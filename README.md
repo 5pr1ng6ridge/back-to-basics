@@ -4,6 +4,8 @@
 
 直接用浏览器打开 `index.html` 就能玩。无需安装依赖或构建服务；全部图与内容保存在本地。
 
+在线探索：[ssdfz.sh.cn/back-to-basics/](https://ssdfz.sh.cn/back-to-basics/)。GitHub Pages 从 `master` 分支根目录发布；推送后自动更新，`.nojekyll` 让静态文件直接发布。
+
 ## 怎么玩
 
 - **沿着问题走**：点节点，看它需要什么、为什么成立，再继续往下。
