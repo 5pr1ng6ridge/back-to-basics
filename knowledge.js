@@ -1,0 +1,1787 @@
+window.TECH_TREE = {
+  "title": "万物的来路",
+  "version": 1,
+  "entry": "can",
+  "sources": [
+    {
+      "id": "aa-bauxite",
+      "title": "Bauxite 101 — The Aluminum Association",
+      "url": "https://www.aluminum.org/bauxite-101"
+    },
+    {
+      "id": "aa-alumina",
+      "title": "Alumina Refining 101 — The Aluminum Association",
+      "url": "https://www.aluminum.org/alumina-refining-101"
+    },
+    {
+      "id": "aa-primary",
+      "title": "Primary Production 101 — The Aluminum Association",
+      "url": "https://www.aluminum.org/primary-production-101"
+    },
+    {
+      "id": "alcoa-bayer",
+      "title": "Wagerup Refinery Long Term Residue Management Strategy — Alcoa",
+      "url": "https://aacomnoa.apps.alcoa.com/australia/en/pdf/2017-wagerup-refinery-ltrms.pdf"
+    },
+    {
+      "id": "iai-bauxite-residue",
+      "title": "Bauxite Residue Management — International Aluminium Institute",
+      "url": "https://international-aluminium.org/wp-content/uploads/2022/04/BRManagementGuidance.pdf"
+    },
+    {
+      "id": "openstax-metals",
+      "title": "18.2 Occurrence and Preparation of the Representative Metals — OpenStax Chemistry 2e",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-2-occurrence-and-preparation-of-the-representative-metals"
+    },
+    {
+      "id": "psu-materials",
+      "title": "Lesson 6: Types and Applications of Metal Alloys — Penn State Materials Science",
+      "url": "https://courses.ems.psu.edu/matse81/book/export/html/2138"
+    },
+    {
+      "id": "tamu-faraday",
+      "title": "Electrochemistry lecture 4 — Texas A&M University",
+      "url": "https://www.chem.tamu.edu/rgroup/hughbanks/courses/102H/lecturenotes/class10-1.pdf"
+    },
+    {
+      "id": "doe-energy",
+      "title": "ITP Aluminum: Energy Requirements for the U.S. Aluminum Industry — U.S. Department of Energy",
+      "url": "https://www.energy.gov/documents/altheoreticalpdf"
+    },
+    {
+      "id": "iai-smelting-energy",
+      "title": "Primary Aluminium Smelting Energy Intensity — International Aluminium Institute",
+      "url": "https://international-aluminium.org/statistics/primary-aluminium-smelting-energy-intensity/?nocache=1736998824"
+    },
+    {
+      "id": "aa-standards",
+      "title": "Standards and Aluminum Alloys — The Aluminum Association",
+      "url": "https://www.aluminum.org/standards"
+    },
+    {
+      "id": "aa-can-lca",
+      "title": "2021 Aluminum Can Life Cycle Assessment Report — The Aluminum Association",
+      "url": "https://www.aluminum.org/sites/default/files/2021-10/2021AluminumCanLCAReportFullVersion.pdf"
+    },
+    {
+      "id": "ball-plant",
+      "title": "Inside a Ball Beverage Can Plant — Ball Corporation",
+      "url": "https://www.ball.com/getmedia/4db64513-133d-4fa8-9de0-89fd7c2724f9/How_a_Ball_Metal_Beverage_Can_Is_Made.pdf"
+    },
+    {
+      "id": "epa-canmaking",
+      "title": "Development Document for Canmaking Subcategory of Coil Coating Category — U.S. EPA",
+      "url": "https://www.epa.gov/sites/default/files/2017-07/documents/canmaking_dd_1984.pdf"
+    },
+    {
+      "id": "cmi-made",
+      "title": "How Cans Are Made — Can Manufacturers Institute",
+      "url": "https://www.cancentral.com/canresources/how-cans-are-made/"
+    },
+    {
+      "id": "cmi-standards",
+      "title": "Beverage Can Standards — Can Manufacturers Institute",
+      "url": "https://www.cancentral.com/standards/"
+    },
+    {
+      "id": "crown-seaming",
+      "title": "Seaming — Crown Holdings",
+      "url": "https://www.crowncork.com/aerosol-food-packaging/essentials/seaming"
+    },
+    {
+      "id": "ecfr-seam",
+      "title": "21 CFR 113.60 Containers — Electronic Code of Federal Regulations",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-113/section-113.60"
+    },
+    {
+      "id": "ppg-internal",
+      "title": "Internal Coatings — PPG Packaging Coatings",
+      "url": "https://www.ppg.com/en-US/packagingcoatings/internal-coatings"
+    },
+    {
+      "id": "unt-passivation",
+      "title": "Laser Aided Additive Manufacturing of Corrosion and Wear Resistance Coatings — University of North Texas",
+      "url": "https://engineering.unt.edu/mse/research/labs/laasm/research/laser-aided-additive-manufacturing-corrosion-wear-resistance-coatings.html"
+    },
+    {
+      "id": "tamu-thinwall",
+      "title": "Strength of Materials Lab Manual, Lab 10: Thin-Walled Pressure Vessels — Texas A&M University",
+      "url": "https://oaktrust.library.tamu.edu/server/api/core/bitstreams/4daebb22-e822-4a6e-a5de-a72023d64164/content"
+    },
+    {
+      "id": "mit-shell",
+      "title": "Plates and Shells Lecture Notes — MIT OpenCourseWare",
+      "url": "https://ocw.mit.edu/courses/2-081j-plates-and-shells-spring-2007/1bd32d641a2b41ca518591d981405393_lecturenote.pdf"
+    },
+    {
+      "id": "ball-spec",
+      "title": "750 mL Beer/Beverage Manufacturing Specification CS-A1087 — Ball Corporation",
+      "url": "https://source.ball.com/api/content/v1/content/media?mediaPath=%2FCustomerPortalCMS%2Fmedia%2Fcustomer-portal-media%2FRegions%2FNA%2FPDF%20Library%2F750mL-%28300%29-%28Monticello%29-CS-A1087-C_KK.pdf"
+    },
+    {
+      "id": "novelis-scrap",
+      "title": "Can Process Scrap Specification — Novelis",
+      "url": "https://b2b.mps.novelis.com/_assets/content/CanProcessScrapSpecificationRev4-092619.pdf"
+    },
+    {
+      "id": "novelis-recycling",
+      "title": "Novelis Invests in Doubling its UK Recycling Capacity for Used Beverage Cans",
+      "url": "https://novelis.com/news/novelis-invests-in-doubling-its-uk-recycling-capacity-for-used-beverage-cans/"
+    },
+    {
+      "id": "aa-recycling",
+      "title": "Aluminum Beverage Can Moves from Recycling Bin to Newly Formed Can in Less Than 60 Days — The Aluminum Association",
+      "url": "https://www.aluminum.org/news/aluminum-beverage-can-moves-recycling-bin-newly-formed-can-less-60-days"
+    },
+    {
+      "id": "epa-recyclecity",
+      "title": "Materials Recovery Center — U.S. EPA Recycle City",
+      "url": "https://www3.epa.gov/recyclecity/recovery.htm"
+    },
+    {
+      "id": "aa-scrap-terms",
+      "title": "GAG 001 Terms and Definitions — The Aluminum Association",
+      "url": "https://www.aluminum.org/sites/default/files/2021-09/GAG_001_Terms_and_Definitions_3rd_Edition_2011_01_August_21_2011_JW.pdf"
+    },
+    {
+      "id": "concordia-hardening",
+      "title": "Lecture 5: Strengthening Mechanisms — Concordia University",
+      "url": "https://users.encs.concordia.ca/~mmedraj/mech321/lecture_5_strengthening_mechanisms.pdf"
+    },
+    {
+      "id": "f-quantum",
+      "title": "OpenStax · 量子理论与原子轨道",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-3-development-of-quantum-theory"
+    },
+    {
+      "id": "f-bonds",
+      "title": "OpenStax · 共价键与能量",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-2-covalent-bonding"
+    },
+    {
+      "id": "f-mole",
+      "title": "OpenStax · 摩尔概念",
+      "url": "https://openstax.org/books/chemistry-2e/pages/3-1-formula-mass-and-the-mole-concept"
+    },
+    {
+      "id": "f-entropy",
+      "title": "OpenStax · 熵与微观状态",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-2-entropy"
+    },
+    {
+      "id": "f-gibbs",
+      "title": "OpenStax · Gibbs 自由能",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-4-free-energy"
+    },
+    {
+      "id": "f-phase",
+      "title": "剑桥 DoITPoMS · 相图与自由能",
+      "url": "https://www.doitpoms.ac.uk/tlplib/phase-diagrams/printall.php"
+    },
+    {
+      "id": "f-power",
+      "title": "OpenStax · 电能与功率",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power"
+    },
+    {
+      "id": "f-induction",
+      "title": "OpenStax · 法拉第电磁感应定律",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law"
+    },
+    {
+      "id": "f-stress",
+      "title": "OpenStax · 应力、应变与弹性模量",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/12-3-stress-strain-and-elastic-modulus"
+    },
+    {
+      "id": "f-crystal",
+      "title": "OpenStax · 晶体结构",
+      "url": "https://openstax.org/books/chemistry-2e/pages/10-6-lattice-structures-in-crystalline-solids"
+    },
+    {
+      "id": "f-charge",
+      "title": "OpenStax · 电荷守恒",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/5-1-electric-charge"
+    },
+    {
+      "id": "f-diffusion",
+      "title": "MIT · 固体中的扩散",
+      "url": "https://ocw.mit.edu/courses/3-091sc-introduction-to-solid-state-chemistry-fall-2010/pages/reactions-and-kinetics/24-diffusion/"
+    },
+    {
+      "id": "f-fick",
+      "title": "MIT · 扩散讲义与 Fick 定律",
+      "url": "https://ocw.mit.edu/courses/3-205-thermodynamics-and-kinetics-of-materials-fall-2006/resources/lecture02_review/"
+    },
+    {
+      "id": "f-amphoteric",
+      "title": "OpenStax · 溶解与两性氢氧化物",
+      "url": "https://openstax.org/books/chemistry-2e/pages/15-1-precipitation-and-dissolution"
+    },
+    {
+      "id": "f-lewis",
+      "title": "OpenStax · Lewis 酸碱与配位",
+      "url": "https://openstax.org/books/chemistry-2e/pages/15-2-lewis-acids-and-bases"
+    },
+    {
+      "id": "f-equilibrium",
+      "title": "OpenStax · 化学平衡移动",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "can",
+      "title": "易拉罐",
+      "subtitle": "铝制两片饮料罐 · 今天的观察入口",
+      "category": "object",
+      "layer": 0,
+      "question": "一只这么轻、这么薄的容器，怎样装住有压力的饮料？",
+      "mechanism": "这类罐通常有一体成形的罐身和独立罐盖。罐身从合金卷材拉深并压薄，罐盖通过双卷封固定。天然氧化层与内涂层保护界面；强度、几何和密封一起完成任务。",
+      "why": "一只罐同时需要合金、塑性成形、薄壳力学、表面化学和材料循环。它们又共享电子、能量和守恒等基础。",
+      "equations": [],
+      "example": "自设罐中铝元素质量 \\(13.0\\,\\mathrm{g}\\)、槽压 \\(4.2\\,\\mathrm{V}\\)、电流效率 \\(95\\%\\)。仅追踪原生铝电解时，理论电量约 \\(38.7\\,\\mathrm{Ah}\\)，实际约 \\(40.8\\,\\mathrm{Ah}\\)，输入约 \\(171\\,\\mathrm{Wh}\\)；不含矿山、精炼、制罐及辅机。若材料来自回收，则会走另一条来源路径。",
+      "gotcha": "本册以典型铝制两片饮料罐为入口。钢罐、三片罐、不同容量与厂商设计会有不同路线；这不是一只实物罐的完整检测报告。",
+      "sourceIds": [
+        "aa-can-lca",
+        "ball-plant",
+        "f-mole"
+      ],
+      "frontier": "你也可以换一个入口：圆珠笔、玻璃、肥皂、锂电池。它们会在化学键、扩散、能量和数学处相遇。"
+    },
+    {
+      "id": "bauxite-ore",
+      "title": "铝土矿与含铝矿物",
+      "subtitle": "从红土风化层中的含铝矿物开始",
+      "category": "chemistry",
+      "layer": 1,
+      "question": "为什么从铝土矿到金属铝要先分离、再还原？",
+      "mechanism": "铝土矿通常是近地表红土型矿石，含水铝氧化物/氢氧化物（如三水铝石 \\(\\ce{Al(OH)3}\\)、一水铝石 \\(\\ce{AlO(OH)}\\)）以及二氧化硅、氧化铁、二氧化钛等杂质。工业路线先利用溶解度和酸碱选择性把含铝相转入溶液，再把铝变成 \\(\\ce{Al2O3}\\)，最后电解；矿石本身的品位和矿物相决定拜耳条件与残渣量。",
+      "why": "铝在矿石中以稳定的氧化物/氢氧化物存在，不能像较不活泼金属那样靠简单熔炼得到金属；把杂质先移走，才可让电解槽处理组成稳定的冶金级氧化铝。",
+      "equations": [
+        {
+          "formula": "\\ce{2Al(OH)3(s) -> Al2O3(s) + 3H2O(g)}",
+          "terms": "三水铝石脱水的化学计量式；实际矿石还含 \\(\\ce{AlO(OH)}\\) 与非铝矿物",
+          "scope": "代表性矿物的脱水，不是铝土矿整体组成式"
+        },
+        {
+          "formula": "w_{\\ce{Al2O3}}=\\frac{m_{\\ce{Al2O3},\\,\\mathrm{eq}}}{m_{\\mathrm{ore}}}",
+          "terms": "\\(w_{\\ce{Al2O3}}\\) 为铝土矿的氧化铝等效质量分数，\\(m_{\\ce{Al2O3},\\mathrm{eq}}\\) 为氧化铝等效质量，\\(m_{\\mathrm{ore}}\\) 为矿石质量",
+          "scope": "用于粗略物料衡算；必须另计回收率和水分"
+        }
+      ],
+      "example": "若 \\(1.00\\,\\mathrm{t}\\) 干矿的 \\(\\ce{Al2O3}\\) 等效品位为 \\(45\\%\\)，则 \\(m_{\\ce{Al2O3}}=1.00\\times0.45=0.450\\,\\mathrm{t}\\)；若拜耳回收率假定为 \\(90\\%\\)，则 \\(m_{\\mathrm{recovered}}=0.450\\times0.90=0.405\\,\\mathrm{t}\\)，尚未扣除煅烧、输送或电解损失。",
+      "gotcha": "“铝土矿就是 \\(\\ce{Al2O3}\\)”会误导物料衡算；\\(\\ce{Al2O3}\\) 是精炼后的产品名，矿石是多种含水矿物和杂质的混合物。",
+      "sourceIds": [
+        "aa-bauxite",
+        "aa-alumina"
+      ],
+      "fullTitle": "铝矿：铝土矿是混合矿物，不是纯 \\(\\ce{Al2O3}\\)",
+      "frontier": "下一枝：岩石中的铝怎样经风化、淋滤和地质时间富集成矿？硅为什么会增加拜耳法的碱耗？"
+    },
+    {
+      "id": "bayer-digestion",
+      "title": "拜耳法 · 碱液消化",
+      "subtitle": "把固体含铝相变成可过滤的铝酸盐溶液",
+      "category": "chemistry",
+      "layer": 1,
+      "question": "热烧碱怎样从铝土矿中带走铝？",
+      "mechanism": "破碎研磨后的矿浆与热的浓 \\(\\ce{NaOH}\\) 在加压消化器中接触；铝的氧羟化物/氢氧化物被羟基配位并进入溶液，主要以四羟基合铝酸根 \\(\\ce{[Al(OH)4]^-}\\) 存在，\\(\\ce{Na+}\\) 是对离子。铁氧化物、钛氧化物和部分硅质相大多留下为固相。",
+      "why": "铝的两性使强碱能溶解含铝氧化物，而许多杂质在该碱液中的溶解度较低；温度和压力提高反应速率并适配不同矿物相。",
+      "equations": [
+        {
+          "formula": "\\ce{AlO(OH)(s)+NaOH(aq)+H2O(l)->Na[Al(OH)4](aq)}",
+          "terms": "\\(\\ce{AlO(OH)}\\) 可代表一水铝石/硬水铝石；\\(\\ce{Na[Al(OH)4]}\\) 写法等价于 \\(\\ce{Na+ + [Al(OH)4]^-}\\)",
+          "scope": "适用于氧羟化物端元；三水铝石端元反应为 \\(\\ce{Al(OH)3 + NaOH -> Na[Al(OH)4]}\\)。"
+        },
+        {
+          "formula": "\\ce{AlO(OH)(s)+OH^-(aq)+H2O(l)->[Al(OH)4]^-(aq)}",
+          "terms": "净离子式中 \\(\\ce{Na+}\\) 不参加配位反应",
+          "scope": "水溶液的简化化学计量；真实拜耳液含多种络合/杂质物种"
+        }
+      ],
+      "example": "按氧羟化物端元计，\\(1.00\\,\\mathrm{mol}\\) \\(\\ce{AlO(OH)}\\) 最多生成 \\(1.00\\,\\mathrm{mol}\\) \\(\\ce{[Al(OH)4]^-}\\)；其所含 \\(\\ce{Al}\\) 的物质的量不因络合而改变。",
+      "gotcha": "\\(\\ce{NaAlO2}\\)(aq) 常见于旧教材或工艺简写，但在水相中更清楚、守恒更直观的记法是 \\(\\ce{Na[Al(OH)4]}\\) 或 \\(\\ce{[Al(OH)4]^-}\\)；两者不能被当作不同的铝产物。",
+      "sourceIds": [
+        "alcoa-bayer",
+        "openstax-metals",
+        "iai-bauxite-residue"
+      ],
+      "fullTitle": "拜耳法消化：热浓 \\(\\ce{NaOH}\\) 选择性溶出铝"
+    },
+    {
+      "id": "bayer-clarification",
+      "title": "拜耳法 · 澄清与赤泥",
+      "subtitle": "固液分离决定铝回收与残渣负荷",
+      "category": "chemistry",
+      "layer": 1,
+      "question": "为什么消化后还要过滤和沉降？",
+      "mechanism": "消化浆料先分级、沉降和过滤，得到含铝的澄清绿色液（green liquor）与不溶残渣。残渣主要来自铁氧化物、二氧化钛、未反应硅质物和细颗粒；液体中的烧碱随后进入沉淀循环。",
+      "why": "电解槽需要低杂质的氧化铝；若固体杂质随液进入后续步骤，会污染种分产品、增加烧碱损失并使残渣处理量失控。",
+      "equations": [
+        {
+          "formula": "n_{\\ce{Al},\\mathrm{feed}}=n_{\\ce{Al},\\mathrm{liquor}}+n_{\\ce{Al},\\mathrm{residue}}",
+          "terms": "\\(n_{\\ce{Al},\\mathrm{feed}}\\)、\\(n_{\\ce{Al},\\mathrm{liquor}}\\)、\\(n_{\\ce{Al},\\mathrm{residue}}\\) 分别为进料、澄清液和残渣/夹带液中的铝元素物质的量",
+          "scope": "需分开测量未溶铝相与夹带溶液；质量衡算还须计入碱、水与所有其他固相。"
+        }
+      ],
+      "example": "自设矿浆带入 \\(100\\,\\mathrm{kg}\\) \\(\\ce{Al2O3}\\) 等效，\\(92\\,\\mathrm{kg}\\) 等效铝进入净澄清液、\\(8\\,\\mathrm{kg}\\) 留在残渣/夹带液等流中；\\(100\\,\\mathrm{kg}=92\\,\\mathrm{kg}+8\\,\\mathrm{kg}\\)。\\(92\\%\\) 是这一核算边界下的净回收率；不能把余量全部解释成“沉降不完全”。",
+      "gotcha": "赤泥不是单一化合物，也不是‘过滤掉的纯泥’；它夹带碱液并含多种矿物相，产量和组成取决于矿石、消化和洗涤条件。",
+      "sourceIds": [
+        "alcoa-bayer",
+        "iai-bauxite-residue"
+      ],
+      "fullTitle": "拜耳法澄清：从绿色液分离赤泥"
+    },
+    {
+      "id": "bayer-precipitation",
+      "title": "拜耳法 · 晶种析出",
+      "subtitle": "冷却、稀释和晶种把可溶铝重新变成固体",
+      "category": "chemistry",
+      "layer": 1,
+      "question": "怎样从澄清铝酸盐液拿回高纯氢氧化铝？",
+      "mechanism": "绿色液经冷却、稀释并加入 \\(\\ce{Al(OH)3}\\) 晶种，使溶液相对于氢氧化铝过饱和；晶种表面提供成核和长大界面，\\(\\ce{Al(OH)3}\\) 晶体沉降后分级、洗涤，母液中的 \\(\\ce{NaOH}\\) 回到消化段。",
+      "why": "沉淀把铝从可循环的碱液中选择性取出，同时回收烧碱；控制晶种、温度和停留时间可调粒度，粒度又影响煅烧粉尘和电解溶解。",
+      "equations": [
+        {
+          "formula": "\\ce{[Al(OH)4]^-(aq)<=>Al(OH)3(s)+OH^-(aq)}",
+          "terms": "析出后母液中的 \\(\\ce{OH^-}\\) 可回到消化段；\\(\\ce{Na+}\\) 是对离子",
+          "scope": "净计量式；析出程度和粒度还由活度、温度、晶种与停留时间决定。"
+        },
+        {
+          "formula": "S=\\frac{C_{\\mathrm{dissolved\\ Al}}}{C_{\\mathrm{eq,dissolved\\ Al}}}",
+          "terms": "\\(S\\) 为按浓度比定义的工艺过饱和度，\\(C_{\\mathrm{dissolved\\ Al}}\\) 为溶解铝浓度，\\(C_{\\mathrm{eq,dissolved\\ Al}}\\) 为相同温度、碱度和液体组成下的平衡浓度",
+          "scope": "\\(S>1\\) 表示此定义下的过饱和；不能用固体 \\(\\ce{Al(OH)3}\\) 的活度去当浓度，也不能把浓液直接套稀溶液 \\(K_{\\mathrm{sp}}\\)。"
+        }
+      ],
+      "example": "若净反应每沉淀 \\(1.00\\,\\mathrm{mol}\\) \\(\\ce{Al(OH)3}\\)，按式子同时再生 \\(1.00\\,\\mathrm{mol}\\) \\(\\ce{NaOH}\\)；\\(1.00\\,\\mathrm{mol}\\) \\(\\ce{Al(OH)3}\\) 的理论质量为约 \\(78.00\\,\\mathrm{g}\\)。实际收率要乘以沉淀率并扣除母液夹带。",
+      "gotcha": "晶种是促进成核和控制粒度的固体，不是催化剂意义上的‘永不消耗’物质；一部分会随产品带走并需循环补充。",
+      "sourceIds": [
+        "aa-alumina",
+        "alcoa-bayer",
+        "iai-bauxite-residue"
+      ],
+      "fullTitle": "拜耳法种分：让 \\(\\ce{Al(OH)3}\\) 从铝酸盐液结晶"
+    },
+    {
+      "id": "alumina-calcination",
+      "title": "煅烧得到氧化铝",
+      "subtitle": "白色 \\(\\ce{Al2O3}\\) 粉末是电解槽的进料",
+      "category": "chemistry",
+      "layer": 1,
+      "question": "为什么沉淀的氢氧化铝不能直接送进电解槽？",
+      "mechanism": "洗涤后的三水铝石在约 \\(1000\\,^\\circ\\mathrm{C}\\) 级的煅烧器中脱去结构水，形成 \\(\\ce{Al2O3}\\)；粒度、晶型、残余碱和水分影响其在冰晶石浴中的溶解与加料响应。",
+      "why": "电解需要无水氧化铝作为可控的氧源；若把大量结合水带入约 950–\\(970\\,^\\circ\\mathrm{C}\\) 槽，会消耗热量并改变气体、酸碱与电流平衡。",
+      "equations": [
+        {
+          "formula": "\\ce{2Al(OH)3(s)->[\\Delta]Al2O3(s)+3H2O(g)}",
+          "terms": "\\(\\Delta\\) 表示加热；\\(\\ce{Al2O3}\\) 为氧化铝，水以蒸汽排出",
+          "scope": "三水铝石完全煅烧的理想计量式；不同矿物相可先经 \\(\\ce{AlO(OH)}\\) 中间相"
+        },
+        {
+          "formula": "m_{\\ce{Al2O3}}=m_{\\ce{Al(OH)3}}\\frac{M_{\\ce{Al2O3}}}{2M_{\\ce{Al(OH)3}}}",
+          "terms": "\\(M\\) 为摩尔质量；理想质量比为 \\(M_{\\ce{Al2O3}}/[2M_{\\ce{Al(OH)3}}]=101.96/(2\\times78.00)=0.6536\\)",
+          "scope": "纯三水铝石、完全反应、忽略夹带物时的干基估算"
+        }
+      ],
+      "example": "\\(100.0\\,\\mathrm{kg}\\) 纯 \\(\\ce{Al(OH)3}\\) 完全煅烧理论得到 \\(m_{\\ce{Al2O3}}=100.0\\times\\frac{101.96}{2\\times78.00}=65.4\\,\\mathrm{kg}\\)，并放出 \\(m_{\\ce{H2O}}=100.0-65.4=34.6\\,\\mathrm{kg}\\) 水；若实际产品只有 \\(63.5\\,\\mathrm{kg}\\)，差额可能来自未完全转化、粉尘损失或原料夹带水分。",
+      "gotcha": "\\(\\ce{Al2O3}\\) 不是把 \\(\\ce{Al(OH)3}\\)‘熔化’后得到的液体；这里主要是脱水和晶型演变，电解槽再把固体粉末溶入熔盐。",
+      "sourceIds": [
+        "aa-alumina",
+        "alcoa-bayer",
+        "iai-bauxite-residue"
+      ],
+      "fullTitle": "煅烧：\\(\\ce{Al(OH)3}\\) 脱水成为冶金级氧化铝"
+    },
+    {
+      "id": "cryolite-electrolyte",
+      "title": "冰晶石与熔盐浴",
+      "subtitle": "\\(\\ce{Na3AlF6}\\) 是熔盐溶剂/载流介质，不是还原剂",
+      "category": "chemistry",
+      "layer": 2,
+      "question": "为什么不把 \\(\\ce{Al2O3}\\) 直接熔化再电解？",
+      "mechanism": "\\(\\ce{Al2O3}\\) 熔点超过 \\(2000\\,^\\circ\\mathrm{C}\\)；工业上将其溶解于熔融冰晶石 \\(\\ce{Na3AlF6}\\) 及调 bath 的氟化物中。熔盐提供可移动离子、降低工作温度并保持铝氧物种可在阴阳极反应；铝液密度较大，在槽底收集。",
+      "why": "直接熔化氧化铝会带来更高的炉温、耐材负担和热损失；冰晶石浴把‘能导电的铝氧源’和‘可维持的熔盐温度’结合起来。",
+      "equations": [
+        {
+          "formula": "\\ce{Na3AlF6(l) + Al2O3(diss)}\\rightleftharpoons\\text{熔盐中的离子和 Al-F-O 络合物}",
+          "terms": "\\(\\ce{Na3AlF6}\\) 和溶解态 \\(\\ce{Al2O3}\\) 形成复杂熔盐物种；\\(\\mathrm{diss}\\) 表示溶解态",
+          "scope": "定性示意，不把复杂熔盐结构误写成唯一配平反应"
+        },
+        {
+          "formula": "P=IV,\\quad Q_{\\mathrm{elec}}=\\int I(t)\\,\\mathrm{d}t",
+          "terms": "\\(P\\) 为电功率，\\(I\\) 为电流，\\(V\\) 为槽电压，\\(Q_{\\mathrm{elec}}\\) 为通过的电荷",
+          "scope": "槽的电输入；熔盐只承载电流，不能据此推出电能全变成铝的化学能"
+        }
+      ],
+      "example": "若把 \\(\\ce{Al2O3}\\) 熔点粗略看作约 \\(2050\\,^{\\circ}\\mathrm{C}\\)，而槽约 \\(960\\,^{\\circ}\\mathrm{C}\\)，冰晶石路线把主要液相操作温度降低约 \\(2050-960\\approx1100\\,^{\\circ}\\mathrm{C}\\)；这只是温度差示意，不能直接等同于节省的 \\(\\mathrm{kWh}\\)。",
+      "gotcha": "冰晶石在净反应中不被消耗，也不是催化剂；它是熔盐电解质和溶剂，实际会有挥发、夹带和氟化物排放，需要补加与净化。",
+      "sourceIds": [
+        "psu-materials",
+        "aa-primary",
+        "iai-smelting-energy"
+      ],
+      "fullTitle": "冰晶石浴：让氧化铝在可操作温度下成为电解质"
+    },
+    {
+      "id": "hall-heroult-cell",
+      "title": "霍尔–埃鲁电解",
+      "subtitle": "碳衬钢槽中的高电流熔盐电解",
+      "category": "physics",
+      "layer": 2,
+      "question": "电流如何把溶解的氧化铝分成铝和含碳阳极气体？",
+      "mechanism": "预焙碳阳极插入含氧化铝的熔融冰晶石，槽底碳质阴极收集液态铝。阴极还原铝氧物种得到 \\(\\ce{Al}\\)(l)；阳极氧物种放电并与碳反应，主要生成 \\(\\ce{CO2}\\)，少量 CO。电解槽以直流电保持反应与约 950–\\(970\\,^\\circ\\mathrm{C}\\) 的液相。",
+      "why": "\\(\\ce{Al-O}\\) 键和 \\(\\ce{Al2O3}\\) 的热力学稳定性使化学还原很难；外加电功提供电子并维持高温熔盐离子传输。",
+      "equations": [
+        {
+          "formula": "\\text{阴极：}\\ce{Al^3++3e^-->Al(l)}",
+          "terms": "理想化铝离子写法；实际熔盐中为 \\(\\ce{Al-O-F}\\) 络合物",
+          "scope": "用来配平电子和计算电量，不宣称槽内存在大量自由 \\(\\ce{Al^3+}\\)"
+        },
+        {
+          "formula": "\\text{阳极（}\\ce{CO2}\\text{ 主路径）：}\\ce{C(s) + 2O^2- -> CO2(g) + 4e^-}",
+          "terms": "\\(\\ce{O^2-}\\) 代表含氧阴离子等效；阳极半反应释放 \\(4\\,\\mathrm{mol}\\) 电子",
+          "scope": "理想化半反应；气体中 CO 比例受条件与阳极效应影响"
+        }
+      ],
+      "example": "自设恒流 \\(I=100\\,\\mathrm{kA}\\) 运行 \\(t=1\\,\\mathrm{h}\\)，\\(Q=It=3.60\\times10^8\\,\\mathrm{C}=360\\,\\mathrm{MC}\\)，对应 \\(n_e=Q/F\\approx3731\\,\\mathrm{mol}\\) 电子。每 \\(1\\,\\mathrm{mol}\\) 铝需 \\(3\\,\\mathrm{mol}\\) 电子，故理论产量约 \\(m_{\\ce{Al}}=(3731/3)\\times26.9815/1000\\approx33.6\\,\\mathrm{kg}\\)；若电流效率取 \\(95\\%\\)，则约 \\(0.95\\times33.6=31.9\\,\\mathrm{kg}\\)。这一步计算还没有用槽电压。",
+      "gotcha": "阴极是还原处、阳极是氧化处；‘阳极带正所以发生还原’是把电池符号和电解槽混淆。",
+      "sourceIds": [
+        "aa-primary",
+        "aa-alumina",
+        "doe-energy"
+      ],
+      "fullTitle": "霍尔–埃鲁槽：阴极析铝、阳极耗氧"
+    },
+    {
+      "id": "carbon-anode-reaction",
+      "title": "碳阳极与氧的去向",
+      "subtitle": "工业碳阳极把‘析氧’改写为 \\(\\ce{CO2}\\)/CO 排放并被消耗",
+      "category": "chemistry",
+      "layer": 2,
+      "question": "为什么传统铝电解会消耗碳阳极并排出 \\(\\ce{CO2}\\)？",
+      "mechanism": "把阴极铝还原和碳阳极氧化相加，铝氧化物的氧不以 \\(\\ce{O2}\\) 逸出，而转移给碳。DOE 的理想碳阳极总式是 \\(\\ce{2Al2O3 + 3C -> 4Al + 3CO2}\\)；真实槽还会有 \\(\\ce{CO2 + C <=> 2CO}\\)、铝被 \\(\\ce{CO2}\\) 反氧化以及阳极效应。",
+      "why": "碳既导电又能与阳极氧反应，降低相对惰性阳极的电解功需求；代价是阳极消耗和直接碳排放。",
+      "equations": [
+        {
+          "formula": "\\ce{2Al2O3(l,diss)+3C(s)->4Al(l)+3CO2(g)}",
+          "terms": "每生成 \\(4\\,\\mathrm{mol}\\) \\(\\ce{Al}\\) 消耗 \\(3\\,\\mathrm{mol}\\) \\(\\ce{C}\\)，对应转移 \\(12\\,\\mathrm{mol}\\) 电子",
+          "scope": "碳阳极主反应的理想总式；熔盐活度、温度和气相组成会改变实际路径"
+        },
+        {
+          "formula": "\\ce{CO2(g)+C(s)<=>2CO(g)}",
+          "terms": "\\(\\ce{CO2 + C <=> 2CO}\\) 是 Boudouard 反应，使实际阳极气体不只含 \\(\\ce{CO2}\\)",
+          "scope": "高温副反应，不能据此把总式固定写成全 CO"
+        },
+        {
+          "formula": "\\ce{2Al(l)+3CO2(g)->Al2O3(diss)+3CO(g)}",
+          "terms": "\\(\\ce{CO2}\\) 可将铝反氧化，降低电流效率",
+          "scope": "DOE 列出的实际运行损失路径之一"
+        }
+      ],
+      "example": "按主总式，生产 \\(1.000\\,\\mathrm{kg}\\) \\(\\ce{Al}\\)（\\(26.9815\\,\\mathrm{g\\,mol^{-1}}\\)）理论消耗碳：\\(n(\\ce{C})=0.75n(\\ce{Al})=27.80\\,\\mathrm{mol}\\)，质量约 \\(0.334\\,\\mathrm{kg}\\)；实际阳极净耗量因副反应、残极和工艺管理而不同。",
+      "gotcha": "“阳极产氧气”只适用于惰性阳极理想化路线；传统碳阳极把氧转成 \\(\\ce{CO2}\\) / \\(\\ce{CO}\\)，所以不能把碳阳极槽的总式写成 \\(\\ce{2Al2O3 -> 4Al + 3O2}\\)。",
+      "sourceIds": [
+        "doe-energy",
+        "aa-primary",
+        "aa-alumina"
+      ],
+      "fullTitle": "碳阳极总反应：氧化铝的氧最终氧化碳"
+    },
+    {
+      "id": "faraday-charge",
+      "title": "法拉第电解定律",
+      "subtitle": "三电子/铝原子给出电流、时间与产量的桥梁",
+      "category": "math",
+      "layer": 3,
+      "question": "生产一罐铝需要多少电荷？",
+      "mechanism": "电极反应每生成 \\(1\\,\\mathrm{mol}\\) \\(\\ce{Al}\\) 需转移 \\(z=3\\) mol 电子。电荷守恒与法拉第常数 \\(F\\) 把电子物质的量换成库仑；电流效率 \\(\\eta_I\\) 把理想电荷修正为实际所需电荷。",
+      "why": "这条关系不依赖槽的外形，只要电子计量数和目标产物量明确，就能先给出物理下限，再讨论电压、热损失和副反应。",
+      "equations": [
+        {
+          "formula": "Q_{\\mathrm{ideal}}=zFn(\\ce{Al})=zF\\frac{m(\\ce{Al})}{M(\\ce{Al})}",
+          "terms": "\\(Q\\) 为电荷（\\(\\mathrm{C}\\)），\\(z=3\\) 为每个铝原子对应的电子计量数，\\(F=96485\\,\\mathrm{C\\,mol^{-1}}\\) 为法拉第常数，\\(n\\) 为物质的量（\\(\\mathrm{mol}\\)），\\(M(\\ce{Al})=26.9815\\,\\mathrm{g\\,mol^{-1}}\\)",
+          "scope": "\\(100\\%\\) 电流效率且只有铝析出的理论值"
+        },
+        {
+          "formula": "m_{\\mathrm{actual}}=\\frac{\\eta_I M(\\ce{Al})It}{zF}",
+          "terms": "\\(m_{\\mathrm{actual}}\\) 为实际产量，\\(I\\) 为电流（\\(\\mathrm{A}\\)），\\(t\\) 为时间（\\(\\mathrm{s}\\)），\\(\\eta_I\\in[0,1]\\) 为电流效率",
+          "scope": "恒定电流的实际产量估算；电流波动时用积分 \\(\\int I(t)\\,\\mathrm{d}t\\)"
+        }
+      ],
+      "example": "\\(1.000\\,\\mathrm{kg}\\) \\(\\ce{Al}\\)：\\(n=1000/26.9815=37.06\\,\\mathrm{mol}\\)，\\(Q_{\\mathrm{ideal}}=3\\times96485\\times37.06=1.073\\times10^7\\,\\mathrm{C}=2{,}980\\,\\mathrm{Ah}\\)。若 \\(\\eta_I=95\\%\\)，实际需约 \\(3{,}137\\,\\mathrm{Ah}\\)；这仍只算电荷，不含槽电压和辅机能耗。",
+      "gotcha": "把 \\(1\\,\\mathrm{mol}\\) \\(\\ce{Al}\\) 当成 \\(1\\,\\mathrm{mol}\\) 电子会少算三倍；“电流效率 \\(95\\%\\)”也不表示总电能效率 \\(95\\%\\)，因为电压、热损失和整流/辅机还在分母中。",
+      "sourceIds": [
+        "tamu-faraday",
+        "doe-energy"
+      ],
+      "fullTitle": "法拉第定律：由铝的量反推理论电量"
+    },
+    {
+      "id": "thermo-voltage",
+      "title": "自由能与电解电压",
+      "subtitle": "高稳定性的 \\(\\ce{Al2O3}\\) 需要外加电功驱动",
+      "category": "energy",
+      "layer": 4,
+      "question": "为什么电解需要约伏特级的电压，且实际还要更高？",
+      "mechanism": "对给定温度、组成和产物状态，分解反应的正 Gibbs 自由能 \\(\\Delta G\\) 是可逆最低非膨胀功；电化学可逆电压满足 \\(\\Delta G=nFE_{\\mathrm{rev}}\\)（若按分解反应取正值）。真实槽还要克服阳极/阴极过电位、熔盐欧姆压降、浓差和散热。",
+      "why": "\\(\\Delta H\\) 告诉总焓变化，\\(\\Delta G\\) 才告诉在恒温恒压下至少要输入多少有用功；这解释了‘理论电量’与‘理论能耗’不能混为一谈。",
+      "equations": [
+        {
+          "formula": "\\Delta G=\\Delta H-T\\Delta S",
+          "terms": "\\(\\Delta G\\) 为 Gibbs 自由能变化，\\(\\Delta H\\) 为焓变，\\(T\\) 为绝对温度，\\(\\Delta S\\) 为熵变",
+          "scope": "恒温恒压、给定标准态/活度的热力学关系"
+        },
+        {
+          "formula": "\\begin{aligned}W_{\\mathrm{elec,min}} &= \\Delta G = nF E_{\\mathrm{rev}},\\\\ V_{\\mathrm{cell,actual}} &= E_{\\mathrm{rev}} + \\eta_{\\mathrm{an}} + \\eta_{\\mathrm{cat}} + IR + \\cdots\\end{aligned}",
+          "terms": "\\(\\eta_{\\mathrm{an}}\\)、\\(\\eta_{\\mathrm{cat}}\\) 为过电位，\\(IR\\) 为电阻压降，省略项包括浓差与接触损失",
+          "scope": "电解分解取 \\(\\Delta G>0\\)；实际槽电压是运行量，不等于可逆电压"
+        }
+      ],
+      "example": "自设一个转移 \\(3\\,\\mathrm{mol}\\) 电子的分解反应，在指定恒温恒压条件下 \\(\\Delta_{\\mathrm r}G=300\\,\\mathrm{kJ\\,mol^{-1}}\\)，则最低可逆电压 \\(300000/(3\\times96485)\\approx1.04\\,\\mathrm{V}\\)。这是演示 \\(\\Delta G\\) 与电压关系的假想数据，不是铝电解槽的实测值。",
+      "gotcha": "电压越高不自动等于效率越高；在同样电流下，\\(P=IV\\) 会增加输入功，除非它解决了传质/动力学限制并提高电流效率。",
+      "sourceIds": [
+        "doe-energy",
+        "tamu-faraday",
+        "f-gibbs"
+      ],
+      "fullTitle": "热力学电压：\\(\\Delta G\\) 决定可逆最低电功"
+    },
+    {
+      "id": "smelting-energy",
+      "title": "电耗下限与真实损失",
+      "subtitle": "\\(5.99\\,\\mathrm{kWh/kg}\\) 是理想下限，不是电费账单",
+      "category": "energy",
+      "layer": 4,
+      "question": "为什么实际铝电解耗电远高于热力学下限？",
+      "mechanism": "DOE 2007 报告中的理想碳阳极账本：原料和 \\(\\ce{CO2}\\) 在 \\(25\\,^\\circ\\mathrm{C}\\)、铝液以 \\(960\\,^\\circ\\mathrm{C}\\) 离开，忽略外部损失，合计 \\(5.99\\,\\mathrm{kWh\\,kg^{-1}}\\)；其中 \\(5.11\\,\\mathrm{kWh\\,kg^{-1}}\\) 是 \\(298\\,\\mathrm{K}\\) 反应自由能对应的电功项，余下是热量项。若 \\(\\ce{CO2}\\) 也以 \\(960\\,^\\circ\\mathrm{C}\\) 排出，边界改为 \\(6.16\\,\\mathrm{kWh\\,kg^{-1}}\\)。该报告的 \\(2003\\) 年美国电解段基准为 \\(15.58\\,\\mathrm{kWh\\,kg^{-1}}\\)。IAI 又区分 DC 电解与包含整流及辅机的 AC 槽区电力。",
+      "why": "真实槽要保持熔盐液相、补偿导线/电解质电阻、过电位、铝再氧化、阳极效应和碳耗，还要运行整流、控制和污染治理；这些使能耗高于可逆下限。",
+      "equations": [
+        {
+          "formula": "E_{\\mathrm{specific}}=\\frac{\\int V(t)I(t)\\,\\mathrm{d}t}{m(\\ce{Al})}",
+          "terms": "\\(E_{\\mathrm{specific}}\\) 为单位铝电耗，\\(V(t)\\) 和 \\(I(t)\\) 为随时间变化的槽电压与电流，\\(m(\\ce{Al})\\) 为出槽铝质量",
+          "scope": "现场电能边界；需说明是否含整流损失、辅机和碳厂"
+        },
+        {
+          "formula": "\\eta_{\\mathrm{energy}}\\approx\\frac{E_{\\mathrm{theory}}}{E_{\\mathrm{actual}}}=\\frac{5.99}{15.58}\\approx0.384\\quad(\\text{示例边界})",
+          "terms": "该比值比较 DOE 理想碳阳极模型的 \\(E_{\\mathrm{theory}}\\) 与 \\(2003\\) 年美国电解段基准的 \\(E_{\\mathrm{actual}}\\)，仅对应这两个特定边界",
+          "scope": "不能当作全生命周期效率，也不能代表所有年代/地区的当前值"
+        }
+      ],
+      "example": "按上述边界，\\(1.000\\,\\mathrm{kg}\\) \\(\\ce{Al}\\) 的理想下限约 \\(5.99\\,\\mathrm{kWh}\\)，而 \\(2003\\) 年美国电解段基准约 \\(15.58\\,\\mathrm{kWh}\\)，两者相差 \\(15.58-5.99=9.59\\,\\mathrm{kWh}\\)；若只引用“约 \\(15\\,\\mathrm{kWh\\,kg^{-1}}\\)”，必须注明年份和统计边界。",
+      "gotcha": "\\(5.99\\,\\mathrm{kWh\\,kg^{-1}}\\) 是特定理想边界的总输入，不是全链路耗电。将常温自由能电功除以理论电量，也不能当作 \\(960\\,^\\circ\\mathrm{C}\\) 槽的可逆电压。实际 DC、AC 槽区、从矿到金属的能耗和历史地区基准应分别说明。",
+      "sourceIds": [
+        "doe-energy",
+        "iai-smelting-energy"
+      ],
+      "fullTitle": "理论能耗与真实能耗：边界和损失决定数字"
+    },
+    {
+      "id": "can-alloy-split",
+      "title": "罐身与罐盖的合金",
+      "subtitle": "典型饮料罐使用不同牌号和状态",
+      "category": "materials",
+      "layer": 1,
+      "question": "为什么不能把整只罐都看成同一种铝？",
+      "mechanism": "典型罐身使用 3004/3104 类铝锰系合金，罐盖常见 5182 类铝镁系合金；其状态、厚度和批次成分还要看供应规格。罐身材料兼顾高速成形，盖材需要较高屈服强度和合适的刻痕、卷封性能。",
+      "why": "罐身要在高速 D&I 中延伸而不开裂；盖板要薄、能压出刻痕和拉环，并承受卷封与内压。不同部位的加工窗口相反，所以材料选择是结构设计的一部分。",
+      "equations": [
+        {
+          "formula": "x_i=\\frac{m_i}{m_{\\mathrm{alloy}}}",
+          "terms": "\\(x_i\\) 为元素 \\(i\\) 的质量分数，\\(m_i\\) 为该元素质量，\\(m_{\\mathrm{alloy}}\\) 为合金总质量",
+          "scope": "定义牌号成分的质量分数；不能由牌号名称推得单罐的实际批次成分"
+        }
+      ],
+      "example": "一个教学用配料例子：若 \\(1.000\\,\\mathrm{kg}\\) 合金含 \\(40\\,\\mathrm{g}\\) \\(\\ce{Mg}\\)，则 \\(x_{\\mathrm{Mg}}=\\frac{40}{1000}=0.040=4.0\\,\\mathrm{wt\\%}\\)；这只是成分计算示例，不是对某个罐盖批次的检测值。",
+      "gotcha": "“更强”通常指抗塑性变形能力，不是弹性模量明显提高。不同铝合金的弹性模量通常接近；盖板的结构刚度还受厚度、曲率和筋控制。典型牌号也不是全行业唯一配方。",
+      "sourceIds": [
+        "aa-standards",
+        "aa-can-lca",
+        "novelis-scrap"
+      ],
+      "fullTitle": "罐身与罐盖是两种材料任务"
+    },
+    {
+      "id": "coil-to-cup",
+      "title": "从卷材冲出杯",
+      "subtitle": "圆片的塑性流动把平板变成杯",
+      "category": "making",
+      "layer": 2,
+      "question": "一张平的铝卷怎样变成没有侧缝的罐身毛坯？",
+      "mechanism": "卷材在润滑后由 cupper 冲出圆形 blank，并由压边圈和冲头将圆片拉成杯。Ball 的工艺图把卷材、润滑、冲杯列为连续工序；EPA 说明深拉时金属在拉深环上方被控制流动，而不是简单的平板冲压。必要时用逐级较小直径的 punch 重拉，降低一次变形过大的风险。",
+      "why": "圆片的材料从径向流入杯壁，能得到一体的底和侧壁；侧缝减少了一个潜在泄漏路径，也为后面的 D&I 留下均匀的杯形。",
+      "equations": [
+        {
+          "formula": "\\frac{\\pi D_b^2}{4}\\approx\\frac{\\pi D_c^2}{4}+\\pi D_ch_c",
+          "terms": "\\(D_b\\) 为圆片直径，\\(D_c\\) 为杯的平均直径，\\(h_c\\) 为杯壁高度",
+          "scope": "薄板、体积近似守恒的几何估算；忽略底部圆角、厚度变化、修边和各向异性"
+        }
+      ],
+      "example": "取 \\(D_b=140\\,\\mathrm{mm}\\)、\\(D_c=66\\,\\mathrm{mm}\\) 的理想圆片，\\(h_c\\approx\\frac{140^2-66^2}{4\\times66}=57.7\\,\\mathrm{mm}\\)；它只说明材料面积量级，不能当作某条生产线的模具尺寸。",
+      "gotcha": "冲杯是深拉成形的起点；饮料罐常见的二片罐还要继续重拉、壁厚变薄、修边、洗罐、涂层和缩颈。三片罐则是裁片后卷圆并焊/粘侧缝，不能混用这条流程。",
+      "sourceIds": [
+        "ball-plant",
+        "epa-canmaking",
+        "cmi-made"
+      ],
+      "fullTitle": "卷材先冲杯再深拉"
+    },
+    {
+      "id": "draw-redraw-ironing",
+      "title": "拉深与壁厚变薄",
+      "subtitle": "深拉和壁厚变薄是两个耦合塑性过程",
+      "category": "making",
+      "layer": 3,
+      "question": "罐壁为什么能比冲杯的板材薄，还能变得更高？",
+      "mechanism": "bodymaker 用 punch 把杯先 redraw 到较小直径，再连续通过 ironing rings。环隙把侧壁厚度压薄，同时让材料沿轴向延伸；底部保留较厚区域并形成反拱/穹底。CMI 将其概括为‘杯被一系列环压过，达到全长并形成底穹’，EPA 也明确说 ironing 是通过变薄金属来延长罐身。",
+      "why": "把更多铝放在受力和成形需要的位置，侧壁轻量化；底穹和后续缩颈则用几何刚度补偿薄壁的局部稳定性。",
+      "equations": [
+        {
+          "formula": "\\pi(R_o^2-R_i^2)L\\approx\\mathrm{constant},\\quad r_t=1-\\frac{t_f}{t_i}",
+          "terms": "\\(R_o\\)、\\(R_i\\) 为外/内半径，\\(L\\) 为局部长度，\\(t_i\\)/\\(t_f\\) 为变薄前/后厚度，\\(r_t\\) 为厚度减少率",
+          "scope": "塑性流动的局部体积估算；实际 D&I 还受摩擦、温升、模具圆角、底部增厚、修边和材料各向异性影响"
+        }
+      ],
+      "example": "若某侧壁局部从 \\(t_i=0.30\\,\\mathrm{mm}\\) 被压到 \\(t_f=0.11\\,\\mathrm{mm}\\)，则 \\(r_t=1-\\frac{0.11}{0.30}=0.633\\)，即约 \\(63.3\\%\\) 变薄；这是假设截取位置和厚度值，不是所有罐的规格。",
+      "gotcha": "“全罐同厚”是错误的；D&I 罐身通常存在底部、肩部、侧壁和颈部的厚度与加工历史差异，不能用一个 \\(t\\) 代表泄漏、爆破或屈曲的全部位置。",
+      "sourceIds": [
+        "ball-plant",
+        "epa-canmaking",
+        "cmi-made"
+      ],
+      "fullTitle": "D&I：重拉并把侧壁压薄拉长"
+    },
+    {
+      "id": "cold-work-dislocations",
+      "title": "位错与冷作硬化",
+      "subtitle": "成形让强度上升，也消耗延性",
+      "category": "materials",
+      "layer": 3,
+      "question": "为什么冷轧和 D&I 后铝会更强，却更难继续变形？",
+      "mechanism": "非热处理强化铝在冷轧、拉深和壁厚变薄中发生塑性滑移，位错数量增加；位错的弹性应变场和交互作用阻碍后续位错运动，所以继续塑性流动需要更高应力。铝业协会明确把‘位错和空位累积、抑制原子相对运动’作为冷作强化机制；镁等固溶元素还会进一步增强阻碍。",
+      "why": "同一条生产线需要在冲杯前保留成形性、在罐身成形后获得抗压与抗鼓包能力；冷作历史因此是材料和结构之间的接口。",
+      "equations": [
+        {
+          "formula": "\\sigma_y\\approx\\sigma_0+\\alpha Gb\\sqrt{\\rho}",
+          "terms": "\\(\\sigma_y\\) 为屈服应力，\\(\\sigma_0\\) 为基体/固溶等基线，\\(\\alpha\\) 为无量纲交互系数，\\(G\\) 为剪切模量，\\(b\\) 为柏氏矢量，\\(\\rho\\) 为位错密度",
+          "scope": "Taylor 型数量级模型；\\(\\alpha\\)、\\(\\rho\\)、织构、晶粒、第二相和残余应力必须由具体材料与工艺决定"
+        }
+      ],
+      "example": "用 \\(G=26\\,\\mathrm{GPa}\\)、\\(b=0.286\\,\\mathrm{nm}\\)、\\(\\alpha=0.30\\) 的教学假设，\\(\\rho\\) 从 \\(10^{12}\\,\\mathrm{m^{-2}}\\) 增至 \\(10^{14}\\,\\mathrm{m^{-2}}\\) 时，\\(\\alpha Gb(\\sqrt{\\rho_2}-\\sqrt{\\rho_1})\\approx20\\,\\mathrm{MPa}\\)；它是位错项的增量估算，不是罐材牌号的保证强度。",
+      "gotcha": "硬化并不等于所有方向都同样变强；轧制/拉深织构会造成各向异性，且过度冷作会降低延性并提高耳高、开裂或后续缩颈风险。",
+      "sourceIds": [
+        "aa-standards",
+        "concordia-hardening",
+        "aa-can-lca"
+      ],
+      "fullTitle": "冷作硬化来自位错阻塞"
+    },
+    {
+      "id": "end-stiffness",
+      "title": "罐盖的强度与形状",
+      "subtitle": "盖的任务是抗压、刻痕、拉环和卷封",
+      "category": "materials",
+      "layer": 2,
+      "question": "为什么盖板不能照搬罐身的合金与厚度？",
+      "mechanism": "盖材常用镁系合金与冷作状态获得较高强度，但结构刚度还来自厚度、环筋和沉孔等几何。刻痕又需要局部可控断裂；材料、盖形、涂层与加工状态必须一起选择。",
+      "why": "开口端承受卷封压紧、堆叠和内压；刻痕又要求局部可控断裂，材料强度、延性、涂层和成形窗口需要一起调。",
+      "equations": [
+        {
+          "formula": "D_b=\\frac{Et^3}{12(1-\\nu^2)}",
+          "terms": "\\(D_b\\) 为理想平板弯曲刚度，\\(E\\) 为杨氏模量，\\(t\\) 为厚度，\\(\\nu\\) 为泊松比",
+          "scope": "均匀各向同性平板的小挠度模型；盖的筋、沉孔、刻痕和卷边会改变等效刚度"
+        }
+      ],
+      "example": "在相同 \\(E\\)、\\(\\nu\\) 和无筋平板假设下，厚度由 \\(0.20\\,\\mathrm{mm}\\) 增至 \\(0.40\\,\\mathrm{mm}\\)，\\(D_b\\) 按 \\((0.40/0.20)^3=8\\) 倍增加；真实盖往往用成形筋实现刚度而不是这样加厚。",
+      "gotcha": "硬度、屈服强度和刚度不是同一件事。合金牌号可以改变强度，却不会像厚度的三次方那样大幅改变平板弹性弯曲刚度。真实压筋盖也不是这里的理想平板。",
+      "sourceIds": [
+        "aa-standards",
+        "aa-can-lca",
+        "novelis-scrap"
+      ],
+      "fullTitle": "罐盖用较硬的薄板和几何筋"
+    },
+    {
+      "id": "neck-flange-double-seam",
+      "title": "缩颈与双卷封",
+      "subtitle": "金属互锁加垫胶，而非靠铝本身熔焊",
+      "category": "making",
+      "layer": 4,
+      "question": "盖子怎样在薄铝上既固定又不漏气？",
+      "mechanism": "罐身顶部先缩颈以匹配较小的盖径，再翻出 flange。卷封的第一道滚轮把盖钩卷到罐身钩下，第二道把多层金属压紧；盖边的 gasket compound 填补微小空隙。Crown 将 body hook、cover hook、两道操作和垫胶列为形成 hermetic seal 的关键。",
+      "why": "互锁承受轴向拉开和剪切，垫胶提供连续的气液阻隔；制造线还需要检测假缝、皱褶、切伤、交叠和微漏。",
+      "equations": [
+        {
+          "formula": "O_{\\mathrm{theory}}=CH+BH+T-W",
+          "terms": "\\(O_{\\mathrm{theory}}\\) 为理论搭接长度，\\(CH\\) 为盖钩，\\(BH\\) 为罐身钩，\\(T\\) 为盖厚，\\(W\\) 为卷缝宽/高",
+          "scope": "美国食品法规列出的双卷封计算式；实际还要用剖面、紧密度、皱褶与工艺公差检验"
+        }
+      ],
+      "example": "若 \\(CH=1.70\\,\\mathrm{mm}\\)、\\(BH=1.80\\,\\mathrm{mm}\\)、\\(T=0.20\\,\\mathrm{mm}\\)、\\(W=3.00\\,\\mathrm{mm}\\)，则 \\(O_{\\mathrm{theory}}=CH+BH+T-W=1.70+1.80+0.20-3.00=0.70\\,\\mathrm{mm}\\)；这是测量值代入的示范，不是所有罐的验收阈值。",
+      "gotcha": "两片饮料罐的底部通常由杯底直接形成，顶部才卷封盖；三片食品罐可能有两条端部卷封和一条侧缝，不能把‘双卷封’误写成所有罐都有相同接头。",
+      "sourceIds": [
+        "cmi-made",
+        "cmi-standards",
+        "crown-seaming",
+        "ecfr-seam"
+      ],
+      "fullTitle": "缩颈、翻边与双卷封把两片锁成气密接头",
+      "frontier": "下一枝：卷封为什么有时看似紧密却漏气？弹性回复、垫胶流动与公差怎样共同起作用？"
+    },
+    {
+      "id": "internal-coating-barrier",
+      "title": "罐内的聚合物涂层",
+      "subtitle": "薄涂层兼顾阻隔、耐磨、口味与食品接触要求",
+      "category": "chemistry",
+      "layer": 3,
+      "question": "既有氧化膜，为什么罐内还要喷涂并烘烤？",
+      "mechanism": "清洗后的二片罐内壁喷涂并烘烤固化聚合物涂层，减少饮料、溶解氧、金属和局部缺陷之间的电化学接触，并阻隔金属离子迁移和风味相互作用。PPG 的饮料罐内喷涂包括水性丙烯酸等 BPA-NI 配方，且适用于铝或钢；配方会因饮料酸度、碳酸、热灌装和法规而变化。",
+      "why": "涂层不仅防腐，还要在高速输送、缩颈、卷封和运输摩擦后保持连续；针孔、划伤和界面附着才是局部腐蚀的起点。",
+      "equations": [
+        {
+          "formula": "m=\\frac{MIt}{nF}",
+          "terms": "\\(m\\) 为电化学溶解质量，\\(M\\) 为摩尔质量，\\(I\\) 为局部腐蚀电流，\\(t\\) 为时间，\\(n\\) 为每个原子转移的电子数，\\(F\\) 为法拉第常数",
+          "scope": "法拉第定律的理想估算；真实涂层下电流分布、络合、氧浓差和腐蚀产物会改变结果"
+        }
+      ],
+      "example": "把针孔处 \\(I=1.0\\,\\mathrm{mA}\\)、\\(t=1\\,\\mathrm{h}\\)、\\(M(\\ce{Al})=26.98\\,\\mathrm{g\\,mol^{-1}}\\)、\\(n=3\\) 代入，\\(m=\\frac{MIt}{nF}=\\frac{26.98\\times10^{-3}\\times3600}{3\\times96485}\\approx0.000336\\,\\mathrm{g}=0.336\\,\\mathrm{mg}\\)；它只表示一个局部电流的数量级联系，不能预测整罐失效时间。",
+      "gotcha": "‘有内涂层’不等于涂层材质、厚度和法规在各市场相同；BPA-NI、环氧替代、水性体系等都存在，需看具体供应商和产品规格。",
+      "sourceIds": [
+        "cmi-made",
+        "ppg-internal"
+      ],
+      "fullTitle": "内涂层是金属与饮料之间的第二道界面",
+      "frontier": "下一枝：聚合物怎样交联固化？扩散系数、针孔与附着力，谁决定一层涂膜的失效？"
+    },
+    {
+      "id": "oxide-passivation-pitting",
+      "title": "氧化膜与局部腐蚀",
+      "subtitle": "\\(\\ce{Al2O3}\\) 薄膜是动态屏障，不是永久盔甲",
+      "category": "chemistry",
+      "layer": 2,
+      "question": "铝为什么在空气里耐蚀，却可能被酸、碱或氯离子点蚀？",
+      "mechanism": "铝接触空气/水后快速形成薄、致密、附着的氧化/羟基化钝化层，划伤处可重新生成。UNT 材料学页面指出，近中性环境通常较耐蚀，但酸性和碱性会溶解氧化层，氯、氟、碘环境会破坏钝化并触发局部点蚀；合金中的金属间化合物也可能造成局部电偶差异。",
+      "why": "罐内饮料不是简单的纯水：pH、盐、络合物、溶解氧、温度和涂层缺陷共同决定界面反应，因此需要把钝化膜和内涂层分开理解。",
+      "equations": [
+        {
+          "formula": "\\ce{4 Al + 3 O2 -> 2 Al2O3}",
+          "terms": "铝被氧化形成氧化铝的简化总反应",
+          "scope": "化学计量示意；实际天然膜通常含水合氧化物、缺陷和合金元素，不能由此推出膜的实际厚度"
+        }
+      ],
+      "example": "按该反应的质量守恒，\\(10.8\\,\\mathrm{g}\\ \\ce{Al}\\) 完全生成 \\(\\ce{Al2O3}\\) 需要约 \\(9.6\\,\\mathrm{g}\\ \\ce{O2}\\)，并得到约 \\(20.4\\,\\mathrm{g}\\ \\ce{Al2O3}\\)；真实罐的钝化膜极薄，不能把这个块体反应量当作罐面会长出的膜。",
+      "gotcha": "‘铝不腐蚀’和‘氧化膜永远自愈’都过度简化；点蚀可在肉眼看不见的涂层破口处启动，并与合金、饮料配方和温度相关。",
+      "sourceIds": [
+        "aa-standards",
+        "unt-passivation",
+        "ppg-internal"
+      ],
+      "fullTitle": "天然氧化膜会钝化，也会在特定环境失效"
+    },
+    {
+      "id": "internal-pressure-hoop-stress",
+      "title": "内压与薄壁应力",
+      "subtitle": "薄壁圆筒式是局部估算，不是整罐判定",
+      "category": "physics",
+      "layer": 4,
+      "question": "碳酸饮料的压力怎样拉开罐壁和罐底？",
+      "mechanism": "对远离端部、半径远大于壁厚且均匀的闭口圆筒，内压在环向切开截面上产生两倍轴向膜力，因此环向应力约为轴向应力的两倍。Texas A&M 的薄壁压力容器实验正以汽水罐为例给出这两个式子。",
+      "why": "这解释了为什么侧壁、底穹和盖板的取向与几何不同；也说明卷封、缩颈、底部和刻痕等不连续处不能只用一条圆筒公式。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}\\sigma_\\theta &= \\frac{pD_m}{2t}\\\\[2pt]\\sigma_z &= \\frac{pD_m}{4t}=\\frac{\\sigma_\\theta}{2}\\end{aligned}",
+          "terms": "\\(p\\) 为表压，\\(D_m\\) 为平均直径，\\(t\\) 为局部壁厚，\\(\\sigma_\\theta\\) 为环向应力，\\(\\sigma_z\\) 为轴向应力",
+          "scope": "薄壁、弹性、均匀各向同性、圆筒中段、内外压差稳定且远离端部的膜理论"
+        }
+      ],
+      "example": "用 CMI 标准中约 \\(2.602\\,\\mathrm{in}=66.1\\,\\mathrm{mm}\\) 的罐身直径作量级，并假设 \\(p=0.30\\,\\mathrm{MPa}\\)、局部 \\(t=0.11\\,\\mathrm{mm}\\)：\\(\\sigma_\\theta\\approx90\\,\\mathrm{MPa}\\)、\\(\\sigma_z\\approx45\\,\\mathrm{MPa}\\)；\\(p\\) 和 \\(t\\) 是示范假设，不能当作全部饮料或全罐壁的实测值。",
+      "gotcha": "真实罐的厚度、强度和应力随底穹、肩部、缩颈、卷封、刻痕、织构和残余应力变化；膜应力低于屈服也不保证没有局部屈曲、疲劳或泄漏。",
+      "sourceIds": [
+        "tamu-thinwall",
+        "cmi-standards",
+        "aa-can-lca"
+      ],
+      "fullTitle": "内压首先变成环向和轴向拉应力",
+      "simulator": "stress"
+    },
+    {
+      "id": "shell-buckling-dome",
+      "title": "薄壳屈曲与穹底",
+      "subtitle": "外压或轴向压缩下可能先屈曲再失效",
+      "category": "physics",
+      "layer": 5,
+      "question": "为什么空罐容易被侧向捏瘪，底部却做成穹形？",
+      "mechanism": "内压时圆筒壁以拉膜应力为主；外部挤压、堆叠或局部凹陷会产生压缩膜力和弯曲，薄壳可能发生局部屈曲。MIT 壳体教材给出理想圆柱轴压的经典临界应力，并特别讨论壳的长宽比、边界条件和几何缺陷。饮料罐用反拱底、沉孔、环筋和缩颈提高曲率与载荷路径；Ball 的一个 750 mL 规格还列有 \\(90\\,\\mathrm{psi}\\) 最小穹底反转压力，这只是该规格的测试指标。",
+      "why": "屈曲是刚度和几何稳定性问题，不能仅把‘强度’理解为材料拉断；薄壁壳对初始凹陷、厚度波动、卷封约束和加载偏心尤其敏感。",
+      "equations": [
+        {
+          "formula": "\\sigma_{\\mathrm{cr}} = \\frac{Et}{R\\sqrt{3(1-\\nu^2)}} \\approx 0.605\\frac{Et}{R}",
+          "terms": "\\(\\sigma_{\\mathrm{cr}}\\) 为理想圆柱轴向屈曲应力，\\(E\\) 为杨氏模量，\\(t\\) 为壳厚，\\(R\\) 为半径，\\(\\nu\\) 为泊松比",
+          "scope": "理想、弹性、均匀圆柱壳的轴向压缩经典解；不能直接替代有穹底、缩颈、接缝、刻痕和初始缺陷的整罐试验/有限元；0.605 系数采用 \\(\\nu\\approx0.30\\)。"
+        }
+      ],
+      "example": "取 \\(E=69\\,\\mathrm{GPa}\\)、\\(t=0.11\\,\\mathrm{mm}\\)、\\(R=33\\,\\mathrm{mm}\\) 的理想圆柱，则 \\(\\sigma_{\\mathrm{cr}}\\approx0.605E\\frac{t}{R}=0.605\\times69\\,\\mathrm{GPa}\\times\\frac{0.11\\,\\mathrm{mm}}{33\\,\\mathrm{mm}}\\approx139\\,\\mathrm{MPa}\\)；实际制造缺陷和边界约束可显著降低临界值，故不能把 \\(139\\,\\mathrm{MPa}\\) 当作罐的保证抗瘪强度。",
+      "gotcha": "Ball 750 mL 的公开制造规格写的是 \\(90\\,\\mathrm{psi}\\)（约 \\(620\\,\\mathrm{kPa}\\)）最小穹底反转压力；这是一个供应规格的试验量，不是所有尺寸、合金、饮料和底形的普适压力。",
+      "sourceIds": [
+        "mit-shell",
+        "ball-plant",
+        "ball-spec",
+        "cmi-standards"
+      ],
+      "fullTitle": "薄壁稳定性靠曲率、筋和缺陷控制"
+    },
+    {
+      "id": "recycling-sort-remelt",
+      "title": "分选、去涂层与重熔",
+      "subtitle": "铝的‘循环’包含成分管理和熔损",
+      "category": "making",
+      "layer": 1,
+      "question": "喝完的罐怎样重新变成罐材，而不是简单‘融化就结束’？",
+      "mechanism": "回收设施先按材料分选、压包；制罐厂的工艺废料还要按 3104/3004 罐身料与 5182 盖/拉环料分开并避免钢、塑料、油和水污染。UBC 工厂会破碎、分选、去涂层/除潮，再熔化、除渣和铸成锭，随后轧成罐身料或盖料；EPA 的流程也把回收罐熔化铸锭后再轧片，铸锭后的步骤与原生路线相同。",
+      "why": "回收的铝已经处于金属态，重熔可绕过“从氧化铝还原”的电解段；仍要付出分选、去涂层、熔化和再加工的能量。混合牌号还需校正成分。",
+      "equations": [
+        {
+          "formula": "m_{\\mathrm{cast}} = \\eta_{\\mathrm{melt}}\\,m_{\\mathrm{feed}}",
+          "terms": "\\(\\eta_{\\mathrm{melt}}\\)：从所定义进料到可用金属的收得率；轧成片还会有修边等损失。",
+          "scope": "边界须说明进料是否已经去涂层、除潮。不是固定收得率，也不是直接得到同样质量的成品罐片。"
+        }
+      ],
+      "example": "若 \\(100\\,\\mathrm{kg}\\) 已分选 UBC 的教学假设收得率为 \\(\\eta_{\\mathrm{melt}}=0.90\\)，则约 \\(90\\,\\mathrm{kg}\\) 进入铸锭；剩余 \\(10\\,\\mathrm{kg}\\) 不是“铝消失”，而可能在涂层挥发物、氧化膜、熔渣、夹杂和系统损失中。",
+      "gotcha": "回收并不会自动恢复原来的 temper 和织构；熔化会抹掉加工硬化，之后还要成分校正、铸造、均匀化/轧制和制罐成形，且实际闭环比例受收集率、污染和市场分流影响。",
+      "sourceIds": [
+        "novelis-scrap",
+        "novelis-recycling",
+        "aa-scrap-terms",
+        "aa-recycling",
+        "epa-recyclecity",
+        "aa-can-lca"
+      ],
+      "fullTitle": "回收先分流与去涂层，再熔化重铸",
+      "frontier": "下一枝：涡电流分选为什么能抛出铝？混入镁、铁和硅后，怎样做成分校正？"
+    },
+    {
+      "id": "atoms-electrons",
+      "title": "电子与原子轨道",
+      "subtitle": "化学性质的微观入口",
+      "category": "physics",
+      "layer": 5,
+      "question": "为什么同样叫金属，铝和铁会如此不同？",
+      "mechanism": "核电荷和电子可占据的量子态，限制了电子排布。轨道描述概率分布；电子与多个原子相互作用时，才形成材料中的成键和能带。",
+      "why": "氧化、成键和导电，都要回答电子处在什么状态、改变状态需要多少能量。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}\\hat{H}\\psi &= E\\psi\\\\[2pt]P(\\mathcal{R}) &= \\int_{\\mathcal{R}} |\\psi|^2\\,\\mathrm{d}V\\end{aligned}",
+          "terms": "\\(\\hat{H}\\)：能量算符；\\(\\psi\\)：归一化波函数；\\(E\\)：能量本征值。",
+          "scope": "非相对论量子模型的定态形式。真实金属是多电子体系，通常必须近似求解。"
+        }
+      ],
+      "example": "一个空间轨道最多容纳 \\(2\\) 个自旋相反的电子。这里的“两个”是占据规则，不是画出的轨道里有两颗沿圆圈运行的小球。",
+      "gotcha": "把轨道画成行星轨道会误导。写出薛定谔方程也不等于已经计算出罐体强度；中间还有结构、缺陷和尺度。",
+      "sourceIds": [
+        "f-quantum"
+      ],
+      "frontier": "下一层可以展开：泡利原理、能带、密度泛函近似，以及为什么模型参数要用实验校准。"
+    },
+    {
+      "id": "bonds",
+      "title": "化学键与能量",
+      "subtitle": "拆键要能量，成键释放能量",
+      "category": "chemistry",
+      "layer": 4,
+      "question": "“铝和氧结合得很牢”到底在说什么？",
+      "mechanism": "原子靠近时，电子与原子核的相互作用改变系统能量。稳定构型对应能量谷底；化学反应比较整个初态和终态，而不是孤立地比较一根键。",
+      "why": "冶炼是在改变氧、铝、碳等原子的组合。净能量差和熵的变化共同决定反应方向。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}\\Delta H &\\approx \\sum_j n_jE_{j,\\mathrm{broken}}\\\\[2pt]&\\quad-\\sum_k n_kE_{k,\\mathrm{formed}}\\end{aligned}",
+          "terms": "\\(\\Delta H\\)：焓变；每项都须乘反应中对应的键数。",
+          "scope": "用气相平均键能做粗估；晶体氧化铝含晶格贡献，应查生成焓/自由能数据，不能当作几根气相键。"
+        }
+      ],
+      "example": "假设断键总需 \\(500\\,\\mathrm{kJ}\\)，成键总释放 \\(650\\,\\mathrm{kJ}\\)，则模型给出 \\(\\Delta H\\approx500-650=-150\\,\\mathrm{kJ}\\)。放热来自新键释放的能量超过旧键断裂所需。",
+      "gotcha": "“断键释放能量”方向反了；“放热就一定很快”也不成立，速度还取决于能垒。",
+      "sourceIds": [
+        "f-bonds"
+      ]
+    },
+    {
+      "id": "moles",
+      "title": "摩尔与物料守恒",
+      "subtitle": "把原子计数变成公斤",
+      "category": "math",
+      "layer": 5,
+      "question": "知道化学式，如何算一只罐子需要多少原料？",
+      "mechanism": "摩尔把极大量粒子的计数压缩成可称量的单位。配平反应是在核对每一种原子与净电荷；实际投料还要考虑纯度、回收率与杂质。",
+      "why": "矿石含量、电解电量、阳极消耗，都先从计量比例开始。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}n &= \\frac{m}{M}\\\\[2pt]N &= nN_{\\mathrm{A}}\\end{aligned}",
+          "terms": "\\(n\\)：\\(\\mathrm{mol}\\)；\\(m\\)：\\(\\mathrm{g}\\)；\\(M\\)：\\(\\mathrm{g\\,mol^{-1}}\\)；\\(N_{\\mathrm{A}}=6.02214076\\times10^{23}\\,\\mathrm{mol^{-1}}\\)。",
+          "scope": "必须说明称量的是哪种物质。这里忽略核反应。"
+        }
+      ],
+      "example": "教学假设：一只罐中含 \\(13.0\\,\\mathrm{g}\\) 铝。\\(n\\approx\\frac{13.0\\,\\mathrm{g}}{26.98\\,\\mathrm{g\\,mol^{-1}}}=0.482\\,\\mathrm{mol}\\)；约有 \\(2.90\\times10^{23}\\) 个铝原子。按纯 \\(\\ce{Al2O3}\\) 计量，至少对应约 \\(24.6\\,\\mathrm{g}\\) 氧化铝；这不是铝土矿投料量。",
+      "gotcha": "“\\(13\\,\\mathrm{g}\\) 铝”是本册算例参数，不是所有罐子的实测质量。合金质量也不严格等于铝元素质量。",
+      "sourceIds": [
+        "f-mole"
+      ]
+    },
+    {
+      "id": "charge",
+      "title": "电荷守恒",
+      "subtitle": "电子也需要记账",
+      "category": "physics",
+      "layer": 5,
+      "question": "为什么制出一摩尔铝，需要三摩尔电子？",
+      "mechanism": "\\(\\ce{Al^3+}\\) 还原成中性 \\(\\ce{Al}\\) 时，净电荷差必须由三份负电荷补足。槽内离子传导和槽外电子传导连成一个回路。",
+      "why": "守恒让“多少金属”与“多少电量”直接相连。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}\\ce{Al^3+ + 3 e- -> Al}\\\\[2pt]Q &= \\int I(t)\\,\\mathrm{d}t\\end{aligned}",
+          "terms": "\\(Q\\)：\\(\\mathrm{C}\\)；\\(I\\)：\\(\\mathrm{A}=\\mathrm{C\\,s^{-1}}\\)；\\(t\\)：\\(\\mathrm{s}\\)；\\(1\\,\\mathrm{mol}\\) 电子的电量 \\(F\\approx96485\\,\\mathrm{C\\,mol^{-1}}\\)。",
+          "scope": "半反应是记账表达，实际熔盐中的含铝物种更复杂。"
+        }
+      ],
+      "example": "若按 \\(100\\%\\) 电流效率算，\\(13.0\\,\\mathrm{g}\\) 铝对应 \\(n=13.0/26.98\\approx0.482\\,\\mathrm{mol}\\)，需 \\(Q=3nF=3\\times0.482\\times96485\\approx1.39\\times10^5\\,\\mathrm{C}=38.7\\,\\mathrm{Ah}\\)。",
+      "gotcha": "电子不在阴极被“消灭”，它们参与价态变化；电荷守恒也不能单独告诉你需要几伏。",
+      "sourceIds": [
+        "f-charge",
+        "f-mole"
+      ]
+    },
+    {
+      "id": "entropy",
+      "title": "熵与微观状态",
+      "subtitle": "有多少种方式实现同一个宏观状态",
+      "category": "physics",
+      "layer": 5,
+      "question": "为什么升温、混合和相变会改变材料的稳定性？",
+      "mechanism": "同样的温度、体积和成分，可以由很多粒子排列和能量分配实现。可实现的微观状态数进入熵；平衡倾向不能只比较能量。",
+      "why": "它是自由能中的 \\(T\\Delta S\\)，也联系随机游走、合金混合与概率。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}S &= k_{\\mathrm{B}}\\ln\\Omega\\\\[2pt]\\Delta S &= k_{\\mathrm{B}}\\ln\\frac{\\Omega_2}{\\Omega_1}\\end{aligned}",
+          "terms": "\\(\\Omega\\)：给定约束下可访问的等概率微观状态数；\\(k_{\\mathrm{B}}=1.380649\\times10^{-23}\\,\\mathrm{J\\,K^{-1}}\\)。",
+          "scope": "Boltzmann 形式适用于等概率状态计数；一般概率分布要用更一般的熵表达。"
+        }
+      ],
+      "example": "玩具模型：若可访问的等概率状态数增到原来的 \\(2\\) 倍，\\(\\Delta S=k_{\\mathrm{B}}\\ln 2\\approx9.57\\times10^{-24}\\,\\mathrm{J\\,K^{-1}}\\)。这是微小模型的变化，不是一摩尔材料的值。",
+      "gotcha": "把熵只叫“混乱程度”容易失准。局部变得有序并不违背第二定律，要把环境也计入。",
+      "sourceIds": [
+        "f-entropy"
+      ]
+    },
+    {
+      "id": "free-energy",
+      "title": "Gibbs 自由能",
+      "subtitle": "方向、平衡与最低功",
+      "category": "chemistry",
+      "layer": 4,
+      "question": "怎样定量回答“这个反应愿不愿意发生”？",
+      "mechanism": "在恒温恒压、没有额外非体积功驱动时，系统会向更低的 Gibbs 自由能变化。可逆极限把自由能差与非体积功相连；电解通过外部做功推动相反方向。",
+      "why": "溶解、析出、氧化和电解电压，都能用同一套能量账本理解。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}\\Delta G &= \\Delta H-T\\Delta S\\\\[2pt]\\Delta_{\\mathrm{r}}G &= \\Delta_{\\mathrm{r}}G^{\\circ}+RT\\ln Q_{\\mathrm{r}}\\end{aligned}",
+          "terms": "\\(T\\) 用 \\(\\mathrm{K}\\)；\\(\\Delta H\\)、\\(T\\Delta S\\) 单位一致；\\(Q_{\\mathrm{r}}\\) 是由无量纲活度组成的反应商。",
+          "scope": "第一式在恒温下使用；自发方向判据须说明约束与外部做功。° 表示标准态，不等于所有实际工况。"
+        }
+      ],
+      "example": "教学假设 \\(\\Delta H=20\\,\\mathrm{kJ\\,mol^{-1}}\\)，\\(\\Delta S=50\\,\\mathrm{J\\,mol^{-1}\\,K^{-1}}\\)。\\(300\\,\\mathrm{K}\\) 时 \\(\\Delta G=5\\,\\mathrm{kJ\\,mol^{-1}}\\)；\\(500\\,\\mathrm{K}\\) 时为 \\(-5\\,\\mathrm{kJ\\,mol^{-1}}\\)。符号能随温度改变。",
+      "gotcha": "\\(\\Delta G<0\\) 告诉你方向，不能告诉你多久完成。算电解下限必须用正确反应、温度、相态与活度。",
+      "sourceIds": [
+        "f-gibbs"
+      ]
+    },
+    {
+      "id": "phase",
+      "title": "相、相图与化学势",
+      "subtitle": "合金不只是把元素搅在一起",
+      "category": "materials",
+      "layer": 4,
+      "question": "为什么同一配方在不同温度下会有不同组织？",
+      "mechanism": "在成分和质量守恒约束下，系统可能选择单相，也可能分成不同成分的多个相，以降低总自由能。相平衡要求各相中同一组分的化学势相等。",
+      "why": "合金设计、凝固、熔盐配方和回收熔化，都需要区分成分与相。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}\\mu_i &= \\left(\\frac{\\partial G}{\\partial n_i}\\right)_{T,p,n_{j\\ne i}}\\\\[2pt]\\mu_i^{\\alpha} &= \\mu_i^{\\beta}\\end{aligned}",
+          "terms": "\\(\\mu_i\\)：组分 \\(i\\) 的化学势，\\(\\mathrm{J\\,mol^{-1}}\\)；\\(\\alpha\\)、\\(\\beta\\)：共存相。",
+          "scope": "平衡条件。工业冷却速度下，材料可能保留未达到平衡的组织。"
+        }
+      ],
+      "example": "质量守恒玩具算例：\\(\\alpha\\) 相含 \\(2\\%\\) 溶质，\\(\\beta\\) 相含 \\(10\\%\\)，整体含 \\(4\\%\\)，则 \\(\\beta\\) 的质量分数为 \\(\\frac{4-2}{10-2}=25\\%\\)。这里不是某个实际铝合金相图的数据。",
+      "gotcha": "相图描绘平衡状态；它不自动给出析出速度、晶粒尺寸或成形后的性能。",
+      "sourceIds": [
+        "f-phase"
+      ]
+    },
+    {
+      "id": "electric-power",
+      "title": "电路、电功与损耗",
+      "subtitle": "电量回答多少；电压回答每份多少钱",
+      "category": "energy",
+      "layer": 4,
+      "question": "同样生产一公斤铝，电耗为什么会不同？",
+      "mechanism": "电压是每单位电荷转移的能量。真正的槽压还包括驱动反应所需的电势差、反应过电位和电阻压降；部分电能成为维持槽温的热。",
+      "why": "提高电流效率与降低损耗，改变的是同一个产量背后的能量成本。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}P &= VI\\\\[2pt]W &= \\int VI\\,\\mathrm{d}t\\\\[2pt]P_{\\mathrm{resistor}} &= I^2R\\end{aligned}",
+          "terms": "\\(P\\)：\\(\\mathrm{W}\\)；\\(V\\)：\\(\\mathrm{V}\\)；\\(I\\)：\\(\\mathrm{A}\\)；\\(R\\)：\\(\\Omega\\)；能量 \\(W\\)：\\(\\mathrm{J}\\)；\\(1\\,\\mathrm{kWh}=3.6\\,\\mathrm{MJ}\\)。",
+          "scope": "直流电功；焦耳热式只针对电阻部分，不能把整个电解槽都当纯电阻。"
+        }
+      ],
+      "example": "教学假设 \\(100\\,\\mathrm{kA}\\)、\\(4\\,\\mathrm{V}\\)，功率为 \\(400\\,\\mathrm{kW}\\)。运行 \\(1\\,\\mathrm{h}\\) 输入 \\(400\\,\\mathrm{kWh}\\)；这不是直接等于产出铝的化学能。",
+      "gotcha": "\\(\\mathrm{Ah}\\) 是电量，\\(\\mathrm{kWh}\\) 是能量。只给电流和时间，无法确定电耗。",
+      "sourceIds": [
+        "f-power"
+      ]
+    },
+    {
+      "id": "electromagnetism",
+      "title": "电磁感应与发电",
+      "subtitle": "把运动转成电压",
+      "category": "energy",
+      "layer": 5,
+      "question": "电解槽所需的电，怎样从一台发电机来？",
+      "mechanism": "穿过线圈的磁通量变化，产生感应电动势。水轮、蒸汽轮机或风轮可提供转动；接上负载后，产生的电磁作用会阻碍驱动运动，需要持续输入机械功。",
+      "why": "铝背后不只有矿山，还有电网、发电和能量转换。光伏走的是另一条机制，可以以后接进来。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}\\varepsilon &= -N\\frac{\\mathrm{d}\\Phi_B}{\\mathrm{d}t}\\\\[2pt]\\Phi_B &= \\int \\mathbf{B}\\cdot\\mathrm{d}\\mathbf{A}\\end{aligned}",
+          "terms": "\\(\\varepsilon\\)：\\(\\mathrm{V}\\)；\\(N\\)：匝数；\\(\\Phi_B\\)：\\(\\mathrm{Wb}\\)；\\(B\\)：\\(\\mathrm{T}\\)。负号体现楞次定律的方向。",
+          "scope": "理想线圈；实际发电机还受绕组电阻、磁损耗和控制系统限制。"
+        }
+      ],
+      "example": "若 \\(100\\) 匝线圈中每匝磁通在 \\(0.1\\,\\mathrm{s}\\) 内均匀改变 \\(0.02\\,\\mathrm{Wb}\\)，感应电动势大小约 \\(20\\,\\mathrm{V}\\)。",
+      "gotcha": "发电机不是创造能量。法拉第电磁感应定律与法拉第电解定律关联同一个科学家，但回答不同问题。",
+      "sourceIds": [
+        "f-induction"
+      ]
+    },
+    {
+      "id": "stress",
+      "title": "应力、应变与连续体",
+      "subtitle": "力怎样分摊到材料里面",
+      "category": "physics",
+      "layer": 4,
+      "question": "为什么相同的力作用在薄壁上更危险？",
+      "mechanism": "应力把力分摊到面积，应变描述相对变形。连续体模型把许多原子平均为一个材料点，借助本构关系把应力连到变形。",
+      "why": "罐壁、卷封、拉深模具与屈曲分析，都从力平衡和材料响应出发。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}\\sigma &= \\frac{F}{A}\\\\[2pt]\\varepsilon &= \\frac{\\Delta L}{L_0}\\\\[2pt]\\sigma &= E\\varepsilon\\end{aligned}",
+          "terms": "\\(\\sigma\\)：\\(\\mathrm{Pa}\\)；\\(F\\)：\\(\\mathrm{N}\\)；\\(A\\)：\\(\\mathrm{m^2}\\)；\\(\\varepsilon\\)：无量纲；\\(E\\)：杨氏模量，\\(\\mathrm{Pa}\\)。",
+          "scope": "前两式是均匀单轴例子；线性式仅适用于小弹性应变。塑性成形不能全程使用它。"
+        }
+      ],
+      "example": "\\(20\\,\\mathrm{N}\\) 均匀拉在 \\(1\\,\\mathrm{mm^2}\\) 上，\\(\\sigma=20\\,\\mathrm{MPa}\\)。假设 \\(E=70\\,\\mathrm{GPa}\\) 且仍在线性弹性范围，\\(\\varepsilon\\approx2.86\\times10^{-4}\\)。",
+      "gotcha": "压力和应力同用 \\(\\mathrm{Pa}\\)，但不是同一个量；屈服强度、刚度与韧性也不是同义词。",
+      "sourceIds": [
+        "f-stress"
+      ],
+      "simulator": "stress"
+    },
+    {
+      "id": "diffusion",
+      "title": "扩散与热激活",
+      "subtitle": "原子的随机运动变成宏观通量",
+      "category": "physics",
+      "layer": 4,
+      "question": "为什么加热会让组织变化和物质交换快得多？",
+      "mechanism": "粒子持续随机运动；若左右可供迁移的粒子数不同，就产生净通量。在晶体里，跃迁还常要跨越能垒，并借助空位或间隙。",
+      "why": "热处理、涂层阻隔和溶解过程的速率，不能只靠“终态更稳定”来解释。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}J &= -D\\frac{\\partial c}{\\partial x}\\\\[2pt]D &\\approx D_0\\exp\\left(-\\frac{E_{\\mathrm{a}}}{RT}\\right)\\end{aligned}",
+          "terms": "\\(J\\)：\\(\\mathrm{mol\\,m^{-2}\\,s^{-1}}\\)；\\(c\\)：\\(\\mathrm{mol\\,m^{-3}}\\)；\\(D\\)：\\(\\mathrm{m^2\\,s^{-1}}\\)；\\(E_{\\mathrm{a}}\\)：\\(\\mathrm{J\\,mol^{-1}}\\)。",
+          "scope": "简单一维 Fick 模型；温度式在相同扩散机制占主导的范围内使用。多组分扩散通常更复杂。"
+        }
+      ],
+      "example": "自设 \\(D=10^{-12}\\,\\mathrm{m^2\\,s^{-1}}\\)，一维自由扩散 \\(100\\,\\mathrm{s}\\)，均方根位移 \\(\\sqrt{2Dt}\\approx14\\,\\mathrm{\\mu m}\\)。把距离增到 \\(10\\) 倍，所需时间约增到 \\(100\\) 倍。",
+      "gotcha": "浓度梯度是简单模型的驱动表达；更一般情形涉及化学势梯度。没有给 D，就不能给具体扩散时间。",
+      "sourceIds": [
+        "f-diffusion",
+        "f-fick"
+      ]
+    },
+    {
+      "id": "crystal",
+      "title": "晶体、晶粒与缺陷",
+      "subtitle": "完美排列只是开始",
+      "category": "materials",
+      "layer": 4,
+      "question": "为什么同是铝，轧过以后就不一样了？",
+      "mechanism": "铝的常见晶体结构是面心立方。实际罐料含许多不同取向的晶粒、晶界与位错；加工改变它们，宏观性能也随之变化。",
+      "why": "材料性能来自成分、组织和加工历史共同作用。",
+      "equations": [
+        {
+          "formula": "N_{\\mathrm{atoms}} = 8\\times\\frac{1}{8}+6\\times\\frac{1}{2}=4",
+          "terms": "角上的原子由 \\(8\\) 个晶胞共有；面上的原子由 \\(2\\) 个晶胞共有。",
+          "scope": "理想面心立方晶胞的几何计数，不直接给出位错密度或合金强度。"
+        }
+      ],
+      "example": "微观计数已经能接上“摩尔”：若知道晶胞边长 \\(a\\)，理想单元素晶体的密度可写成 \\(\\rho=\\frac{4M}{N_{\\mathrm{A}}a^3}\\)，单位须统一。",
+      "gotcha": "铝的延展性不能只用“原子排列整齐”解释；滑移体系、缺陷和障碍都关键。",
+      "sourceIds": [
+        "f-crystal"
+      ]
+    },
+    {
+      "id": "calculus",
+      "title": "微积分与守恒方程",
+      "subtitle": "变化率和累积把过程变成可计算的量",
+      "category": "math",
+      "layer": 5,
+      "question": "为什么工艺计算里到处都是积分和导数？",
+      "mechanism": "导数描述此刻变化有多快；积分把很多微小变化累加。控制体中的“流入 − 流出”把局部流动连到总量变化。",
+      "why": "电量、扩散、传热、反应进度与力平衡，用的是同一种数学语言。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}\\frac{\\partial c}{\\partial t} &= -\\frac{\\partial J}{\\partial x}\\\\[2pt]D=\\mathrm{const.}:\\quad\\frac{\\partial c}{\\partial t} &= D\\frac{\\partial^2c}{\\partial x^2}\\end{aligned}",
+          "terms": "\\(c\\)：浓度；\\(J\\)：通量；\\(D\\)：扩散系数；\\(x\\)：位置；\\(t\\)：时间。",
+          "scope": "无源项、无对流的一维物料守恒。初始条件与边界条件必不可少。"
+        }
+      ],
+      "example": "若电流从 \\(0\\) 到 \\(10\\,\\mathrm{A}\\) 在 \\(10\\,\\mathrm{s}\\) 内线性增加，\\(Q\\) 是三角形面积：\\(\\frac12\\times10\\,\\mathrm{A}\\times10\\,\\mathrm{s}=50\\,\\mathrm{C}\\)，而不是 \\(100\\,\\mathrm{C}\\)。",
+      "gotcha": "方程是模型语言。现实还需要初始/边界条件、参数和测量；数学形式相同不代表物理机制相同。",
+      "sourceIds": [
+        "f-fick",
+        "f-power"
+      ]
+    },
+    {
+      "id": "amphoteric",
+      "title": "两性与羟基配位",
+      "subtitle": "同一种氢氧化物，两边都能溶",
+      "category": "chemistry",
+      "layer": 3,
+      "question": "强碱为什么能把含铝矿物变成可溶的铝酸盐？",
+      "mechanism": "\\(\\ce{Al(OH)3}\\) 能与酸反应，也能在足量强碱中形成可溶的 \\(\\ce{[Al(OH)4]-}\\)。羟基可作为配体与铝中心结合，改变溶液中物种分布。拜耳法借此把铝转入碱液。",
+      "why": "“溶解”不一定只是把固体打散：生成新配位物种，会改变原有溶解平衡。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}\\ce{Al(OH)3(s) + 3 H+(aq) -> Al^3+(aq) + 3 H2O(l)}\\\\[2pt]\\ce{Al(OH)3(s) + OH-(aq) <=> [Al(OH)4]-(aq)}\\end{aligned}",
+          "terms": "第二式表示强碱中的主要水相记账物种；酸中 \\(\\ce{Al^3+}\\) 也有水合。",
+          "scope": "简化水相式。浓拜耳液的温度、活度与杂质需要工艺数据，不能直接用稀溶液 pH 推算。"
+        }
+      ],
+      "example": "按理想净式，\\(1\\,\\mathrm{mol}\\ \\ce{Al(OH)3}\\) 与 \\(1\\,\\mathrm{mol}\\ \\ce{OH-}\\) 可对应生成 \\(1\\,\\mathrm{mol}\\ \\ce{[Al(OH)4]-}\\)。这只是净计量，不意味着每摩尔铝只需投一摩尔烧碱：循环液还要保持足够碱度。",
+      "gotcha": "矿物溶解时，铝的氧化数仍是 \\(+3\\)；这步尚未得到金属铝，也不是电解还原。",
+      "sourceIds": [
+        "f-amphoteric",
+        "f-lewis"
+      ]
+    },
+    {
+      "id": "equilibrium",
+      "title": "平衡、活度与反应商",
+      "subtitle": "化学不只看反应箭头",
+      "category": "chemistry",
+      "layer": 4,
+      "question": "为什么同一个拜耳循环，先让铝溶解，再让它析出？",
+      "mechanism": "改变温度与溶液组成，会改变反应商与平衡位置。对析出反应 \\(\\ce{[Al(OH)4]- -> Al(OH)3(s) + OH-}\\)，把纯固相活度取为 \\(1\\)，可以把条件写进 \\(Q\\)。晶种帮助跨过成核障碍。",
+      "why": "工艺通过调节条件实现分离；平衡决定终点，传质与成核决定抵达终点的速度。",
+      "equations": [
+        {
+          "formula": "\\begin{aligned}Q_{\\mathrm{r}} &= \\frac{a(\\ce{OH-})}{a(\\ce{[Al(OH)4]-})}\\\\[2pt]\\Delta_{\\mathrm{r}}G &= RT\\ln\\left(\\frac{Q_{\\mathrm{r}}}{K}\\right)\\end{aligned}",
+          "terms": "\\(a\\)：相对于标准态的无量纲活度；\\(K\\)：该析出反应的平衡常数；\\(R=8.314\\,\\mathrm{J\\,mol^{-1}\\,K^{-1}}\\)。",
+          "scope": "纯 \\(\\ce{Al(OH)3}\\) 固相存在、温度与物种定义给定的简化模型。浓液不能把活度直接等同于浓度。"
+        }
+      ],
+      "example": "纯数学教学例子：设温度 \\(350\\,\\mathrm{K}\\)，\\(Q_{\\mathrm{r}}/K=0.1\\)，则 \\(\\Delta_{\\mathrm{r}}G=8.314\\times350\\times\\ln(0.1)\\approx-6.70\\,\\mathrm{kJ\\,mol^{-1}}\\)，表示析出方向有热力学驱动力。这里没有给某厂拜耳液的 \\(K\\)。",
+      "gotcha": "过饱和液也可能暂时不析出，因为成核有能垒。碱度、铝浓度与温度相互关联，不应把所有稀释都理解成必然析铝。",
+      "sourceIds": [
+        "f-gibbs",
+        "f-equilibrium",
+        "f-amphoteric"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "bayer-digestion",
+      "to": "bauxite-ore",
+      "label": "以矿物相和品位为输入",
+      "kind": "requires"
+    },
+    {
+      "from": "bayer-clarification",
+      "to": "bayer-digestion",
+      "label": "分离消化浆料",
+      "kind": "requires"
+    },
+    {
+      "from": "bayer-precipitation",
+      "to": "bayer-clarification",
+      "label": "使用澄清绿色液",
+      "kind": "requires"
+    },
+    {
+      "from": "alumina-calcination",
+      "to": "bayer-precipitation",
+      "label": "煅烧沉淀氢氧化铝",
+      "kind": "requires"
+    },
+    {
+      "from": "cryolite-electrolyte",
+      "to": "alumina-calcination",
+      "label": "溶解氧化铝进料",
+      "kind": "requires"
+    },
+    {
+      "from": "hall-heroult-cell",
+      "to": "cryolite-electrolyte",
+      "label": "在熔盐浴中电解",
+      "kind": "requires"
+    },
+    {
+      "from": "hall-heroult-cell",
+      "to": "carbon-anode-reaction",
+      "label": "合并电极反应",
+      "kind": "explains"
+    },
+    {
+      "from": "hall-heroult-cell",
+      "to": "faraday-charge",
+      "label": "由三电子计量求产量",
+      "kind": "explains"
+    },
+    {
+      "from": "carbon-anode-reaction",
+      "to": "thermo-voltage",
+      "label": "给出最低电功尺度",
+      "kind": "explains"
+    },
+    {
+      "from": "smelting-energy",
+      "to": "thermo-voltage",
+      "label": "把可逆下限与现场电耗对比",
+      "kind": "explains"
+    },
+    {
+      "from": "bauxite-ore",
+      "to": "crystal",
+      "label": "矿物相决定可浸出性",
+      "kind": "explains"
+    },
+    {
+      "from": "bayer-digestion",
+      "to": "diffusion",
+      "label": "颗粒内外传质影响溶出",
+      "kind": "explains"
+    },
+    {
+      "from": "bayer-precipitation",
+      "to": "phase",
+      "label": "过饱和与成核长大",
+      "kind": "explains"
+    },
+    {
+      "from": "alumina-calcination",
+      "to": "phase",
+      "label": "脱水和晶型变化",
+      "kind": "explains"
+    },
+    {
+      "from": "cryolite-electrolyte",
+      "to": "phase",
+      "label": "熔盐液相窗口",
+      "kind": "explains"
+    },
+    {
+      "from": "hall-heroult-cell",
+      "to": "atoms-electrons",
+      "label": "铝离子获得电子",
+      "kind": "explains"
+    },
+    {
+      "from": "hall-heroult-cell",
+      "to": "charge",
+      "label": "电荷与电子守恒",
+      "kind": "explains"
+    },
+    {
+      "from": "hall-heroult-cell",
+      "to": "electric-power",
+      "label": "直流电输入槽",
+      "kind": "requires"
+    },
+    {
+      "from": "carbon-anode-reaction",
+      "to": "bonds",
+      "label": "Al–O 与 C–O 键重排",
+      "kind": "explains"
+    },
+    {
+      "from": "faraday-charge",
+      "to": "moles",
+      "label": "摩尔与电荷换算",
+      "kind": "explains"
+    },
+    {
+      "from": "faraday-charge",
+      "to": "charge",
+      "label": "电子电荷计数",
+      "kind": "explains"
+    },
+    {
+      "from": "thermo-voltage",
+      "to": "free-energy",
+      "label": "\\(\\Delta G=nFE\\)",
+      "kind": "explains"
+    },
+    {
+      "from": "thermo-voltage",
+      "to": "entropy",
+      "label": "\\(\\Delta G=\\Delta H-T\\Delta S\\)",
+      "kind": "explains"
+    },
+    {
+      "from": "smelting-energy",
+      "to": "electric-power",
+      "label": "积分槽电压电流",
+      "kind": "explains"
+    },
+    {
+      "from": "smelting-energy",
+      "to": "free-energy",
+      "label": "理论下限与实际差距",
+      "kind": "explains"
+    },
+    {
+      "from": "can-alloy-split",
+      "to": "crystal",
+      "label": "合金元素改变晶体中的固溶与相",
+      "kind": "explains"
+    },
+    {
+      "from": "can-alloy-split",
+      "to": "moles",
+      "label": "牌号成分以物质的量和质量分数表达",
+      "kind": "explains"
+    },
+    {
+      "from": "coil-to-cup",
+      "to": "can-alloy-split",
+      "label": "成形窗口取决于罐身料",
+      "kind": "requires"
+    },
+    {
+      "from": "draw-redraw-ironing",
+      "to": "coil-to-cup",
+      "label": "杯是 D&I 的进料形状",
+      "kind": "requires"
+    },
+    {
+      "from": "draw-redraw-ironing",
+      "to": "stress",
+      "label": "变薄后局部应力更依赖厚度",
+      "kind": "explains"
+    },
+    {
+      "from": "draw-redraw-ironing",
+      "to": "cold-work-dislocations",
+      "label": "D&I 提供塑性变形和硬化历史",
+      "kind": "explains"
+    },
+    {
+      "from": "cold-work-dislocations",
+      "to": "crystal",
+      "label": "位错是晶体缺陷",
+      "kind": "explains"
+    },
+    {
+      "from": "cold-work-dislocations",
+      "to": "stress",
+      "label": "硬化改变屈服与应力裕度",
+      "kind": "explains"
+    },
+    {
+      "from": "end-stiffness",
+      "to": "can-alloy-split",
+      "label": "盖的合金和状态为刚度服务",
+      "kind": "requires"
+    },
+    {
+      "from": "end-stiffness",
+      "to": "stress",
+      "label": "盖板把内压载荷转为膜和弯曲载荷",
+      "kind": "explains"
+    },
+    {
+      "from": "neck-flange-double-seam",
+      "to": "draw-redraw-ironing",
+      "label": "成形后的罐身才能缩颈翻边",
+      "kind": "requires"
+    },
+    {
+      "from": "neck-flange-double-seam",
+      "to": "end-stiffness",
+      "label": "盖钩需要可卷封的盖材",
+      "kind": "requires"
+    },
+    {
+      "from": "neck-flange-double-seam",
+      "to": "stress",
+      "label": "卷封传递轴向拉开力和剪切力",
+      "kind": "explains"
+    },
+    {
+      "from": "internal-coating-barrier",
+      "to": "charge",
+      "label": "涂层减少金属与电解质的电荷交换",
+      "kind": "explains"
+    },
+    {
+      "from": "oxide-passivation-pitting",
+      "to": "atoms-electrons",
+      "label": "氧化还原涉及铝原子和电子转移",
+      "kind": "explains"
+    },
+    {
+      "from": "internal-coating-barrier",
+      "to": "oxide-passivation-pitting",
+      "label": "涂层为钝化膜提供额外阻隔",
+      "kind": "explains"
+    },
+    {
+      "from": "internal-pressure-hoop-stress",
+      "to": "stress",
+      "label": "内压产生环向与轴向应力",
+      "kind": "explains"
+    },
+    {
+      "from": "internal-pressure-hoop-stress",
+      "to": "can-alloy-split",
+      "label": "强度与厚度来自对应罐材",
+      "kind": "requires"
+    },
+    {
+      "from": "shell-buckling-dome",
+      "to": "stress",
+      "label": "屈曲由压缩膜力和弯曲刚度触发",
+      "kind": "explains"
+    },
+    {
+      "from": "shell-buckling-dome",
+      "to": "end-stiffness",
+      "label": "盖和穹底用曲率/筋提高稳定性",
+      "kind": "requires"
+    },
+    {
+      "from": "recycling-sort-remelt",
+      "to": "can-alloy-split",
+      "label": "回收分流要追踪罐身与盖材牌号",
+      "kind": "requires"
+    },
+    {
+      "from": "recycling-sort-remelt",
+      "to": "phase",
+      "label": "熔化、铸锭和轧制改变材料状态",
+      "kind": "explains"
+    },
+    {
+      "from": "recycling-sort-remelt",
+      "to": "electric-power",
+      "label": "熔化和轧制的能耗可核算",
+      "kind": "requires"
+    },
+    {
+      "from": "recycling-sort-remelt",
+      "to": "internal-coating-barrier",
+      "label": "涂层和密封胶要去除或作为挥发/熔渣处理",
+      "kind": "explains"
+    },
+    {
+      "from": "bonds",
+      "to": "atoms-electrons",
+      "label": "电子的量子态",
+      "kind": "explains"
+    },
+    {
+      "from": "free-energy",
+      "to": "entropy",
+      "label": "\\(T\\Delta S\\) 从何而来",
+      "kind": "explains"
+    },
+    {
+      "from": "free-energy",
+      "to": "bonds",
+      "label": "反应的能量差",
+      "kind": "explains"
+    },
+    {
+      "from": "phase",
+      "to": "free-energy",
+      "label": "总自由能最小",
+      "kind": "explains"
+    },
+    {
+      "from": "electric-power",
+      "to": "charge",
+      "label": "每单位电荷的能量",
+      "kind": "explains"
+    },
+    {
+      "from": "electric-power",
+      "to": "electromagnetism",
+      "label": "一种发电机制",
+      "kind": "explains"
+    },
+    {
+      "from": "charge",
+      "to": "moles",
+      "label": "电子的计数尺度",
+      "kind": "explains"
+    },
+    {
+      "from": "crystal",
+      "to": "bonds",
+      "label": "原子为何结合",
+      "kind": "explains"
+    },
+    {
+      "from": "stress",
+      "to": "bonds",
+      "label": "弹性响应的微观来源",
+      "kind": "explains"
+    },
+    {
+      "from": "stress",
+      "to": "calculus",
+      "label": "局部平衡与变形",
+      "kind": "explains"
+    },
+    {
+      "from": "diffusion",
+      "to": "entropy",
+      "label": "统计与随机游走",
+      "kind": "explains"
+    },
+    {
+      "from": "diffusion",
+      "to": "calculus",
+      "label": "通量怎样累积",
+      "kind": "explains"
+    },
+    {
+      "from": "electric-power",
+      "to": "calculus",
+      "label": "累积电功",
+      "kind": "explains"
+    },
+    {
+      "from": "bayer-digestion",
+      "to": "amphoteric",
+      "label": "羟基配位带走铝",
+      "kind": "explains"
+    },
+    {
+      "from": "bayer-precipitation",
+      "to": "equilibrium",
+      "label": "改变析出驱动力",
+      "kind": "explains"
+    },
+    {
+      "from": "amphoteric",
+      "to": "equilibrium",
+      "label": "物种分布与溶解平衡",
+      "kind": "explains"
+    },
+    {
+      "from": "amphoteric",
+      "to": "bonds",
+      "label": "Lewis 酸碱与配位键",
+      "kind": "explains"
+    },
+    {
+      "from": "equilibrium",
+      "to": "free-energy",
+      "label": "\\(\\Delta G\\) 与 \\(K\\) 的关系",
+      "kind": "explains"
+    },
+    {
+      "from": "equilibrium",
+      "to": "diffusion",
+      "label": "达到平衡还要传质",
+      "kind": "explains"
+    },
+    {
+      "from": "can",
+      "to": "can-alloy-split",
+      "label": "罐身与盖的材料",
+      "kind": "requires"
+    },
+    {
+      "from": "can",
+      "to": "neck-flange-double-seam",
+      "label": "把盖锁紧并密封",
+      "kind": "requires"
+    },
+    {
+      "from": "can",
+      "to": "internal-coating-barrier",
+      "label": "隔开饮料与金属",
+      "kind": "requires"
+    },
+    {
+      "from": "can",
+      "to": "internal-pressure-hoop-stress",
+      "label": "侧壁如何承受压差",
+      "kind": "explains"
+    },
+    {
+      "from": "can",
+      "to": "recycling-sort-remelt",
+      "label": "另一条金属来源",
+      "kind": "requires"
+    },
+    {
+      "from": "can-alloy-split",
+      "to": "hall-heroult-cell",
+      "label": "原生铝从哪里来",
+      "kind": "requires"
+    },
+    {
+      "from": "can-alloy-split",
+      "to": "cold-work-dislocations",
+      "label": "状态与硬化历史",
+      "kind": "explains"
+    },
+    {
+      "from": "can-alloy-split",
+      "to": "phase",
+      "label": "成分如何变成组织",
+      "kind": "explains"
+    },
+    {
+      "from": "neck-flange-double-seam",
+      "to": "internal-coating-barrier",
+      "label": "垫胶与界面阻隔",
+      "kind": "requires"
+    },
+    {
+      "from": "internal-coating-barrier",
+      "to": "diffusion",
+      "label": "涂层怎样阻隔迁移",
+      "kind": "explains"
+    },
+    {
+      "from": "oxide-passivation-pitting",
+      "to": "bonds",
+      "label": "稳定氧化层与能量",
+      "kind": "explains"
+    },
+    {
+      "from": "oxide-passivation-pitting",
+      "to": "amphoteric",
+      "label": "酸碱为何破坏氧化层",
+      "kind": "explains"
+    },
+    {
+      "from": "hall-heroult-cell",
+      "to": "thermo-voltage",
+      "label": "外加电功为何必要",
+      "kind": "explains"
+    },
+    {
+      "from": "hall-heroult-cell",
+      "to": "smelting-energy",
+      "label": "运行电耗花在哪里",
+      "kind": "explains"
+    },
+    {
+      "from": "internal-pressure-hoop-stress",
+      "to": "shell-buckling-dome",
+      "label": "压缩与屈曲换一种机制",
+      "kind": "explains"
+    }
+  ],
+  "routes": [
+    {
+      "id": "ore",
+      "title": "铝从矿石怎样来？",
+      "nodes": [
+        "can",
+        "can-alloy-split",
+        "hall-heroult-cell",
+        "cryolite-electrolyte",
+        "alumina-calcination",
+        "bayer-precipitation",
+        "bayer-clarification",
+        "bayer-digestion",
+        "bauxite-ore"
+      ],
+      "steps": [
+        "手边的物件",
+        "需要罐材",
+        "先制出原生铝",
+        "氧化铝溶入熔盐",
+        "无水氧化铝从哪来",
+        "先得到氢氧化铝",
+        "液体与残渣分开",
+        "碱液把铝带走",
+        "矿石是混合矿物"
+      ]
+    },
+    {
+      "id": "why",
+      "title": "铝为什么难冶炼？",
+      "nodes": [
+        "can",
+        "can-alloy-split",
+        "hall-heroult-cell",
+        "thermo-voltage",
+        "free-energy",
+        "entropy"
+      ],
+      "steps": [
+        "从一只罐开始",
+        "合金需要铝",
+        "氧化铝要电解",
+        "至少需要多少功",
+        "方向由自由能判断",
+        "把能量接到微观统计"
+      ]
+    },
+    {
+      "id": "thin",
+      "title": "这么薄，为什么不破？",
+      "nodes": [
+        "can",
+        "internal-pressure-hoop-stress",
+        "stress",
+        "bonds",
+        "atoms-electrons"
+      ],
+      "steps": [
+        "一个带压容器",
+        "压力变成膜应力",
+        "力与变形如何相关",
+        "弹性从原子相互作用来",
+        "电子量子态的入口"
+      ]
+    },
+    {
+      "id": "again",
+      "title": "喝完之后的捷径",
+      "nodes": [
+        "can",
+        "recycling-sort-remelt",
+        "phase",
+        "free-energy",
+        "bonds",
+        "atoms-electrons"
+      ],
+      "steps": [
+        "换一条材料来源",
+        "分选去涂层再熔化",
+        "熔化改变材料的相",
+        "平衡取决于自由能",
+        "比较微观能量",
+        "电子与原子状态"
+      ]
+    }
+  ]
+};

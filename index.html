@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="从易拉罐一路追问到矿物、材料、能量和数学的私人科技树。">
+  <title>万物的来路 · 易拉罐</title>
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="style.css?v=latex-1">
+  <script defer src="vendor/katex/katex.min.js"></script>
+  <script defer src="vendor/katex/contrib/mhchem.min.js"></script>
+  <script defer src="vendor/katex/contrib/auto-render.min.js"></script>
+  <script defer src="knowledge.js?v=latex-1"></script>
+  <script defer src="app.js?v=latex-1"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div><span class="brand-mark" aria-hidden="true">↟</span><span class="brand">万物的来路</span><span class="edition">私人科技树 / 001</span></div>
+    <a href="README.md" target="_blank" class="text-link">这本册子怎么长大 ↗</a>
+  </header>
+  <main class="workspace">
+    <aside class="rail">
+      <p class="eyebrow">从手边开始</p>
+      <h1>一只易拉罐，<br>通往整个世界。</h1>
+      <p class="intro">把习以为常的东西拆开，<br>再一路问：它凭什么成立？</p>
+      <div class="specimen">
+        <svg viewBox="0 0 230 245" role="img" aria-label="铝制易拉罐示意：罐盖、变薄罐壁和一体罐底">
+          <defs><linearGradient id="metal" x1="0" x2="1"><stop offset="0" stop-color="#d9e0d4"/><stop offset=".5" stop-color="#f4f5ed"/><stop offset="1" stop-color="#d7ddcf"/></linearGradient></defs>
+          <path d="M64 59 Q62 47 74 41 L78 28 L149 28 L155 41 Q168 47 166 59 L166 190 Q166 207 151 213 L78 213 Q62 207 64 190Z" fill="url(#metal)" stroke="#6f7b69" stroke-width="1.3"/>
+          <ellipse cx="114" cy="29" rx="37" ry="10" fill="#dbe1d5" stroke="#6f7b69" stroke-width="1.3"/>
+          <ellipse cx="114" cy="29" rx="30" ry="7" fill="none" stroke="#9ca693"/>
+          <path d="M103 23 Q118 20 123 28 Q119 36 109 33 Q101 31 103 23Z" fill="none" stroke="#6f7b69" stroke-width="1.5"/>
+          <ellipse cx="112" cy="27" rx="5" ry="2.5" fill="#9ca693"/>
+          <path d="M68 194 Q111 208 164 194 M78 44 Q114 54 152 44" fill="none" stroke="#9ca693"/>
+          <path d="M81 63 L81 187 M146 63 L146 187" stroke="#f8f9f1" stroke-width="2"/>
+          <text x="114" y="108" text-anchor="middle" class="can-word">Al</text>
+          <text x="114" y="131" text-anchor="middle" class="can-caption">一个日常的奇迹</text>
+          <path d="M150 30 L192 22 M165 118 L198 118 M152 204 L194 221" stroke="#8e9788" stroke-width="1"/>
+          <text x="195" y="20" class="can-label">罐盖</text><text x="198" y="113" class="can-label">薄壁</text><text x="196" y="231" class="can-label">罐底</text>
+        </svg>
+      </div>
+      <div class="rail-section"><p class="eyebrow">挑一条好奇心</p><nav id="routes" aria-label="探索路径"></nav></div>
+      <div class="rail-section"><p class="eyebrow">这棵树的规矩</p><p class="small">箭头朝向所需技术或更深解释。<br>实线：制造依赖 · 虚线：原理解释<br>它是知识网，也会继续长。</p><div class="tree-count" id="tree-count"></div></div>
+    </aside>
+    <section class="exploration" aria-label="知识图与节点内容">
+      <div class="explore-bar">
+        <div class="view-switch" role="group" aria-label="图的范围"><button type="button" id="focus-view" aria-pressed="true">沿着问题走</button><button type="button" id="atlas-view" aria-pressed="false">看整棵树</button></div>
+        <div class="search-wrap"><label class="sr-only" for="search">找一个节点</label><input id="search" type="search" placeholder="找节点：电解 / 位错 / 熵…" autocomplete="off"><div id="search-results" hidden></div></div>
+      </div>
+      <div class="content-split">
+        <div class="map-panel">
+          <div class="map-title"><div><p class="eyebrow" id="map-kicker">一层一层，往下追</p><h2 id="map-title">易拉罐的来路</h2></div><button type="button" class="quiet-button" id="back" disabled>← 上一步</button></div>
+          <div class="graph-scroll"><div id="graph"><svg id="edges" aria-hidden="true"></svg><div id="node-layout"></div></div></div>
+          <div class="map-foot"><span><i class="key-line"></i>制造依赖</span><span><i class="key-line dashed"></i>原理解释</span><span id="map-count"></span></div>
+          <div class="trail-panel"><p class="eyebrow">刚才走过的路</p><div id="trail"></div></div>
+          <div class="question-seed"><span class="seed-symbol" aria-hidden="true">✳</span><div><p>还有什么，值得继续往下挖？</p><p class="small" id="frontier-text">比如：赤泥怎样处理？涂层如何固化？拉环为什么能沿刻痕打开？</p><button type="button" class="text-link" id="copy-question">复制这个节点的追问 ↗</button></div></div>
+        </div>
+        <article id="detail" class="detail-panel" aria-label="选中节点的原理与计算" aria-live="polite"></article>
+      </div>
+    </section>
+  </main>
+  <footer>从一个物件开始，逐渐接近原理。 <span>计算中的自设参数均标为教学估算；来源可在每个节点展开。</span></footer>
+</body>
+</html>

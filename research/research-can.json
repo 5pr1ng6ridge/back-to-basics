@@ -1,0 +1,349 @@
+{
+  "sources": [
+    {
+      "id": "aa-standards",
+      "title": "Standards and Aluminum Alloys — The Aluminum Association",
+      "url": "https://www.aluminum.org/standards"
+    },
+    {
+      "id": "aa-can-lca",
+      "title": "2021 Aluminum Can Life Cycle Assessment Report — The Aluminum Association",
+      "url": "https://www.aluminum.org/sites/default/files/2021-10/2021AluminumCanLCAReportFullVersion.pdf"
+    },
+    {
+      "id": "ball-plant",
+      "title": "Inside a Ball Beverage Can Plant — Ball Corporation",
+      "url": "https://www.ball.com/getmedia/4db64513-133d-4fa8-9de0-89fd7c2724f9/How_a_Ball_Metal_Beverage_Can_Is_Made.pdf"
+    },
+    {
+      "id": "epa-canmaking",
+      "title": "Development Document for Canmaking Subcategory of Coil Coating Category — U.S. EPA",
+      "url": "https://www.epa.gov/sites/default/files/2017-07/documents/canmaking_dd_1984.pdf"
+    },
+    {
+      "id": "cmi-made",
+      "title": "How Cans Are Made — Can Manufacturers Institute",
+      "url": "https://www.cancentral.com/canresources/how-cans-are-made/"
+    },
+    {
+      "id": "cmi-standards",
+      "title": "Beverage Can Standards — Can Manufacturers Institute",
+      "url": "https://www.cancentral.com/standards/"
+    },
+    {
+      "id": "crown-seaming",
+      "title": "Seaming — Crown Holdings",
+      "url": "https://www.crowncork.com/aerosol-food-packaging/essentials/seaming"
+    },
+    {
+      "id": "ecfr-seam",
+      "title": "21 CFR 113.60 Containers — Electronic Code of Federal Regulations",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-113/section-113.60"
+    },
+    {
+      "id": "ppg-internal",
+      "title": "Internal Coatings — PPG Packaging Coatings",
+      "url": "https://www.ppg.com/en-US/packagingcoatings/internal-coatings"
+    },
+    {
+      "id": "unt-passivation",
+      "title": "Laser Aided Additive Manufacturing of Corrosion and Wear Resistance Coatings — University of North Texas",
+      "url": "https://engineering.unt.edu/mse/research/labs/laasm/research/laser-aided-additive-manufacturing-corrosion-wear-resistance-coatings.html"
+    },
+    {
+      "id": "tamu-thinwall",
+      "title": "Strength of Materials Lab Manual, Lab 10: Thin-Walled Pressure Vessels — Texas A&M University",
+      "url": "https://oaktrust.library.tamu.edu/server/api/core/bitstreams/4daebb22-e822-4a6e-a5de-a72023d64164/content"
+    },
+    {
+      "id": "mit-shell",
+      "title": "Plates and Shells Lecture Notes — MIT OpenCourseWare",
+      "url": "https://ocw.mit.edu/courses/2-081j-plates-and-shells-spring-2007/1bd32d641a2b41ca518591d981405393_lecturenote.pdf"
+    },
+    {
+      "id": "ball-spec",
+      "title": "750 mL Beer/Beverage Manufacturing Specification CS-A1087 — Ball Corporation",
+      "url": "https://source.ball.com/api/content/v1/content/media?mediaPath=%2FCustomerPortalCMS%2Fmedia%2Fcustomer-portal-media%2FRegions%2FNA%2FPDF%20Library%2F750mL-%28300%29-%28Monticello%29-CS-A1087-C_KK.pdf"
+    },
+    {
+      "id": "novelis-scrap",
+      "title": "Can Process Scrap Specification — Novelis",
+      "url": "https://b2b.mps.novelis.com/_assets/content/CanProcessScrapSpecificationRev4-092619.pdf"
+    },
+    {
+      "id": "novelis-recycling",
+      "title": "Novelis Invests in Doubling its UK Recycling Capacity for Used Beverage Cans",
+      "url": "https://novelis.com/news/novelis-invests-in-doubling-its-uk-recycling-capacity-for-used-beverage-cans/"
+    },
+    {
+      "id": "aa-recycling",
+      "title": "Aluminum Beverage Can Moves from Recycling Bin to Newly Formed Can in Less Than 60 Days — The Aluminum Association",
+      "url": "https://www.aluminum.org/news/aluminum-beverage-can-moves-recycling-bin-newly-formed-can-less-60-days"
+    },
+    {
+      "id": "epa-recyclecity",
+      "title": "Materials Recovery Center — U.S. EPA Recycle City",
+      "url": "https://www3.epa.gov/recyclecity/recovery.htm"
+    },
+    {
+      "id": "aa-scrap-terms",
+      "title": "GAG 001 Terms and Definitions — The Aluminum Association",
+      "url": "https://www.aluminum.org/sites/default/files/2021-09/GAG_001_Terms_and_Definitions_3rd_Edition_2011_01_August_21_2011_JW.pdf"
+    },
+    {
+      "id": "concordia-hardening",
+      "title": "Lecture 5: Strengthening Mechanisms — Concordia University",
+      "url": "https://users.encs.concordia.ca/~mmedraj/mech321/lecture_5_strengthening_mechanisms.pdf"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "can-alloy-split",
+      "title": "罐身与罐盖是两种材料任务",
+      "subtitle": "典型饮料罐使用不同牌号和状态",
+      "category": "materials",
+      "layer": 1,
+      "question": "为什么不能把整只罐都看成同一种铝？",
+      "mechanism": "铝业协会给出的典型组合是罐身 3004、罐盖 5182；Novelis 的制程废料规范则把罐身列为 3104/3004、罐盖和拉环列为 5182。3xxx 的锰系成分兼顾深冲成形，5xxx 的镁系成分在冷轧和成形状态下可给盖板较高刚度。具体牌号、厚度、temper 和单一合金方案随厂商与设计变化，典型组合不能当作所有罐的成分分析。",
+      "why": "罐身要在高速 D&I 中延伸而不开裂；盖板要薄、能压出刻痕和拉环，并承受卷封与内压。不同部位的加工窗口相反，所以材料选择是结构设计的一部分。",
+      "equations": [
+        {
+          "formula": "x_i = m_i / m_{alloy}",
+          "terms": "x_i 为元素 i 的质量分数，m_i 为该元素质量，m_alloy 为合金总质量",
+          "scope": "定义牌号成分的质量分数；不能由牌号名称推得单罐的实际批次成分"
+        }
+      ],
+      "example": "一个教学用配料例子：若 1.000 kg 合金含 40 g Mg，则 x_Mg=0.040=4.0 wt%；这只是成分计算示例，不是对某个罐盖批次的检测值。",
+      "gotcha": "‘罐身 3004、盖 5182’是协会给出的典型事实；3104、5042、改良牌号、涂层和 temper 也可能出现，不能写成全行业唯一配方。",
+      "sourceIds": ["aa-standards", "aa-can-lca", "novelis-scrap"]
+    },
+    {
+      "id": "coil-to-cup",
+      "title": "卷材先冲杯再深拉",
+      "subtitle": "圆片的塑性流动把平板变成杯",
+      "category": "making",
+      "layer": 2,
+      "question": "一张平的铝卷怎样变成没有侧缝的罐身毛坯？",
+      "mechanism": "卷材在润滑后由 cupper 冲出圆形 blank，并由压边圈和冲头将圆片拉成杯。Ball 的工艺图把卷材、润滑、冲杯列为连续工序；EPA 说明深拉时金属在拉深环上方被控制流动，而不是简单的平板冲压。必要时用逐级较小直径的 punch 重拉，降低一次变形过大的风险。",
+      "why": "圆片的材料从径向流入杯壁，能得到一体的底和侧壁；侧缝减少了一个潜在泄漏路径，也为后面的 D&I 留下均匀的杯形。",
+      "equations": [
+        {
+          "formula": "πD_b^2/4 ≈ πD_c^2/4 + πD_c h_c",
+          "terms": "D_b 为圆片直径，D_c 为杯的平均直径，h_c 为杯壁高度",
+          "scope": "薄板、体积近似守恒的几何估算；忽略底部圆角、厚度变化、修边和各向异性"
+        }
+      ],
+      "example": "取 D_b=140 mm、D_c=66 mm 的理想圆片，h_c≈(140²−66²)/(4×66)=57.7 mm；它只说明材料面积量级，不能当作某条生产线的模具尺寸。",
+      "gotcha": "冲杯是深拉成形的起点；饮料罐常见的二片罐还要继续重拉、壁厚变薄、修边、洗罐、涂层和缩颈。三片罐则是裁片后卷圆并焊/粘侧缝，不能混用这条流程。",
+      "sourceIds": ["ball-plant", "epa-canmaking", "cmi-made"]
+    },
+    {
+      "id": "draw-redraw-ironing",
+      "title": "D&I：重拉并把侧壁压薄拉长",
+      "subtitle": "深拉和壁厚变薄是两个耦合塑性过程",
+      "category": "making",
+      "layer": 3,
+      "question": "罐壁为什么能比冲杯的板材薄，还能变得更高？",
+      "mechanism": "bodymaker 用 punch 把杯先 redraw 到较小直径，再连续通过 ironing rings。环隙把侧壁厚度压薄，同时让材料沿轴向延伸；底部保留较厚区域并形成反拱/穹底。CMI 将其概括为‘杯被一系列环压过，达到全长并形成底穹’，EPA 也明确说 ironing 是通过变薄金属来延长罐身。",
+      "why": "把更多铝放在受力和成形需要的位置，侧壁轻量化；底穹和后续缩颈则用几何刚度补偿薄壁的局部稳定性。",
+      "equations": [
+        {
+          "formula": "π(R_o^2−R_i^2)L ≈ 常数；r_t = 1−t_f/t_i",
+          "terms": "R_o、R_i 为外/内半径，L 为局部长度，t_i/t_f 为变薄前/后厚度，r_t 为厚度减少率",
+          "scope": "塑性流动的局部体积估算；实际 D&I 还受摩擦、温升、模具圆角、底部增厚、修边和材料各向异性影响"
+        }
+      ],
+      "example": "若某侧壁局部从 t_i=0.30 mm 被压到 t_f=0.11 mm，则 r_t=1−0.11/0.30=0.633，即约 63.3% 变薄；这是假设截取位置和厚度值，不是所有罐的规格。",
+      "gotcha": "‘全罐同厚’是错误的；D&I 罐身通常存在底部、肩部、侧壁和颈部的厚度与加工历史差异，不能用一个 t 代表泄漏、爆破或屈曲的全部位置。",
+      "sourceIds": ["ball-plant", "epa-canmaking", "cmi-made"]
+    },
+    {
+      "id": "cold-work-dislocations",
+      "title": "冷作硬化来自位错阻塞",
+      "subtitle": "成形让强度上升，也消耗延性",
+      "category": "materials",
+      "layer": 3,
+      "question": "为什么冷轧和 D&I 后铝会更强，却更难继续变形？",
+      "mechanism": "非热处理强化铝在冷轧、拉深和壁厚变薄中发生塑性滑移，位错数量增加；位错的弹性应变场和交互作用阻碍后续位错运动，所以继续塑性流动需要更高应力。铝业协会明确把‘位错和空位累积、抑制原子相对运动’作为冷作强化机制；镁等固溶元素还会进一步增强阻碍。",
+      "why": "同一条生产线需要在冲杯前保留成形性、在罐身成形后获得抗压与抗鼓包能力；冷作历史因此是材料和结构之间的接口。",
+      "equations": [
+        {
+          "formula": "σ_y ≈ σ_0 + α G b √ρ",
+          "terms": "σ_y 为屈服应力，σ_0 为基体/固溶等基线，α 为无量纲交互系数，G 为剪切模量，b 为柏氏矢量，ρ 为位错密度",
+          "scope": "Taylor 型数量级模型；α、ρ、织构、晶粒、第二相和残余应力必须由具体材料与工艺决定"
+        }
+      ],
+      "example": "用 G=26 GPa、b=0.286 nm、α=0.30 的教学假设，ρ 从 10^12 增至 10^14 m^-2 时，αGb(√ρ_2−√ρ_1)≈20 MPa；它是位错项的增量估算，不是罐材牌号的保证强度。",
+      "gotcha": "硬化并不等于所有方向都同样变强；轧制/拉深织构会造成各向异性，且过度冷作会降低延性并提高耳高、开裂或后续缩颈风险。",
+      "sourceIds": ["aa-standards", "concordia-hardening", "aa-can-lca"]
+    },
+    {
+      "id": "end-stiffness",
+      "title": "罐盖用较硬的薄板和几何筋",
+      "subtitle": "盖的任务是抗压、刻痕、拉环和卷封",
+      "category": "materials",
+      "layer": 2,
+      "question": "为什么盖板不能照搬罐身的合金与厚度？",
+      "mechanism": "协会的罐生命周期报告指出，盖材用不同合金组，并以较高镁含量替代罐身中主要的锰，以使盖板更硬/更挺。盖板再通过冲压形成沉孔、环形筋、刻痕和拉环孔；几何改变弯曲刚度和抗屈曲能力，不靠单纯加厚。",
+      "why": "开口端承受卷封压紧、堆叠和内压；刻痕又要求局部可控断裂，材料强度、延性、涂层和成形窗口需要一起调。",
+      "equations": [
+        {
+          "formula": "D_b = E t^3/[12(1−ν^2)]",
+          "terms": "D_b 为理想平板弯曲刚度，E 为杨氏模量，t 为厚度，ν 为泊松比",
+          "scope": "均匀各向同性平板的小挠度模型；盖的筋、沉孔、刻痕和卷边会改变等效刚度"
+        }
+      ],
+      "example": "在相同 E、ν 和无筋平板假设下，厚度由 0.20 mm 增至 0.40 mm，D_b 按 (0.40/0.20)^3=8 倍增加；真实盖往往用成形筋实现刚度而不是这样加厚。",
+      "gotcha": "5182 是常见盖/拉环牌号，但不是‘所有盖都 5182’的证明；盖、拉环、刻痕区也可能有不同规格和 temper。",
+      "sourceIds": ["aa-standards", "aa-can-lca", "novelis-scrap"]
+    },
+    {
+      "id": "neck-flange-double-seam",
+      "title": "缩颈、翻边与双卷封把两片锁成气密接头",
+      "subtitle": "金属互锁加垫胶，而非靠铝本身熔焊",
+      "category": "making",
+      "layer": 4,
+      "question": "盖子怎样在薄铝上既固定又不漏气？",
+      "mechanism": "罐身顶部先缩颈以匹配较小的盖径，再翻出 flange。卷封的第一道滚轮把盖钩卷到罐身钩下，第二道把多层金属压紧；盖边的 gasket compound 填补微小空隙。Crown 将 body hook、cover hook、两道操作和垫胶列为形成 hermetic seal 的关键。",
+      "why": "互锁承受轴向拉开和剪切，垫胶提供连续的气液阻隔；制造线还需要检测假缝、皱褶、切伤、交叠和微漏。",
+      "equations": [
+        {
+          "formula": "O_theory = CH + BH + T − W",
+          "terms": "O_theory 为理论搭接长度，CH 为盖钩，BH 为罐身钩，T 为盖厚，W 为卷缝宽/高",
+          "scope": "美国食品法规列出的双卷封计算式；实际还要用剖面、紧密度、皱褶与工艺公差检验"
+        }
+      ],
+      "example": "若 CH=1.70 mm、BH=1.80 mm、T=0.20 mm、W=3.00 mm，则 O_theory=0.70 mm；这是测量值代入的示范，不是所有罐的验收阈值。",
+      "gotcha": "两片饮料罐的底部通常由杯底直接形成，顶部才卷封盖；三片食品罐可能有两条端部卷封和一条侧缝，不能把‘双卷封’误写成所有罐都有相同接头。",
+      "sourceIds": ["cmi-made", "cmi-standards", "crown-seaming", "ecfr-seam"]
+    },
+    {
+      "id": "internal-coating-barrier",
+      "title": "内涂层是金属与饮料之间的第二道界面",
+      "subtitle": "薄涂层兼顾阻隔、耐磨、口味与食品接触要求",
+      "category": "chemistry",
+      "layer": 3,
+      "question": "既有氧化膜，为什么罐内还要喷涂并烘烤？",
+      "mechanism": "清洗后的二片罐内壁喷涂并烘烤固化聚合物涂层，减少饮料、溶解氧、金属和局部缺陷之间的电化学接触，并阻隔金属离子迁移和风味相互作用。PPG 的饮料罐内喷涂包括水性丙烯酸等 BPA-NI 配方，且适用于铝或钢；配方会因饮料酸度、碳酸、热灌装和法规而变化。",
+      "why": "涂层不仅防腐，还要在高速输送、缩颈、卷封和运输摩擦后保持连续；针孔、划伤和界面附着才是局部腐蚀的起点。",
+      "equations": [
+        {
+          "formula": "m = M I t/(nF)",
+          "terms": "m 为电化学溶解质量，M 为摩尔质量，I 为局部腐蚀电流，t 为时间，n 为每个原子转移的电子数，F 为法拉第常数",
+          "scope": "法拉第定律的理想估算；真实涂层下电流分布、络合、氧浓差和腐蚀产物会改变结果"
+        }
+      ],
+      "example": "把针孔处 I=1.0 mA、t=1 h、Al 的 M=26.98 g/mol、n=3 代入，m≈0.336 mg；它只表示一个局部电流的数量级联系，不能预测整罐失效时间。",
+      "gotcha": "‘有内涂层’不等于涂层材质、厚度和法规在各市场相同；BPA-NI、环氧替代、水性体系等都存在，需看具体供应商和产品规格。",
+      "sourceIds": ["cmi-made", "ppg-internal"]
+    },
+    {
+      "id": "oxide-passivation-pitting",
+      "title": "天然氧化膜会钝化，也会在特定环境失效",
+      "subtitle": "Al2O3 薄膜是动态屏障，不是永久盔甲",
+      "category": "chemistry",
+      "layer": 2,
+      "question": "铝为什么在空气里耐蚀，却可能被酸、碱或氯离子点蚀？",
+      "mechanism": "铝接触空气/水后快速形成薄、致密、附着的氧化/羟基化钝化层，划伤处可重新生成。UNT 材料学页面指出，近中性环境通常较耐蚀，但酸性和碱性会溶解氧化层，氯、氟、碘环境会破坏钝化并触发局部点蚀；合金中的金属间化合物也可能造成局部电偶差异。",
+      "why": "罐内饮料不是简单的纯水：pH、盐、络合物、溶解氧、温度和涂层缺陷共同决定界面反应，因此需要把钝化膜和内涂层分开理解。",
+      "equations": [
+        {
+          "formula": "4Al + 3O_2 → 2Al_2O_3",
+          "terms": "铝被氧化形成氧化铝的简化总反应",
+          "scope": "化学计量示意；实际天然膜通常含水合氧化物、缺陷和合金元素，不能由此推出膜的实际厚度"
+        }
+      ],
+      "example": "按该反应的质量守恒，10.8 g Al 完全生成 Al2O3 需要约 9.6 g O2 并得到约 20.4 g 氧化物；真实罐的钝化膜极薄，不能把这个块体反应量当作罐面会长出的膜。",
+      "gotcha": "‘铝不腐蚀’和‘氧化膜永远自愈’都过度简化；点蚀可在肉眼看不见的涂层破口处启动，并与合金、饮料配方和温度相关。",
+      "sourceIds": ["aa-standards", "unt-passivation", "ppg-internal"]
+    },
+    {
+      "id": "internal-pressure-hoop-stress",
+      "title": "内压首先变成环向和轴向拉应力",
+      "subtitle": "薄壁圆筒式是局部估算，不是整罐判定",
+      "category": "physics",
+      "layer": 4,
+      "question": "碳酸饮料的压力怎样拉开罐壁和罐底？",
+      "mechanism": "对远离端部、半径远大于壁厚且均匀的闭口圆筒，内压在环向切开截面上产生两倍轴向膜力，因此环向应力约为轴向应力的两倍。Texas A&M 的薄壁压力容器实验正以汽水罐为例给出这两个式子。",
+      "why": "这解释了为什么侧壁、底穹和盖板的取向与几何不同；也说明卷封、缩颈、底部和刻痕等不连续处不能只用一条圆筒公式。",
+      "equations": [
+        {
+          "formula": "σ_θ = pD_m/(2t),  σ_z = pD_m/(4t) = σ_θ/2",
+          "terms": "p 为表压，D_m 为平均直径，t 为局部壁厚，σ_θ 为环向应力，σ_z 为轴向应力",
+          "scope": "薄壁、弹性、均匀各向同性、圆筒中段、内外压差稳定且远离端部的膜理论"
+        }
+      ],
+      "example": "用 CMI 标准中约 2.602 in=66.1 mm 的罐身直径作量级，并假设 p=0.30 MPa、局部 t=0.11 mm：σ_θ≈90 MPa、σ_z≈45 MPa；p 和 t 是示范假设，不能当作全部饮料或全罐壁的实测值。",
+      "gotcha": "真实罐的厚度、强度和应力随底穹、肩部、缩颈、卷封、刻痕、织构和残余应力变化；膜应力低于屈服也不保证没有局部屈曲、疲劳或泄漏。",
+      "sourceIds": ["tamu-thinwall", "cmi-standards", "aa-can-lca"]
+    },
+    {
+      "id": "shell-buckling-dome",
+      "title": "薄壁稳定性靠曲率、筋和缺陷控制",
+      "subtitle": "外压或轴向压缩下可能先屈曲再失效",
+      "category": "physics",
+      "layer": 5,
+      "question": "为什么空罐容易被侧向捏瘪，底部却做成穹形？",
+      "mechanism": "内压时圆筒壁以拉膜应力为主；外部挤压、堆叠或局部凹陷会产生压缩膜力和弯曲，薄壳可能发生局部屈曲。MIT 壳体教材给出理想圆柱轴压的经典临界应力，并特别讨论壳的长宽比、边界条件和几何缺陷。饮料罐用反拱底、沉孔、环筋和缩颈提高曲率与载荷路径；Ball 的一个 750 mL 规格还列有 90 psi 最小 dome reversal pressure，这只是该规格的测试指标。",
+      "why": "屈曲是刚度和几何稳定性问题，不能仅把‘强度’理解为材料拉断；薄壁壳对初始凹陷、厚度波动、卷封约束和加载偏心尤其敏感。",
+      "equations": [
+        {
+          "formula": "σ_cr ≈ 0.605 E(t/R) = E t/[√(3(1−ν^2))R]",
+          "terms": "σ_cr 为理想圆柱轴向屈曲应力，E 为杨氏模量，t 为壳厚，R 为半径，ν 为泊松比",
+          "scope": "理想、弹性、均匀圆柱壳的轴向压缩经典解；不能直接替代有穹底、缩颈、接缝、刻痕和初始缺陷的整罐试验/有限元"
+        }
+      ],
+      "example": "取 E=69 GPa、t=0.11 mm、R=33 mm 的理想圆柱，σ_cr≈0.605×69 GPa×0.00011/0.033≈139 MPa；实际制造缺陷和边界约束可显著降低临界值，故不能把 139 MPa 当作罐的保证抗瘪强度。",
+      "gotcha": "Ball 750 mL 的公开制造规格写的是 90 psi（约 620 kPa）最小 dome reversal pressure；这是一个供应规格的试验量，不是所有尺寸、合金、饮料和底形的普适压力。",
+      "sourceIds": ["mit-shell", "ball-plant", "ball-spec", "cmi-standards"]
+    },
+    {
+      "id": "recycling-sort-remelt",
+      "title": "回收先分流与去涂层，再熔化重铸",
+      "subtitle": "铝的‘循环’包含成分管理和熔损",
+      "category": "making",
+      "layer": 1,
+      "question": "喝完的罐怎样重新变成罐材，而不是简单‘融化就结束’？",
+      "mechanism": "回收设施先按材料分选、压包；制罐厂的工艺废料还要按 3104/3004 罐身料与 5182 盖/拉环料分开并避免钢、塑料、油和水污染。UBC 工厂会破碎、分选、去涂层/除潮，再熔化、除渣和铸成锭，随后轧成罐身料或盖料；EPA 的流程也把回收罐熔化铸锭后再轧片，铸锭后的步骤与原生路线相同。",
+      "why": "涂层、油、密封胶和水会变成挥发物、烟尘或熔渣；混合牌号会改变 Mg、Mn、Fe 等成分，影响下一轮的成形、强度和耐蚀窗口，所以‘分开’本身就是冶金步骤。",
+      "equations": [
+        {
+          "formula": "m_{sheet}=η_{melt} m_{UBC};  E_{secondary} < E_{primary}",
+          "terms": "m_UBC 为进炉回收罐质量，η_melt 为扣除氧化、熔渣和污染后的金属收得率，m_sheet 为可铸轧金属质量",
+          "scope": "质量和能耗的流程记账式；η 与分选、去涂层、炉型、熔剂、杂质和产品规格有关，不是固定常数"
+        }
+      ],
+      "example": "若 100 kg 已分选 UBC 的教学假设收得率 η_melt=0.90，则约 90 kg 进入铸锭；剩余 10 kg 不是‘铝消失’，而可能在涂层挥发物、氧化膜、熔渣、夹杂和系统损失中。",
+      "gotcha": "回收并不会自动恢复原来的 temper 和织构；熔化会抹掉加工硬化，之后还要成分校正、铸造、均匀化/轧制和制罐成形，且实际闭环比例受收集率、污染和市场分流影响。",
+      "sourceIds": ["novelis-scrap", "novelis-recycling", "aa-scrap-terms", "aa-recycling", "epa-recyclecity", "aa-can-lca"]
+    }
+  ],
+  "edges": [
+    {"from": "can-alloy-split", "to": "crystal", "label": "合金元素改变晶体中的固溶与相", "kind": "requires"},
+    {"from": "can-alloy-split", "to": "moles", "label": "牌号成分以物质的量和质量分数表达", "kind": "requires"},
+    {"from": "coil-to-cup", "to": "can-alloy-split", "label": "成形窗口取决于罐身料", "kind": "requires"},
+    {"from": "draw-redraw-ironing", "to": "coil-to-cup", "label": "杯是 D&I 的进料形状", "kind": "requires"},
+    {"from": "draw-redraw-ironing", "to": "stress", "label": "变薄后局部应力更依赖厚度", "kind": "explains"},
+    {"from": "cold-work-dislocations", "to": "draw-redraw-ironing", "label": "D&I 提供塑性变形和硬化历史", "kind": "explains"},
+    {"from": "cold-work-dislocations", "to": "crystal", "label": "位错是晶体缺陷", "kind": "requires"},
+    {"from": "cold-work-dislocations", "to": "stress", "label": "硬化改变屈服与应力裕度", "kind": "explains"},
+    {"from": "end-stiffness", "to": "can-alloy-split", "label": "盖的合金和状态为刚度服务", "kind": "requires"},
+    {"from": "end-stiffness", "to": "stress", "label": "盖板把内压载荷转为膜和弯曲载荷", "kind": "explains"},
+    {"from": "neck-flange-double-seam", "to": "draw-redraw-ironing", "label": "成形后的罐身才能缩颈翻边", "kind": "requires"},
+    {"from": "neck-flange-double-seam", "to": "end-stiffness", "label": "盖钩需要可卷封的盖材", "kind": "requires"},
+    {"from": "neck-flange-double-seam", "to": "stress", "label": "卷封传递轴向拉开力和剪切力", "kind": "explains"},
+    {"from": "internal-coating-barrier", "to": "neck-flange-double-seam", "label": "卷封前后都要保持界面与涂层完整", "kind": "requires"},
+    {"from": "internal-coating-barrier", "to": "charge", "label": "涂层减少金属与电解质的电荷交换", "kind": "explains"},
+    {"from": "oxide-passivation-pitting", "to": "atoms-electrons", "label": "氧化还原涉及铝原子和电子转移", "kind": "requires"},
+    {"from": "oxide-passivation-pitting", "to": "internal-coating-barrier", "label": "涂层为钝化膜提供额外阻隔", "kind": "explains"},
+    {"from": "internal-pressure-hoop-stress", "to": "stress", "label": "内压产生环向与轴向应力", "kind": "requires"},
+    {"from": "internal-pressure-hoop-stress", "to": "can-alloy-split", "label": "强度与厚度来自对应罐材", "kind": "requires"},
+    {"from": "shell-buckling-dome", "to": "internal-pressure-hoop-stress", "label": "内压拉膜与外压压缩是不同稳定性状态", "kind": "explains"},
+    {"from": "shell-buckling-dome", "to": "stress", "label": "屈曲由压缩膜力和弯曲刚度触发", "kind": "requires"},
+    {"from": "shell-buckling-dome", "to": "end-stiffness", "label": "盖和穹底用曲率/筋提高稳定性", "kind": "requires"},
+    {"from": "recycling-sort-remelt", "to": "can-alloy-split", "label": "回收分流要追踪罐身与盖材牌号", "kind": "requires"},
+    {"from": "recycling-sort-remelt", "to": "phase", "label": "熔化、铸锭和轧制改变材料状态", "kind": "requires"},
+    {"from": "recycling-sort-remelt", "to": "electric-power", "label": "熔化和轧制的能耗可核算", "kind": "requires"},
+    {"from": "recycling-sort-remelt", "to": "internal-coating-barrier", "label": "涂层和密封胶要去除或作为挥发/熔渣处理", "kind": "explains"}
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "sources": [
+    {
+      "id": "aa-bauxite",
+      "title": "Bauxite 101 — The Aluminum Association",
+      "url": "https://www.aluminum.org/bauxite-101"
+    },
+    {
+      "id": "aa-alumina",
+      "title": "Alumina Refining 101 — The Aluminum Association",
+      "url": "https://www.aluminum.org/alumina-refining-101"
+    },
+    {
+      "id": "aa-primary",
+      "title": "Primary Production 101 — The Aluminum Association",
+      "url": "https://www.aluminum.org/primary-production-101"
+    },
+    {
+      "id": "alcoa-bayer",
+      "title": "Wagerup Refinery Long Term Residue Management Strategy — Alcoa",
+      "url": "https://aacomnoa.apps.alcoa.com/australia/en/pdf/2017-wagerup-refinery-ltrms.pdf"
+    },
+    {
+      "id": "iai-bauxite-residue",
+      "title": "Bauxite Residue Management — International Aluminium Institute",
+      "url": "https://international-aluminium.org/wp-content/uploads/2022/04/BRManagementGuidance.pdf"
+    },
+    {
+      "id": "openstax-metals",
+      "title": "18.2 Occurrence and Preparation of the Representative Metals — OpenStax Chemistry 2e",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-2-occurrence-and-preparation-of-the-representative-metals"
+    },
+    {
+      "id": "psu-materials",
+      "title": "Lesson 6: Types and Applications of Metal Alloys — Penn State Materials Science",
+      "url": "https://courses.ems.psu.edu/matse81/book/export/html/2138"
+    },
+    {
+      "id": "tamu-faraday",
+      "title": "Electrochemistry lecture 4 — Texas A&M University",
+      "url": "https://www.chem.tamu.edu/rgroup/hughbanks/courses/102H/lecturenotes/class10-1.pdf"
+    },
+    {
+      "id": "doe-energy",
+      "title": "ITP Aluminum: Energy Requirements for the U.S. Aluminum Industry — U.S. Department of Energy",
+      "url": "https://www.energy.gov/documents/altheoreticalpdf"
+    },
+    {
+      "id": "iai-smelting-energy",
+      "title": "Primary Aluminium Smelting Energy Intensity — International Aluminium Institute",
+      "url": "https://international-aluminium.org/statistics/primary-aluminium-smelting-energy-intensity/?nocache=1736998824"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bauxite-ore",
+      "title": "铝矿：铝土矿是混合矿物，不是纯 Al₂O₃",
+      "subtitle": "从红土风化层中的含铝矿物开始",
+      "category": "chemistry",
+      "layer": 1,
+      "question": "为什么从铝土矿到金属铝要先分离、再还原？",
+      "mechanism": "铝土矿通常是近地表红土型矿石，含水铝氧化物/氢氧化物（如三水铝石 Al(OH)₃、一水铝石 AlO(OH)）以及二氧化硅、氧化铁、二氧化钛等杂质。工业路线先利用溶解度和酸碱选择性把含铝相转入溶液，再把铝变成 Al₂O₃，最后电解；矿石本身的品位和矿物相决定拜耳条件与残渣量。",
+      "why": "铝在矿石中以稳定的氧化物/氢氧化物存在，不能像较不活泼金属那样靠简单熔炼得到金属；把杂质先移走，才可让电解槽处理组成稳定的冶金级氧化铝。",
+      "equations": [
+        {
+          "formula": "Al(OH)₃(s) → 1/2 Al₂O₃(s) + 3/2 H₂O(g)",
+          "terms": "三水铝石脱水的化学计量表示；实际矿石还含 AlO(OH) 与非铝矿物",
+          "scope": "代表性矿物的脱水，不是铝土矿整体组成式"
+        },
+        {
+          "formula": "质量分数 w(Al₂O₃)=m(Al₂O₃ 等效)/m(矿石)",
+          "terms": "w 为铝土矿的氧化铝等效品位",
+          "scope": "用于粗略物料衡算；必须另计回收率和水分"
+        }
+      ],
+      "example": "若 1.00 t 干矿的 Al₂O₃ 等效品位为 45%，理论上含 0.450 t Al₂O₃；若拜耳回收率假定为 90%，可得约 0.405 t Al₂O₃，尚未扣除煅烧、输送或电解损失。",
+      "gotcha": "“铝土矿就是 Al₂O₃”会误导物料衡算；Al₂O₃ 是精炼后的产品名，矿石是多种含水矿物和杂质的混合物。",
+      "sourceIds": ["aa-bauxite", "aa-alumina"]
+    },
+    {
+      "id": "bayer-digestion",
+      "title": "拜耳法消化：热浓 NaOH 选择性溶出铝",
+      "subtitle": "把固体含铝相变成可过滤的铝酸盐溶液",
+      "category": "chemistry",
+      "layer": 1,
+      "question": "热烧碱怎样从铝土矿中带走铝？",
+      "mechanism": "破碎研磨后的矿浆与热的浓 NaOH 在加压消化器中接触；铝的氧羟化物/氢氧化物被羟基配位并进入溶液，主要以四羟基合铝酸根 [Al(OH)₄]⁻ 存在，Na⁺ 是对离子。铁氧化物、钛氧化物和部分硅质相大多留下为固相。",
+      "why": "铝的两性使强碱能溶解含铝氧化物，而许多杂质在该碱液中的溶解度较低；温度和压力提高反应速率并适配不同矿物相。",
+      "equations": [
+        {
+          "formula": "AlO(OH)(s)+NaOH(aq)+H₂O(l) → Na[Al(OH)₄](aq)",
+          "terms": "AlO(OH) 可代表一水铝石/硬水铝石；Na[Al(OH)₄] 是写法等价于 Na⁺+[Al(OH)₄]⁻",
+          "scope": "适用于氧羟化物端元；三水铝石端元为 Al(OH)₃+NaOH→Na[Al(OH)₄]"
+        },
+        {
+          "formula": "AlO(OH)(s)+OH⁻(aq)+H₂O(l) → [Al(OH)₄]⁻(aq)",
+          "terms": "净离子式，Na⁺ 不参加配位反应",
+          "scope": "水溶液的简化化学计量；真实拜耳液含多种络合/杂质物种"
+        }
+      ],
+      "example": "按氧羟化物端元计，1.00 mol AlO(OH) 最多生成 1.00 mol [Al(OH)₄]⁻；其所含 Al 的物质的量不因络合而改变。",
+      "gotcha": "NaAlO₂(aq) 常见于旧教材或工艺简写，但在水相中更清楚、守恒更直观的记法是 Na[Al(OH)₄] 或 [Al(OH)₄]⁻；两者不能被当作不同的铝产物。",
+      "sourceIds": ["alcoa-bayer", "openstax-metals", "iai-bauxite-residue"]
+    },
+    {
+      "id": "bayer-clarification",
+      "title": "拜耳法澄清：从绿色液分离赤泥",
+      "subtitle": "固液分离决定铝回收与残渣负荷",
+      "category": "chemistry",
+      "layer": 1,
+      "question": "为什么消化后还要过滤和沉降？",
+      "mechanism": "消化浆料先分级、沉降和过滤，得到含铝的澄清绿色液（green liquor）与不溶残渣。残渣主要来自铁氧化物、二氧化钛、未反应硅质物和细颗粒；液体中的烧碱随后进入沉淀循环。",
+      "why": "电解槽需要低杂质的氧化铝；若固体杂质随液进入后续步骤，会污染种分产品、增加烧碱损失并使残渣处理量失控。",
+      "equations": [
+        {
+          "formula": "η_Al = n(Al)_澄清液 / n(Al)_矿浆进料",
+          "terms": "η_Al 为澄清步骤的铝回收率",
+          "scope": "工艺衡算定义；需以取样分析的 Al 量计算，不把浆液体积当回收率"
+        },
+        {
+          "formula": "m_残渣 = m_进料 − m_溶出铝相 − m_过程水（按干基另行核算）",
+          "terms": "m 为质量；实际需分开干固体、水、可溶碱和夹带液",
+          "scope": "概念质量衡算，不能代替现场含水率测量"
+        }
+      ],
+      "example": "若进料带入 100 kg Al₂O₃ 等效，其中 92 kg 进入绿色液，则澄清前后铝回收率为 92%；剩余 8 kg 可能是未溶相、夹带残渣或取样误差，不能全部称为‘赤泥中的铁’。",
+      "gotcha": "赤泥不是单一化合物，也不是‘过滤掉的纯泥’；它夹带碱液并含多种矿物相，产量和组成取决于矿石、消化和洗涤条件。",
+      "sourceIds": ["alcoa-bayer", "iai-bauxite-residue"]
+    },
+    {
+      "id": "bayer-precipitation",
+      "title": "拜耳法种分：让 Al(OH)₃ 从铝酸盐液结晶",
+      "subtitle": "冷却、稀释和晶种把可溶铝重新变成固体",
+      "category": "chemistry",
+      "layer": 1,
+      "question": "怎样从澄清铝酸盐液拿回高纯氢氧化铝？",
+      "mechanism": "绿色液经冷却、稀释并加入 Al(OH)₃ 晶种，使溶液相对于氢氧化铝过饱和；晶种表面提供成核和长大界面，Al(OH)₃ 晶体沉降后分级、洗涤，母液中的 NaOH 回到消化段。",
+      "why": "沉淀把铝从可循环的碱液中选择性取出，同时回收烧碱；控制晶种、温度和停留时间可调粒度，粒度又影响煅烧粉尘和电解溶解。",
+      "equations": [
+        {
+          "formula": "Na[Al(OH)₄](aq) → Al(OH)₃(s) + NaOH(aq)",
+          "terms": "铝酸盐水解/沉淀的净化学计量式",
+          "scope": "以四羟基合铝酸根表示的水相简式；实际为平衡、非瞬时完全反应"
+        },
+        {
+          "formula": "S = a_Al(OH)₃ / K_sp（或以工艺溶解度定义过饱和度）",
+          "terms": "S 为相对过饱和度，a 为活度，K_sp 为相应平衡常数",
+          "scope": "教学近似；工业液含 NaOH、碳酸根和有机物，活度不能简单等于浓度"
+        }
+      ],
+      "example": "若净反应每沉淀 1.00 mol Al(OH)₃，按式子同时再生 1.00 mol NaOH；1.00 mol Al(OH)₃ 的理论质量为约 78.00 g。实际收率要乘以沉淀率并扣除母液夹带。",
+      "gotcha": "晶种是促进成核和控制粒度的固体，不是催化剂意义上的‘永不消耗’物质；一部分会随产品带走并需循环补充。",
+      "sourceIds": ["aa-alumina", "alcoa-bayer", "iai-bauxite-residue"]
+    },
+    {
+      "id": "alumina-calcination",
+      "title": "煅烧：Al(OH)₃ 脱水成为冶金级氧化铝",
+      "subtitle": "白色 Al₂O₃ 粉末是电解槽的进料",
+      "category": "chemistry",
+      "layer": 1,
+      "question": "为什么沉淀的氢氧化铝不能直接送进电解槽？",
+      "mechanism": "洗涤后的三水铝石在约 1000 °C 级的煅烧器中脱去结构水，形成 Al₂O₃；粒度、晶型、残余碱和水分影响其在冰晶石浴中的溶解与加料响应。",
+      "why": "电解需要无水氧化铝作为可控的氧源；若把大量结合水带入约 950–970 °C 槽，会消耗热量并改变气体、酸碱与电流平衡。",
+      "equations": [
+        {
+          "formula": "2Al(OH)₃(s)  —Δ→  Al₂O₃(s) + 3H₂O(g)",
+          "terms": "Δ 表示加热；Al₂O₃ 为氧化铝，水以蒸汽排出",
+          "scope": "三水铝石完全煅烧的理想计量式；不同矿物相可先经 AlO(OH) 中间相"
+        },
+        {
+          "formula": "m(Al₂O₃)=m(Al(OH)₃)×M(Al₂O₃)/(2M(Al(OH)₃))",
+          "terms": "M 为摩尔质量，理想比例约 101.96/(2×78.00)=0.6536",
+          "scope": "纯三水铝石、完全反应、忽略夹带物时的干基估算"
+        }
+      ],
+      "example": "100.0 kg 纯 Al(OH)₃ 完全煅烧理论得到 65.4 kg Al₂O₃，并放出 34.6 kg 水；若实际产品只有 63.5 kg，差额可能来自未完全转化、粉尘损失或原料夹带水分。",
+      "gotcha": "Al₂O₃ 不是把 Al(OH)₃‘熔化’后得到的液体；这里主要是脱水和晶型演变，电解槽再把固体粉末溶入熔盐。",
+      "sourceIds": ["aa-alumina", "alcoa-bayer", "iai-bauxite-residue"]
+    },
+    {
+      "id": "cryolite-electrolyte",
+      "title": "冰晶石浴：让氧化铝在可操作温度下成为电解质",
+      "subtitle": "Na₃AlF₆ 是熔盐溶剂/载流介质，不是还原剂",
+      "category": "chemistry",
+      "layer": 2,
+      "question": "为什么不把 Al₂O₃ 直接熔化再电解？",
+      "mechanism": "Al₂O₃ 熔点超过 2000 °C；工业上将其溶解于熔融冰晶石 Na₃AlF₆ 及调 bath 的氟化物中。熔盐提供可移动离子、降低工作温度并保持铝氧物种可在阴阳极反应；铝液密度较大，在槽底收集。",
+      "why": "直接熔化氧化铝会带来更高的炉温、耐材负担和热损失；冰晶石浴把‘能导电的铝氧源’和‘可维持的熔盐温度’结合起来。",
+      "equations": [
+        {
+          "formula": "Na₃AlF₆(l) + Al₂O₃(diss) ⇌ 熔盐中的 Na⁺、Al-F-O 络合物",
+          "terms": "熔盐物种不是单一水溶液离子；diss 表示溶解态",
+          "scope": "定性示意，不把复杂熔盐结构误写成唯一配平反应"
+        },
+        {
+          "formula": "P = IV，Q_elec = ∫I(t)dt",
+          "terms": "I 为电流，V 为槽电压，Q_elec 为通过的电荷",
+          "scope": "槽的电输入；熔盐只承载电流，不能据此推出电能全变成铝的化学能"
+        }
+      ],
+      "example": "若把 Al₂O₃ 熔点粗略看作约 2050 °C，而槽约 960 °C，冰晶石路线把主要液相操作温度降低约 1100 °C 量级；这只是温度差示意，不能直接等同于节省的 kWh。",
+      "gotcha": "冰晶石在净反应中不被消耗，也不是催化剂；它是熔盐电解质和溶剂，实际会有挥发、夹带和氟化物排放，需要补加与净化。",
+      "sourceIds": ["psu-materials", "aa-primary", "iai-smelting-energy"]
+    },
+    {
+      "id": "hall-heroult-cell",
+      "title": "霍尔–埃鲁槽：阴极析铝、阳极耗氧",
+      "subtitle": "碳衬钢槽中的高电流熔盐电解",
+      "category": "physics",
+      "layer": 2,
+      "question": "电流如何把溶解的氧化铝分成铝和含碳阳极气体？",
+      "mechanism": "预焙碳阳极插入含氧化铝的熔融冰晶石，槽底碳质阴极收集液态铝。阴极还原铝氧物种得到 Al(l)；阳极氧物种放电并与碳反应，主要生成 CO₂，少量 CO。电解槽以直流电保持反应与约 950–970 °C 的液相。",
+      "why": "Al–O 键和 Al₂O₃ 的热力学稳定性使化学还原很难；外加电功提供电子并维持高温熔盐离子传输。",
+      "equations": [
+        {
+          "formula": "阴极：Al³⁺ + 3e⁻ → Al(l)",
+          "terms": "理想化铝离子写法；实际熔盐中有 Al-O-F 络合物",
+          "scope": "用来配平电子和计算电量，不宣称槽内存在大量自由 Al³⁺"
+        },
+        {
+          "formula": "阳极（CO₂ 主路径）：C + 2O²⁻ → CO₂(g) + 4e⁻",
+          "terms": "O²⁻ 代表含氧阴离子等效；阳极释放电子",
+          "scope": "理想化半反应；气体中 CO 比例受条件与阳极效应影响"
+        }
+      ],
+      "example": "按 1 mol Al 需要 3 mol 电子，100 kA 槽在 1 h 通过 360 MJ 的电荷对应 100,000×3600/96485=3,731 mol e⁻，理论沉积 1,244 mol、约 33.6 kg Al；实际要乘电流效率。",
+      "gotcha": "阴极是还原处、阳极是氧化处；‘阳极带正所以发生还原’是把电池符号和电解槽混淆。",
+      "sourceIds": ["aa-primary", "aa-alumina", "doe-energy"]
+    },
+    {
+      "id": "carbon-anode-reaction",
+      "title": "碳阳极总反应：氧化铝的氧最终氧化碳",
+      "subtitle": "工业碳阳极把‘析氧’改写为 CO₂/CO 排放并被消耗",
+      "category": "chemistry",
+      "layer": 2,
+      "question": "为什么传统铝电解会消耗碳阳极并排出 CO₂？",
+      "mechanism": "把阴极铝还原和碳阳极氧化相加，铝氧化物的氧不以 O₂ 逸出，而转移给碳。DOE 的理想碳阳极总式是 2Al₂O₃+3C→4Al+3CO₂；真实槽还会有 CO₂+C→2CO、铝被 CO₂ 反氧化以及阳极效应。",
+      "why": "碳既导电又能与阳极氧反应，降低相对惰性阳极的电解功需求；代价是阳极消耗和直接碳排放。",
+      "equations": [
+        {
+          "formula": "2Al₂O₃(l,diss) + 3C(s) → 4Al(l) + 3CO₂(g)",
+          "terms": "每生成 4 mol Al 消耗 3 mol C，并通过 12 mol 电子的等效电荷",
+          "scope": "碳阳极主反应的理想总式；熔盐活度、温度和气相组成会改变实际路径"
+        },
+        {
+          "formula": "CO₂(g)+C(s) ⇌ 2CO(g)",
+          "terms": "Boudouard 反应；使实际阳极气体不只含 CO₂",
+          "scope": "高温副反应，不能据此把总式固定写成全 CO"
+        },
+        {
+          "formula": "2Al(l)+3CO₂(g) → Al₂O₃(diss)+3CO(g)",
+          "terms": "铝被阳极气体反氧化，降低电流效率",
+          "scope": "DOE 列出的实际运行损失路径之一"
+        }
+      ],
+      "example": "按主总式，生产 1.000 kg Al（26.9815 g/mol）理论消耗碳：n(C)=0.75n(Al)=27.80 mol，质量约 0.334 kg；实际阳极净耗量因副反应、残极和工艺管理而不同。",
+      "gotcha": "‘阳极产氧气’只适用于惰性阳极理想化路线；传统碳阳极把氧转成 CO₂/CO，所以不能把碳阳极槽的总式写成 2Al₂O₃→4Al+3O₂。",
+      "sourceIds": ["doe-energy", "aa-primary", "aa-alumina"]
+    },
+    {
+      "id": "faraday-charge",
+      "title": "法拉第定律：由铝的量反推理论电量",
+      "subtitle": "三电子/铝原子给出电流、时间与产量的桥梁",
+      "category": "math",
+      "layer": 3,
+      "question": "生产一罐铝需要多少电荷？",
+      "mechanism": "电极反应每生成 1 mol Al 需转移 z=3 mol 电子。电荷守恒与法拉第常数 F 把电子物质的量换成库仑；电流效率 η_I 把理想电荷修正为实际所需电荷。",
+      "why": "这条关系不依赖槽的外形，只要电子计量数和目标产物量明确，就能先给出物理下限，再讨论电压、热损失和副反应。",
+      "equations": [
+        {
+          "formula": "Q_ideal = zF n(Al) = zF m(Al)/M(Al)",
+          "terms": "Q 为电荷(C)，z=3，F=96485 C·mol⁻¹ e⁻，n 为 mol，M(Al)=26.9815 g·mol⁻¹",
+          "scope": "100% 电流效率且只有铝析出的理论值"
+        },
+        {
+          "formula": "m_actual = η_I M(Al) I t/(zF)",
+          "terms": "I 为 A，t 为 s，η_I 为 0–1 的电流效率",
+          "scope": "恒定电流的实际产量估算；电流波动时用积分 ∫I(t)dt"
+        }
+      ],
+      "example": "1.000 kg Al：n=1000/26.9815=37.06 mol，Q_ideal=3×96485×37.06=1.073×10⁷ C=2,980 Ah。若 η_I=95%，实际需约 3,137 Ah；这仍只算电荷，不含槽电压和辅机能耗。",
+      "gotcha": "把 1 mol Al 当成 1 mol 电子会少算三倍；‘电流效率 95%’也不表示总电能效率 95%，因为电压、热损失和整流/辅机还在分母中。",
+      "sourceIds": ["tamu-faraday", "doe-energy"]
+    },
+    {
+      "id": "thermo-voltage",
+      "title": "热力学电压：ΔG 决定可逆最低电功",
+      "subtitle": "高稳定性的 Al₂O₃ 需要外加电功驱动",
+      "category": "energy",
+      "layer": 4,
+      "question": "为什么电解需要约伏特级的电压，且实际还要更高？",
+      "mechanism": "对给定温度、组成和产物状态，分解反应的正 Gibbs 自由能 ΔG 是可逆最低非膨胀功；电化学可逆电压满足 ΔG=nFE_rev（若按分解反应取正值）。真实槽还要克服阳极/阴极过电位、熔盐欧姆压降、浓差和散热。",
+      "why": "ΔH 告诉总焓变化，ΔG 才告诉在恒温恒压下至少要输入多少有用功；这解释了‘理论电量’与‘理论能耗’不能混为一谈。",
+      "equations": [
+        {
+          "formula": "ΔG = ΔH − TΔS",
+          "terms": "ΔG 为 Gibbs 自由能变化，ΔH 为焓变，T 为绝对温度，ΔS 为熵变",
+          "scope": "恒温恒压、给定标准态/活度的热力学关系"
+        },
+        {
+          "formula": "W_elec,min = ΔG = nF E_rev；V_cell,actual = E_rev + η_an + η_cat + IR + …",
+          "terms": "η_an/η_cat 为过电位，IR 为电阻压降，省略项包括浓差与接触损失",
+          "scope": "电解分解取 ΔG>0；实际槽电压是运行量，不等于可逆电压"
+        }
+      ],
+      "example": "DOE 理想碳阳极模型给电解功 5.11 kWh/kg。对 1 kg Al 的 Q_ideal=1.073×10⁷ C，E_rev≈(5.11×3.6 MJ)/Q=1.71 V；若运行槽电压约 4–5 V，差额对应欧姆压降、过电位、温度维持及其他损失，而非多生成了铝。",
+      "gotcha": "电压越高不自动等于效率越高；在同样电流下，P=IV 会增加输入功，除非它解决了传质/动力学限制并提高电流效率。",
+      "sourceIds": ["doe-energy", "tamu-faraday"]
+    },
+    {
+      "id": "smelting-energy",
+      "title": "理论能耗与真实能耗：边界和损失决定数字",
+      "subtitle": "5.99 kWh/kg 是理想下限，不是电费账单",
+      "category": "energy",
+      "layer": 4,
+      "question": "为什么实际铝电解耗电远高于热力学下限？",
+      "mechanism": "DOE 的理想碳阳极边界假定原料 25 °C、铝液出槽 960 °C、无反向反应、无旁路、无热损失，得到 5.99 kWh/kg（其中电解功 5.11、温度维持 0.49、铝升温 0.39）。DOE 记录的 2003 年美国电解段现场值为 15.58 kWh/kg；IAI 的统计进一步区分整流后 DC 电解功与含整流、污染控制等辅机的 AC 槽区电力，不能跨边界直接比较。",
+      "why": "真实槽要保持熔盐液相、补偿导线/电解质电阻、过电位、铝再氧化、阳极效应和碳耗，还要运行整流、控制和污染治理；这些使能耗高于可逆下限。",
+      "equations": [
+        {
+          "formula": "E_specific = ∫V(t)I(t)dt / m(Al)",
+          "terms": "E_specific 为单位铝电耗，V/I 随时间变化，m 为出槽铝质量",
+          "scope": "现场电能边界；需说明是否含整流损失、辅机和碳厂"
+        },
+        {
+          "formula": "η_energy ≈ E_theory/E_actual = 5.99/15.58 ≈ 0.384（示例边界）",
+          "terms": "这里的比值只是 DOE 理想碳阳极模型与 2003 年美国电解段基准的粗略比较",
+          "scope": "不能当作全生命周期效率，也不能代表所有年代/地区的当前值"
+        }
+      ],
+      "example": "按上述边界，1.000 kg Al 的理想下限约 5.99 kWh，而 2003 年美国电解段基准约 15.58 kWh，差约 9.59 kWh；若只引用‘约 15 kWh/kg’，必须注明年份和统计边界。",
+      "gotcha": "理论最低能耗、实际槽 DC、含整流/辅机的 AC 槽区电耗、从矿到金属的全链路能耗是四个不同指标；混用它们会制造看似矛盾的数字。",
+      "sourceIds": ["doe-energy", "iai-smelting-energy"]
+    }
+  ],
+  "edges": [
+    {"from": "bayer-digestion", "to": "bauxite-ore", "label": "以矿物相和品位为输入", "kind": "requires"},
+    {"from": "bayer-clarification", "to": "bayer-digestion", "label": "分离消化浆料", "kind": "requires"},
+    {"from": "bayer-precipitation", "to": "bayer-clarification", "label": "使用澄清绿色液", "kind": "requires"},
+    {"from": "alumina-calcination", "to": "bayer-precipitation", "label": "煅烧沉淀氢氧化铝", "kind": "requires"},
+    {"from": "cryolite-electrolyte", "to": "alumina-calcination", "label": "溶解氧化铝进料", "kind": "requires"},
+    {"from": "hall-heroult-cell", "to": "cryolite-electrolyte", "label": "在熔盐浴中电解", "kind": "requires"},
+    {"from": "carbon-anode-reaction", "to": "hall-heroult-cell", "label": "合并电极反应", "kind": "explains"},
+    {"from": "faraday-charge", "to": "hall-heroult-cell", "label": "由三电子计量求产量", "kind": "explains"},
+    {"from": "thermo-voltage", "to": "carbon-anode-reaction", "label": "给出最低电功尺度", "kind": "explains"},
+    {"from": "smelting-energy", "to": "thermo-voltage", "label": "把可逆下限与现场电耗对比", "kind": "explains"},
+    {"from": "bauxite-ore", "to": "crystal", "label": "矿物相决定可浸出性", "kind": "requires"},
+    {"from": "bayer-digestion", "to": "diffusion", "label": "颗粒内外传质影响溶出", "kind": "requires"},
+    {"from": "bayer-precipitation", "to": "phase", "label": "过饱和与成核长大", "kind": "requires"},
+    {"from": "alumina-calcination", "to": "phase", "label": "脱水和晶型变化", "kind": "requires"},
+    {"from": "cryolite-electrolyte", "to": "phase", "label": "熔盐液相窗口", "kind": "requires"},
+    {"from": "hall-heroult-cell", "to": "atoms-electrons", "label": "铝离子获得电子", "kind": "requires"},
+    {"from": "hall-heroult-cell", "to": "charge", "label": "电荷与电子守恒", "kind": "requires"},
+    {"from": "hall-heroult-cell", "to": "electric-power", "label": "直流电输入槽", "kind": "requires"},
+    {"from": "carbon-anode-reaction", "to": "bonds", "label": "Al–O 与 C–O 键重排", "kind": "explains"},
+    {"from": "faraday-charge", "to": "moles", "label": "摩尔与电荷换算", "kind": "requires"},
+    {"from": "faraday-charge", "to": "charge", "label": "电子电荷计数", "kind": "requires"},
+    {"from": "thermo-voltage", "to": "free-energy", "label": "ΔG=nFE", "kind": "requires"},
+    {"from": "thermo-voltage", "to": "entropy", "label": "ΔG=ΔH−TΔS", "kind": "requires"},
+    {"from": "smelting-energy", "to": "electric-power", "label": "积分槽电压电流", "kind": "requires"},
+    {"from": "smelting-energy", "to": "free-energy", "label": "理论下限与实际差距", "kind": "explains"}
+  ]
+}

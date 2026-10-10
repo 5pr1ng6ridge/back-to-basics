@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {"id":"f-amphoteric","title":"OpenStax · 溶解与两性氢氧化物","url":"https://openstax.org/books/chemistry-2e/pages/15-1-precipitation-and-dissolution"},
+    {"id":"f-lewis","title":"OpenStax · Lewis 酸碱与配位","url":"https://openstax.org/books/chemistry-2e/pages/15-2-lewis-acids-and-bases"},
+    {"id":"f-equilibrium","title":"OpenStax · 化学平衡移动","url":"https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle"}
+  ],
+  "nodes": [
+    {"id":"amphoteric","title":"两性与羟基配位","subtitle":"同一种氢氧化物，两边都能溶","category":"chemistry","layer":3,"question":"强碱为什么能把含铝矿物变成可溶的铝酸盐？","mechanism":"Al(OH)₃ 能与酸反应，也能在足量强碱中形成可溶的 [Al(OH)₄]⁻。羟基可作为配体与铝中心结合，改变溶液中物种分布。拜耳法借此把铝转入碱液。","why":"“溶解”不一定只是把固体打散：生成新配位物种，会改变原有溶解平衡。","equations":[{"formula":"Al(OH)₃(s) + 3H⁺(aq) → Al³⁺(aq) + 3H₂O(l)\nAl(OH)₃(s) + OH⁻(aq) ⇌ [Al(OH)₄]⁻(aq)","terms":"第二式表示强碱中的主要水相记账物种；酸中 Al³⁺ 也有水合。","scope":"简化水相式。浓拜耳液的温度、活度与杂质需要工艺数据，不能直接用稀溶液 pH 推算。"}],"example":"按理想净式，1 mol Al(OH)₃ 与 1 mol OH⁻ 可对应生成 1 mol [Al(OH)₄]⁻。这只是净计量，不意味着每摩尔铝只需投一摩尔烧碱：循环液还要保持足够碱度。","gotcha":"矿物溶解时，铝的氧化数仍是 +3；这步尚未得到金属铝，也不是电解还原。","sourceIds":["f-amphoteric","f-lewis"]},
+    {"id":"equilibrium","title":"平衡、活度与反应商","subtitle":"化学不只看反应箭头","category":"chemistry","layer":4,"question":"为什么同一个拜耳循环，先让铝溶解，再让它析出？","mechanism":"改变温度与溶液组成，会改变反应商与平衡位置。对析出反应 [Al(OH)₄]⁻→Al(OH)₃(s)+OH⁻，把纯固相活度取为 1，可以把条件写进 Q。晶种帮助跨过成核障碍。","why":"工艺通过调节条件实现分离；平衡决定终点，传质与成核决定抵达终点的速度。","equations":[{"formula":"Qᵣ = a(OH⁻)/a([Al(OH)₄]⁻)\nΔᵣG = RT ln(Qᵣ/K)","terms":"a：相对于标准态的无量纲活度；K：该析出反应的平衡常数；R=8.314 J/(mol·K)。","scope":"纯 Al(OH)₃ 固相存在、温度与物种定义给定的简化模型。浓液不能把活度直接等同于浓度。"}],"example":"纯数学教学例子：设温度 350 K，Qᵣ/K=0.1，则 ΔᵣG=8.314×350×ln(0.1)≈−6.70 kJ/mol，表示析出方向有热力学驱动力。这里没有给某厂拜耳液的 K。","gotcha":"过饱和液也可能暂时不析出，因为成核有能垒。碱度、铝浓度与温度相互关联，不应把所有稀释都理解成必然析铝。","sourceIds":["f-gibbs","f-equilibrium","f-amphoteric"]}
+  ],
+  "edges": [
+    {"from":"bayer-digestion","to":"amphoteric","label":"羟基配位带走铝","kind":"explains"},
+    {"from":"bayer-precipitation","to":"equilibrium","label":"改变析出驱动力","kind":"explains"},
+    {"from":"amphoteric","to":"equilibrium","label":"物种分布与溶解平衡","kind":"explains"},
+    {"from":"amphoteric","to":"bonds","label":"Lewis 酸碱与配位键","kind":"explains"},
+    {"from":"equilibrium","to":"free-energy","label":"ΔG 与 K 的关系","kind":"explains"},
+    {"from":"equilibrium","to":"diffusion","label":"达到平衡还要传质","kind":"explains"}
+  ]
+}
