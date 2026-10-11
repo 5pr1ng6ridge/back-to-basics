@@ -1,7 +1,75 @@
 window.TECH_TREE = {
-  "title": "万物的来路",
-  "version": 1,
-  "entry": "can",
+  "version": "discovery-2",
+  "title": "万物的来路 · 从石器到自主发现",
+  "entry": "observation-test",
+  "scope": {
+    "goal": "一个有物质基础、能源、测量能力与协作条件的智慧体，沿可检验的路径积累能力，并最终改进自己的发现过程。",
+    "status": "覆盖起源到自主研究的核心主干，不是完整文明或可直接执行的工程手册。",
+    "omissions": [
+      "具体矿床与原料纯化参数",
+      "设备图纸与工艺窗口",
+      "药品、临床与公共卫生全体系",
+      "交通、航空航天与完整基础设施",
+      "经济制度、规模化组织和环境约束"
+    ],
+    "order": "阶段表示可行的能力发展顺序，不是统一年代或唯一文明史；观察和工艺常先于现代解释。"
+  },
+  "stages": [
+    {
+      "id": 0,
+      "title": "观察与生存",
+      "en": "NOTICE & SURVIVE",
+      "question": "怎样把偶然变成可重复的经验？"
+    },
+    {
+      "id": 1,
+      "title": "积累与协作",
+      "en": "STORE & COOPERATE",
+      "question": "怎样跨越季节，保存劳动与记忆？"
+    },
+    {
+      "id": 2,
+      "title": "火与材料",
+      "en": "TRANSFORM MATERIALS",
+      "question": "怎样改变物质，获得新的工具？"
+    },
+    {
+      "id": 3,
+      "title": "记录与求证",
+      "en": "RECORD & TEST",
+      "question": "怎样让别人复查我们相信的东西？"
+    },
+    {
+      "id": 4,
+      "title": "机器与尺度",
+      "en": "MECHANIZE & MEASURE",
+      "question": "怎样把工具变成能复制的机器？"
+    },
+    {
+      "id": 5,
+      "title": "电力与工业",
+      "en": "POWER & INDUSTRY",
+      "question": "怎样稳定地生产、传输和控制能量？"
+    },
+    {
+      "id": 6,
+      "title": "微观与精密",
+      "en": "PRECISION & DEVICES",
+      "question": "怎样控制看不见的结构与误差？"
+    },
+    {
+      "id": 7,
+      "title": "计算与网络",
+      "en": "COMPUTE & CONNECT",
+      "question": "怎样将过程变成可执行、可协作的信息？"
+    },
+    {
+      "id": 8,
+      "title": "智能与新发现",
+      "en": "LEARN & DISCOVER",
+      "question": "怎样让系统检验假说，而不是只生成答案？"
+    }
+  ],
   "sources": [
     {
       "id": "aa-bauxite",
@@ -227,14 +295,1513 @@ window.TECH_TREE = {
       "id": "f-equilibrium",
       "title": "OpenStax · 化学平衡移动",
       "url": "https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle"
+    },
+    {
+      "id": "origins-si-tools",
+      "title": "Stone Tools — Smithsonian National Museum of Natural History, Human Origins Program",
+      "url": "https://humanorigins.si.edu/evidence/behavior/stone-tools"
+    },
+    {
+      "id": "origins-si-fire",
+      "title": "Hearths & Shelters — Smithsonian Human Origins Program",
+      "url": "https://humanorigins.si.edu/evidence/behavior/hearths-shelters"
+    },
+    {
+      "id": "origins-history",
+      "title": "World History, Volume 1: to 1500 — OpenStax（早期人类、新石器时代、城市与知识传播）",
+      "url": "https://openstax.org/books/world-history-volume-1/pages/2-introduction"
+    },
+    {
+      "id": "origins-storage",
+      "title": "Grain storage techniques: Evolution and trends in developing countries, Chapter 2 — FAO",
+      "url": "https://www.fao.org/4/x5065e/x5065e04.htm"
+    },
+    {
+      "id": "origins-materials",
+      "title": "Impact of Materials on Society — University of Florida / Materials Research Society（陶、铜与青铜、钢、混凝土、书写材料各章）",
+      "url": "https://ufl.pb.unizin.org/imos/"
+    },
+    {
+      "id": "origins-watt",
+      "title": "James Watt — Science Museum Group Collection（仪器制作、热机改进、联动机构与离心调速）",
+      "url": "https://collection.sciencemuseumgroup.org.uk/people/ap24508/watt-james"
+    },
+    {
+      "id": "origins-textiles",
+      "title": "Reproduction of Hargreaves’s original Spinning Jenny — Science Museum Group Collection",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co44855/reproduction-of-hargreavess-original-spinning-jenny"
+    },
+    {
+      "id": "origins-physics",
+      "title": "College Physics 2e — OpenStax（测量、力矩、热力学第一定律、几何光学与显微镜）",
+      "url": "https://openstax.org/books/college-physics-2e/pages/1-introduction-to-science-and-the-realm-of-physics-physical-quantities-and-units"
+    },
+    {
+      "id": "origins-chemistry",
+      "title": "Chemistry 2e — OpenStax（物质测量、反应计量与元素材料）",
+      "url": "https://openstax.org/books/chemistry-2e/pages/1-introduction"
+    },
+    {
+      "id": "origins-statistics",
+      "title": "1.1 Definitions of Statistics, Probability, and Key Terms — OpenStax Introductory Statistics 2e",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/1-1-definitions-of-statistics-probability-and-key-terms"
+    },
+    {
+      "id": "origins-water",
+      "title": "Drinking-water — World Health Organization（污染、健康风险与安全供水）",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/drinking-water"
+    },
+    {
+      "id": "origins-geology",
+      "title": "Maps — U.S. Geological Survey Mineral Resources Program（矿产资源、地质与调查地图）",
+      "url": "https://www.usgs.gov/programs/mineral-resources-program/maps"
+    },
+    {
+      "id": "modern-physics-2",
+      "title": "OpenStax / Rice University — University Physics Volume 2（热力学、电路、电磁感应）",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-introduction"
+    },
+    {
+      "id": "modern-chemistry",
+      "title": "OpenStax / Rice University — Chemistry 2e（化学计量、平衡、电化学与有机材料）",
+      "url": "https://openstax.org/books/chemistry-2e/pages/1-introduction"
+    },
+    {
+      "id": "modern-worldsteel",
+      "title": "World Steel Association — The steelmaking process",
+      "url": "https://worldsteel.org/about-steel/steelmaking-process/"
+    },
+    {
+      "id": "modern-germ",
+      "title": "OpenStax — Microbiology 3.2: Foundations of Modern Cell Theory（病菌理论的证据史）",
+      "url": "https://openstax.org/books/microbiology/pages/3-2-foundations-of-modern-cell-theory"
+    },
+    {
+      "id": "modern-metrology",
+      "title": "NIST Technical Note 1297 — Guidelines for Evaluating and Expressing Measurement Uncertainty",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297"
+    },
+    {
+      "id": "modern-physics-3",
+      "title": "OpenStax / Rice University — University Physics Volume 3（量子证据、原子与固体物理）",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/1-introduction"
+    },
+    {
+      "id": "modern-feedback",
+      "title": "MIT OpenCourseWare 6.302 — Feedback Systems",
+      "url": "https://ocw.mit.edu/courses/6-302-feedback-systems-spring-2007/"
+    },
+    {
+      "id": "modern-silicon",
+      "title": "Computer History Museum — The Silicon Engine: A Timeline of Semiconductors in Computers",
+      "url": "https://www.computerhistory.org/siliconengine/"
+    },
+    {
+      "id": "modern-cs50",
+      "title": "Harvard University — CS50x 2025: Introduction to Computer Science",
+      "url": "https://cs50.harvard.edu/x/2025/"
+    },
+    {
+      "id": "modern-solar",
+      "title": "U.S. Department of Energy — How Does Solar Work?",
+      "url": "https://www.energy.gov/eere/solar/how-does-solar-work"
+    },
+    {
+      "id": "modern-ml",
+      "title": "Google for Developers — Machine Learning Crash Course",
+      "url": "https://developers.google.com/machine-learning/crash-course"
+    },
+    {
+      "id": "modern-autonomous",
+      "title": "Argonne National Laboratory — Autonomous Discovery",
+      "url": "https://www.anl.gov/autonomous-discovery"
     }
   ],
   "nodes": [
+    {
+      "id": "observation-test",
+      "title": "观察、比较与试错",
+      "subtitle": "先辨别差异，再保留可重复的办法",
+      "category": "cognition",
+      "nodeType": "theory",
+      "stage": 0,
+      "question": "同一件事有时成功、有时失败，究竟什么改变了结果？",
+      "mechanism": "先注意可感知的差别，再在近似条件下重复行动，把结果与猜想比较。早期试错不必有文字和正式实验；后来才把变量、误差与反证明确化。",
+      "why": "能把一次偶然的效果变成可传递的经验，减少盲目消耗。智慧仍需要接触材料、付出时间并承担可控的试验成本。",
+      "equations": [],
+      "example": "两块形状相近的石头分别摩擦同一段软木，用相同次数比较留下的痕迹；这是学习模型，不是石器制造史的复现。",
+      "gotcha": "先后发生不等于因果；一次成功不能证明普遍有效。第0阶段表示最小学习能力，不是在给人群的智力排名。",
+      "sourceIds": [
+        "origins-si-tools",
+        "origins-physics"
+      ],
+      "frontier": "把口头的“我觉得”变成别人也能检查的“在这些条件下”。",
+      "learning": {
+        "observe": "留意木面痕迹、石头粗糙度和动作变化。",
+        "try": "用无锐边样品比较，保持木材和摩擦次数相同。",
+        "infer": "提出粗糙面更容易磨去软材料的局部模型。",
+        "check": "换一块木料并让另一人复试，记录不一致处。",
+        "unlocks": "选择工具材料，积累可验证的工艺经验。"
+      }
+    },
+    {
+      "id": "shelter-water",
+      "title": "遮蔽与水源辨识",
+      "subtitle": "降低暴露风险，但不把清澈误当安全",
+      "category": "life",
+      "nodeType": "practice",
+      "stage": 0,
+      "question": "怎样减少风雨、寒暑和缺水造成的损失？",
+      "mechanism": "利用地形和可用材料遮蔽风雨，观察水源的季节变化、上游活动与取水距离。饮用风险包括看不见的病原体和溶解污染物，需要另外的处理与检测能力。",
+      "why": "稳定的停留条件使工具维护和知识传递更可行；水、燃料和劳动仍是必须筹措的资源。",
+      "equations": [],
+      "example": "纸板模型比较有无挡风面的散热与喷水渗漏；纸上地图标出水源及潜在污染源，不进行野外饮水试验。",
+      "gotcha": "沉淀、砂滤和煮沸各有局限，不能凭外观或一次处理保证饮用安全；未知水体不取来饮用。",
+      "sourceIds": [
+        "origins-si-fire",
+        "origins-water"
+      ],
+      "frontier": "从避开明显风险，走向可监测的供水与卫生系统。",
+      "learning": {
+        "observe": "比较模型迎风面、漏水点和地图中上游活动。",
+        "try": "用清洁自来水测试模型遮蔽，不尝试判断野水能否饮用。",
+        "infer": "遮蔽改变暴露路径；水的安全性不能仅靠感官推断。",
+        "check": "换喷水方向仍能指出薄弱处，并完整标记未知风险。",
+        "unlocks": "更稳定的营地、储物空间及后续卫生问题。"
+      },
+      "practice": {
+        "line": "营地选择与资源保障",
+        "input": "地形观察、遮蔽材料、水源风险信息",
+        "operation": "比较暴露条件与取水代价，标记不确定风险",
+        "output": "有边界的选址方案，而非饮水安全认证"
+      }
+    },
+    {
+      "id": "stone-tools",
+      "title": "石材刃口与工具选择",
+      "subtitle": "从天然碎片到有意塑形",
+      "category": "making",
+      "nodeType": "practice",
+      "stage": 0,
+      "question": "怎样让手的力量集中到一条刃口上？",
+      "mechanism": "某些石材断裂能留下刃口，形状与材质决定切削、刮削和耐用表现。制作和选用经验先于断裂力学；并非所有地区都采用同一套石器序列。",
+      "why": "工具扩大切割、加工木材和纤维的能力，但仍依赖合适原料、熟练动作和持续维护。",
+      "equations": [],
+      "example": "用圆钝塑料片的宽边与窄边压湿黏土，比同一负载留下的压痕；它只类比接触面积，不复现石材断裂。",
+      "gotcha": "实际打制会飞溅锐片，本节点不提供打制教程；不能把石器简单理解成比金属低级的工具。",
+      "sourceIds": [
+        "origins-si-tools",
+        "origins-materials"
+      ],
+      "frontier": "让可重复的形状服务于任务，再追问材料为什么这样断裂。",
+      "learning": {
+        "observe": "看博物馆刃口、使用痕迹及不同原料的展示。",
+        "try": "以钝片和软黏土比较接触形状，避开锐器和敲击。",
+        "infer": "接触面积与几何改变局部作用，不只取决于用力大小。",
+        "check": "同负载重复压痕比较，并说出模型不能说明断裂的原因。",
+        "unlocks": "木作、纤维加工、采掘与专用工具。"
+      },
+      "practice": {
+        "line": "原料选择与工具维护",
+        "input": "适用石料、任务经验和制作劳动",
+        "operation": "选择并塑形，按用途检查刃口与损伤",
+        "output": "可承担特定加工任务的工具"
+      }
+    },
+    {
+      "id": "fire-control",
+      "title": "保存与管理火",
+      "subtitle": "获得持续热源，不等于理解燃烧化学",
+      "category": "energy",
+      "nodeType": "practice",
+      "stage": 0,
+      "question": "偶遇的火怎样变成能重复利用、又不失控的热源？",
+      "mechanism": "火的持续性受燃料、空气供应、散热和环境影响。保存火种与主动取火是不同能力；考古证据往往只能约束某地点的用火，不能给所有人类一条统一时间线。",
+      "why": "热源支持熟食、照明和材料处理，也增加火灾、烟气和燃料负担。用火工艺不需要先掌握热力学。",
+      "equations": [],
+      "example": "比较博物馆炉床遗迹和教学视频中的燃烧现象，标记燃料、通风与热量损失；不自行点火验证。",
+      "gotcha": "烟气和一氧化碳可能致命；任何实物燃烧试验应由合格人员在批准设施中进行，不能在住所复现。",
+      "sourceIds": [
+        "origins-si-fire",
+        "origins-chemistry"
+      ],
+      "frontier": "从偶然热量，走向能控制热分布的炉与窑。",
+      "learning": {
+        "observe": "区分视频里的火焰、余烬、烟和被加热材料。",
+        "try": "在纸上比较有无通风与遮蔽的热源模型。",
+        "infer": "燃烧的持续要同时满足供料、供氧与热量条件。",
+        "check": "用另一段视频检验预测，承认缺失条件时无法判断。",
+        "unlocks": "炊食、陶器、木炭和高温材料工艺。"
+      },
+      "practice": {
+        "line": "受控热源保障",
+        "input": "燃料、空气、隔离空间与看护劳动",
+        "operation": "维持热源并管理烟气、热损失和环境风险",
+        "output": "可用热量及必须处理的烟灰与排放"
+      }
+    },
+    {
+      "id": "oral-learning",
+      "title": "示范、口述与共同记忆",
+      "subtitle": "让一个人的试错成为群体的能力",
+      "category": "information",
+      "nodeType": "practice",
+      "stage": 0,
+      "question": "一个人会做的事，怎样在他离开后仍有人会做？",
+      "mechanism": "观察示范、模仿动作、口述条件和纠正失败，使经验跨人传播。重复与多人交叉核对可以保留细节；叙事也可能混入误记，需要实际操作反馈。",
+      "why": "群体能累积超出单人寿命的技能；文字是一种扩展，不是学习、合作或复杂工艺的必要起点。",
+      "equations": [],
+      "example": "一人仅口述纸条折法，另一人做模型，再加入示范比较成品差异与耗时；不把这个游戏当作史前语言证据。",
+      "gotcha": "口传不等于不可靠，书写也不自动真实。早期语言的具体形式与起源时间不能仅靠器物确定。",
+      "sourceIds": [
+        "origins-history",
+        "origins-si-tools"
+      ],
+      "frontier": "从人与人的记忆，走向能核对库存和工艺的外部记录。",
+      "learning": {
+        "observe": "找出口述中遗漏的方向、动作和判断条件。",
+        "try": "用同一纸模型比较纯口述与示范加纠正。",
+        "infer": "反馈和共享术语能减少传播中的信息丢失。",
+        "check": "让新参与者按解释做出约定形状，并指出仍含糊的步骤。",
+        "unlocks": "跨代工艺、协作和共同使用的记号。"
+      },
+      "practice": {
+        "line": "技能传承与协作",
+        "input": "熟练者的示范、语言、练习时间",
+        "operation": "观察模仿、解释条件、检查结果并纠错",
+        "output": "多人掌握的技能与可共享的经验"
+      }
+    },
+    {
+      "id": "fibre-cordage",
+      "title": "纤维与绳结",
+      "subtitle": "把短而散的材料变成可传力的长线",
+      "category": "materials",
+      "nodeType": "practice",
+      "stage": 0,
+      "question": "松散纤维怎样能绑住物件、接成长绳？",
+      "mechanism": "纤维的交叠、捻合与绳结利用摩擦和几何约束传递拉力。材料湿度、长度、捻度和结形都会改变性能；不必先有农业或金属。",
+      "why": "绳索使捆扎、搬运、工具装柄和织网成为可能，但强度必须按材料与用途实测，不能由聪明程度保证。",
+      "equations": [],
+      "example": "用现成棉线比较单股与合股在小纸杯负载下的伸长；只在桌面上试验，不用于攀爬或悬吊人。",
+      "gotcha": "合股强度不必等于各股强度之和；结、磨损和潮湿会降低承载，不能据模型推定安全绳规格。",
+      "sourceIds": [
+        "origins-history",
+        "origins-materials"
+      ],
+      "frontier": "从一根线，走向织物、帆与可控制的传动。",
+      "learning": {
+        "observe": "比较棉线的散开、滑移和结附近的变形。",
+        "try": "同长度小负载比较单股与合股，避免弹射与重物。",
+        "infer": "摩擦分担与纤维排列决定载荷如何传播。",
+        "check": "换样品重复，记录结形与湿度而不只记录股数。",
+        "unlocks": "捆扎、编织、装配连接和柔性结构。"
+      },
+      "practice": {
+        "line": "柔性连接材料制作",
+        "input": "适用纤维、连接经验和加工劳动",
+        "operation": "整理、交叠捻合与结扎，检查滑移和磨损",
+        "output": "限定用途的绳索与连接件"
+      }
+    },
+    {
+      "id": "agriculture",
+      "title": "栽培与留种",
+      "subtitle": "改变生长条件，积累跨季节反馈",
+      "category": "life",
+      "nodeType": "practice",
+      "stage": 1,
+      "question": "怎样让有用植物在需要的地方、需要的时候更多出现？",
+      "mechanism": "栽培改变土壤、水分、竞争和传播条件，留种可在多代中改变群体性状。栽培、驯化和定居并非一次发生，采集与栽培可以长期并存。",
+      "why": "扩大可计划的食物来源，却带来季节性、病虫害、生态改变和劳作负担；产量受土地、水、种子和劳动约束。",
+      "equations": [],
+      "example": "用园艺种子在相同光照下比较两种浇水记录，测萌发比例；仅观察，不食用实验苗，也不声称一次试验找到了最佳农业。",
+      "gotcha": "较大的果实不一定适应当地环境；农业不是所有社会必经的进步阶梯，也不保证营养改善。",
+      "sourceIds": [
+        "origins-history"
+      ],
+      "frontier": "从观察生长，走向季节计划、储藏与作物风险管理。",
+      "learning": {
+        "observe": "记录萌发、叶片与水分条件，而非只看最终高度。",
+        "try": "园艺种子小样比较，每组留重复样并保持光照相近。",
+        "infer": "把水分效应与种子差异分开，提出有条件的生长模型。",
+        "check": "新一批种子重复趋势，失败时检查土壤和光照变化。",
+        "unlocks": "可计划的栽培、留种和跨季节食物供给。"
+      },
+      "practice": {
+        "line": "作物生产与留种",
+        "input": "种子、土地、水、工具和季节劳动",
+        "operation": "栽培管理、收获与筛选适合条件的繁殖材料",
+        "output": "作物、种子及秸秆等副产物"
+      }
+    },
+    {
+      "id": "domestication",
+      "title": "动物管理与驯化",
+      "subtitle": "个体驯服与种群变化不是同一件事",
+      "category": "life",
+      "nodeType": "practice",
+      "stage": 1,
+      "question": "野生动物怎样可能成为可持续共同生活的种群？",
+      "mechanism": "管理改变食物、繁殖和生存条件，选择在多代中改变种群性状；驯服只描述个体行为。不同物种和社会有不同路径，农业并非所有动物驯化的前提。",
+      "why": "可能提供纤维、运输、肥料等资源，同时必须承担饲料、疾病、防逃和动物福利成本。",
+      "equations": [],
+      "example": "以卡片表示行为不同的虚拟动物，多代选择后比较性状比例；这是选择模型，不是在教人抓捕或繁殖野生动物。",
+      "gotcha": "不是任何物种都能经济地驯化；纸上选择忽略遗传关联与环境，不能预测真实育种效果。",
+      "sourceIds": [
+        "origins-history"
+      ],
+      "frontier": "把动物资源与饲料、健康和劳动力一起纳入长期管理。",
+      "learning": {
+        "observe": "分清馆藏材料中个体行为和群体骨骼性状的证据。",
+        "try": "用卡片比较有选择与随机选择的多代群体。",
+        "infer": "可遗传差异与繁殖机会共同影响群体变化。",
+        "check": "换一组初始比例重算，说明环境和遗传假设。",
+        "unlocks": "有条件的畜牧、动物纤维和役用协作。"
+      },
+      "practice": {
+        "line": "动物种群长期管理",
+        "input": "适用种群、饲料、水、空间和照护劳动",
+        "operation": "管理生存与繁殖，持续检查健康及福利",
+        "output": "动物资源与必须处理的粪污、疾病风险"
+      }
+    },
+    {
+      "id": "food-storage",
+      "title": "干燥、储粮与库存",
+      "subtitle": "收获量不等于下一季可用量",
+      "category": "life",
+      "nodeType": "practice",
+      "stage": 1,
+      "question": "丰收之后，怎样不把食物损失在等待中？",
+      "mechanism": "干燥、隔绝虫害和合适容器降低部分损失，通风与湿度控制影响霉菌和呼吸。库存还要记入消耗、种粮、虫鼠损失和储藏劳动。",
+      "why": "跨季节供给支持持续工艺与协作，但储粮设施、环境和管理都可能失效。",
+      "equations": [],
+      "example": "用100个筹码表示入库粮，分别扣除口粮、种粮和自设损失；透明模型比较密封与敞口的吸湿变化，不培养或食用霉变食品。",
+      "gotcha": "无霉味或外观正常不保证无毒；不同食品的安全储存条件不同。本节点不提供可用于实际食品的保存期限。",
+      "sourceIds": [
+        "origins-storage",
+        "origins-history"
+      ],
+      "frontier": "从“存了多少”走向“还能安全用多少”的库存管理。",
+      "learning": {
+        "observe": "看粮仓结构与损失类别，区分质量损失和安全风险。",
+        "try": "筹码模型比较不同损失假设，不做变质食物试验。",
+        "infer": "可用库存由流入、消耗与多种损失共同决定。",
+        "check": "他人能用同一账目算出余额，并指出安全性仍未测量。",
+        "unlocks": "季节缓冲、留种和有条件的剩余供给。"
+      },
+      "practice": {
+        "line": "收获后的储藏与保管",
+        "input": "收获物、储藏设施、干燥条件和监测劳动",
+        "operation": "减少水分及虫鼠损害，分类监测并记账",
+        "output": "可核算的库存与需要剔除的损失"
+      }
+    },
+    {
+      "id": "village-surplus",
+      "title": "剩余、分工与协作",
+      "subtitle": "技术的社会支持，不是每项发明的硬前置",
+      "category": "cognition",
+      "nodeType": "practice",
+      "stage": 1,
+      "question": "怎样让有人持续做工具，同时所有人仍有饭吃？",
+      "mechanism": "把生产、消耗、储备和交换放在共同账目中，分配劳动及风险。可用剩余取决于损失和再生产需求，不能把全部收获当作可支配资源。",
+      "why": "持续专门化需要稳定供给与信任，但家庭、流动工匠和跨群体交换也能支持工艺，不只有固定村落一条路线。",
+      "equations": [],
+      "example": "自设收获100份、食用60份、留种10份、损失10份，剩20份尚需分配给储备和专门劳动；数值只是教学假设。",
+      "gotcha": "剩余不自动产生公平制度，也不自动用于创新；分工是支持条件，不能当作所有早期工艺的必要技术条件。",
+      "sourceIds": [
+        "origins-history",
+        "origins-storage"
+      ],
+      "frontier": "将工艺能力与真实的供给、劳动和合作约束一起建模。",
+      "learning": {
+        "observe": "找出模型账目中未计算的留种、照护与维修劳动。",
+        "try": "用筹码比较均分、留储备和供养工匠的方案。",
+        "infer": "专门化能成立的范围由可用资源与协作规则限制。",
+        "check": "在减产情景下重新分配，明确谁承担损失。",
+        "unlocks": "较长期的专门工艺、公共设施和交换网络。"
+      },
+      "practice": {
+        "line": "共同供给与劳动协调",
+        "input": "可用库存、人口需求、技能和协作规则",
+        "operation": "核算再生产需求，分配劳动并保留风险储备",
+        "output": "有资源依据的分工计划"
+      }
+    },
+    {
+      "id": "counting",
+      "title": "一一对应与计数",
+      "subtitle": "从“很多”到能核对的数量",
+      "category": "math",
+      "nodeType": "theory",
+      "stage": 1,
+      "question": "不用把物件都带来，怎样知道数量有没有少？",
+      "mechanism": "以手指、筹码或刻痕和物件一一对应，用稳定次序给出数量。分组与进位压缩记录长度；数字符号与书写语言不是同一能力。",
+      "why": "可核对的数量支持分配、库存与重复试验，而物件分类与计数边界仍要约定。",
+      "equations": [],
+      "example": "用12枚豆子和刻痕做对应，改变排列后重新数，验证数量不随摆放形状改变；豆子不在实验中食用。",
+      "gotcha": "把不同质量或不同用途的物件混算，数量相等仍不能代表资源相等；零与位值制不是计数一开始就必有。",
+      "sourceIds": [
+        "origins-history",
+        "origins-statistics"
+      ],
+      "frontier": "从数物件，走向量长度、时间和质量。",
+      "learning": {
+        "observe": "比较同数量物件不同排列造成的直觉误差。",
+        "try": "一物一筹码，再分组复核，防止重复或漏数。",
+        "infer": "对应关系而非排列面积决定这一组的数量。",
+        "check": "他人改排列后仍能核对，说明什么被当作一个单位。",
+        "unlocks": "库存、分配、比例与数值记录。"
+      }
+    },
+    {
+      "id": "units-measurement",
+      "title": "基准、单位与测量",
+      "subtitle": "让两个人说的“一样长”能够互相检查",
+      "category": "math",
+      "nodeType": "theory",
+      "stage": 1,
+      "question": "不同人的步长和手掌不同，怎样仍能交换尺寸？",
+      "mechanism": "选择可传递的基准，定义比较方法并重复测量。单位需要社会约定，测量还受工具分辨率和操作差异限制；现代国际单位不是早期工艺的必要前提。",
+      "why": "尺寸可复制才便于配合、计量和跨人协作；记录数值时同时保留单位和不确定性。",
+      "equations": [],
+      "example": "同一桌面分别用纸条单位和尺测量，比较接续间隙与读数差异；先建立本地基准，再学习换算。",
+      "gotcha": "读数位数多不代表更准确；统一单位不等于仪器已校准，温度、磨损和起点也会改变结果。",
+      "sourceIds": [
+        "origins-physics",
+        "origins-chemistry"
+      ],
+      "frontier": "从约定基准，走向可校准的量具与零件公差。",
+      "learning": {
+        "observe": "比较不同人以掌宽测桌面得到的结果。",
+        "try": "改用同一纸条基准重复测量，记录最小分度。",
+        "infer": "共享基准减少系统差异，重复性不消除所有偏差。",
+        "check": "他人能用同一基准复核，且报告单位与合理误差范围。",
+        "unlocks": "几何、配料、量具和标准化接口。"
+      }
+    },
+    {
+      "id": "seasonal-calendar",
+      "title": "季节与周期记录",
+      "subtitle": "从“往年这时”到可纠正的时间模型",
+      "category": "information",
+      "nodeType": "practice",
+      "stage": 1,
+      "question": "怎样提前安排播种、迁移和库存，而不是只等变化到来？",
+      "mechanism": "把日夜、月相、太阳周年变化及生态信号与事件对应，累积周期记录。不同周期不整齐重合，需要校正；本节点学习周期，不主张一种历法起源。",
+      "why": "时间参照支持跨季节协调，但地方气候和异常年景会使固定经验失效。",
+      "equations": [],
+      "example": "用公开一年气象数据把温度与日长画在同一时间轴，比较相位差；不直视太阳，也不将温度曲线当作通用播种表。",
+      "gotcha": "月相周期不能精确整除太阳年；天文周期和降水不是同一信号，日历不能消除天气风险。",
+      "sourceIds": [
+        "origins-history",
+        "origins-physics"
+      ],
+      "frontier": "周期记录进一步支持天文定位、导航与长期实验。",
+      "learning": {
+        "observe": "区分气象数据的周期趋势和单次异常。",
+        "try": "比较两年公开数据，统一日期和测量单位。",
+        "infer": "周期模型提供预期，但生态事件还依赖环境条件。",
+        "check": "用未参与拟合的一年检验预测，保留异常而非删除。",
+        "unlocks": "季节计划、时间记录和导航参照。"
+      },
+      "practice": {
+        "line": "时间参照与季节计划",
+        "input": "周期观察、事件记号和多年记录",
+        "operation": "对齐周期与活动，按新观察校正",
+        "output": "带地方条件的时间计划"
+      }
+    },
+    {
+      "id": "irrigation",
+      "title": "引水与排水",
+      "subtitle": "水要到得了，也要退得出去",
+      "category": "making",
+      "nodeType": "practice",
+      "stage": 1,
+      "question": "怎样把水送到需要的地方，又避免长期积水？",
+      "mechanism": "利用水位差、渠道和分配设施移动水，并为多余水设置排出路径。长期蒸发可能积盐；水权、维修和季节变化与渠道几何一样影响效果。",
+      "why": "扩大可管理的生长条件，但需要水源、土地落差、劳动与合作；雨养农业是另一条路径。",
+      "equations": [],
+      "example": "浅盘、清洁水和可回收模型渠道比较有无落差与出口的流动，仅作非承压桌面演示。",
+      "gotcha": "模型通水不代表真实水利可用；渗漏、泥沙、盐分、洪水与生态代价必须另行调查，也不说明水可饮用。",
+      "sourceIds": [
+        "origins-history",
+        "origins-physics"
+      ],
+      "frontier": "从被动引水，走向水动力设备与供水卫生。",
+      "learning": {
+        "observe": "看浅盘中水在哪停留、溢出和绕行。",
+        "try": "同水量比较有无排出口，保持渠道宽度近似。",
+        "infer": "落差驱动流动，出口条件影响积水而不只入口。",
+        "check": "换供水量复试，能解释溢出和模型的缩尺局限。",
+        "unlocks": "可控制的水路、排水协作及水力设备场景。"
+      },
+      "practice": {
+        "line": "田间水量调配",
+        "input": "水源、落差、渠道材料和维护劳动",
+        "operation": "引流、分配、排水并检查泥沙及盐分问题",
+        "output": "可管理的供水与排水路径"
+      }
+    },
+    {
+      "id": "weaving",
+      "title": "纺线、编织与织物",
+      "subtitle": "把线变成可设计的面",
+      "category": "making",
+      "nodeType": "practice",
+      "stage": 1,
+      "question": "怎样让很多根细线形成稳固、透气或保温的面？",
+      "mechanism": "交错经纬或编结让线相互约束，密度、纤维和结构影响伸缩、透气及耐磨。纺线与织布是不同工序；野生纤维也能使用，不要求先有畜牧。",
+      "why": "织物支持衣物、袋、滤网和帆，并形成后来可机械化的重复动作。",
+      "equations": [],
+      "example": "纸条织片比较疏密两种交错结构在小负载下的滑移；纸与纤维差别大，只演示结构约束。",
+      "gotcha": "密织不必在每个方向更强；织物过滤颗粒不等于去除病原体，不能拿模型证明饮水安全。",
+      "sourceIds": [
+        "origins-history",
+        "origins-textiles"
+      ],
+      "frontier": "识别可重复动作，才可能将纺织变成机械生产。",
+      "learning": {
+        "observe": "拆看布面经纬、边缘散开和不同方向的伸长。",
+        "try": "用纸条比较同材料两种编织密度。",
+        "infer": "结构约束与材料性能共同决定整片表现。",
+        "check": "复做样片并换拉动方向，记录边缘与主体差异。",
+        "unlocks": "衣物、容器、柔性结构和纺织机械任务。"
+      },
+      "practice": {
+        "line": "纤维到织物的生产",
+        "input": "纤维或线、框架与操作劳动",
+        "operation": "成线并交错编织，整理边缘与检查缺陷",
+        "output": "具有方向性与特定用途的织物"
+      }
+    },
+    {
+      "id": "pottery-kiln",
+      "title": "制陶与窑炉",
+      "subtitle": "把可塑的泥，变成不可逆改变的容器",
+      "category": "making",
+      "nodeType": "practice",
+      "stage": 2,
+      "question": "泥做的器物怎样不再一遇水就散？",
+      "mechanism": "选泥、成形和干燥后，受控加热改变黏土矿物并促进烧结；原料与热史决定孔隙、收缩和耐用性。露天烧成也是路线，窑是热量与气氛控制的扩展。",
+      "why": "容器与耐火部件扩大储存、处理材料和高温工艺的可能性，经验配料不必等待现代矿物学。",
+      "equations": [],
+      "example": "在馆教活动中比较已烧陶片与未烧干泥的吸水和形态，使用准备好的非食用样品，不自行建窑烧制。",
+      "gotcha": "烧硬不等于致密或可装食品；孔隙、釉料和迁移物必须另评估。陶器在部分地区早于农业，阶段不是全球年代顺序。",
+      "sourceIds": [
+        "origins-materials",
+        "origins-history"
+      ],
+      "frontier": "将热量分布和气氛作为可控制的工艺条件。",
+      "learning": {
+        "observe": "比较干泥与陶片的吸水、边缘和孔隙。",
+        "try": "用既有样品小水滴比较，不加热、不磨成粉。",
+        "infer": "干燥与烧成产生不同改变，硬度不是唯一质量指标。",
+        "check": "在多块样品重复，并注明来源与不同原料的干扰。",
+        "unlocks": "耐用容器、耐火构件与高温工艺经验。"
+      },
+      "practice": {
+        "line": "陶质器物与耐火构件生产",
+        "input": "合适黏土、调质材料、燃料和劳动",
+        "operation": "成形、干燥与专业受控烧成，检查裂纹和收缩",
+        "output": "陶器及按用途检验的耐火部件"
+      }
+    },
+    {
+      "id": "charcoal",
+      "title": "木炭与碳质燃料",
+      "subtitle": "改变燃料组成，也承担能量与森林成本",
+      "category": "energy",
+      "nodeType": "practice",
+      "stage": 2,
+      "question": "木材经过受限供氧的热处理，为什么会留下性质不同的固体？",
+      "mechanism": "木材在受限供氧的热处理中释放挥发组分，留下富碳固体。木炭的燃烧与还原作用帮助某些早期冶金路线，但制炭会损失可用能量并产生危险烟气。",
+      "why": "改变燃料形态和杂质组成，扩大高温工艺选择；原木、煤、焦炭和后来的电热并不是同一条资源路线。",
+      "equations": [],
+      "example": "看工业制炭资料的物料去向图，把木材分到固体、气体与液体副产物，不做家庭制炭或燃烧试验。",
+      "gotcha": "木炭并非凭空增加原料总能量，也不是所有冶炼唯一燃料；制炭、储运和燃烧均有一氧化碳及火灾风险。",
+      "sourceIds": [
+        "origins-materials",
+        "origins-chemistry"
+      ],
+      "frontier": "将燃料、还原剂、排放和资源消耗分别核算。",
+      "learning": {
+        "observe": "对照木材与成品炭的结构图片及副产物流。",
+        "try": "在纸上比较直接用木与先制炭的能量损失项。",
+        "infer": "工艺收益来自适用性改变，不是能量守恒失效。",
+        "check": "另一人能追踪所有产物流，并指出图中未知产率。",
+        "unlocks": "碳质燃料选择及部分金属氧化物的还原路线。"
+      },
+      "practice": {
+        "line": "专业碳质燃料准备",
+        "input": "木质原料、工艺热、设备及环境管理",
+        "operation": "受控热处理并收集处理烟气与副产物",
+        "output": "木炭、挥发产物与损失热量"
+      }
+    },
+    {
+      "id": "copper-smelting",
+      "title": "从矿物取得铜",
+      "subtitle": "分清熔化已有金属与从化合物还原金属",
+      "category": "chemistry",
+      "nodeType": "practice",
+      "stage": 2,
+      "question": "有颜色的矿物为什么有时能变成可锤打的金属？",
+      "mechanism": "选矿和受控热处理能在适合矿物、燃料与气氛下分离铜及杂质。氧化物与硫化物矿路线不同；冶炼改变化学组成，熔化只是已有金属的相态变化。",
+      "why": "让铜料不再只依赖稀少天然铜，但要付出采矿、燃料、炉材和劳动，也必须处理炉渣及排放。",
+      "equations": [],
+      "example": "用馆藏矿石、铜块和炉渣照片做物料分类，再按元素去向画图；不烧矿石，不收集未知粉末。",
+      "gotcha": "并非任意矿石加热都得铜；烟尘可能含有毒元素。本节点是工艺概念，不含家庭冶炼参数。",
+      "sourceIds": [
+        "origins-materials",
+        "origins-chemistry"
+      ],
+      "frontier": "区分金属来源、材料加工与更晚的化学解释。",
+      "learning": {
+        "observe": "对照矿物、金属与炉渣的性质和组成说明。",
+        "try": "用卡片画铜元素在原料、金属和渣中的去向。",
+        "infer": "化合物转成金属需要反应条件，颜色不能单独判矿。",
+        "check": "给新矿物资料时能说明路线可能不同且产率未知。",
+        "unlocks": "持续铜料来源、金属加工和合金探索。"
+      },
+      "practice": {
+        "line": "矿物到铜料的专业冶金",
+        "input": "合适矿料、燃料或还原介质、炉材与劳动",
+        "operation": "按矿物路线分离铜及杂质，治理烟气与残渣",
+        "output": "待精整铜料、炉渣和需治理的排放"
+      }
+    },
+    {
+      "id": "bronze-casting",
+      "title": "合金与青铜铸造",
+      "subtitle": "经验配料先于相图理论",
+      "category": "materials",
+      "nodeType": "practice",
+      "stage": 2,
+      "question": "怎样让铜料获得不同的硬度、流动和成形表现？",
+      "mechanism": "铜与锡等元素组成合金，成分和热史改变组织及性能。模具把流动材料变成形状，凝固可能产生收缩与缺陷；硬度和韧性不能只看一种配料比例。",
+      "why": "扩大工具和器物的形状与性能选择，也依赖稀缺合金元素、贸易或矿源；不是所有地区都有统一青铜阶段。",
+      "equations": [],
+      "example": "比较博物馆铜器和青铜器的材料检测及铸痕，用橡皮泥压模类比形状复制；模型不说明熔体凝固。",
+      "gotcha": "历史合金有多种成分，不能都叫固定比例铜锡；含砷、铅等成分有毒，不进行自配合金或熔铸试验。",
+      "sourceIds": [
+        "origins-materials",
+        "origins-history"
+      ],
+      "frontier": "从配料成功，走向能控制组织与缺陷的材料工艺。",
+      "learning": {
+        "observe": "找出铸缝、浇口痕及材料报告中成分的差异。",
+        "try": "软泥模型比较两种模腔，不加热金属。",
+        "infer": "几何复制与合金性能是两个要分别验证的问题。",
+        "check": "按新器物资料辨别铸造证据，并不凭外形猜成分。",
+        "unlocks": "合金选择、复杂器形和可重复模具。"
+      },
+      "practice": {
+        "line": "合金配料与铸件生产",
+        "input": "可用铜料、合金元素、模具、热源和劳动",
+        "operation": "专业配料成形与凝固控制，检验缺陷及性能",
+        "output": "经检验铸件、余料与不合格件"
+      }
+    },
+    {
+      "id": "iron-smelting",
+      "title": "铁矿还原与铁料整理",
+      "subtitle": "早期铁料未必经过完整熔化",
+      "category": "chemistry",
+      "nodeType": "practice",
+      "stage": 2,
+      "question": "广泛存在的铁矿，为什么不等于随处可用的铁工具？",
+      "mechanism": "适合的热与还原条件使铁氧化物转成金属；早期块炼路线可形成含渣铁团，需进一步整理。矿物、碳和炉渣相互作用，不能简化成把铁矿熔成液体。",
+      "why": "扩大工具原料范围，却增加燃料、炉材、鼓风和后处理难度；铁器出现不代表青铜或石器立刻消失。",
+      "equations": [],
+      "example": "以博物馆块炼铁和炉渣切面图比较金属与夹杂分布，画出矿料、还原介质与残渣去向。",
+      "gotcha": "铁矿不能仅凭红色认定；一氧化碳、炽热残渣与含毒矿物危险，本节点不提供建炉、鼓风或冶炼设置。",
+      "sourceIds": [
+        "origins-materials",
+        "origins-chemistry"
+      ],
+      "frontier": "把取得金属与做出性能可靠的铁件分成两个问题。",
+      "learning": {
+        "observe": "看铁团截面中金属连续性和夹杂，不仅看表面颜色。",
+        "try": "用卡片追踪矿料、碳质介质与炉渣，不做热试验。",
+        "infer": "还原程度与夹杂清理共同影响可用铁料。",
+        "check": "能够解释为何块炼铁并不要求铁完全熔化。",
+        "unlocks": "铁件加工、钢料探索与更耐用的加工工具。"
+      },
+      "practice": {
+        "line": "矿物到可加工铁料",
+        "input": "适用铁矿、还原介质、专业炉材及劳动力",
+        "operation": "受控还原、金属与渣分离并整理含渣铁料",
+        "output": "可加工铁料、炉渣和需治理的排放"
+      }
+    },
+    {
+      "id": "steel-heat-treatment",
+      "title": "钢料与热处理",
+      "subtitle": "同样外形，也可能有不同内部组织",
+      "category": "materials",
+      "nodeType": "practice",
+      "stage": 2,
+      "question": "为什么有的铁件软、有的硬，有的硬却容易断？",
+      "mechanism": "碳含量、加热与冷却历史改变铁基材料组织，影响硬度、强度和韧性。经验工匠可先发现差别；相变和扩散理论后来才解释可重复工艺的窗口。",
+      "why": "可靠刃具、弹性件和耐磨件需要性能组合，而不是追求单一最大硬度。",
+      "equations": [],
+      "example": "用公开钢样硬度与冲击数据比较不同处理结果，关联显微组织照片；不加热、淬火或折断真实刀具。",
+      "gotcha": "含碳越多并非越好；同一热处理不能适用于所有钢种。淬火会开裂、喷溅并造成火灾，不提供操作参数。",
+      "sourceIds": [
+        "origins-materials",
+        "origins-chemistry"
+      ],
+      "frontier": "先用性能筛选工艺，再以组织、扩散和相变解释边界。",
+      "learning": {
+        "observe": "区分数据中的硬度、韧性和组织三个指标。",
+        "try": "对已公布同钢种样本分组比较，不做高温操作。",
+        "infer": "热史与成分共同决定组织，单一指标不代表好材料。",
+        "check": "用未参与比较的样本检验趋势并注明适用钢种。",
+        "unlocks": "刃具、量具、弹性件和后来的精密机床。"
+      },
+      "practice": {
+        "line": "铁基材料性能调节",
+        "input": "已知成分钢料、专业热处理设施和检验能力",
+        "operation": "控制热史并检测组织、硬度与韧性",
+        "output": "限定用途的处理件及检验记录"
+      }
+    },
+    {
+      "id": "lime-mortar",
+      "title": "石灰与砂浆",
+      "subtitle": "让颗粒结合，但不是所有硬化都同一种反应",
+      "category": "chemistry",
+      "nodeType": "practice",
+      "stage": 2,
+      "question": "松散的砂与石，怎样形成能保持形状的构件？",
+      "mechanism": "石灰石热分解得到生石灰，专业消化后可用于砂浆。空气石灰通过与二氧化碳反应逐渐碳化；水硬性石灰和含火山灰体系还有其他硬化机制。",
+      "why": "黏结材料扩大建筑与水工的选择，但需要原料、热量、养护与结构设计，不能用“硬了”代替安全评价。",
+      "equations": [
+        {
+          "formula": "\\ce{Ca(OH)2 + CO2 -> CaCO3 + H2O}",
+          "terms": "氢氧化钙与二氧化碳生成碳酸钙和水。",
+          "scope": "空气石灰碳化的简化计量式；不描述全部砂浆硬化、速度或强度。"
+        }
+      ],
+      "example": "观察馆教提供的已固化砂浆与干砂断面，以照片比较结合和孔隙；不烧石灰、不自行消化生石灰。",
+      "gotcha": "生石灰遇水强烈放热，石灰碱性可灼伤。空气石灰不等同现代水泥，受潮或水下硬化不能一概推断。",
+      "sourceIds": [
+        "origins-materials",
+        "origins-chemistry"
+      ],
+      "frontier": "区分黏结、养护、结构几何与后来的应力计算。",
+      "learning": {
+        "observe": "看固化砂浆断面中的颗粒、结合处和裂缝。",
+        "try": "比较准备好的惰性样品照片，不接触活性石灰。",
+        "infer": "新结合相能连接颗粒，硬化还受环境与孔隙限制。",
+        "check": "能区分空气碳化与水硬路线，不用外观估计承载。",
+        "unlocks": "耐久黏结构件、建筑与水工设施的材料选择。"
+      },
+      "practice": {
+        "line": "专业黏结材料与砂浆生产",
+        "input": "适用石灰质原料、热量、骨料和质量控制",
+        "operation": "专业制备黏结料、配合与养护，检查用途适配",
+        "output": "砂浆构件、排放与质量记录"
+      }
+    },
+    {
+      "id": "glassmaking",
+      "title": "玻璃与透明材料",
+      "subtitle": "配料、成形与退火分别决定可用性",
+      "category": "materials",
+      "nodeType": "practice",
+      "stage": 2,
+      "question": "怎样得到既能保持形状、又能让光穿过的材料？",
+      "mechanism": "适用配料形成熔体，成形后受控冷却可得到玻璃态材料；硅酸盐玻璃常用改性组分调节工艺。杂质、气泡、曲面和内应力影响透明与耐用。",
+      "why": "透明容器和光学元件扩大观察能力，但光学用玻璃比普通器皿还要求均匀性与表面质量。",
+      "equations": [],
+      "example": "比较成品玻璃、磨砂片和带气泡样品的透光照片，用塑料放大镜观察曲面作用；不熔玻璃或切玻璃。",
+      "gotcha": "不是所有玻璃都透明，也不是一种固定化学式；旧窗玻璃厚薄不能证明它在室温下明显流动。",
+      "sourceIds": [
+        "origins-materials",
+        "origins-chemistry",
+        "origins-physics"
+      ],
+      "frontier": "从透光器物，走向透镜、仪器与可量化的光学误差。",
+      "learning": {
+        "observe": "区分气泡散射、磨砂表面与曲面造成的像变化。",
+        "try": "用现成安全塑料镜片比较平面与曲面，不看太阳。",
+        "infer": "成分、内部均匀性与表面几何共同影响光的传播。",
+        "check": "换观察距离复试，明确塑料镜片不是制玻璃工艺证明。",
+        "unlocks": "容器、透镜和观察仪器的材料基础。"
+      },
+      "practice": {
+        "line": "玻璃材料与器形生产",
+        "input": "适用配料、高温设备、模具和检验能力",
+        "operation": "专业熔制、成形与退火，控制杂质和内应力",
+        "output": "按用途检验的玻璃制品"
+      }
+    },
+    {
+      "id": "lever-wheel",
+      "title": "杠杆、轮轴与机械传力",
+      "subtitle": "省力常以距离或速度为代价",
+      "category": "physics",
+      "nodeType": "practice",
+      "stage": 2,
+      "question": "怎样改变力的方向、大小或动作距离？",
+      "mechanism": "杠杆和轮轴通过几何关系传递运动及力。先能经验地操作，再用力矩和功的模型解释；摩擦、支承和材料变形使真实机器偏离理想关系。",
+      "why": "搬运、加工与旋转设备有了共同的机械构件，但机器不产生免费能量，也不能越过结构承载极限。",
+      "equations": [
+        {
+          "formula": "F_1 l_1=F_2 l_2",
+          "terms": "F为力，l为力到支点的垂直力臂。",
+          "scope": "静止、可忽略杠杆自重与摩擦且只有这些力矩时的平衡；经验制作不需先掌握此式。"
+        }
+      ],
+      "example": "尺、支点与轻小砝码做桌面平衡比较，改变支点位置并记录力臂，不撬重物。",
+      "gotcha": "力臂不是随意量的杆长；省力不等于省功，负载、轴承和地面条件决定轮子能否实际帮助运输。",
+      "sourceIds": [
+        "origins-physics",
+        "origins-history"
+      ],
+      "frontier": "从简单机械，走向传动、机床和连续动力。",
+      "learning": {
+        "observe": "比较力作用位置改变后的平衡与运动距离。",
+        "try": "轻小负载改变支点，保持材料和砝码相同。",
+        "infer": "几何能交换力与距离，摩擦会消耗可用功。",
+        "check": "新力臂组合可预测近似平衡，误差需记录。",
+        "unlocks": "轮轴、传动、搬运和动力机械。"
+      },
+      "practice": {
+        "line": "机械构件与传力装配",
+        "input": "杆、轮轴、支承、连接件和外部动力",
+        "operation": "按任务组织几何与支承，检查摩擦及载荷",
+        "output": "改变力与运动方式的机构"
+      }
+    },
+    {
+      "id": "waterwheel",
+      "title": "水轮与持续动力",
+      "subtitle": "把水的能量转成交给工具的转动",
+      "category": "energy",
+      "nodeType": "practice",
+      "stage": 2,
+      "question": "流动的水怎样替代一部分持续重复的人力？",
+      "mechanism": "水的落差或流动动能作用于轮叶，再经轮轴和传动带动负载。不同水轮利用条件不同，选址、季节流量、泥沙与维修限制可用功率。",
+      "why": "磨粮、提水和工艺可获得较连续动力，但水源、土建和维护成本不会因机器转起来而消失。",
+      "equations": [
+        {
+          "formula": "P_{\\mathrm{out}}\\leq\\rho g q_v h",
+          "terms": "ρ是水密度，g是重力加速度，q_v是体积流量，h是有效落差。",
+          "scope": "忽略上游速度差的落差型系统可用重力功率上界；实际有水力和机械损失，不适用于所有水轮。"
+        }
+      ],
+      "example": "清洁水在非承压桌面模型上比较空转与轻负载转速；需把任何提水或循环泵的输入另记为能量来源。",
+      "gotcha": "轮速不是输出功率；循环模型不能说明自发永动，无落差的流轮要用动能模型而非套此式。",
+      "sourceIds": [
+        "origins-physics",
+        "origins-history"
+      ],
+      "frontier": "从就地自然动力，走向供能与工艺负载的匹配。",
+      "learning": {
+        "observe": "看轮速在轻负载接入前后的改变。",
+        "try": "非承压小模型同水流比较空转与负载，远离电气设备。",
+        "infer": "能量来自水源及落差，负载改变系统运行状态。",
+        "check": "列清全部输入并重复比较，不用转速代替功率。",
+        "unlocks": "磨坊、工艺传动与部分纺织机械动力。"
+      },
+      "practice": {
+        "line": "水能到机械动力",
+        "input": "适用水流或落差、轮叶、轴承与维护",
+        "operation": "耦合水轮与负载，管理水路及机械损失",
+        "output": "机械功、尾水与损失热量"
+      }
+    },
+    {
+      "id": "writing-records",
+      "title": "记号、文字与账目",
+      "subtitle": "让不在场的人核对事件和数量",
+      "category": "information",
+      "nodeType": "practice",
+      "stage": 3,
+      "question": "怎样把一次交易或一条经验保留下来，供以后检查？",
+      "mechanism": "把约定记号对应到对象、数量、语言或事件，再放到耐用载体上。记号、完整文字系统和账目有不同功能；泥版、木简等路径不需要先有纸。",
+      "why": "扩大记忆的规模与距离，使库存和工艺可追踪，但解读、复制、权限与保管仍需制度和劳动。",
+      "equations": [],
+      "example": "给纸卡约定日期、物件、数量和来源四栏，由另一人核对模拟出入库；这种格式是现代教学例，不是最早文字的复原。",
+      "gotcha": "写下来的内容未必真实；记号要有共同解释。文字出现晚于很多工艺，本节点的阶段是能力分组而非统一年代。",
+      "sourceIds": [
+        "origins-history",
+        "origins-materials"
+      ],
+      "frontier": "从外部记忆，走向可复制的图样、实验记录与书籍。",
+      "learning": {
+        "observe": "对照无来源便条与有日期账目，找无法核对的项。",
+        "try": "两人各记同一模拟交易再交换解读。",
+        "infer": "共享编码和来源记录减少歧义，但不能保证事实正确。",
+        "check": "第三人只凭记录能还原余额并找出故意漏记。",
+        "unlocks": "长期账目、图样、历表和可审查的知识记录。"
+      },
+      "practice": {
+        "line": "事件与数量的外部记录",
+        "input": "共同记号、载体、事件信息与记录劳动",
+        "operation": "编码、标明来源并保存，按实物或独立记录核对",
+        "output": "可追踪账目、文本与图样"
+      }
+    },
+    {
+      "id": "geometry",
+      "title": "形状、面积与几何推理",
+      "subtitle": "从量地和作图到有条件的证明",
+      "category": "math",
+      "nodeType": "theory",
+      "stage": 3,
+      "question": "没有把每块地都铺满，怎样比较形状与面积？",
+      "mechanism": "分割、拼合和相似关系把形状转成可计算关系。测量给经验结果，证明依赖明确假设；理想平面关系不能不加修正地套在弯曲地表或变形构件上。",
+      "why": "支持土地核算、设计图样和仪器几何，也能让不同问题共享一组可检验关系。",
+      "equations": [
+        {
+          "formula": "A_{\\triangle}=\\frac{1}{2}bh",
+          "terms": "b为选定底边长度，h为对该底边的垂直高度。",
+          "scope": "平面欧氏三角形；斜边长度不能随意替代垂直高度。"
+        }
+      ],
+      "example": "剪纸把两块相同三角形拼成平行四边形，再比较方格计数估计的面积。",
+      "gotcha": "图画看起来相同不算证明；真实测量有边界与读数误差，公式正确并不保证输入数据可靠。",
+      "sourceIds": [
+        "origins-history",
+        "origins-physics"
+      ],
+      "frontier": "从形状关系，走向光学路径、导航和机械图样。",
+      "learning": {
+        "observe": "比较同底不同高的纸三角形及面积变化。",
+        "try": "用剪纸拼合与方格计数互相核对。",
+        "infer": "提出底乘垂直高的一半关系，并列出平面假设。",
+        "check": "换斜角新三角形仍成立，同时解释测量差异。",
+        "unlocks": "面积核算、相似测量、设计与仪器几何。"
+      }
+    },
+    {
+      "id": "paper-printing",
+      "title": "纸张、印刷与复制",
+      "subtitle": "传播量增加，也要管理错字与版本",
+      "category": "information",
+      "nodeType": "practice",
+      "stage": 3,
+      "question": "怎样让许多人拿到较一致的知识，而不逐字重写？",
+      "mechanism": "适合纤维可形成书写载体，刻版或活字等复制方法把同一图文转移到多个表面。纸与印刷有各自历史，印章与其他载体也是替代路线。",
+      "why": "降低重复抄写的边际劳动，扩大教材、表格和图样传播，但制版、纤维、水、墨和审校仍需投入。",
+      "equations": [],
+      "example": "用安全现成字母印章复制三份表格，对比手写份的时间、漏项与一致性；不声称它复现任何地区的完整印刷工艺。",
+      "gotcha": "大量复制同一个错误会放大错误；纸张保存性受湿度和材料影响，传播广不等于证据可靠。",
+      "sourceIds": [
+        "origins-materials",
+        "origins-history"
+      ],
+      "frontier": "建立版本与审校，让工艺和实验能跨地点复现。",
+      "learning": {
+        "observe": "比较副本中的相同错字、墨迹与漏项。",
+        "try": "同文本比较手抄和现成印章，记录准备与复制时间。",
+        "infer": "复制降低重复动作，却保留母版缺陷。",
+        "check": "另一人按版本号核对更正，并能区分旧版与新版。",
+        "unlocks": "低成本副本、共享表格、教学和工艺传播。"
+      },
+      "practice": {
+        "line": "知识载体与副本生产",
+        "input": "适用纤维载体、图文母版、着色材料和劳动",
+        "operation": "制备载体并转印，校对与标识版本",
+        "output": "可分发副本、废张和版本记录"
+      }
+    },
+    {
+      "id": "experiments-control",
+      "title": "对照、变量与反证",
+      "subtitle": "把早期比较发展成明确的检验协议",
+      "category": "cognition",
+      "nodeType": "theory",
+      "stage": 3,
+      "question": "怎样判断效果来自改变的条件，而非运气或旁人的暗示？",
+      "mechanism": "预先明确问题、比较组和观测标准，尽可能控制其他因素；重复、随机安排和独立核对减少某些偏差。复杂情境往往不能只靠一次单变量试验。",
+      "why": "让工艺经验更容易跨人检验，允许有价值的失败推翻猜想，而不是只留下成功故事。",
+      "equations": [],
+      "example": "用纸滑道比较两种无锐边滑块表面，统一坡度与起点，随机安排次序并完整保留各次结果。",
+      "gotcha": "对照组并不能消除所有混杂；随机不等于必然均衡。原始工艺可以在没有正式实验协议时被发现。",
+      "sourceIds": [
+        "origins-physics",
+        "origins-statistics"
+      ],
+      "frontier": "把“有效”改写成有条件、可复现、可反驳的结论。",
+      "learning": {
+        "observe": "找出示例记录中换材料时也换坡度的混杂。",
+        "try": "低能量桌面比较，固定起点并随机次序。",
+        "infer": "将待检因素与背景变化区分，列出剩余未知因素。",
+        "check": "他人照协议复试，结果不一致时不删除失败数据。",
+        "unlocks": "定量化学、仪器比较和可靠的工艺改进。"
+      }
+    },
+    {
+      "id": "algebra",
+      "title": "未知量与关系模型",
+      "subtitle": "把一个算例变成一类可检查的问题",
+      "category": "math",
+      "nodeType": "theory",
+      "stage": 3,
+      "question": "资源数量变了，怎样不用从头试遍每种安排？",
+      "mechanism": "以符号表示未知量和约束，用保持等价的操作求解，再把结果代回情境。关系模型压缩多组计算，正确代数仍依赖正确的边界和单位。",
+      "why": "支持配料、成本和几何关系的推广；符号化是经验计算的扩展，而不是早期计数或铸造的硬前置。",
+      "equations": [
+        {
+          "formula": "y=ax+b",
+          "terms": "x为批次数量，a为每批变量投入，b为固定投入，y为总投入。",
+          "scope": "假设每批投入恒定且固定投入可共用的教学成本模型；不包括产能、损耗与规模效应。"
+        }
+      ],
+      "example": "自设每批耗材3份、固定准备2份，列总投入后倒求可做批数，并按整批和损耗修正答案。",
+      "gotcha": "能解方程不代表模型适用；负批数、分数零件或超出资源上限的解要回到现实筛选。",
+      "sourceIds": [
+        "origins-physics",
+        "origins-chemistry"
+      ],
+      "frontier": "从离散数量关系，接到已有微积分与变化率模型。",
+      "learning": {
+        "observe": "列两种批量的资源表，区分固定与变量投入。",
+        "try": "用筹码按不同批数计算，再对照符号模型。",
+        "infer": "提炼线性关系并声明不随批量变化的假设。",
+        "check": "代回新批量，检查单位、整数限制和资源边界。",
+        "unlocks": "配料、设计关系、误差传播和后续微积分。"
+      }
+    },
+    {
+      "id": "navigation",
+      "title": "定位、路线与导航",
+      "subtitle": "知道方向、位置与不确定性是三个问题",
+      "category": "making",
+      "nodeType": "practice",
+      "stage": 3,
+      "question": "离开熟悉地标后，怎样知道自己在哪、还能否到达目标？",
+      "mechanism": "地标、天体、方向工具与航程估计可提供不同约束，再与地图和误差记录交叉核对。不同环境有不同导航传统，不必先拥有现代钟表或全球地图。",
+      "why": "扩大交换和资源调查范围，同时增加交通、气象、补给与救援约束；路线计算不能替代现实安全保障。",
+      "equations": [],
+      "example": "在桌面方格地图上累计方向与步数，自设每步误差，再用一个已知地标修正估计位置。",
+      "gotcha": "朝向不等于位置；地图、磁向和天体参照各有条件。本节点不提供真实航行指引，也不观察太阳验证。",
+      "sourceIds": [
+        "origins-history",
+        "origins-physics"
+      ],
+      "frontier": "从路线经验，走向测绘、仪器和带误差的定位。",
+      "learning": {
+        "observe": "比较只报方向与同时报地标位置的信息量。",
+        "try": "纸上路线加入小误差，比较是否有交叉定位。",
+        "infer": "误差会累积，独立参照能约束位置而非自动消除偏差。",
+        "check": "同一模型他人重算得到相同范围，能解释未知条件。",
+        "unlocks": "交换路线、测绘和系统资源调查。"
+      },
+      "practice": {
+        "line": "路线规划与位置核对",
+        "input": "地图或地标、方向参照、航程记录及环境信息",
+        "operation": "估计位置并交叉校验，管理补给和误差",
+        "output": "有不确定性范围的路线与定位记录"
+      }
+    },
+    {
+      "id": "sanitation",
+      "title": "卫生隔离与污染路径",
+      "subtitle": "不必先看见微生物，才能减少部分风险",
+      "category": "life",
+      "nodeType": "practice",
+      "stage": 3,
+      "question": "污物怎样从一个地方转到水、食物和人的手上？",
+      "mechanism": "污水、粪污、手和器具构成多条传播路径，隔离、清洁、排水和专业处理可降低不同风险。经验卫生措施可早于微生物解释，具体安全性仍须监测验证。",
+      "why": "保障共同生活和持续劳动，减少部分可避免的健康损失；卫生是维护系统，不是一项做完就永久有效的器物。",
+      "equations": [],
+      "example": "用可水洗颜料在模型表面模拟接触转移，比较分区与混用器具的路径；颜色只作示踪，不能表示真实病原体残留。",
+      "gotcha": "看不见、无异味或示踪色消失不保证无污染；显微镜也不能单独认证饮用水，不提供家庭制水安全结论。",
+      "sourceIds": [
+        "origins-water",
+        "origins-history"
+      ],
+      "frontier": "从阻断明显路径，走向微生物、检测和专业公共卫生。",
+      "learning": {
+        "observe": "画出模型污物接触到器具和取水口的路径。",
+        "try": "已知安全颜料只在非食用模型上比较分区方案。",
+        "infer": "风险由传播路径与处理能力共同决定，而非只靠整洁外观。",
+        "check": "新接触顺序仍能预测路径，并声明无法据颜色判卫生安全。",
+        "unlocks": "供排水管理、接触隔离与后续卫生检验。"
+      },
+      "practice": {
+        "line": "污染隔离与卫生维护",
+        "input": "风险信息、清洁供水、排水设施和持续劳动",
+        "operation": "分隔污染路径，按专业规范处理并监测",
+        "output": "风险较低的环境与需处理的污水、废物"
+      }
+    },
+    {
+      "id": "microscopy",
+      "title": "透镜与早期显微观察",
+      "subtitle": "发现眼睛看不清的结构，也识别仪器伪影",
+      "category": "physics",
+      "nodeType": "practice",
+      "stage": 3,
+      "question": "细小结构怎样从模糊一片变成可检查的图像？",
+      "mechanism": "透镜及其组合形成放大图像，照明、焦距、样品厚度与镜片质量影响可见细节。放大倍率与分辨率不同，早期观察可先于成熟光学理论。",
+      "why": "扩大材料、植物与微小生命的观察范围，也把镜片缺陷和制样偏差带入证据链。",
+      "equations": [],
+      "example": "用现成放大镜或显微镜看纸纤维与印刷点，配参考尺并比较照明；不培养未知微生物或检查人体样本。",
+      "gotcha": "放得更大不一定看得更清；图中颗粒可能是灰尘、气泡或损伤，不能仅凭一次观察判定病原体。",
+      "sourceIds": [
+        "origins-physics"
+      ],
+      "frontier": "让微小结构成为可重复证据，再发展校准与成像理论。",
+      "learning": {
+        "observe": "比较肉眼、放大镜与显微图中的纸纤维结构。",
+        "try": "安全已知样品改变照明与对焦，保留相同观察位置。",
+        "infer": "图像由样品与仪器共同产生，清晰度不只由倍率决定。",
+        "check": "换人复看同位置和尺度，能区分可重复结构与灰尘伪影。",
+        "unlocks": "微观结构记录、材料检验与后来的生物研究。"
+      },
+      "practice": {
+        "line": "微小结构成像",
+        "input": "光学元件、照明、已知安全样品与尺度参照",
+        "operation": "安装对焦、控制制样与记录位置尺度",
+        "output": "可核对的图像和仪器条件记录"
+      }
+    },
+    {
+      "id": "probability",
+      "title": "随机、样本与概率",
+      "subtitle": "把一次成败与长期频率分开",
+      "category": "math",
+      "nodeType": "theory",
+      "stage": 3,
+      "question": "结果每次不同，怎样仍能作有限可靠的判断？",
+      "mechanism": "定义试验和事件，以样本频率估计结果分布，并区分独立、相关与条件变化。数学概率由模型定义，有限数据只能检验和估计，不能保证下一次结果。",
+      "why": "帮助理解作物、测量和工艺的不稳定性，让资源决策带上不确定性，而不把偶然成功当规律。",
+      "equations": [
+        {
+          "formula": "\\widehat{p}=\\frac{k}{n}",
+          "terms": "n为试验次数，k为目标事件出现次数，p̂为样本频率。",
+          "scope": "事件定义和抽样过程一致的估计；小样本波动、偏差与依赖不能忽略。"
+        }
+      ],
+      "example": "从袋中有放回抽取两色筹码，比较小样本与较大样本比例；已知组成的袋子只演示模型，不代表实际工艺同样独立。",
+      "gotcha": "连续失败不表示下一次必成功；样本更大也不能修正系统性的选择偏差。",
+      "sourceIds": [
+        "origins-statistics"
+      ],
+      "frontier": "从数成功次数，走向可重复的质量检验与风险预算。",
+      "learning": {
+        "observe": "比较多组同样抽样条件下频率的差别。",
+        "try": "有放回与不放回分别抽样，明确记录规则。",
+        "infer": "样本波动和试验依赖是不同问题。",
+        "check": "他人按同规则复试出现合理差异，不要求比例完全相同。",
+        "unlocks": "误差判断、质量抽查与有边界的风险决策。"
+      }
+    },
+    {
+      "id": "machine-tools",
+      "title": "机床与受约束加工",
+      "subtitle": "用导向、夹持和进给复制形状",
+      "category": "making",
+      "nodeType": "practice",
+      "stage": 4,
+      "question": "怎样让零件形状不再完全取决于每次徒手动作？",
+      "mechanism": "机床约束刀具与工件的相对运动，把旋转、导向、夹持和进给组合成加工任务。人力、水力或其他动力均可驱动；刚性、刃具、量具和磨损限制精度。",
+      "why": "扩大重复尺寸与配合面的生产能力，也需要更可靠材料、动力和检验，不能把标称精度当作实际产出。",
+      "equations": [],
+      "example": "用笔与纸板导向槽比较自由画线和受约束画线的重复宽度；这只模拟导向，不模拟金属切削载荷。",
+      "gotcha": "机床不必等蒸汽机发明才出现；真实机床有卷入、飞屑和切伤风险，模型不能替代设备操作培训。",
+      "sourceIds": [
+        "origins-watt",
+        "origins-materials",
+        "origins-physics"
+      ],
+      "frontier": "从形状可重复，走向公差、配合与批量零件。",
+      "learning": {
+        "observe": "比较手画与导向线的偏离、导向间隙和磨损。",
+        "try": "纸笔低风险模型同人多次作图，再换人重复。",
+        "infer": "几何约束减少部分动作差异，但不能消除工具和结构误差。",
+        "check": "按同宽度基准测新样本，报告离散度与模型局限。",
+        "unlocks": "更可靠加工面、量具与标准接口的生产。"
+      },
+      "practice": {
+        "line": "受约束的零件加工",
+        "input": "坯料、刀具、导向夹具、动力与量具",
+        "operation": "约束相对运动并加工，按工序检验及维护",
+        "output": "有尺寸与表面要求的加工件、切屑和检验记录"
+      }
+    },
+    {
+      "id": "standardized-parts",
+      "title": "标准接口与可互换零件",
+      "subtitle": "不要求绝对相同，而要求落在配合窗口内",
+      "category": "making",
+      "nodeType": "practice",
+      "stage": 4,
+      "question": "怎样换上另一个零件，而不为它重新修配整台机器？",
+      "mechanism": "约定尺寸、材料与接口，配合量具、限度检验和工序控制，使零件处于允许范围。标准是规则，可互换是经过交叉装配验证的制造成果。",
+      "why": "减少维修与重复修配的劳动，支持批量生产，但需要持续检测、供应一致性与标准维护。",
+      "equations": [],
+      "example": "用预制纸板插片和插槽设两档宽度基准，随机交叉组合，记录哪些能配合；纸板变形会影响结果。",
+      "gotcha": "统一名字或平均尺寸不代表互换；公差越窄通常越难制造，过度精密也可能浪费材料与劳动。",
+      "sourceIds": [
+        "origins-watt",
+        "origins-physics"
+      ],
+      "frontier": "把单件能用，变成整批、跨来源仍可维护。",
+      "learning": {
+        "observe": "区分同名零件在不同装配组合中的卡住与松动。",
+        "try": "已备纸板件随机配对，用共同限度模板检查。",
+        "infer": "互换依赖接口窗口、测量和过程，不是外观看起来一样。",
+        "check": "不同批次交叉装配仍达到事先约定的配合标准。",
+        "unlocks": "模块维修、批量装配和可交换供应。"
+      },
+      "practice": {
+        "line": "标准化制造与配合检验",
+        "input": "接口规范、材料、制造设备和校准基准",
+        "operation": "按公差制造、检测并交叉验证装配",
+        "output": "限定接口下可互换的零件批次"
+      }
+    },
+    {
+      "id": "steam-engine",
+      "title": "蒸汽机与热驱动",
+      "subtitle": "热能经工质、压差与机构转成机械功",
+      "category": "energy",
+      "nodeType": "practice",
+      "stage": 4,
+      "question": "没有适用水流时，怎样把燃料提供的热变成持续机械运动？",
+      "mechanism": "热源与工质状态变化形成可用压差，经活塞等机构推动负载并周期复位。大气式、凝汽及后续高压路线不同；改进来自热损失、密封、加工和控制等多个问题。",
+      "why": "扩大动力选址与规模，但依赖燃料、水、材料、加工、维护和安全治理；它不会凭智慧绕过这些投入。",
+      "equations": [],
+      "example": "按博物馆发动机剖面动画标记热源、蒸汽、冷凝、活塞与负载，在纸上比较哪些环节耗热；不制作锅炉或承压演示。",
+      "gotcha": "早期蒸汽机不必先有成熟热力学或标准化批产；承压与高温可致致命事故，本节点只提供历史和概念模型。",
+      "sourceIds": [
+        "origins-watt",
+        "origins-physics"
+      ],
+      "frontier": "让热机性能成为可测问题，再形成能量守恒与反馈理论。",
+      "learning": {
+        "observe": "分清动画中提供热、产生压差和输出功的部件。",
+        "try": "纸上对照两种历史方案的能量流，不做热或压力试验。",
+        "infer": "做功需要系统状态变化与周期安排，不是只要有蒸汽。",
+        "check": "给新剖面图能标出输入、输出及损失而不杜撰效率。",
+        "unlocks": "不依赖现场水流的动力及热机研究问题。"
+      },
+      "practice": {
+        "line": "专业热机动力系统",
+        "input": "热源、工质、合格设备、冷却条件和运维劳动",
+        "operation": "在专业安全系统中周期改变状态并耦合负载",
+        "output": "机械功、废热、排放与运行记录"
+      }
+    },
+    {
+      "id": "thermodynamics-first-law",
+      "title": "热力学第一定律",
+      "subtitle": "从机器经验到完整的能量账目",
+      "category": "energy",
+      "nodeType": "theory",
+      "stage": 4,
+      "question": "热、功和材料内部状态之间，怎样做不漏项的账？",
+      "mechanism": "选择系统边界后，热和功是跨边界的能量传递，内能是状态量。热机和量热经验支持统一守恒模型，不能把“热”当作存在物体中的特殊存货。",
+      "why": "辨认损失、估算资源和检验永动主张；守恒限制能量数量，但不单独说明能量品质或最大热机效率。",
+      "equations": [
+        {
+          "formula": "\\Delta U=Q-W",
+          "terms": "ΔU为内能变化，Q为传入系统的热，W为系统对外做的功。",
+          "scope": "封闭系统且忽略宏观动能、势能变化；质量流入流出及其他能量项需要扩展，符号约定不可混用。"
+        }
+      ],
+      "example": "教学假设传入热100 J、对外功30 J，内能增加70 J；这是一段过程的账目，不代表循环热机可一直积累内能。",
+      "gotcha": "循环回到原状态时净内能变化为零；第一定律不是蒸汽机发明的必要前置，也不是第二定律的替代。",
+      "sourceIds": [
+        "origins-physics"
+      ],
+      "frontier": "衔接已有熵、自由能和真实工艺能耗节点。",
+      "learning": {
+        "observe": "在公开量热或热机资料中找出系统边界与各能量项。",
+        "try": "纸上核算多组已给输入，分别标明热、功和状态变化。",
+        "infer": "缺少边界和符号约定时，所谓能量不守恒可能只是漏账。",
+        "check": "另一人采用同约定能复算，循环过程不误留净内能增量。",
+        "unlocks": "能量预算、热机评价和后续熵及自由能分析。"
+      }
+    },
+    {
+      "id": "optics-instruments",
+      "title": "光学仪器与校准",
+      "subtitle": "从看得见，走向知道看见了什么",
+      "category": "physics",
+      "nodeType": "practice",
+      "stage": 4,
+      "question": "怎样把放大和成像变成可比较的测量，而不是漂亮图像？",
+      "mechanism": "镜片、孔径、镜筒与尺度参照共同规定成像。对焦、像差、照明及校准决定结果；几何光学是有限条件下的模型，波动效应另有分辨率限制。",
+      "why": "支持精细测量、导航与材料观察，但标称倍率不等于精度，工具仍需制造、校准和保养。",
+      "equations": [
+        {
+          "formula": "\\frac{1}{f}=\\frac{1}{d_o}+\\frac{1}{d_i}",
+          "terms": "f为焦距，d_o为物距，d_i为像距；会聚薄透镜取实物、实像距离为正，虚像距离为负。",
+          "scope": "近轴、薄透镜且两侧介质相同的近似；不完整描述像差、厚透镜或分辨率。"
+        }
+      ],
+      "example": "用安全成品凸透镜、低亮度LED物标和纸屏比较物距与像距，再用参考尺核对尺度；不以太阳或激光作光源。",
+      "gotcha": "更大镜片或更多倍率不自动更准；太阳聚光会伤眼或起火，不直视强光，简化模型不能认证专业仪器。",
+      "sourceIds": [
+        "origins-physics"
+      ],
+      "frontier": "把仪器条件与被测对象一同记录，接向更精密成像与计量。",
+      "learning": {
+        "observe": "比较对焦位置、图像边缘和不同距离的像变化。",
+        "try": "低亮度安全光源与成品镜片比较，记录几何与参考尺度。",
+        "infer": "成像遵循几何关系，但像差与衍射给近似模型边界。",
+        "check": "新物距可预测近似实像位置，并用尺度复核误差。",
+        "unlocks": "定量显微、望远观测和精密光学测量。"
+      },
+      "practice": {
+        "line": "光学系统装配与计量",
+        "input": "合格光学元件、机械支承、光源与尺度基准",
+        "operation": "装配、对焦、校准并评估成像误差",
+        "output": "有测量条件与误差说明的图像或读数"
+      }
+    },
+    {
+      "id": "textile-mechanization",
+      "title": "纺织机械化",
+      "subtitle": "把重复动作拆解，再与动力和劳动匹配",
+      "category": "making",
+      "nodeType": "practice",
+      "stage": 4,
+      "question": "能否让许多纱线的重复动作同时进行，而不失去张力控制？",
+      "mechanism": "把牵伸、加捻、卷绕或开口引纬等工序组织成可重复机构，再协调速度与张力。纺纱和织布的机械化不是同一发明，早期设备也可由人力驱动。",
+      "why": "提高部分工序吞吐量，却可能把瓶颈移到原料、维修、动力和工人健康；产量增加不等于劳动条件改善。",
+      "equations": [],
+      "example": "看珍妮纺纱机复原藏品的多锭结构，以纸上工序表比较单线和多线需要的供料与卷绕能力，不操作真实传动机器。",
+      "gotcha": "蒸汽动力不是机械化纺织的唯一或最早前提；复杂设备有卷入危险，工艺简图不能替代实机培训。",
+      "sourceIds": [
+        "origins-textiles",
+        "origins-watt"
+      ],
+      "frontier": "从单机动作，走向整条产线的速度、质量与劳动核算。",
+      "learning": {
+        "observe": "从藏品图分清纺纱、多锭与动力输入，不混作织机。",
+        "try": "纸上增加锭数，检查供料、张力与收卷是否同步。",
+        "infer": "并行化只提高匹配工序的产能，瓶颈会转移。",
+        "check": "用不同原料供应假设重算，记录不合格品和停机项。",
+        "unlocks": "并行生产、工序协调与工业劳动问题的系统分析。"
+      },
+      "practice": {
+        "line": "机械化成线与织物生产",
+        "input": "纤维或纱线、机构、动力与操作维护劳动",
+        "operation": "同步重复动作并控制张力、速度和缺陷",
+        "output": "纱线或织物、废料及质量和劳动记录"
+      }
+    },
+    {
+      "id": "quantitative-chemistry",
+      "title": "称量、守恒与定量化学",
+      "subtitle": "让反应解释同时通过数量检查",
+      "category": "chemistry",
+      "nodeType": "practice",
+      "stage": 4,
+      "question": "材料变了形态，数量怎样核对，配料又怎样不只凭感觉？",
+      "mechanism": "界定物料边界，称量输入、输出和残留，再结合组成分析与反应计量。气体、蒸发、器具残留和杂质会影响账目；守恒不要求每个局部读数都不变。",
+      "why": "从经验配料走向可解释的产率、纯度和损耗；并非冶金必须等待完整原子或摩尔理论才会出现。",
+      "equations": [
+        {
+          "formula": "\\sum m_{\\mathrm{in}}-\\sum m_{\\mathrm{out}}=\\Delta m_{\\mathrm{system}}",
+          "terms": "m是同一边界内核算的质量，Δm是系统总质量的积存变化；气体和残留也必须计入。",
+          "scope": "普通化学过程在选定时间段的完整物料账，忽略相对论质量变化；无积存变化时总输入等于总输出。"
+        }
+      ],
+      "example": "用公开课堂数据核对盐溶于水前后总质量，把杯壁残留和蒸发列为可能误差；不尝实验样品、不封闭产气反应。",
+      "gotcha": "质量守恒不等于体积相加，也不保证目标产品纯净；未知化学品、气体或容器不能用于自行验证。",
+      "sourceIds": [
+        "origins-chemistry",
+        "origins-physics"
+      ],
+      "frontier": "连接已有摩尔、平衡与工业物料衡算，而不再重复这些节点。",
+      "learning": {
+        "observe": "查看给定称量记录中是否包括容器、气体和残留。",
+        "try": "以安全已有溶解数据比较完整账与漏记账。",
+        "infer": "组成变化与数量守恒可以同时成立，偏差要先排查边界。",
+        "check": "独立复算全部产物流与误差，不以总质量一致宣称纯度。",
+        "unlocks": "定量配料、产率分析与已有摩尔计量。"
+      },
+      "practice": {
+        "line": "定量实验与物料分析",
+        "input": "已知材料、校准量具、边界定义和记录能力",
+        "operation": "称量、分析组成并核对全部产物流及残留",
+        "output": "带误差的物料账、组成与产率记录"
+      }
+    },
+    {
+      "id": "geology-mining",
+      "title": "地质调查与资源核算",
+      "subtitle": "矿物存在、能采出来、值得开采是三个判断",
+      "category": "materials",
+      "nodeType": "practice",
+      "stage": 4,
+      "question": "怎样从零星矿物线索，得到可核对的资源判断？",
+      "mechanism": "比较岩层、矿物与空间分布，结合地图、样品分析和采掘约束推断矿体。系统地质调查扩展了更早的经验采矿；资源量与经济可采储量需不同证据。",
+      "why": "为冶金和建筑提供更可靠原料规划，但需调查劳动、运输、能源、水和环境治理，不能从一块样品推定整个矿床。",
+      "equations": [],
+      "example": "用USGS公开地图和已标识样品资料比较矿物记录、覆盖范围与交通条件，写下仍缺采样的位置；不进入矿洞或采未知石粉。",
+      "gotcha": "本节点不是早期铜铁冶炼的必要前置；发现矿点不等于发现可经济开采矿床，未知矿石可能有毒或含放射性。",
+      "sourceIds": [
+        "origins-geology",
+        "origins-materials"
+      ],
+      "frontier": "把材料技术与原料品位、规模、运输及生态代价相接。",
+      "learning": {
+        "observe": "区分地图上的实测点、推断边界与未知区。",
+        "try": "公开资料上比较两种采样覆盖，不接触未知矿物。",
+        "infer": "资源推断依赖代表性和地质模型，不能外推单一样品。",
+        "check": "他人可追溯每个判断的地图与样品来源，未知项明确保留。",
+        "unlocks": "系统原料规划、矿产调查与材料供应风险核算。"
+      },
+      "practice": {
+        "line": "资源调查与开采方案评估",
+        "input": "地质地图、代表性样品数据、基础设施和环境约束",
+        "operation": "调查建模、分析品位与可采性，评估治理代价",
+        "output": "带不确定性的资源及方案报告"
+      }
+    },
+    {
+      "id": "mechanical-feedback",
+      "title": "机械反馈与调节",
+      "subtitle": "输出反过来改变输入，也可能造成振荡",
+      "category": "making",
+      "nodeType": "practice",
+      "stage": 4,
+      "question": "负载改变时，怎样不靠人时时盯着仍能调节机器？",
+      "mechanism": "浮子、离心机构等把水位或转速转成机械位移，再调节流量或动力输入。负反馈试图抵消偏差，但延迟、过强响应、摩擦与饱和可能导致振荡或失效。",
+      "why": "减少一部分重复人工调节，让动力与负载匹配；反馈设备需要能源、维护和适合的响应范围，不是自主智能的替代品。",
+      "equations": [],
+      "example": "在表格中模拟转速升高就减少输入，分别比较缓慢与过强响应在负载变化后的曲线；不改装真实热机或压力控制器。",
+      "gotcha": "负反馈不自动稳定；限压与安全联锁不是普通调速器可替代的功能，教学仿真不能证明真实系统安全。",
+      "sourceIds": [
+        "origins-watt",
+        "origins-physics"
+      ],
+      "frontier": "从机械自调节，走向控制、稳定性与更复杂的信息系统。",
+      "learning": {
+        "observe": "分清模拟中目标值、测得输出、调节动作与负载扰动。",
+        "try": "同负载曲线比较无反馈、缓慢反馈和过强反馈。",
+        "infer": "调节方向、响应速度及延迟共同决定收敛或振荡。",
+        "check": "预先列定多个扰动，复算能否回稳且不持续振荡。",
+        "unlocks": "有边界的自动调节及后续控制理论。"
+      },
+      "practice": {
+        "line": "输出感知与输入调节",
+        "input": "被控机构、机械传感部件、调节器与动力",
+        "operation": "将输出偏差转成输入变化，检查响应与失效边界",
+        "output": "一定工况内的调节动作与响应记录"
+      }
+    },
     {
       "id": "can",
       "title": "易拉罐",
       "subtitle": "铝制两片饮料罐 · 今天的观察入口",
       "category": "object",
+      "nodeType": "object",
       "layer": 0,
       "question": "一只这么轻、这么薄的容器，怎样装住有压力的饮料？",
       "mechanism": "这类罐通常有一体成形的罐身和独立罐盖。罐身从合金卷材拉深并压薄，罐盖通过双卷封固定。天然氧化层与内涂层保护界面；强度、几何和密封一起完成任务。",
@@ -247,13 +1814,28 @@ window.TECH_TREE = {
         "ball-plant",
         "f-mole"
       ],
-      "frontier": "你也可以换一个入口：圆珠笔、玻璃、肥皂、锂电池。它们会在化学键、扩散、能量和数学处相遇。"
+      "frontier": "当前能解释典型两片铝罐，却不能从外观反推出某只罐的合金批次、各处壁厚、涂层配方和真实寿命，仍需逐项实测。",
+      "stage": 7,
+      "learning": {
+        "observe": "观察已打开、洗净且边缘完整的空罐，记录一体罐底、独立罐盖、缩颈和内壁涂层的位置。",
+        "try": "用制罐流程图和公开剖面照片，把实物各部位对应到选材、成形、涂层及卷封工序，不切割或加压罐体。",
+        "infer": "先从接缝位置、薄壁和曲面推断容器需要同时解决省料、承载与密封，再用材料学和力学解释各设计。",
+        "check": "独立称量同规格空罐并测量直径、高度，将几何估算质量与称量值比较，注明未计入盖、底部厚度差和涂层。",
+        "unlocks": "把日用品拆成可追溯的制造任务，分别接入铝材来源、罐身成形、罐盖密封及回收循环。"
+      }
     },
     {
       "id": "bauxite-ore",
       "title": "铝土矿与含铝矿物",
       "subtitle": "从红土风化层中的含铝矿物开始",
       "category": "chemistry",
+      "nodeType": "practice",
+      "practice": {
+        "line": "氧化铝精炼线·矿石进料",
+        "input": "含水铝矿物与硅、铁、钛杂质组成的铝土矿",
+        "operation": "依据品位、矿物相与杂质组成确定拜耳法消化条件",
+        "output": "与消化条件相匹配的含铝矿石进料"
+      },
       "layer": 1,
       "question": "为什么从铝土矿到金属铝要先分离、再还原？",
       "mechanism": "铝土矿通常是近地表红土型矿石，含水铝氧化物/氢氧化物（如三水铝石 \\(\\ce{Al(OH)3}\\)、一水铝石 \\(\\ce{AlO(OH)}\\)）以及二氧化硅、氧化铁、二氧化钛等杂质。工业路线先利用溶解度和酸碱选择性把含铝相转入溶液，再把铝变成 \\(\\ce{Al2O3}\\)，最后电解；矿石本身的品位和矿物相决定拜耳条件与残渣量。",
@@ -277,13 +1859,28 @@ window.TECH_TREE = {
         "aa-alumina"
       ],
       "fullTitle": "铝矿：铝土矿是混合矿物，不是纯 \\(\\ce{Al2O3}\\)",
-      "frontier": "下一枝：岩石中的铝怎样经风化、淋滤和地质时间富集成矿？硅为什么会增加拜耳法的碱耗？"
+      "frontier": "总铝品位不能唯一预测可溶铝和碱耗；下一步需要矿物相、反应性硅及颗粒解离度数据，连同地质富集过程一起解释。",
+      "stage": 4,
+      "learning": {
+        "observe": "对照矿样照片、矿物鉴定和干基化验，发现同样红色的矿石可能具有不同含铝矿物、氧化铝等效品位和硅含量。",
+        "try": "用两批公开矿石分析数据计算单位回收氧化铝对应的干矿量，并分别列出水分、铁和硅等杂质。",
+        "infer": "颜色只能提供找矿线索，真正的进料价值还取决于矿物相、可溶铝量及杂质负荷。",
+        "check": "用未参与估算的矿批化验及回收率数据核对氧化铝产量，检查是否误把湿矿质量或总铝量当作可回收产品量。",
+        "unlocks": "建立矿石采样与分级能力，为选择精炼路线和预估赤泥、碱耗提供依据。"
+      }
     },
     {
       "id": "bayer-digestion",
       "title": "拜耳法 · 碱液消化",
       "subtitle": "把固体含铝相变成可过滤的铝酸盐溶液",
       "category": "chemistry",
+      "nodeType": "practice",
+      "practice": {
+        "line": "氧化铝精炼线·碱液消化",
+        "input": "破碎研磨后的铝土矿浆与热浓烧碱液",
+        "operation": "在加压消化器中接触，使含铝矿物选择性溶入碱液",
+        "output": "含铝酸根的碱液与未溶杂质组成的消化浆料"
+      },
       "layer": 1,
       "question": "热烧碱怎样从铝土矿中带走铝？",
       "mechanism": "破碎研磨后的矿浆与热的浓 \\(\\ce{NaOH}\\) 在加压消化器中接触；铝的氧羟化物/氢氧化物被羟基配位并进入溶液，主要以四羟基合铝酸根 \\(\\ce{[Al(OH)4]^-}\\) 存在，\\(\\ce{Na+}\\) 是对离子。铁氧化物、钛氧化物和部分硅质相大多留下为固相。",
@@ -307,13 +1904,29 @@ window.TECH_TREE = {
         "openstax-metals",
         "iai-bauxite-residue"
       ],
-      "fullTitle": "拜耳法消化：热浓 \\(\\ce{NaOH}\\) 选择性溶出铝"
+      "fullTitle": "拜耳法消化：热浓 \\(\\ce{NaOH}\\) 选择性溶出铝",
+      "stage": 6,
+      "learning": {
+        "observe": "阅读合格实验室或工厂的消化对比数据，记录矿物相、碱液组成、温度、停留时间与溶出铝量。",
+        "try": "在数据表或工艺模拟中固定矿样与碱度，只改变温度或停留时间，比较铝回收和杂质进入液相的变化，不进行家庭热碱加压实验。",
+        "infer": "先从选择性溶出的经验关系建立工艺窗口，之后再以两性、配位和平衡解释铝进入碱液而未变成金属。",
+        "check": "用独立批次的液相铝分析和残渣铝分析核对进料铝守恒，并检验模型能否预报该批次的溶出率。",
+        "unlocks": "得到可进入固液分离的含铝浆料，并学会把经验操作窗口与后来的化学解释分开。"
+      },
+      "frontier": "简单选择性溶解模型尚未覆盖不同含铝矿物的速率、反应性硅耗碱和浓液活度变化，工艺窗口必须随矿源校准。"
     },
     {
       "id": "bayer-clarification",
       "title": "拜耳法 · 澄清与赤泥",
       "subtitle": "固液分离决定铝回收与残渣负荷",
       "category": "chemistry",
+      "nodeType": "practice",
+      "practice": {
+        "line": "氧化铝精炼线·澄清分离",
+        "input": "含铝碱液与不溶固相组成的消化浆料",
+        "operation": "对浆料分级、沉降和过滤，分离不溶固相",
+        "output": "含铝澄清绿色液与夹带碱液的赤泥"
+      },
       "layer": 1,
       "question": "为什么消化后还要过滤和沉降？",
       "mechanism": "消化浆料先分级、沉降和过滤，得到含铝的澄清绿色液（green liquor）与不溶残渣。残渣主要来自铁氧化物、二氧化钛、未反应硅质物和细颗粒；液体中的烧碱随后进入沉淀循环。",
@@ -331,13 +1944,29 @@ window.TECH_TREE = {
         "alcoa-bayer",
         "iai-bauxite-residue"
       ],
-      "fullTitle": "拜耳法澄清：从绿色液分离赤泥"
+      "fullTitle": "拜耳法澄清：从绿色液分离赤泥",
+      "stage": 6,
+      "learning": {
+        "observe": "从精炼线数据分辨澄清液中的悬浮固体、赤泥中的未溶铝以及残渣夹带液中的溶解铝。",
+        "try": "用给定进料量、滤液浊度、残渣含液量和洗涤数据模拟沉降过滤，比较多洗涤带来的碱回收与水负荷。",
+        "infer": "固体分得干净不等于铝和碱全部回收，残渣携带的液体也是需要核算的物料流。",
+        "check": "以独立测得的各出口质量、铝含量和碱含量分别闭合衡算，并用实测悬浮固体量检验澄清效果。",
+        "unlocks": "向晶种析出提供低固体杂质的铝酸盐液，同时建立赤泥洗涤、碱回收和残渣管理的接口。"
+      },
+      "frontier": "总回收率还不能区分未溶铝、夹带液及细粒穿透各自的贡献，需要沉降粒径分布、洗涤效率与液体组成的联合测量。"
     },
     {
       "id": "bayer-precipitation",
       "title": "拜耳法 · 晶种析出",
       "subtitle": "冷却、稀释和晶种把可溶铝重新变成固体",
       "category": "chemistry",
+      "nodeType": "practice",
+      "practice": {
+        "line": "氧化铝精炼线·晶种析出",
+        "input": "澄清铝酸盐液与氢氧化铝晶种",
+        "operation": "冷却、稀释并加晶种析出，分级洗涤晶体，循环母液",
+        "output": "洗涤后的氢氧化铝晶体与回用碱液"
+      },
       "layer": 1,
       "question": "怎样从澄清铝酸盐液拿回高纯氢氧化铝？",
       "mechanism": "绿色液经冷却、稀释并加入 \\(\\ce{Al(OH)3}\\) 晶种，使溶液相对于氢氧化铝过饱和；晶种表面提供成核和长大界面，\\(\\ce{Al(OH)3}\\) 晶体沉降后分级、洗涤，母液中的 \\(\\ce{NaOH}\\) 回到消化段。",
@@ -361,13 +1990,29 @@ window.TECH_TREE = {
         "alcoa-bayer",
         "iai-bauxite-residue"
       ],
-      "fullTitle": "拜耳法种分：让 \\(\\ce{Al(OH)3}\\) 从铝酸盐液结晶"
+      "fullTitle": "拜耳法种分：让 \\(\\ce{Al(OH)3}\\) 从铝酸盐液结晶",
+      "stage": 6,
+      "learning": {
+        "observe": "比较合格实验室的有晶种与无晶种析出记录，关注诱导时间、溶解铝下降和产品粒径分布。",
+        "try": "在同温度、同液体组成的种分数据或模拟中改变晶种表面积与停留时间，追踪产率和粒度，不自行操作浓碱液。",
+        "infer": "先发现旧晶体能帮助新晶体长大，再用过饱和与成核能垒解释为何有驱动力仍可能迟迟不析出。",
+        "check": "用独立测量的母液铝浓度下降核对扣除投入晶种后的净晶体增量，并比较预测与实测粒度。",
+        "unlocks": "从循环碱液中取出可洗涤的氢氧化铝晶体，并用粒度控制衔接煅烧和后续电解加料。"
+      },
+      "frontier": "过饱和度给不出产品粒径分布；晶种长大、二次成核、团聚和破碎相互竞争，仍需群体衡算与动力学参数。"
     },
     {
       "id": "alumina-calcination",
       "title": "煅烧得到氧化铝",
       "subtitle": "白色 \\(\\ce{Al2O3}\\) 粉末是电解槽的进料",
       "category": "chemistry",
+      "nodeType": "practice",
+      "practice": {
+        "line": "氧化铝精炼线·煅烧",
+        "input": "洗涤后的氢氧化铝（三水铝石）",
+        "operation": "加热脱除结构水，形成氧化铝粉末",
+        "output": "供熔盐电解的氧化铝粉末与水蒸气"
+      },
       "layer": 1,
       "question": "为什么沉淀的氢氧化铝不能直接送进电解槽？",
       "mechanism": "洗涤后的三水铝石在约 \\(1000\\,^\\circ\\mathrm{C}\\) 级的煅烧器中脱去结构水，形成 \\(\\ce{Al2O3}\\)；粒度、晶型、残余碱和水分影响其在冰晶石浴中的溶解与加料响应。",
@@ -391,13 +2036,29 @@ window.TECH_TREE = {
         "alcoa-bayer",
         "iai-bauxite-residue"
       ],
-      "fullTitle": "煅烧：\\(\\ce{Al(OH)3}\\) 脱水成为冶金级氧化铝"
+      "fullTitle": "煅烧：\\(\\ce{Al(OH)3}\\) 脱水成为冶金级氧化铝",
+      "stage": 6,
+      "learning": {
+        "observe": "读取氢氧化铝的热重、逸出气体和相鉴定记录，区分表面水蒸发、结构水脱除与晶型变化。",
+        "try": "用合格实验室热分析数据计算各阶段失重与氧化铝收率，再比较不同煅烧产品的相组成和溶解性能，不自行高温煅烧。",
+        "infer": "先从加热后失水和固体性质变化识别转化，再用化学计量和晶体结构解释这不是简单熔化。",
+        "check": "对已扣除游离水和杂质的纯三水铝石数据，核对完全转化约65.4%的固体质量比，并用相鉴定验证产品身份。",
+        "unlocks": "获得可按水分、粒度和晶型管理的电解进料，而不是仅凭白色外观认定合格氧化铝。"
+      },
+      "frontier": "完全脱水的质量比不能预测电解级氧化铝的质量，尚须把过渡晶型、比表面积、残余碱和粉化与槽中溶解行为相连。"
     },
     {
       "id": "cryolite-electrolyte",
       "title": "冰晶石与熔盐浴",
       "subtitle": "\\(\\ce{Na3AlF6}\\) 是熔盐溶剂/载流介质，不是还原剂",
       "category": "chemistry",
+      "nodeType": "practice",
+      "practice": {
+        "line": "原铝电解线·熔盐浴",
+        "input": "氧化铝粉末、冰晶石与调浴氟化物",
+        "operation": "将氧化铝溶入熔融冰晶石浴，以可移动离子承载电流",
+        "output": "可用于电解的含氧化铝熔盐浴"
+      },
       "layer": 2,
       "question": "为什么不把 \\(\\ce{Al2O3}\\) 直接熔化再电解？",
       "mechanism": "\\(\\ce{Al2O3}\\) 熔点超过 \\(2000\\,^\\circ\\mathrm{C}\\)；工业上将其溶解于熔融冰晶石 \\(\\ce{Na3AlF6}\\) 及调 bath 的氟化物中。熔盐提供可移动离子、降低工作温度并保持铝氧物种可在阴阳极反应；铝液密度较大，在槽底收集。",
@@ -421,13 +2082,29 @@ window.TECH_TREE = {
         "aa-primary",
         "iai-smelting-energy"
       ],
-      "fullTitle": "冰晶石浴：让氧化铝在可操作温度下成为电解质"
+      "fullTitle": "冰晶石浴：让氧化铝在可操作温度下成为电解质",
+      "stage": 6,
+      "learning": {
+        "observe": "比较氧化铝熔点、含氟熔盐液相线及氧化铝溶解度数据，发现溶剂能使铝氧源在较低温度进入导电液相。",
+        "try": "在公开浴组成数据或模拟中比较液相温度、导电率和氧化铝溶解量的权衡，不熔化或接触含氟工业浴。",
+        "infer": "先从可熔、可溶、可导电的经验筛选电解浴，后来再以相平衡和离子传输解释它的作用。",
+        "check": "用另一组独立测得的液相线、导电率和溶解度核对候选浴组成，避免仅用温度降低量推断节电量。",
+        "unlocks": "为铝电解建立可操作的离子载流环境，并引出浴成分、补料和热平衡的联合控制。"
+      },
+      "frontier": "降低液相温度并非单目标最优，溶解度、导电率、腐蚀和氟化物挥发之间的权衡需要真实浴组成及高温物性数据。"
     },
     {
       "id": "hall-heroult-cell",
       "title": "霍尔–埃鲁电解",
       "subtitle": "碳衬钢槽中的高电流熔盐电解",
       "category": "physics",
+      "nodeType": "practice",
+      "practice": {
+        "line": "原铝生产线·霍尔–埃鲁电解",
+        "input": "含氧化铝的冰晶石浴、碳阳极与直流电",
+        "operation": "在碳衬槽中熔盐电解，阴极还原并收集铝液，阳极与氧物种反应",
+        "output": "槽底液态铝及以二氧化碳为主、含少量一氧化碳的阳极气体"
+      },
       "layer": 2,
       "question": "电流如何把溶解的氧化铝分成铝和含碳阳极气体？",
       "mechanism": "预焙碳阳极插入含氧化铝的熔融冰晶石，槽底碳质阴极收集液态铝。阴极还原铝氧物种得到 \\(\\ce{Al}\\)(l)；阳极氧物种放电并与碳反应，主要生成 \\(\\ce{CO2}\\)，少量 CO。电解槽以直流电保持反应与约 950–\\(970\\,^\\circ\\mathrm{C}\\) 的液相。",
@@ -451,13 +2128,23 @@ window.TECH_TREE = {
         "aa-alumina",
         "doe-energy"
       ],
-      "fullTitle": "霍尔–埃鲁槽：阴极析铝、阳极耗氧"
+      "fullTitle": "霍尔–埃鲁槽：阴极析铝、阳极耗氧",
+      "stage": 6,
+      "learning": {
+        "observe": "查看工业槽记录，分清外部电子回路、浴内离子传导、槽底铝液与阳极气体的产生位置。",
+        "try": "用工业数据或模拟改变电流、加料与极距，比较产铝、电压和温度，所有熔盐高电流操作仅限合格设施。",
+        "infer": "先依据通电后出现金属及阳极消耗识别电化学制铝，再以半反应和电子计量解释两极的物质变化。",
+        "check": "用独立出铝称量与电流时间积分计算电流效率，并检查其是否在合理范围内且与浴中铝库存变化相容。",
+        "unlocks": "把稳定氧化铝转为可铸造金属，连接直流供电、阳极管理、热管理和排放核算。"
+      },
+      "frontier": "单槽电子计量无法预测金属液界面稳定性、加料波动和阳极效应；下一层需耦合电磁流动、气泡、传热与控制。"
     },
     {
       "id": "carbon-anode-reaction",
       "title": "碳阳极与氧的去向",
       "subtitle": "工业碳阳极把‘析氧’改写为 \\(\\ce{CO2}\\)/CO 排放并被消耗",
       "category": "chemistry",
+      "nodeType": "theory",
       "layer": 2,
       "question": "为什么传统铝电解会消耗碳阳极并排出 \\(\\ce{CO2}\\)？",
       "mechanism": "把阴极铝还原和碳阳极氧化相加，铝氧化物的氧不以 \\(\\ce{O2}\\) 逸出，而转移给碳。DOE 的理想碳阳极总式是 \\(\\ce{2Al2O3 + 3C -> 4Al + 3CO2}\\)；真实槽还会有 \\(\\ce{CO2 + C <=> 2CO}\\)、铝被 \\(\\ce{CO2}\\) 反氧化以及阳极效应。",
@@ -486,13 +2173,23 @@ window.TECH_TREE = {
         "aa-primary",
         "aa-alumina"
       ],
-      "fullTitle": "碳阳极总反应：氧化铝的氧最终氧化碳"
+      "fullTitle": "碳阳极总反应：氧化铝的氧最终氧化碳",
+      "stage": 6,
+      "learning": {
+        "observe": "对照工厂阳极质量变化和尾气分析，发现传统碳阳极槽主要排出二氧化碳，同时存在一氧化碳及其他损失。",
+        "try": "用已测铝产量和尾气CO₂/CO比例建立碳、氧、电子三本账，所有气体和阳极资料采用工业或合格实验室数据。",
+        "infer": "阳极不只是供电接点，它参与氧化反应；理想CO₂主路径解释最低碳耗，但不能包办真实消耗。",
+        "check": "先核对理想模型每千克铝约0.334千克碳，再用独立阳极盘点和气体数据检验实际偏差能否由副反应及残极解释。",
+        "unlocks": "量化原铝生产的直接碳排放，并为比较惰性阳极路线建立相同物料边界。"
+      },
+      "frontier": "CO₂主反应仍遗漏空气氧化、CO形成、粉化及反氧化，惰性阳极的耐蚀寿命、金属污染和全系统能耗也不能只靠净反应比较。"
     },
     {
       "id": "faraday-charge",
       "title": "法拉第电解定律",
       "subtitle": "三电子/铝原子给出电流、时间与产量的桥梁",
       "category": "math",
+      "nodeType": "theory",
       "layer": 3,
       "question": "生产一罐铝需要多少电荷？",
       "mechanism": "电极反应每生成 \\(1\\,\\mathrm{mol}\\) \\(\\ce{Al}\\) 需转移 \\(z=3\\) mol 电子。电荷守恒与法拉第常数 \\(F\\) 把电子物质的量换成库仑；电流效率 \\(\\eta_I\\) 把理想电荷修正为实际所需电荷。",
@@ -515,13 +2212,23 @@ window.TECH_TREE = {
         "tamu-faraday",
         "doe-energy"
       ],
-      "fullTitle": "法拉第定律：由铝的量反推理论电量"
+      "fullTitle": "法拉第定律：由铝的量反推理论电量",
+      "stage": 5,
+      "learning": {
+        "observe": "阅读不同电流与时长的合格电解实验记录，发现同一电极反应的沉积质量通常随累计电荷近似线性增加。",
+        "try": "对质量和电流时间数据作图拟合，再把铝的三电子计量用于计算理论产量与电流效率，不自行开展铝熔盐电解。",
+        "infer": "先由沉积质量与电量的重复比例发现经验定律，电子和摩尔概念后来为比例常数提供统一解释。",
+        "check": "用未参与拟合的一段电流记录预测金属增量，并与独立称量比较，同时核对库仑、安时和克的换算。",
+        "unlocks": "由目标产量反推电荷需求，或由通电记录诊断副反应损失，但仍须另给电压才能算能耗。"
+      },
+      "frontier": "电量给出理论产量，却无法单独分辨电流效率下降来自副反应、金属再氧化还是库存核算偏差，需要独立物料与气体证据。"
     },
     {
       "id": "thermo-voltage",
       "title": "自由能与电解电压",
       "subtitle": "高稳定性的 \\(\\ce{Al2O3}\\) 需要外加电功驱动",
       "category": "energy",
+      "nodeType": "theory",
       "layer": 4,
       "question": "为什么电解需要约伏特级的电压，且实际还要更高？",
       "mechanism": "对给定温度、组成和产物状态，分解反应的正 Gibbs 自由能 \\(\\Delta G\\) 是可逆最低非膨胀功；电化学可逆电压满足 \\(\\Delta G=nFE_{\\mathrm{rev}}\\)（若按分解反应取正值）。真实槽还要克服阳极/阴极过电位、熔盐欧姆压降、浓差和散热。",
@@ -545,13 +2252,23 @@ window.TECH_TREE = {
         "tamu-faraday",
         "f-gibbs"
       ],
-      "fullTitle": "热力学电压：\\(\\Delta G\\) 决定可逆最低电功"
+      "fullTitle": "热力学电压：\\(\\Delta G\\) 决定可逆最低电功",
+      "stage": 5,
+      "learning": {
+        "observe": "比较同一反应的可逆电压计算值与实际电压电流曲线，看到电流增大时出现额外压降。",
+        "try": "用给定温度、活度和反应自由能的数据计算可逆电压，再用独立电阻及极化数据拆分实际槽压。",
+        "infer": "自由能对应可逆最低电功，而欧姆损耗、反应动力学和传质决定实际设备还要付出的电压。",
+        "check": "将分解反应电子数和正自由能代入ΔG/(nF)，核对单位及符号，再检查各压降之和与独立槽压记录的残差。",
+        "unlocks": "区分电荷需求与能量需求，能针对电阻、过电位或传质瓶颈提出不同改进方向。"
+      },
+      "frontier": "最低电压取决于温度、活度和阳极反应，实际压降又包含互相耦合的动力学与传质项，仍需可靠物性及可分辨的极化数据。"
     },
     {
       "id": "smelting-energy",
       "title": "电耗下限与真实损失",
       "subtitle": "\\(5.99\\,\\mathrm{kWh/kg}\\) 是理想下限，不是电费账单",
       "category": "energy",
+      "nodeType": "theory",
       "layer": 4,
       "question": "为什么实际铝电解耗电远高于热力学下限？",
       "mechanism": "DOE 2007 报告中的理想碳阳极账本：原料和 \\(\\ce{CO2}\\) 在 \\(25\\,^\\circ\\mathrm{C}\\)、铝液以 \\(960\\,^\\circ\\mathrm{C}\\) 离开，忽略外部损失，合计 \\(5.99\\,\\mathrm{kWh\\,kg^{-1}}\\)；其中 \\(5.11\\,\\mathrm{kWh\\,kg^{-1}}\\) 是 \\(298\\,\\mathrm{K}\\) 反应自由能对应的电功项，余下是热量项。若 \\(\\ce{CO2}\\) 也以 \\(960\\,^\\circ\\mathrm{C}\\) 排出，边界改为 \\(6.16\\,\\mathrm{kWh\\,kg^{-1}}\\)。该报告的 \\(2003\\) 年美国电解段基准为 \\(15.58\\,\\mathrm{kWh\\,kg^{-1}}\\)。IAI 又区分 DC 电解与包含整流及辅机的 AC 槽区电力。",
@@ -574,13 +2291,29 @@ window.TECH_TREE = {
         "doe-energy",
         "iai-smelting-energy"
       ],
-      "fullTitle": "理论能耗与真实能耗：边界和损失决定数字"
+      "fullTitle": "理论能耗与真实能耗：边界和损失决定数字",
+      "stage": 6,
+      "learning": {
+        "observe": "对照电解槽直流、含整流辅机的交流槽区及全链路能耗统计，记录年份、产量口径和出口温度。",
+        "try": "在同一核算边界内用电压电流时间序列积分并除以实际铝产量，再逐项加入整流、辅机和热损失。",
+        "infer": "能耗差异既来自设备损失也来自统计边界，保持液相所需热量不能全部简单视为可消除浪费。",
+        "check": "用独立电表读数和出铝称量核对积分结果，只在DOE指定理想边界内复算5.99千瓦时每千克的示例。",
+        "unlocks": "以可比较的单位产量能耗评估改造，并区分电解节电、余热利用和上游减耗。"
+      },
+      "frontier": "单位电耗不能独自回答减排优劣，电力来源、阳极制造、余热利用和上游精炼须以一致生命周期边界重新比较。"
     },
     {
       "id": "can-alloy-split",
       "title": "罐身与罐盖的合金",
       "subtitle": "典型饮料罐使用不同牌号和状态",
       "category": "materials",
+      "nodeType": "practice",
+      "practice": {
+        "line": "制罐线·罐身与罐盖选材",
+        "input": "不同牌号、状态、厚度与批次成分的铝合金材料",
+        "operation": "罐身典型选用3004/3104类料，罐盖典型选用5182类料，分别匹配成形与卷封要求",
+        "output": "分别满足罐身成形和罐盖强度要求的材料"
+      },
       "layer": 1,
       "question": "为什么不能把整只罐都看成同一种铝？",
       "mechanism": "典型罐身使用 3004/3104 类铝锰系合金，罐盖常见 5182 类铝镁系合金；其状态、厚度和批次成分还要看供应规格。罐身材料兼顾高速成形，盖材需要较高屈服强度和合适的刻痕、卷封性能。",
@@ -599,13 +2332,29 @@ window.TECH_TREE = {
         "aa-can-lca",
         "novelis-scrap"
       ],
-      "fullTitle": "罐身与罐盖是两种材料任务"
+      "fullTitle": "罐身与罐盖是两种材料任务",
+      "stage": 6,
+      "learning": {
+        "observe": "比较罐身料与罐盖料的批次成分、材料状态和拉伸曲线，看到强度、延性与用途并不由牌号单独决定。",
+        "try": "用供应商和合格实验室数据把3004/3104类与5182类材料分别放入罐身成形、盖板承载的需求表。",
+        "infer": "先从成形开裂和承载表现选择材料，后来用固溶强化、冷作组织和各向异性解释为什么同一种铝不适合所有部位。",
+        "check": "在厚度和测试方向相匹配的数据中，用独立批次的屈服强度与延伸率检验选材判断，不把弹性模量当作强度。",
+        "unlocks": "让罐身和罐盖各用适合的材料，并为回收时的分料及成分校正建立要求。"
+      },
+      "frontier": "牌号和单轴拉伸不足以判断高速成形适用性，还需方向性屈服、成形极限、耳高以及批次夹杂对缺陷的影响。"
     },
     {
       "id": "coil-to-cup",
       "title": "从卷材冲出杯",
       "subtitle": "圆片的塑性流动把平板变成杯",
       "category": "making",
+      "nodeType": "practice",
+      "practice": {
+        "line": "两片饮料罐制造线·冲杯",
+        "input": "罐身用铝合金卷材",
+        "operation": "润滑卷材，冲出圆片，再用压边圈和冲头拉成杯",
+        "output": "底与侧壁一体的杯形罐身毛坯"
+      },
       "layer": 2,
       "question": "一张平的铝卷怎样变成没有侧缝的罐身毛坯？",
       "mechanism": "卷材在润滑后由 cupper 冲出圆形 blank，并由压边圈和冲头将圆片拉成杯。Ball 的工艺图把卷材、润滑、冲杯列为连续工序；EPA 说明深拉时金属在拉深环上方被控制流动，而不是简单的平板冲压。必要时用逐级较小直径的 punch 重拉，降低一次变形过大的风险。",
@@ -624,13 +2373,29 @@ window.TECH_TREE = {
         "epa-canmaking",
         "cmi-made"
       ],
-      "fullTitle": "卷材先冲杯再深拉"
+      "fullTitle": "卷材先冲杯再深拉",
+      "stage": 7,
+      "learning": {
+        "observe": "查看工业冲杯视频和杯坯截面测量，观察圆片边缘向杯壁流入，同时出现压边、摩擦及耳高差异。",
+        "try": "用成形模拟或合格实验室对比数据改变压边力和圆角，比较起皱、开裂及杯高，不自行操作冲压设备。",
+        "infer": "先从模具和压边调整获得可重复杯形，塑性流动与各向异性理论随后解释为何材料既不能失控起皱也不能被锁死。",
+        "check": "用独立圆片直径、杯径、杯高与厚度测量核对近似体积守恒，并记录圆角和修边导致的估算误差。",
+        "unlocks": "获得没有侧缝的一体杯坯，为重拉、壁厚变薄和穹底成形提供稳定起点。"
+      },
+      "frontier": "面积守恒只估算杯高，不能给出极限拉深比或耳高；摩擦、压边力和轧制织构须进入经实测校准的成形模型。"
     },
     {
       "id": "draw-redraw-ironing",
       "title": "拉深与壁厚变薄",
       "subtitle": "深拉和壁厚变薄是两个耦合塑性过程",
       "category": "making",
+      "nodeType": "practice",
+      "practice": {
+        "line": "两片饮料罐制造线·重拉与壁厚变薄",
+        "input": "杯形罐身毛坯",
+        "operation": "用冲头重拉杯坯并压过变薄环，侧壁压薄拉长，同时形成穹底",
+        "output": "侧壁变薄延长、底部较厚且带穹底的罐身"
+      },
       "layer": 3,
       "question": "罐壁为什么能比冲杯的板材薄，还能变得更高？",
       "mechanism": "bodymaker 用 punch 把杯先 redraw 到较小直径，再连续通过 ironing rings。环隙把侧壁厚度压薄，同时让材料沿轴向延伸；底部保留较厚区域并形成反拱/穹底。CMI 将其概括为‘杯被一系列环压过，达到全长并形成底穹’，EPA 也明确说 ironing 是通过变薄金属来延长罐身。",
@@ -649,13 +2414,23 @@ window.TECH_TREE = {
         "epa-canmaking",
         "cmi-made"
       ],
-      "fullTitle": "D&I：重拉并把侧壁压薄拉长"
+      "fullTitle": "D&I：重拉并把侧壁压薄拉长",
+      "stage": 7,
+      "learning": {
+        "observe": "对照工业工序前后截面，看到侧壁变薄、长度增加，而底部厚度与变形历史不同。",
+        "try": "用D&I模拟或合格试验数据比较变薄环间隙、摩擦与多道次安排对壁厚、成形力和破裂的影响。",
+        "infer": "先凭分道次变形和润滑经验形成薄长罐身，再以局部体积守恒、加工硬化和摩擦热解释工艺窗口。",
+        "check": "用独立多高度壁厚和外形测量验证材料体积估算，并将预测成形力与设备记录对照，而不假定全罐同厚。",
+        "unlocks": "把杯坯变成轻量薄壁罐身，并把局部厚度分布传给承压和屈曲分析。"
+      },
+      "frontier": "体积守恒无法预测壁厚分布、擦伤和断裂，需耦合模具弹性、摩擦热、润滑失效及材料各向异性。"
     },
     {
       "id": "cold-work-dislocations",
       "title": "位错与冷作硬化",
       "subtitle": "成形让强度上升，也消耗延性",
       "category": "materials",
+      "nodeType": "theory",
       "layer": 3,
       "question": "为什么冷轧和 D&I 后铝会更强，却更难继续变形？",
       "mechanism": "非热处理强化铝在冷轧、拉深和壁厚变薄中发生塑性滑移，位错数量增加；位错的弹性应变场和交互作用阻碍后续位错运动，所以继续塑性流动需要更高应力。铝业协会明确把‘位错和空位累积、抑制原子相对运动’作为冷作强化机制；镁等固溶元素还会进一步增强阻碍。",
@@ -674,13 +2449,29 @@ window.TECH_TREE = {
         "concordia-hardening",
         "aa-can-lca"
       ],
-      "fullTitle": "冷作硬化来自位错阻塞"
+      "fullTitle": "冷作硬化来自位错阻塞",
+      "stage": 6,
+      "learning": {
+        "observe": "比较同批铝材不同冷加工量的拉伸和硬度数据，发现流动应力常升高而剩余延性下降。",
+        "try": "用已测冷轧或拉伸数据建立加工量与屈服强度的经验曲线，并与合格实验室退火后数据作对照。",
+        "infer": "工匠可先发现敲打后更硬、退火后更易加工的规律，位错积累与相互阻碍是后来获得的微观解释。",
+        "check": "用独立加工状态及不同方向的拉伸曲线检验预测，分开比较屈服强度、弹性斜率与延伸率。",
+        "unlocks": "安排成形与退火顺序，避免把增强承载能力误当作无限保留可成形性。"
+      },
+      "frontier": "位错密度与强度的简化关系还遗漏回复、织构及局部应变集中，如何把加工路径转为剩余成形能力仍需微观和宏观联合验证。"
     },
     {
       "id": "end-stiffness",
       "title": "罐盖的强度与形状",
       "subtitle": "盖的任务是抗压、刻痕、拉环和卷封",
       "category": "materials",
+      "nodeType": "practice",
+      "practice": {
+        "line": "罐盖制造线·材料与盖形选择",
+        "input": "镁系合金盖材及其冷作状态",
+        "operation": "配合厚度、环筋、沉孔和刻痕选择盖材、盖形、涂层与加工状态",
+        "output": "兼顾抗压、开启和卷封的罐盖材料与结构方案"
+      },
       "layer": 2,
       "question": "为什么盖板不能照搬罐身的合金与厚度？",
       "mechanism": "盖材常用镁系合金与冷作状态获得较高强度，但结构刚度还来自厚度、环筋和沉孔等几何。刻痕又需要局部可控断裂；材料、盖形、涂层与加工状态必须一起选择。",
@@ -699,13 +2490,29 @@ window.TECH_TREE = {
         "aa-can-lca",
         "novelis-scrap"
       ],
-      "fullTitle": "罐盖用较硬的薄板和几何筋"
+      "fullTitle": "罐盖用较硬的薄板和几何筋",
+      "stage": 7,
+      "learning": {
+        "observe": "比较罐盖剖面及合格实验室载荷挠度记录，辨别厚度、环筋、沉孔与刻痕的不同作用。",
+        "try": "先用纸片平板和折筋模型在相同小载荷下比较挠度，再用盖板模拟比较强度与几何的贡献，不做加压罐盖实验。",
+        "infer": "先发现折筋和曲面能减少变形，再用板壳力学解释刚度，刻痕则是有意保留的局部断裂路径。",
+        "check": "用尺测纸模型挠度并重复对照，在理想同材平板数据中检验弯曲刚度随厚度三次方变化的适用区间。",
+        "unlocks": "协同设计薄盖、承载形状和开启部位，而不是只靠提高合金强度解决全部任务。"
+      },
+      "frontier": "理想平板刚度不能覆盖真实盖板的刻痕断裂、筋形、残余应力和开启手感，需要成形后的几何与断裂数据。"
     },
     {
       "id": "neck-flange-double-seam",
       "title": "缩颈与双卷封",
       "subtitle": "金属互锁加垫胶，而非靠铝本身熔焊",
       "category": "making",
+      "nodeType": "practice",
+      "practice": {
+        "line": "制罐与封罐线·缩颈翻边及双卷封",
+        "input": "成形罐身与带垫胶的罐盖",
+        "operation": "罐口缩颈翻边，两道滚轮使罐身钩与盖钩互锁压紧，垫胶填隙",
+        "output": "顶部双卷封的气密罐体"
+      },
       "layer": 4,
       "question": "盖子怎样在薄铝上既固定又不漏气？",
       "mechanism": "罐身顶部先缩颈以匹配较小的盖径，再翻出 flange。卷封的第一道滚轮把盖钩卷到罐身钩下，第二道把多层金属压紧；盖边的 gasket compound 填补微小空隙。Crown 将 body hook、cover hook、两道操作和垫胶列为形成 hermetic seal 的关键。",
@@ -726,13 +2533,28 @@ window.TECH_TREE = {
         "ecfr-seam"
       ],
       "fullTitle": "缩颈、翻边与双卷封把两片锁成气密接头",
-      "frontier": "下一枝：卷封为什么有时看似紧密却漏气？弹性回复、垫胶流动与公差怎样共同起作用？"
+      "frontier": "单个二维截面可能漏掉周向局部缺陷，密封胶的老化、温度循环和成形公差如何共同影响泄漏还需多位置与长期测试。",
+      "stage": 7,
+      "learning": {
+        "observe": "查看两道卷封的放大剖面，识别罐身钩、盖钩、重叠区、压紧区和填隙密封胶。",
+        "try": "用纸带剖面模型理解钩合顺序，再比较工业卷封截面与合格泄漏测试数据，不把纸模型当作可承压密封件。",
+        "infer": "先从机械钩合与压紧获得接头，再通过界面和泄漏分析解释为何外观闭合仍可能留有贯通微隙。",
+        "check": "从独立截面照片测量钩长、重叠量和卷封厚度，检验几何模型并对照泄漏记录，此比较不构成食品容器认证。",
+        "unlocks": "把独立罐盖接到一体罐身，并将几何检查、密封胶和实际泄漏测试纳入同一质量链。"
+      }
     },
     {
       "id": "internal-coating-barrier",
       "title": "罐内的聚合物涂层",
       "subtitle": "薄涂层兼顾阻隔、耐磨、口味与食品接触要求",
       "category": "chemistry",
+      "nodeType": "practice",
+      "practice": {
+        "line": "两片饮料罐制造线·内喷涂与固化",
+        "input": "清洗后的罐身与适配饮料的聚合物涂料",
+        "operation": "内壁喷涂并烘烤固化，形成连续的聚合物阻隔层",
+        "output": "饮料与金属界面被涂层隔开的罐身"
+      },
       "layer": 3,
       "question": "既有氧化膜，为什么罐内还要喷涂并烘烤？",
       "mechanism": "清洗后的二片罐内壁喷涂并烘烤固化聚合物涂层，减少饮料、溶解氧、金属和局部缺陷之间的电化学接触，并阻隔金属离子迁移和风味相互作用。PPG 的饮料罐内喷涂包括水性丙烯酸等 BPA-NI 配方，且适用于铝或钢；配方会因饮料酸度、碳酸、热灌装和法规而变化。",
@@ -751,13 +2573,22 @@ window.TECH_TREE = {
         "ppg-internal"
       ],
       "fullTitle": "内涂层是金属与饮料之间的第二道界面",
-      "frontier": "下一枝：聚合物怎样交联固化？扩散系数、针孔与附着力，谁决定一层涂膜的失效？"
+      "frontier": "均匀膜扩散模型难以描述针孔、成形损伤和界面脱粘，特定饮料与储存周期中的迁移及风味改变须实测而非由膜厚推定。",
+      "stage": 7,
+      "learning": {
+        "observe": "比较合格实验室对完整、薄弱及带微缺陷内涂层的阻隔、腐蚀和迁移数据，关注饮料组成与温度。",
+        "try": "用给定膜厚、固化状态和缺陷率的数据建立对比表，区分均匀渗透与针孔通道，不自行配制食品接触涂层。",
+        "infer": "先从有涂层样品较少金属接触和风味变化发现屏障作用，再以扩散和界面电化学解释失效路径。",
+        "check": "用未参与建模的渗透或金属迁移测量检验预测，并检查同膜厚条件下缺陷是否使简单扩散模型失效。",
+        "unlocks": "把成形后的金属容器转为受控食品接触界面，并提出针对饮料、工艺和市场法规的验证需求。"
+      }
     },
     {
       "id": "oxide-passivation-pitting",
       "title": "氧化膜与局部腐蚀",
       "subtitle": "\\(\\ce{Al2O3}\\) 薄膜是动态屏障，不是永久盔甲",
       "category": "chemistry",
+      "nodeType": "theory",
       "layer": 2,
       "question": "铝为什么在空气里耐蚀，却可能被酸、碱或氯离子点蚀？",
       "mechanism": "铝接触空气/水后快速形成薄、致密、附着的氧化/羟基化钝化层，划伤处可重新生成。UNT 材料学页面指出，近中性环境通常较耐蚀，但酸性和碱性会溶解氧化层，氯、氟、碘环境会破坏钝化并触发局部点蚀；合金中的金属间化合物也可能造成局部电偶差异。",
@@ -776,13 +2607,23 @@ window.TECH_TREE = {
         "unt-passivation",
         "ppg-internal"
       ],
-      "fullTitle": "天然氧化膜会钝化，也会在特定环境失效"
+      "fullTitle": "天然氧化膜会钝化，也会在特定环境失效",
+      "stage": 6,
+      "learning": {
+        "observe": "从合格腐蚀实验的显微照片和电化学记录中比较均匀腐蚀、钝化及氯化物条件下的局部点蚀。",
+        "try": "在既有数据中固定合金和温度，比较环境酸碱性、氯离子与表面缺陷对点蚀发生及深度的影响。",
+        "infer": "先由部分环境中铝表面较稳定的事实识别保护膜，再理解膜的破坏和局部电偶会使很小区域集中腐蚀。",
+        "check": "用独立显微测得的坑深和失重结果核对判断，明确平均失重很小不能排除局部贯穿风险。",
+        "unlocks": "对涂层缺陷、合金颗粒和接触介质开展针对性评价，而不再把天然氧化膜视为永久保险。"
+      },
+      "frontier": "平均腐蚀速率不能给出最深点蚀坑的寿命分布，局部颗粒、氯离子、涂层微缺陷与随机启动之间的关系仍需统计性模型。"
     },
     {
       "id": "internal-pressure-hoop-stress",
       "title": "内压与薄壁应力",
       "subtitle": "薄壁圆筒式是局部估算，不是整罐判定",
       "category": "physics",
+      "nodeType": "theory",
       "layer": 4,
       "question": "碳酸饮料的压力怎样拉开罐壁和罐底？",
       "mechanism": "对远离端部、半径远大于壁厚且均匀的闭口圆筒，内压在环向切开截面上产生两倍轴向膜力，因此环向应力约为轴向应力的两倍。Texas A&M 的薄壁压力容器实验正以汽水罐为例给出这两个式子。",
@@ -802,13 +2643,23 @@ window.TECH_TREE = {
         "aa-can-lca"
       ],
       "fullTitle": "内压首先变成环向和轴向拉应力",
-      "simulator": "stress"
+      "simulator": "stress",
+      "stage": 4,
+      "learning": {
+        "observe": "观察薄壁圆筒受压模拟的环向和轴向应变，并标记远离底部、颈部与接头的近似均匀区。",
+        "try": "在模拟中分别改变内外压差、半径和壁厚，比较膜应力变化，仅使用模拟或合格压力实验数据。",
+        "infer": "从切开半筒及端盖的力平衡推导环向与轴向应力，理想闭口圆筒的环向应力约为轴向两倍。",
+        "check": "用独立尺寸、压差及合格实验应变数据核对pr/t和pr/(2t)预测，只在薄壁、小变形和均匀区域比较。",
+        "unlocks": "估算均匀罐壁的承压量级，再把底穹、卷封、刻痕及失稳问题交给更具体的模型。"
+      },
+      "frontier": "均匀圆筒膜应力遗漏底穹、肩部、卷封和刻痕的局部场，壁厚离散、残余应力与循环载荷也会改变实际失效次序。"
     },
     {
       "id": "shell-buckling-dome",
       "title": "薄壳屈曲与穹底",
       "subtitle": "外压或轴向压缩下可能先屈曲再失效",
       "category": "physics",
+      "nodeType": "theory",
       "layer": 5,
       "question": "为什么空罐容易被侧向捏瘪，底部却做成穹形？",
       "mechanism": "内压时圆筒壁以拉膜应力为主；外部挤压、堆叠或局部凹陷会产生压缩膜力和弯曲，薄壳可能发生局部屈曲。MIT 壳体教材给出理想圆柱轴压的经典临界应力，并特别讨论壳的长宽比、边界条件和几何缺陷。饮料罐用反拱底、沉孔、环筋和缩颈提高曲率与载荷路径；Ball 的一个 750 mL 规格还列有 \\(90\\,\\mathrm{psi}\\) 最小穹底反转压力，这只是该规格的测试指标。",
@@ -828,13 +2679,29 @@ window.TECH_TREE = {
         "ball-spec",
         "cmi-standards"
       ],
-      "fullTitle": "薄壁稳定性靠曲率、筋和缺陷控制"
+      "fullTitle": "薄壁稳定性靠曲率、筋和缺陷控制",
+      "stage": 4,
+      "learning": {
+        "observe": "比较相同纸张制成的光滑筒与带小凹痕筒在低能量桌面压缩下的形变，看到局部缺陷显著影响失稳。",
+        "try": "用薄壳模拟逐项改变初始凹陷、边界约束与曲率，再与合格罐底试验数据比较，不对罐体自行加压。",
+        "infer": "先凭折筋、曲面和缺陷敏感性的经验改进结构，板壳稳定性理论随后说明为何平均应力不高也可能突然变形。",
+        "check": "用独立测得的纸筒首次明显失稳载荷检验缺陷影响的排序，对工业模型另以合格试验载荷核对而不套用单一罐型指标。",
+        "unlocks": "将几何缺陷与载荷路径纳入轻量化设计，并区分轴压屈曲、局部凹陷和底穹反转。"
+      },
+      "frontier": "经典完美壳体公式往往高估真实临界载荷，初始缺陷、边界和材料塑性的组合需要实测几何与非线性分析，不能用统一折减值替代。"
     },
     {
       "id": "recycling-sort-remelt",
       "title": "分选、去涂层与重熔",
       "subtitle": "铝的‘循环’包含成分管理和熔损",
       "category": "making",
+      "nodeType": "practice",
+      "practice": {
+        "line": "铝罐回收线·分选去涂层及重熔",
+        "input": "废饮料罐与按牌号分流的制罐工艺废料",
+        "operation": "分选压包、破碎，去涂层除潮后熔化除渣、铸锭，再轧成罐材",
+        "output": "再生铝锭及后续罐身料或盖料，并产生熔渣等损失流"
+      },
       "layer": 1,
       "question": "喝完的罐怎样重新变成罐材，而不是简单‘融化就结束’？",
       "mechanism": "回收设施先按材料分选、压包；制罐厂的工艺废料还要按 3104/3004 罐身料与 5182 盖/拉环料分开并避免钢、塑料、油和水污染。UBC 工厂会破碎、分选、去涂层/除潮，再熔化、除渣和铸成锭，随后轧成罐身料或盖料；EPA 的流程也把回收罐熔化铸锭后再轧片，铸锭后的步骤与原生路线相同。",
@@ -857,13 +2724,22 @@ window.TECH_TREE = {
         "aa-can-lca"
       ],
       "fullTitle": "回收先分流与去涂层，再熔化重铸",
-      "frontier": "下一枝：涡电流分选为什么能抛出铝？混入镁、铁和硅后，怎样做成分校正？"
+      "frontier": "质量回收率不等于罐到罐闭环率，混料中难去除的铁等元素、镁烧损、市场分流与回收能耗仍限制持续循环的配料方案。",
+      "stage": 7,
+      "learning": {
+        "observe": "比较废罐分料、杂质检测、熔炼损失和再生合金成分记录，发现金属循环同时受收集与成分约束。",
+        "try": "用给定罐身、罐盖和污染物流的质量及成分做配料模拟，加入烧损与除渣损失，不自行重熔带涂层或潮湿废铝。",
+        "infer": "先通过分类减少混料损失，随后以元素衡算解释为什么重熔不能自动恢复原牌号、加工硬化和织构。",
+        "check": "用独立出锭质量和化验成分核对回收率及镁、铁等元素平衡，并将收集率与熔炼收得率分开报告。",
+        "unlocks": "形成从废罐到合格卷材的闭环物料方案，衔接去涂层、冶金处理、铸造及重新轧制。"
+      }
     },
     {
       "id": "atoms-electrons",
       "title": "电子与原子轨道",
       "subtitle": "化学性质的微观入口",
       "category": "physics",
+      "nodeType": "theory",
       "layer": 5,
       "question": "为什么同样叫金属，铝和铁会如此不同？",
       "mechanism": "核电荷和电子可占据的量子态，限制了电子排布。轨道描述概率分布；电子与多个原子相互作用时，才形成材料中的成键和能带。",
@@ -880,13 +2756,22 @@ window.TECH_TREE = {
       "sourceIds": [
         "f-quantum"
       ],
-      "frontier": "下一层可以展开：泡利原理、能带、密度泛函近似，以及为什么模型参数要用实验校准。"
+      "frontier": "单原子轨道不能直接推出现实合金性能，尚需多电子近似、能带、温度和缺陷，以及从原子尺度到构件尺度的桥梁。",
+      "stage": 6,
+      "learning": {
+        "observe": "比较元素的已测线状光谱和电离能，发现光与电离所需能量并非任意连续取值。",
+        "try": "用氢原子光谱数据将波长换成光子能量，并在量子态模拟中比较不同态的概率分布，不把轨道画成电子的确定路径。",
+        "infer": "由离散谱线逐步修正经典原子图景，轨道是后来的量子描述而不是早期冶炼或制罐必须先掌握的知识。",
+        "check": "用未参与拟合的氢谱线检验能级差模型，明确多电子铝不能直接套用氢原子的简单数值公式。",
+        "unlocks": "为元素周期性、成键和能带提供微观解释，同时保留从经验材料规律发展技术的独立路线。"
+      }
     },
     {
       "id": "bonds",
       "title": "化学键与能量",
       "subtitle": "拆键要能量，成键释放能量",
       "category": "chemistry",
+      "nodeType": "theory",
       "layer": 4,
       "question": "“铝和氧结合得很牢”到底在说什么？",
       "mechanism": "原子靠近时，电子与原子核的相互作用改变系统能量。稳定构型对应能量谷底；化学反应比较整个初态和终态，而不是孤立地比较一根键。",
@@ -902,13 +2787,23 @@ window.TECH_TREE = {
       "gotcha": "“断键释放能量”方向反了；“放热就一定很快”也不成立，速度还取决于能垒。",
       "sourceIds": [
         "f-bonds"
-      ]
+      ],
+      "stage": 6,
+      "learning": {
+        "observe": "比较键解离能及量热数据，发现拆开稳定结合通常需要输入能量，而完整反应可能吸热或放热。",
+        "try": "用给定气相平均键能为简单反应做断键与成键能量账，再与独立反应焓数据比较。",
+        "infer": "先从燃烧和反应热的可重复现象建立能量账，后来用成键势能解释净放热来自产物整体能量较低。",
+        "check": "检验估算反应焓的符号与量级，并记录平均键能、相态和分子环境造成的误差，另用速率数据排除放热必快的误判。",
+        "unlocks": "理解化学能、稳定氧化物和反应能垒，避免仅凭某一根键判断冶炼难易。"
+      },
+      "frontier": "平均键能估算遗漏相态、局部电子结构和反应路径，准确预测固体氧化物稳定性及反应速率需要不同层次的热力学和动力学数据。"
     },
     {
       "id": "moles",
       "title": "摩尔与物料守恒",
       "subtitle": "把原子计数变成公斤",
       "category": "math",
+      "nodeType": "theory",
       "layer": 5,
       "question": "知道化学式，如何算一只罐子需要多少原料？",
       "mechanism": "摩尔把极大量粒子的计数压缩成可称量的单位。配平反应是在核对每一种原子与净电荷；实际投料还要考虑纯度、回收率与杂质。",
@@ -924,13 +2819,23 @@ window.TECH_TREE = {
       "gotcha": "“\\(13\\,\\mathrm{g}\\) 铝”是本册算例参数，不是所有罐子的实测质量。合金质量也不严格等于铝元素质量。",
       "sourceIds": [
         "f-mole"
-      ]
+      ],
+      "stage": 4,
+      "learning": {
+        "observe": "比较反应前后各元素的称量与成分数据，发现反应改变物种而不任意改变元素总量。",
+        "try": "用配平式和已知纯度换算铝矿、氢氧化铝及氧化铝的质量，并为未回收物流单独留账。",
+        "infer": "可先用称量发现固定组成与守恒规律，摩尔和阿伏伽德罗常数后来把这些规律统一为粒子计数。",
+        "check": "用独立产品称量或元素化验检查每种元素的投入与产出，并确认合金总质量未被当作纯铝质量。",
+        "unlocks": "建立从矿石品位到产品产量的统一物料语言，连接反应计量、回收率和电解电荷。"
+      },
+      "frontier": "守恒只限制可能结果，不决定转化率或速度；真实产线还需测量纯度、水分、积料和所有漏计出口来确定账目是否闭合。"
     },
     {
       "id": "charge",
       "title": "电荷守恒",
       "subtitle": "电子也需要记账",
       "category": "physics",
+      "nodeType": "theory",
       "layer": 5,
       "question": "为什么制出一摩尔铝，需要三摩尔电子？",
       "mechanism": "\\(\\ce{Al^3+}\\) 还原成中性 \\(\\ce{Al}\\) 时，净电荷差必须由三份负电荷补足。槽内离子传导和槽外电子传导连成一个回路。",
@@ -947,13 +2852,23 @@ window.TECH_TREE = {
       "sourceIds": [
         "f-charge",
         "f-mole"
-      ]
+      ],
+      "stage": 5,
+      "learning": {
+        "observe": "在电路模拟和电极反应记录中追踪电子与离子两类载流方式，观察稳态回路各处净电流的关系。",
+        "try": "为电解两极配平原子与净电荷，并在支路电路模型中核对流入、流出与节点电荷积累。",
+        "infer": "电荷是在回路中传递和重新分配，不是到阴极就消失；铝从三价到中性需要三份电子电荷。",
+        "check": "用独立支路电流记录验证稳态流入等于流出，在暂态模型中用电流差积分核对节点电荷变化。",
+        "unlocks": "把半反应、外部电路和法拉第计量连成一致的账，但仍需能量模型确定电压。"
+      },
+      "frontier": "电荷守恒不能给出载流速度、界面电压或反应选择性，必须继续引入电容、传导与电极动力学来解释暂态和损耗。"
     },
     {
       "id": "entropy",
       "title": "熵与微观状态",
       "subtitle": "有多少种方式实现同一个宏观状态",
       "category": "physics",
+      "nodeType": "theory",
       "layer": 5,
       "question": "为什么升温、混合和相变会改变材料的稳定性？",
       "mechanism": "同样的温度、体积和成分，可以由很多粒子排列和能量分配实现。可实现的微观状态数进入熵；平衡倾向不能只比较能量。",
@@ -969,13 +2884,23 @@ window.TECH_TREE = {
       "gotcha": "把熵只叫“混乱程度”容易失准。局部变得有序并不违背第二定律，要把环境也计入。",
       "sourceIds": [
         "f-entropy"
-      ]
+      ],
+      "stage": 4,
+      "learning": {
+        "observe": "观察粒子混合模拟和不同温度物体趋于同温的量热数据，辨别宏观状态与可实现微观排列的区别。",
+        "try": "枚举少量粒子分布的组合数，并用已测热容量计算两个物体热交换前后的总熵变化。",
+        "infer": "先从热流方向和混合难自发逆转发现规律，再以微观状态数量解释熵，局部有序须连同环境核算。",
+        "check": "用独立终温检验能量守恒，并按绝对温度积分核对孤立近似下总熵不减，注明热容量与隔热假设。",
+        "unlocks": "解释热机限制、混合与分离代价，为自由能和不可逆过程提供第二本能量之外的账。"
+      },
+      "frontier": "有限粒子计数或常热容量模型不足以处理开放反应体系，尚须明确物质携带的熵、相变和耗散，不能把局部熵减误作整体违例。"
     },
     {
       "id": "free-energy",
       "title": "Gibbs 自由能",
       "subtitle": "方向、平衡与最低功",
       "category": "chemistry",
+      "nodeType": "theory",
       "layer": 4,
       "question": "怎样定量回答“这个反应愿不愿意发生”？",
       "mechanism": "在恒温恒压、没有额外非体积功驱动时，系统会向更低的 Gibbs 自由能变化。可逆极限把自由能差与非体积功相连；电解通过外部做功推动相反方向。",
@@ -991,13 +2916,23 @@ window.TECH_TREE = {
       "gotcha": "\\(\\Delta G<0\\) 告诉你方向，不能告诉你多久完成。算电解下限必须用正确反应、温度、相态与活度。",
       "sourceIds": [
         "f-gibbs"
-      ]
+      ],
+      "stage": 5,
+      "learning": {
+        "observe": "对照恒温恒压下的平衡数据和可逆电池电动势，看到反应方向既与焓有关也受温度及组成影响。",
+        "try": "用给定反应焓、熵和活度计算自由能变化，分别改变温度及反应商，比较预测方向与平衡记录。",
+        "infer": "自由能是后来对经验反应方向的统一解释，负变化给出热力学倾向而不承诺快速完成。",
+        "check": "用独立平衡常数或可逆电动势核对ΔG预测的符号和量级，并确认所用反应、相态及标准态一致。",
+        "unlocks": "比较分离、还原和电解的可逆功需求，并将动力学瓶颈与热力学限制分开。"
+      },
+      "frontier": "自由能方向并不提供成核时间或反应速率，浓溶液的非理想活度和亚稳态又会使简单标准态计算偏离工艺现实。"
     },
     {
       "id": "phase",
       "title": "相、相图与化学势",
       "subtitle": "合金不只是把元素搅在一起",
       "category": "materials",
+      "nodeType": "theory",
       "layer": 4,
       "question": "为什么同一配方在不同温度下会有不同组织？",
       "mechanism": "在成分和质量守恒约束下，系统可能选择单相，也可能分成不同成分的多个相，以降低总自由能。相平衡要求各相中同一组分的化学势相等。",
@@ -1013,13 +2948,23 @@ window.TECH_TREE = {
       "gotcha": "相图描绘平衡状态；它不自动给出析出速度、晶粒尺寸或成形后的性能。",
       "sourceIds": [
         "f-phase"
-      ]
+      ],
+      "stage": 4,
+      "learning": {
+        "observe": "比较不同成分合金的冷却曲线与组织照片，看到凝固可能跨温度区间并形成不同成分的多个相。",
+        "try": "在给定二元平衡相图上选择温度和总成分，用连线及杠杆定则计算相分数，再与慢冷数据比较。",
+        "infer": "先用熔化凝固和配料经验建立材料窗口，化学势相等与自由能最小化后来解释相界和共存条件。",
+        "check": "用独立测得的两相成分和相分数核对总成分守恒，并注明快速冷却或非平衡组织不应硬套平衡相图。",
+        "unlocks": "预测合金与熔盐的相区，为铸造、热处理、浴组成选择及析出控制提供边界。"
+      },
+      "frontier": "平衡相图不能重建快速冷却后的偏析、亚稳相和晶粒尺寸，需要相变动力学、扩散与真实热历史来补足。"
     },
     {
       "id": "electric-power",
       "title": "电路、电功与损耗",
       "subtitle": "电量回答多少；电压回答每份多少钱",
       "category": "energy",
+      "nodeType": "theory",
       "layer": 4,
       "question": "同样生产一公斤铝，电耗为什么会不同？",
       "mechanism": "电压是每单位电荷转移的能量。真正的槽压还包括驱动反应所需的电势差、反应过电位和电阻压降；部分电能成为维持槽温的热。",
@@ -1035,13 +2980,23 @@ window.TECH_TREE = {
       "gotcha": "\\(\\mathrm{Ah}\\) 是电量，\\(\\mathrm{kWh}\\) 是能量。只给电流和时间，无法确定电耗。",
       "sourceIds": [
         "f-power"
-      ]
+      ],
+      "stage": 5,
+      "learning": {
+        "observe": "在合格低压电路实验数据中比较电压、电流与电阻温升，区分通过多少电荷和转移多少能量。",
+        "try": "用已测电压电流时间序列分别积分得到电量和电能，再在电阻模型中计算焦耳热。",
+        "infer": "电压表示每单位电荷的能量变化，安时不能代替瓦时；电能既可驱动反应也可变为热。",
+        "check": "用独立电能计读数核对积分结果，并以量热数据比较电阻吸收的热，说明散热和仪表误差。",
+        "unlocks": "建立电源、导线和负载的功率预算，将电解产量、电压损失与热管理联系起来。"
+      },
+      "frontier": "集总电阻模型没有覆盖高电流母线的分布接触电阻、磁效应和局部热点，设备尺度的损耗与安全热管理仍需空间测量。"
     },
     {
       "id": "electromagnetism",
       "title": "电磁感应与发电",
       "subtitle": "把运动转成电压",
       "category": "energy",
+      "nodeType": "theory",
       "layer": 5,
       "question": "电解槽所需的电，怎样从一台发电机来？",
       "mechanism": "穿过线圈的磁通量变化，产生感应电动势。水轮、蒸汽轮机或风轮可提供转动；接上负载后，产生的电磁作用会阻碍驱动运动，需要持续输入机械功。",
@@ -1057,13 +3012,23 @@ window.TECH_TREE = {
       "gotcha": "发电机不是创造能量。法拉第电磁感应定律与法拉第电解定律关联同一个科学家，但回答不同问题。",
       "sourceIds": [
         "f-induction"
-      ]
+      ],
+      "stage": 5,
+      "learning": {
+        "observe": "查看合格低压线圈实验的磁通变化和感应电压记录，发现磁体静止时与运动时结果不同。",
+        "try": "在感应模拟中改变线圈匝数、运动速度和方向，比较电压波形，并在发电模型中加入负载。",
+        "infer": "先从相对运动产生电压发现感应，再用磁通变化和楞次定律解释电压方向与带载时的反作用。",
+        "check": "用未参与拟合的电压波形核对磁通变化率关系，并比较输入机械功与电输出加损耗的能量账。",
+        "unlocks": "把水轮、风轮或热机的机械功转换为电力，为电网、整流及工业电解供能。"
+      },
+      "frontier": "理想感应定律不等于可用发电系统，铁芯饱和、铜损、涡流、机械损耗以及整流和电网稳定性还需分别建模。"
     },
     {
       "id": "stress",
       "title": "应力、应变与连续体",
       "subtitle": "力怎样分摊到材料里面",
       "category": "physics",
+      "nodeType": "theory",
       "layer": 4,
       "question": "为什么相同的力作用在薄壁上更危险？",
       "mechanism": "应力把力分摊到面积，应变描述相对变形。连续体模型把许多原子平均为一个材料点，借助本构关系把应力连到变形。",
@@ -1080,13 +3045,23 @@ window.TECH_TREE = {
       "sourceIds": [
         "f-stress"
       ],
-      "simulator": "stress"
+      "simulator": "stress",
+      "stage": 4,
+      "learning": {
+        "observe": "比较材料拉伸曲线，辨认同一载荷下截面积不同造成的应力差，以及卸载后的恢复和永久变形。",
+        "try": "用合格试验载荷、长度与截面积数据换算应力应变，在小弹性区拟合斜率，并与塑性段分开。",
+        "infer": "先凭构件粗细和变形经验设计承载，连续体力学后来用应力、应变和本构关系统一这些规律。",
+        "check": "用独立的小载荷拉伸记录检验弹性模量预测，并在卸载数据中检查模型在哪一段开始遗漏永久变形。",
+        "unlocks": "把材料试验转为构件受力语言，连接罐壁膜力、盖板弯曲、成形和屈曲。"
+      },
+      "frontier": "小应变单轴关系不能描述罐料的多轴塑性、织构与断裂，连续体近似在极薄区和局部缺陷尺度上也须重新检验。"
     },
     {
       "id": "diffusion",
       "title": "扩散与热激活",
       "subtitle": "原子的随机运动变成宏观通量",
       "category": "physics",
+      "nodeType": "theory",
       "layer": 4,
       "question": "为什么加热会让组织变化和物质交换快得多？",
       "mechanism": "粒子持续随机运动；若左右可供迁移的粒子数不同，就产生净通量。在晶体里，跃迁还常要跨越能垒，并借助空位或间隙。",
@@ -1103,13 +3078,23 @@ window.TECH_TREE = {
       "sourceIds": [
         "f-diffusion",
         "f-fick"
-      ]
+      ],
+      "stage": 5,
+      "learning": {
+        "observe": "观察静置水中食用色素逐渐扩散的趋势及粒子随机游走模拟，注意真实水流可能与扩散同时存在。",
+        "try": "在无对流的一维模拟中改变扩散系数和时间，追踪浓度轮廓与均方位移，再比较合格实验室的温度系列数据。",
+        "infer": "先从物质随时间穿过距离的经验识别迁移，随机运动与能垒后来解释距离平方和热激活规律。",
+        "check": "用独立浓度轮廓检验展宽尺度是否随时间平方根增长，并说明对流、多组分或机制变化何时使模型失效。",
+        "unlocks": "估算组织演化、涂层渗透和溶解的时间尺度，避免仅凭平衡终点判断过程速度。"
+      },
+      "frontier": "常系数Fick模型遗漏对流、晶界通道和多组分化学势耦合，温度变化跨越扩散机制时也不能外推同一活化能。"
     },
     {
       "id": "crystal",
       "title": "晶体、晶粒与缺陷",
       "subtitle": "完美排列只是开始",
       "category": "materials",
+      "nodeType": "theory",
       "layer": 4,
       "question": "为什么同是铝，轧过以后就不一样了？",
       "mechanism": "铝的常见晶体结构是面心立方。实际罐料含许多不同取向的晶粒、晶界与位错；加工改变它们，宏观性能也随之变化。",
@@ -1125,13 +3110,23 @@ window.TECH_TREE = {
       "gotcha": "铝的延展性不能只用“原子排列整齐”解释；滑移体系、缺陷和障碍都关键。",
       "sourceIds": [
         "f-crystal"
-      ]
+      ],
+      "stage": 5,
+      "learning": {
+        "observe": "对照铝材的衍射、金相与取向数据，分辨原子晶格、不同晶粒及加工造成的取向差异。",
+        "try": "用面心立方晶胞模型计数原子，再以合格实验室数据比较加工前后晶粒尺寸、织构与性能。",
+        "infer": "先从加工和退火后的性质变化积累经验，衍射及显微技术后来揭示同种成分内部仍有不同结构和缺陷。",
+        "check": "用独立晶格常数计算理想铝密度并与称量体积法比较，再核对宏观强度不能只由晶胞原子数推出。",
+        "unlocks": "把材料成分、组织与加工历史同时纳入解释，接上位错强化、退火和各向异性成形。"
+      },
+      "frontier": "知道面心立方结构不等于知道强度，晶粒尺寸、取向、位错与第二相需要跨尺度统计才能解释不同加工状态。"
     },
     {
       "id": "calculus",
       "title": "微积分与守恒方程",
       "subtitle": "变化率和累积把过程变成可计算的量",
       "category": "math",
+      "nodeType": "theory",
       "layer": 5,
       "question": "为什么工艺计算里到处都是积分和导数？",
       "mechanism": "导数描述此刻变化有多快；积分把很多微小变化累加。控制体中的“流入 − 流出”把局部流动连到总量变化。",
@@ -1148,13 +3143,23 @@ window.TECH_TREE = {
       "sourceIds": [
         "f-fick",
         "f-power"
-      ]
+      ],
+      "stage": 4,
+      "learning": {
+        "observe": "比较随时间变化的电流和储罐流量记录，发现瞬时速率与一段时间内的总变化是不同问题。",
+        "try": "用分段矩形或梯形累计电量，并把流入减流出写成储量变化，再对无对流扩散建立一维守恒模型。",
+        "infer": "可先用离散计数和面积估算解决实际账目，导数与积分后来把变化率和累积统一为连续模型。",
+        "check": "用已知解析面积的线性电流例子及独立终点储量检验结果，缩小时间步时检查数值误差和总量守恒。",
+        "unlocks": "把电量、传热、扩散和流动物料账写成可预测方程，同时明确初始条件、边界条件与参数。"
+      },
+      "frontier": "写出守恒方程并不保证预测可靠，参数可辨识性、边界条件、数值稳定性及网格收敛仍需用独立观测检验。"
     },
     {
       "id": "amphoteric",
       "title": "两性与羟基配位",
       "subtitle": "同一种氢氧化物，两边都能溶",
       "category": "chemistry",
+      "nodeType": "theory",
       "layer": 3,
       "question": "强碱为什么能把含铝矿物变成可溶的铝酸盐？",
       "mechanism": "\\(\\ce{Al(OH)3}\\) 能与酸反应，也能在足量强碱中形成可溶的 \\(\\ce{[Al(OH)4]-}\\)。羟基可作为配体与铝中心结合，改变溶液中物种分布。拜耳法借此把铝转入碱液。",
@@ -1171,13 +3176,23 @@ window.TECH_TREE = {
       "sourceIds": [
         "f-amphoteric",
         "f-lewis"
-      ]
+      ],
+      "stage": 4,
+      "learning": {
+        "observe": "阅读合格实验室的氢氧化铝溶解度与物种分布数据，看到酸侧和足量强碱侧都可能提高溶解铝量。",
+        "try": "用实验数据或物种模拟比较酸度、碱度及温度变化，不自行用强酸强碱处理含铝矿物。",
+        "infer": "先凭不同介质中的溶解现象发现两性，后来以酸碱反应和羟基配位解释水相物种改变而铝仍为三价。",
+        "check": "用独立溶解铝分析核对趋势，并检查净反应的原子和电荷守恒，避免把浓拜耳液直接当作理想稀溶液。",
+        "unlocks": "解释拜耳法的选择性溶铝，同时区分溶解分离与真正得到金属所需的还原步骤。"
+      },
+      "frontier": "两条净离子式没有覆盖高温浓碱中的全部络合物与硅杂质，可靠溶解度预测还需要物种、活度和矿物反应性数据。"
     },
     {
       "id": "equilibrium",
       "title": "平衡、活度与反应商",
       "subtitle": "化学不只看反应箭头",
       "category": "chemistry",
+      "nodeType": "theory",
       "layer": 4,
       "question": "为什么同一个拜耳循环，先让铝溶解，再让它析出？",
       "mechanism": "改变温度与溶液组成，会改变反应商与平衡位置。对析出反应 \\(\\ce{[Al(OH)4]- -> Al(OH)3(s) + OH-}\\)，把纯固相活度取为 \\(1\\)，可以把条件写进 \\(Q\\)。晶种帮助跨过成核障碍。",
@@ -1195,592 +3210,3841 @@ window.TECH_TREE = {
         "f-gibbs",
         "f-equilibrium",
         "f-amphoteric"
-      ]
+      ],
+      "stage": 4,
+      "learning": {
+        "observe": "比较相同温度和液体组成下的溶解、析出及诱导时间记录，区分最终平衡与抵达平衡的速度。",
+        "try": "用给定活度和温度计算析出反应的Q/K，再比较加入晶种前后的合格实验室动力学记录。",
+        "infer": "先通过改变温度与组成实现可重复分离，平衡常数和反应商后来解释方向，而晶种主要改变成核过程。",
+        "check": "用独立长期平衡数据核对Q约等于K，并用短时数据说明有析出驱动力不等于已经达到预测终点。",
+        "unlocks": "为消化与析出选择可逆切换的条件，同时把活度非理想性、成核和传质分别纳入工艺判断。"
+      },
+      "frontier": "Q/K说明驱动力却不说明析出多快，浓液活度、亚稳区和晶种表面状态仍决定实际拜耳循环能否达到预期终点。"
+    },
+    {
+      "id": "electric-tests",
+      "title": "电现象的可重复试验",
+      "subtitle": "从吸引、排斥到导体与绝缘体的比较",
+      "category": "physics",
+      "nodeType": "practice",
+      "stage": 5,
+      "question": "摩擦后能吸纸屑，是材料的偶然性，还是可以重复的现象？",
+      "mechanism": "将材料、湿度、接触与接地状态分开比较，会发现电效应能转移、受环境影响，并且不同材料保存和传递这种效应的能力不同。这里是获得证据的实践；电荷、电势和场的解释复用已有节点。",
+      "why": "先建立可靠现象和检验工具，才能区分静电积累、持续电流与仪器失灵，而不是用后来的电子理论替代观察。",
+      "equations": [],
+      "example": "同一把塑料梳子在干燥与潮湿条件下吸起纸屑的表现不同；记录失败条件比只展示一次成功更有信息。",
+      "gotcha": "不使用雷电、市电、裸露高压或自制储能装置。摩擦效果也不能证明一种材料天然只有一种电性。",
+      "sourceIds": [
+        "modern-physics-2"
+      ],
+      "frontier": "怎样得到不会很快消失、足以驱动仪器的电源？下一步转向电化学与闭合回路。",
+      "learning": {
+        "observe": "记录纸屑吸引、放置后减弱和湿度变化，不先把所有运动都解释成电。",
+        "try": "只用梳子、干净纸屑和课堂级静电演示，保持材料相同，分别比较摩擦与未摩擦。",
+        "infer": "若效应随处理和接触而改变，提出可转移电状态的假说，并列出气流等竞争解释。",
+        "check": "由另一人更换纸屑重复对照，报告不成功的环境，检验现象而非只相信演示者。",
+        "unlocks": "可辨别导电与绝缘行为，形成电源和回路实验所需的观察方法。"
+      },
+      "practice": {
+        "line": "电学发现线·对照观察",
+        "input": "常见绝缘材料、纸屑、环境记录与课堂演示工具",
+        "operation": "比较摩擦、接触和环境条件下的可观察电效应",
+        "output": "可复核的现象记录与导体/绝缘体分类"
+      }
+    },
+    {
+      "id": "voltaic-cell",
+      "title": "电化学电源",
+      "subtitle": "把短暂静电变成持续供电",
+      "category": "energy",
+      "nodeType": "practice",
+      "stage": 5,
+      "question": "没有发电机时，怎样让电流持续存在？",
+      "mechanism": "原电池把适当的氧化还原反应分到两个电极，电子经外电路转移，离子在电解质中维持电荷平衡。电极、介质和内部阻力共同限制实际输出；电能来自化学变化，不是凭空出现。",
+      "why": "持续、可比较的电源让磁效应、电阻和信号试验不再依赖一次摩擦，为后续电气器件提供起点。",
+      "equations": [],
+      "example": "同一节合格干电池的空载电压与接上规定小负载后的电压不同，说明电源本身也有损耗。",
+      "gotcha": "这里讲功能原理，不提供腐蚀性电解液配方。不能短接电池、混用化学品，也不要尝试给一次电池充电。",
+      "sourceIds": [
+        "modern-chemistry",
+        "modern-physics-2"
+      ],
+      "frontier": "化学电源会耗尽；能否用已有水轮或蒸汽动力连续发电？可充电体系另见现代电池节点。",
+      "learning": {
+        "observe": "观察成品低压电池在合格仪器上显示稳定极性，以及使用后输出减弱。",
+        "try": "用额定教学套件或仿真比较开路与规定负载，不拆电池、不改变其化学配方。",
+        "infer": "从极性稳定和负载变化推断反应驱动电势，同时区分电源电动势与端电压。",
+        "check": "让另一组用不同批次合格电池复核负载曲线，检查接触误差和仪器校准。",
+        "unlocks": "获得低压持续供电，能研究电路、磁效应与电驱动。"
+      },
+      "practice": {
+        "line": "电源制造线·化学能转换",
+        "input": "适配的电极体系、电解质、隔离封装及材料供应",
+        "operation": "在受控制造中建立氧化还原与电子/离子通路",
+        "output": "有规定电压、容量和安全边界的原电池"
+      }
+    },
+    {
+      "id": "generator",
+      "title": "旋转发电机",
+      "subtitle": "水轮、蒸汽机的动力转成电力",
+      "category": "energy",
+      "nodeType": "practice",
+      "stage": 5,
+      "question": "已经有旋转轴，怎样把轴上的功送到远处的电器？",
+      "mechanism": "磁体与线圈相对运动，使穿过回路的磁通变化并产生感应电动势。带负载发电时，电磁作用反抗驱动运动，输入机械功被分成电能和损耗。可靠机器还需导线、绝缘、轴承与散热。",
+      "why": "发电把地点受限的机械动力变成可传输的能量载体，但必须先有真实动力源与可制造的机器。",
+      "equations": [],
+      "example": "合格手摇教学发电机接上额定小灯后，手摇阻力增加；这正是能量转换的可感知证据。",
+      "gotcha": "空载有电压不等于能持续提供大功率。这里只使用封装教学设备，不涉及市电接线或高速转子制造。",
+      "sourceIds": [
+        "modern-physics-2"
+      ],
+      "frontier": "怎样提高稳定性、绝缘寿命和效率，并将许多发电机接入供电系统？",
+      "learning": {
+        "observe": "观察封装手摇装置的转速、输出与负载阻力一起变化。",
+        "try": "按教学设备额定范围比较空载和小灯负载，或在仿真中改变磁通变化速度。",
+        "infer": "运动变化产生电输出，负载又改变机械输入；建立转换而非永动的模型。",
+        "check": "另一人用相同负载重复记录输入与输出趋势，核查机械和电测量的损耗边界。",
+        "unlocks": "把水力、风力或热机轴功接入电源链，为电网和工业电气化提供路径。"
+      },
+      "practice": {
+        "line": "动力转换线·机电发电",
+        "input": "原动机轴功、导电与磁性材料、绝缘、轴承及维护人员",
+        "operation": "用磁通变化转换轴功并管理转速、温升与损耗",
+        "output": "受控的电功率与需要排出的余热"
+      }
+    },
+    {
+      "id": "motors",
+      "title": "电动机与电驱动",
+      "subtitle": "将输送来的电力变回可控运动",
+      "category": "making",
+      "nodeType": "practice",
+      "stage": 5,
+      "question": "电力到达工厂后，怎样分别驱动每一台机器？",
+      "mechanism": "电流与磁场相互作用产生力矩，配合换向或旋转磁场维持转动。反电动势随转速变化，电流、负载与温升相互约束。机器需要电源、绕组绝缘、磁路、轴承和相配的传动。",
+      "why": "独立电驱动摆脱整间工厂共用长传动轴的限制，让转速、启停和后续自动控制可以按工位组织。",
+      "equations": [],
+      "example": "额定教学小电机驱动轻质模型时，负载变化会改变速度；控制器不能让它在任意负载下无限输出。",
+      "gotcha": "堵转可能过热；不以抓住转轴做试验。电磁理论帮助预测，但不能代替导线、绝缘和加工能力。",
+      "sourceIds": [
+        "modern-physics-2"
+      ],
+      "frontier": "怎样在负载扰动下仍保持指定转速或位置？这需要测量与反馈。",
+      "learning": {
+        "observe": "读教学电机的额定参数，观察相同电源下不同安全负载的速度记录。",
+        "try": "只使用有保护的教学套件或电机仿真，比较给定负载曲线，不触碰旋转部件。",
+        "infer": "区分电能输入、轴功输出与发热，解释为什么负载增大不能仅由速度判断效率。",
+        "check": "用另一台同规格电机复核速度—负载趋势，并比较摩擦和温度造成的差异。",
+        "unlocks": "得到可分配的机电执行能力，连接泵、机床、自动化工位与机器人。"
+      },
+      "practice": {
+        "line": "电气装备线·电驱动",
+        "input": "合格电源、磁性材料、导线绝缘、精密机械部件",
+        "operation": "将受控电流转为力矩，并配套传动、散热与保护",
+        "output": "规定速度、力矩和工作制内的机械运动"
+      }
+    },
+    {
+      "id": "power-grid",
+      "title": "电网与可靠供能",
+      "subtitle": "发电、输送、分配与维护成为系统",
+      "category": "energy",
+      "nodeType": "practice",
+      "stage": 5,
+      "question": "一个发电机能亮灯，为什么还不能稳定供养整座城市？",
+      "mechanism": "电网连接发电、变压或变换、输配电和负载调度，持续匹配供需，并用绝缘、保护与检修限制故障。提高传输电压可在相同功率下降低电流和电阻损耗；真实系统还受频率、容量和地理条件约束。",
+      "why": "大规模化工、电解、通信和计算依赖稳定供能，不只是知道电磁定律；建设线路、备用容量和维护组织都是技术条件。",
+      "equations": [],
+      "example": "同样的用电需求，距离和导线电阻增加会带来更大损耗；停电日志比标称装机功率更能反映供能可靠性。",
+      "gotcha": "电网不是无限电池。这里只讨论系统与仿真，不指导变压器制作、带电操作或并网施工。",
+      "sourceIds": [
+        "modern-physics-2",
+        "modern-solar"
+      ],
+      "frontier": "怎样协调波动电源、储能和负载？未来算力增长也必须纳入电、水、土地与维护预算。",
+      "learning": {
+        "observe": "比较公开的用电负荷、发电曲线和故障记录，区分能量总量与瞬时功率。",
+        "try": "在电网仿真中改变线路阻抗、负载与备用电源，观察损耗和欠供，不接触真实电网。",
+        "infer": "推断必须持续平衡供需且限制故障传播，单个设备效率不能代表全系统效率。",
+        "check": "让另一组按同一需求情景重做能量与可靠性核算，验证计入输配损失和备用条件。",
+        "unlocks": "为持续工业生产、冷链、电子制造和计算设施提供可规划的供能基础。"
+      },
+      "practice": {
+        "line": "公共基础设施线·发输配电",
+        "input": "发电能力、线路材料、变换设备、土地、调度与检修团队",
+        "operation": "组织输送、调压、供需协调和故障隔离",
+        "output": "满足容量与可靠性约束的用电服务"
+      }
+    },
+    {
+      "id": "industrial-chemistry",
+      "title": "规模化酸碱与化工分离",
+      "subtitle": "从少量试验到稳定的物料循环",
+      "category": "chemistry",
+      "nodeType": "practice",
+      "stage": 5,
+      "question": "实验能制得一点产品，怎样持续得到组成稳定的大量化工原料？",
+      "mechanism": "工业酸碱与基础化工把反应、分离、传热和循环回用组成生产网络。选择性、杂质控制、腐蚀与废物处置决定可用产率；硫酸、纯碱与烧碱是不同工艺，不应画成一锅万能配方。",
+      "why": "可靠化工原料使肥料、材料精炼、涂层和后来的高纯电子材料成为可能。放大依赖能源、设备、质量检验与专业人员。",
+      "equations": [],
+      "example": "粗物料中产品含量很高，但若有妨碍后续反应的杂质，仍可能不合格；需要按用途而非只按总重量验收。",
+      "gotcha": "仅给概念性工艺边界，不给强酸强碱制备、气体处理或加压装置的操作步骤。小试成功不能直接等比例放大。",
+      "sourceIds": [
+        "modern-chemistry"
+      ],
+      "frontier": "怎样在回收率、纯度、能耗、腐蚀与环境负荷间取得可验证的平衡？",
+      "learning": {
+        "observe": "阅读工业流程图中的原料、产品、循环流与废物流，辨别反应和分离的不同角色。",
+        "try": "用纸面物料衡算比较单程与回用方案，或分析公开批次质检数据，不自行制造危险试剂。",
+        "infer": "从杂质积累和损失推断循环并非百分之百回收，必须规定排污与质量边界。",
+        "check": "另一组独立闭合元素与质量收支，并用不同批次的产品指标检验稳定性。",
+        "unlocks": "供应基础酸碱和分离能力，支撑矿物精炼、肥料、聚合物与高纯材料产业。"
+      },
+      "practice": {
+        "line": "基础化工线·反应与分离网络",
+        "input": "经过分析的原料、水、能源、耐腐蚀设备与专业操作组织",
+        "operation": "受控反应、分离、回用、质量检验与合规废物管理",
+        "output": "有用途规格的酸碱或基础化工产品及可追踪副物流"
+      }
+    },
+    {
+      "id": "polymers",
+      "title": "聚合物与可设计材料",
+      "subtitle": "从天然纤维到绝缘、薄膜和涂层",
+      "category": "materials",
+      "nodeType": "practice",
+      "stage": 5,
+      "question": "怎样制造既可成形，又有特定柔韧性和阻隔性的材料？",
+      "mechanism": "大分子链的组成、长度、支化、交联和排列影响材料的力学、热学与渗透行为。合成、加工及添加体系共同决定性能；天然纤维和橡胶的经验使用早于完整的大分子理论。",
+      "why": "聚合物把原料化学与制品功能连接起来，为电线绝缘、密封件、食品阻隔层和轻量部件提供选择，而非万能替代金属。",
+      "equations": [],
+      "example": "同为塑料的软薄膜与硬外壳用途不同；同一种材料的厚度、老化和加工方向也会改变表现。",
+      "gotcha": "不以燃烧、溶解未知塑料来鉴别，也不提供危险单体合成步骤。可回收标识不能保证当地存在回收路线。",
+      "sourceIds": [
+        "modern-chemistry"
+      ],
+      "frontier": "怎样兼顾使用寿命、迁移安全与回收？先进材料需要长期测试而非只展示初始强度。",
+      "learning": {
+        "observe": "比较已知标签的包装薄膜、橡胶与硬塑料，记录弯曲、厚度和使用条件。",
+        "try": "在室温下做轻载、非破坏性比较或使用材料数据库，不加热燃烧、不接触未知试剂。",
+        "infer": "把性能差异归结为链结构与加工的共同作用，并提出厚度等可排除变量。",
+        "check": "由另一组用同类已知材料重复比较，再核对标准试验或厂家数据中的条件范围。",
+        "unlocks": "获得绝缘、密封、涂层和成形材料的设计选择，支持电气与包装制造。"
+      },
+      "practice": {
+        "line": "材料制造线·大分子制品",
+        "input": "合格原料、大分子材料体系、加工设备和用途规范",
+        "operation": "在受控工厂中形成链结构并加工、检验制品性能",
+        "output": "满足绝缘、力学或阻隔等指定用途的材料与制品"
+      }
+    },
+    {
+      "id": "fertilizer",
+      "title": "工业固氮与养分管理",
+      "subtitle": "哈伯—博施工艺只是粮食系统的一环",
+      "category": "chemistry",
+      "nodeType": "practice",
+      "stage": 5,
+      "question": "空气中氮很多，为什么土地仍会缺少植物能用的氮？",
+      "mechanism": "多数作物不能直接利用空气中的氮气。工业合成氨把氮转成可进入肥料体系的形态，依赖原料气供应、催化、能量、分离循环和专业装置；田间效果又受水、磷钾、土壤和作物需求限制。",
+      "why": "把自然固氮与养分循环之外的可用氮来源规模化，但不能凭氮肥独自消除农业的所有限制。",
+      "equations": [],
+      "example": "同样增加氮供应，缺水或缺磷的地块不一定增产；需要同时核算作物吸收、流失与环境负荷。",
+      "gotcha": "只讨论工业角色与边界，不给氨合成的条件、设备搭建或步骤。过量施用会带来水体富营养化及其他排放。",
+      "sourceIds": [
+        "modern-chemistry"
+      ],
+      "frontier": "怎样降低固氮能耗并按土壤检测匹配施用？自然固氮、堆肥和轮作仍是互补或替代路线。",
+      "learning": {
+        "observe": "比较公开的土壤检测、施肥量和产量数据，寻找限制因子而非只看氮用量。",
+        "try": "分析已有田间对照数据或养分模型，比较匹配供给和过量供给，不进行工业合成。",
+        "infer": "区分把氮转成可用形态的工业问题与让作物吸收养分的生态问题。",
+        "check": "由独立地块、多季节研究复核增产和流失，避免用单次丰收证明普遍有效。",
+        "unlocks": "获得可规模供应的养分来源，并把粮食增产与资源、能源和环境管理联系起来。"
+      },
+      "practice": {
+        "line": "农业化工线·可用氮供应",
+        "input": "氮与氢的工业来源、能源、催化和分离装置、专业人员",
+        "operation": "在受控设施中工业固氮，并按农艺检测组织合格肥料供应",
+        "output": "可追踪的含氮产品与相应能源、排放和养分收支"
+      }
+    },
+    {
+      "id": "germ-theory",
+      "title": "病菌理论与传播证据",
+      "subtitle": "从卫生经验到可检验的感染机制",
+      "category": "life",
+      "nodeType": "theory",
+      "stage": 5,
+      "question": "为什么看起来相似的环境，有些更容易发生感染？",
+      "mechanism": "显微观察、流行病学比较与受控研究共同说明，一部分疾病由特定微生物及其传播途径引起。病原体、宿主和环境共同决定发病；看见微生物不等于证明它致病，也不是所有疾病都由感染造成。",
+      "why": "卫生做法可以先由经验发现，病菌理论随后解释、检验并改进清洁、隔离和医学干预，不是古代卫生的先验门票。",
+      "equations": [],
+      "example": "洗手干预前后感染率下降是重要线索，但仍要排除病人组成、季节和其他治疗改变。",
+      "gotcha": "不培养未知微生物，不让人或动物暴露来证明感染。历史上的柯赫法则有适用限制，现代因果证据不只靠一套规则。",
+      "sourceIds": [
+        "modern-germ"
+      ],
+      "frontier": "如何区分感染与非感染，检验预防和治疗的真实效果，并处理耐药与传播网络？",
+      "learning": {
+        "observe": "阅读显微图像、历史病例统计和卫生干预记录，分清微生物存在与疾病相关。",
+        "try": "用公开匿名数据或传播仿真比较干预组和对照组，不采样培养病原体。",
+        "infer": "提出可阻断的传播链假说，同时考虑混杂因素和非感染性解释。",
+        "check": "要求多地点独立研究、干预后复核及一致的诊断标准，不以单一相关性验收。",
+        "unlocks": "把预防、诊断与传播控制建立在可检验机制上，支撑现代公共卫生。"
+      }
+    },
+    {
+      "id": "refrigeration",
+      "title": "机械制冷与冷链",
+      "subtitle": "用功把热从低温处搬走",
+      "category": "energy",
+      "nodeType": "practice",
+      "stage": 5,
+      "question": "天气炎热时，怎样持续保留食物和温度敏感物品？",
+      "mechanism": "制冷机利用工质或其他制冷循环从冷端吸热，输入功后向较热环境排热。保温、换热、可靠动力和维护共同决定性能；冷库之外，运输、监测及交接也是冷链。",
+      "why": "低温能减慢许多腐败过程，机械制冷让保存不再只依赖冬季天然冰，但不替代卫生与规定的储存时限。",
+      "equations": [],
+      "example": "冰箱内部变冷，而背部或外壁向室内放热；开门运行不会给封闭房间降温。",
+      "gotcha": "不拆制冷管路、不处理制冷剂或压力容器。低温并不意味着所有微生物都被杀死。",
+      "sourceIds": [
+        "modern-physics-2",
+        "modern-germ"
+      ],
+      "frontier": "怎样减少冷链断点、漏损和耗能，并用记录验证物品全过程的温度范围？",
+      "learning": {
+        "observe": "观察完整冰箱的内外温度记录和门开启造成的扰动，不触碰后部电气部件。",
+        "try": "只用合格温度记录器比较关门稳定期与正常取物期，或模拟热漏和停电情景。",
+        "infer": "从冷端降温和环境排热推断热搬运需要输入功，保温只能减少而非消灭热流。",
+        "check": "另一设备和另一组记录复核恢复时间；按物品规定而不是手感验收温度。",
+        "unlocks": "构成食品、医学样品等温度敏感物品的持续保存与物流能力。"
+      },
+      "practice": {
+        "line": "保存与物流线·制冷冷链",
+        "input": "机械功或电力、合格制冷设备、保温设施、监测与维护",
+        "operation": "将冷端热量移向环境，并管理储存、运输和交接温度",
+        "output": "有温度历史记录的低温保存服务及向环境排出的热"
+      }
+    },
+    {
+      "id": "steel-production",
+      "title": "批量炼钢与成分控制",
+      "subtitle": "区别于已经会做的局部热处理",
+      "category": "materials",
+      "nodeType": "practice",
+      "stage": 5,
+      "question": "怎样反复生产适合桥梁、机器和铁轨的大批量钢材？",
+      "mechanism": "炼钢调整含铁物料中的碳与其他元素，去除不需要的杂质，再经精炼、铸造和轧制形成产品。高炉—转炉与废钢/直接还原铁—电炉是不同来源路线；热处理是在既有成分上调整组织，不能替代炼钢。",
+      "why": "稳定成分与质量验收让钢从零散经验制品成为可规格化的结构和设备材料，但需要矿产、炉衬、能源、分析与生产组织。",
+      "equations": [],
+      "example": "两批外观相同的钢材可能因碳、杂质和加工历史不同而表现不同，必须依据成分与标准性能验收。",
+      "gotcha": "不能把高炉铁水、粗钢与成品钢混为一类，也不能把钢回收视为无损循环。这里只介绍工艺角色，不指导熔融金属操作。",
+      "sourceIds": [
+        "modern-worldsteel"
+      ],
+      "frontier": "怎样兼顾强度、韧性、焊接性和低排放？材料认证及服役失效反馈也是科技树的一部分。",
+      "learning": {
+        "observe": "读两种炼钢路线的公开流程，比较原料来源、能量输入和质量检验位置。",
+        "try": "用公开钢材数据比较成分、试验条件和性能，做纸面物料衡算，不做冶炼试验。",
+        "infer": "推断先控制成分再控制组织；同一强度指标不能完全说明韧性或服役寿命。",
+        "check": "检查独立成分分析、批次复验和标准材料试验是否一致，而不只引用产线宣传。",
+        "unlocks": "供给可认证的大型结构、动力设备、精密工具与基础设施材料。"
+      },
+      "practice": {
+        "line": "钢铁制造线·炼钢精炼与成材",
+        "input": "铁水、废钢或直接还原铁来源，能源、炉衬及质量分析能力",
+        "operation": "工业化调整成分、去杂、精炼、铸造并加工验收",
+        "output": "有成分和性能规格的钢材及可核算副物流"
+      }
+    },
+    {
+      "id": "precision-measurement",
+      "title": "精密测量与不确定度",
+      "subtitle": "读数多一位，不等于知道得更准",
+      "category": "physics",
+      "nodeType": "practice",
+      "stage": 6,
+      "question": "怎样判断两个看似相同的零件或两次试验真的不同？",
+      "mechanism": "校准把读数联系到参考标准，重复测量估计随机变化，方法与环境分析评估其他不确定度。报告需说明测量对象、条件和范围；分辨率、重复性与准确性不是同一个指标。",
+      "why": "精密制造、微观证据和闭环控制都要知道差异是否超过测量能力。共同标准与可追溯记录让不同地方能互相验收。",
+      "equations": [],
+      "example": "一把尺每次读数都接近，但零点偏移会让所有结果一起偏错；平均很多次不能消除这种偏差。",
+      "gotcha": "重复性很好并不自动保证准确。校准证书也不是永久保证，方法变化或设备受损都可能使旧结果失效。",
+      "sourceIds": [
+        "modern-metrology"
+      ],
+      "frontier": "怎样把多个测量环节的不确定度合并，并据此规定制造容差和科学证据强度？",
+      "learning": {
+        "observe": "比较同一物体的重复读数、另一仪器读数和已知参考值，寻找散布与系统偏移。",
+        "try": "用普通尺与合格卡尺做非危险物体的重复测量，改变测量者但保留对象和记录规则。",
+        "infer": "区分分辨率、随机变化和方法偏差，给出与用途匹配的可信区间而非虚假精确值。",
+        "check": "由独立人员用可追溯参考复核，说明校准、温度和操作方法，验收差异是否可分辨。",
+        "unlocks": "为精密部件、传感器、电子器件及可重复科学提供共同的误差预算。"
+      },
+      "practice": {
+        "line": "质量保障线·校准与测量",
+        "input": "被测对象、参考标准、合格仪器、方法与环境记录",
+        "operation": "校准、重复测量并评估不确定度与可追溯性",
+        "output": "附方法、单位和不确定度的可比较测量结果"
+      }
+    },
+    {
+      "id": "vacuum",
+      "title": "真空与受控环境",
+      "subtitle": "把空气、污染和碰撞变成可管理变量",
+      "category": "physics",
+      "nodeType": "practice",
+      "stage": 6,
+      "question": "若空气会干扰观察和表面加工，怎样把它的影响分离出来？",
+      "mechanism": "密闭容器与抽气设备降低气体密度，压力测量检验结果。漏气、材料放气和清洁度限制可达到的环境；低压能减少粒子碰撞，却不等于完全没有物质。真空管和薄膜工艺利用这种受控边界。",
+      "why": "将环境从不可见背景变成可测条件，支撑微观证据与部分电子制造，而不是只有一个更强的泵就足够。",
+      "equations": [],
+      "example": "同一密闭系统停止抽气后压力回升，可能来自泄漏也可能来自表面放气，需要不同证据区分。",
+      "gotcha": "不对普通玻璃容器抽真空，也不改造压力系统。低压设备有内爆、电气和材料风险，只用公开数据或认证封装演示。",
+      "sourceIds": [
+        "modern-physics-2",
+        "modern-physics-3"
+      ],
+      "frontier": "怎样用材料、密封和洁净规范一起降低背景，使微弱信号与工艺表面不被污染淹没？",
+      "learning": {
+        "observe": "阅读合格装置的压力—时间记录，观察抽气下降与停泵回升的不同曲线。",
+        "try": "在仿真中分别增加泄漏率和放气率，比较结果；不自制容器或操作裸露真空设备。",
+        "infer": "以气体密度、碰撞和环境污染解释变化，提出漏气与放气的竞争模型。",
+        "check": "使用另一套经校准传感器的公开记录复核，并核对容器材料和测量位置。",
+        "unlocks": "获得可定义的低压环境，为真空电子器件、粒子测量与受控表面制造提供一路条件。"
+      },
+      "practice": {
+        "line": "实验与电子制造线·环境控制",
+        "input": "合格密闭容器、密封、泵、压力仪器及清洁材料",
+        "operation": "受控抽气、环境测量与泄漏/放气管理",
+        "output": "具有测得压力与污染边界的工艺或实验环境"
+      }
+    },
+    {
+      "id": "atomic-evidence",
+      "title": "原子观念的交叉证据",
+      "subtitle": "为什么接受一个看不见的微观模型？",
+      "category": "physics",
+      "nodeType": "theory",
+      "stage": 6,
+      "question": "定比反应、布朗运动和粒子测量，怎样共同支持原子图景？",
+      "mechanism": "化学比例约束组成，布朗运动统计支持离散粒子碰撞，电荷与散射等测量进一步揭示物质内部结构。模型可信来自不同方法的数量预测相互吻合，而非一句‘显微镜看见了’。原子、电子与轨道的具体说明仍使用已有节点。",
+      "why": "说明从经验规律到不可直接感知实体的认知跃迁，也提醒古代冶金和成形不必先掌握这套现代解释。",
+      "equations": [],
+      "example": "能从不同化学和物理方法得到相容的粒子尺度信息，比仅用一类现象拟合出一个参数更有说服力。",
+      "gotcha": "布朗运动中的可见颗粒不是原子本身；现代原子图像也依赖仪器与模型。不同历史证据并非一次试验同时得到。",
+      "sourceIds": [
+        "modern-chemistry",
+        "modern-physics-3"
+      ],
+      "frontier": "哪些观测使经典连续模型失效？下一步研究光的离散能量和物质波，而不重复轨道百科。",
+      "learning": {
+        "observe": "对照定比反应、布朗运动影片和散射数据各自真正测得的量。",
+        "try": "用公开数据或粒子碰撞仿真比较连续与离散模型的预测，不进行辐射或高压实验。",
+        "infer": "寻找多个独立测量对同一微观参数的约束，将拟合成功与模型真实程度分开。",
+        "check": "检查另一团队、另一方法是否获得相容结论，并注明各实验的校准和理论假设。",
+        "unlocks": "建立微观模型的证据标准，连接已有原子电子、材料结构和量子研究。"
+      }
+    },
+    {
+      "id": "quantum-model",
+      "title": "量子证据与概率预测",
+      "subtitle": "聚焦光电、干涉与测量，不重复轨道节点",
+      "category": "physics",
+      "nodeType": "theory",
+      "stage": 6,
+      "question": "为什么有些现象不能只用经典波或经典粒子解释？",
+      "mechanism": "光电效应的频率阈值、离散光谱与粒子干涉对经典模型提出不同约束。量子理论用状态、演化和测量概率组织预测，能量交换可呈离散性；具体原子轨道与电子结构参见已有原子电子节点。",
+      "why": "新模型必须解释旧模型的失效并恢复它在适用范围内的成功，不是因为术语神秘就有更高认知地位。",
+      "equations": [],
+      "example": "在光电效应数据中，增加光强与改变频率产生不同影响；只说‘光越强电子越快’不能解释结果。",
+      "gotcha": "量子概率不意味着随意结果，也不证明意识创造现实。数据分析或仿真可以安全入门，不自制激光、高压或辐射装置。",
+      "sourceIds": [
+        "modern-physics-3"
+      ],
+      "frontier": "怎样把微观概率模型连接到固体能带、器件行为与可测工程参数？",
+      "learning": {
+        "observe": "比较公开光电曲线和低计数干涉图，标出经典预测与观测的冲突。",
+        "try": "在仿真中分别改变频率、强度与观测安排，先记录预测再看结果。",
+        "infer": "提出能量离散与概率幅的模型，明确哪些观测区别了竞争解释。",
+        "check": "复核独立实验的阈值和干涉统计，要求模型给出数值分布而非事后比喻。",
+        "unlocks": "获得预测微观现象的新框架，支持电子材料模型而不冒充早期工艺前置条件。"
+      }
+    },
+    {
+      "id": "semiconductors",
+      "title": "可控半导体材料",
+      "subtitle": "纯度与结构让导电行为可设计",
+      "category": "materials",
+      "nodeType": "practice",
+      "stage": 6,
+      "question": "怎样得到不只是导电或绝缘，而是可受控导电的材料？",
+      "mechanism": "半导体的载流子行为受能带、温度、杂质与界面影响。高纯原料、晶体与缺陷控制、可检验的掺杂和接触结构使其成为器件材料。早期整流可由经验发现，现代模型提升可预测设计。",
+      "why": "材料不只是电路中的一根线；极少量杂质和界面改变就能产生整流、放大或光电功能。可制造性依赖洁净与精密质量控制。",
+      "equations": [],
+      "example": "成品二极管在相同规定电压下的正向与反向电流不同；这与一根普通电阻丝的近似对称行为不同。",
+      "gotcha": "砂中有硅不等于有器件级硅。高纯材料、洁净设施和设备供应链不能由一份设计文件代替。",
+      "sourceIds": [
+        "modern-physics-3",
+        "modern-silicon"
+      ],
+      "frontier": "怎样降低缺陷、控制界面并稳定复制微结构？下一步是用第三个端口调节电流。",
+      "learning": {
+        "observe": "比较成品半导体器件的厂家曲线，观察极性、温度和批次对行为的影响。",
+        "try": "使用有保护的额定低压教学套件或仿真比较二极管与电阻，不自行掺杂或处理工艺气体。",
+        "infer": "推断载流子与界面结构共同控制导电，区分材料名称与实际器件结构。",
+        "check": "由另一器件批次和校准仪器复核特性范围，再与独立制造数据比较。",
+        "unlocks": "提供整流、晶体管、传感和光伏的材料基础，连接微观模型与制造能力。"
+      },
+      "practice": {
+        "line": "电子材料线·纯度与结构控制",
+        "input": "高纯原料、晶体加工、洁净设施、检验与专业工艺能力",
+        "operation": "受控形成材料、载流子分布和界面并检验电学特性",
+        "output": "具有可追踪纯度、结构和特性范围的半导体材料或基础器件"
+      }
+    },
+    {
+      "id": "transistor",
+      "title": "晶体管与电子开关",
+      "subtitle": "小信号控制电源提供的大信号",
+      "category": "information",
+      "nodeType": "practice",
+      "stage": 6,
+      "question": "怎样用一个弱信号，控制另一路电流并连续复制逻辑动作？",
+      "mechanism": "晶体管通过结结构或电场调节载流子通道，实现放大或开关。控制端决定流动状态，输出能量主要来自供电而非控制信号本身。尺寸、材料、噪声、散热和一致性限制器件功能。",
+      "why": "稳定、可批量制造的可控开关把信号与能量管理结合起来，让电子逻辑与密集计算逐步替代笨重的部分旧方案。",
+      "equations": [],
+      "example": "在数字仿真中，一个控制输入可切换后级状态；若断开供电，控制端不能凭信号无限驱动负载。",
+      "gotcha": "晶体管不是所有早期无线电或计算机的必需前件；真空管、继电器等有独立历史路线。放大不创造能量。",
+      "sourceIds": [
+        "modern-silicon",
+        "modern-physics-3"
+      ],
+      "frontier": "怎样把大量器件和互连一起制造，而不是逐个手工连接？",
+      "learning": {
+        "observe": "阅读成品器件的控制—输出曲线，区分开关区、放大区与允许工作范围。",
+        "try": "用数字电路仿真或合格低压模块比较控制端变化和输出状态，不制作裸露大功率电路。",
+        "infer": "建立控制通道与供能通道不同的模型，解释小输入怎样控制较大输出。",
+        "check": "让另一组或另一器件批次复现逻辑与特性，核对噪声、温升和规格限制。",
+        "unlocks": "获得可重复的放大与电子开关单元，为集成逻辑、控制和计算铺路。"
+      },
+      "practice": {
+        "line": "电子器件线·受控开关",
+        "input": "合格半导体结构、电极互连、封装、供电和检验能力",
+        "operation": "制造并验收控制端调节载流子通路的器件",
+        "output": "有工作范围和特性规格的放大/开关元件"
+      }
+    },
+    {
+      "id": "radio-communication",
+      "title": "无线电与信号传递",
+      "subtitle": "发出载波不等于传出可恢复信息",
+      "category": "information",
+      "nodeType": "practice",
+      "stage": 6,
+      "question": "怎样让远处的人收到一个有意义的变化，而不铺设全程导线？",
+      "mechanism": "发射系统把信息编码到电磁信号，接收系统通过天线、选频、检测与放大恢复信息。噪声、带宽、传播与同步限制可靠性；早期器件和现代晶体管系统可走不同实现路线。",
+      "why": "将电气发现变成远距离协作能力，但需要约定编码、频段和接口；接收成功不是无限距离、无限速率的证明。",
+      "equations": [],
+      "example": "同一接收机在两个频段或位置可能收到不同质量的信号；更强的本地噪声也会使原有信号难以辨别。",
+      "gotcha": "不自制高功率发射机，不干扰通信。入门只做接收、音频类比或仿真；真实发射需符合频谱法规。",
+      "sourceIds": [
+        "modern-physics-2",
+        "modern-silicon"
+      ],
+      "frontier": "怎样检错、共享信道并把点对点消息组织成网络？有线和光纤是并列传输路线。",
+      "learning": {
+        "observe": "用成品接收机观察调谐与信号质量的变化，分清载波强度和消息可理解性。",
+        "try": "使用接收模式或信号仿真，把已知消息叠加不同噪声后比较恢复结果，不发射无线信号。",
+        "infer": "从恢复错误推断编码、选频和信噪比共同决定可通信范围。",
+        "check": "由另一接收者独立解码同一测试消息，统计错误而不只记录‘听到了’。",
+        "unlocks": "获得远距离信号链与编码协作，为导航、遥测和通信网络提供一种媒介。"
+      },
+      "practice": {
+        "line": "通信装备线·信号收发",
+        "input": "受许可的信号系统、天线、选频与检测器件、供电及编码约定",
+        "operation": "把信息映射为电磁变化，并在噪声中恢复与核验消息",
+        "output": "具有错误、带宽和覆盖范围指标的通信能力"
+      }
+    },
+    {
+      "id": "feedback-control",
+      "title": "电子反馈与稳定控制",
+      "subtitle": "从机械调速器走向可设计的闭环",
+      "category": "physics",
+      "nodeType": "theory",
+      "stage": 6,
+      "question": "为什么‘偏了就纠正’有时有效，有时却越纠越振荡？",
+      "mechanism": "反馈比较目标与测得输出，通过执行器施加修正。系统响应、延迟、噪声和控制力度决定是否稳定；负反馈也可能因延迟和相位变化造成振荡。现代控制把经验调速推广为可分析的动态系统。",
+      "why": "反馈思想可先由机械实践得到；动态模型和频域分析后来支持更可靠的电子控制，而不是机械调速器必须先懂现代控制论。",
+      "equations": [],
+      "example": "仿真中的温度控制若检测延迟增加，原来合适的修正力度可能造成过冲和反复波动。",
+      "gotcha": "不能把传感器显示等同于真实状态，也不能让机器无限加力追逐错误读数。必须有独立限幅、故障检测与安全停止。",
+      "sourceIds": [
+        "modern-feedback"
+      ],
+      "frontier": "怎样在不确定负载下验证稳定裕度，并把反馈嵌入自动化、机器人与能源系统？",
+      "learning": {
+        "observe": "比较相同目标下开环、温和闭环和强闭环的响应曲线，识别滞后、过冲和稳态差。",
+        "try": "在控制仿真中逐一改变延迟、噪声和控制力度，不调试真实高能执行机构。",
+        "infer": "建立系统动态与控制共同决定结果的模型，解释为何更快纠错不一定更好。",
+        "check": "由另一组在预先保留的扰动情景复核稳定性，并独立检查传感器故障和停止策略。",
+        "unlocks": "提供可验证的稳定控制方法，连接仪器、电驱动、自动化与机器人。"
+      }
+    },
+    {
+      "id": "integrated-circuits",
+      "title": "集成电路与制造链",
+      "subtitle": "不是把设计图缩小就能得到芯片",
+      "category": "making",
+      "nodeType": "practice",
+      "stage": 7,
+      "question": "怎样将成千上万乃至更多电子开关可靠地连在一块材料上？",
+      "mechanism": "集成制造在晶圆上按图形形成器件与互连，配合材料沉积、图形转移、加工、检测及封装。缺陷、对准、洁净、热管理和良率限制可用数量；设计、工艺和测试是相互依赖的体系。",
+      "why": "大规模连接降低体积与部分单元成本，让电子计算可普及。但这需要高纯材料、光学、精密设备、能源、水和熟练团队的实物链。",
+      "equations": [],
+      "example": "即使版图正确，污染或互连失效也会使芯片报废；‘每片晶圆有多少图形’不等于‘能交付多少合格芯片’。",
+      "gotcha": "不提供洁净室危险化学品操作步骤。摩尔定律是历史趋势，不是保证无限缩小的物理定律；AI不能凭代码生成一座晶圆厂。",
+      "sourceIds": [
+        "modern-silicon",
+        "modern-metrology"
+      ],
+      "frontier": "怎样共同优化设计、良率、封装、存储带宽和能耗，而不只比较晶体管数量？",
+      "learning": {
+        "observe": "阅读公开芯片截面、制造流程与良率概念，区分设计层、工艺层和交付层。",
+        "try": "在逻辑或版图教学仿真中加入连接缺陷，比较功能与合格率，不开展真实化学加工。",
+        "infer": "推断复杂度增加需要更强的对准、检测与冗余，器件数量并不自动转成可用能力。",
+        "check": "用独立测试向量验收功能，并核对不同批次的规格、可靠性和供应链条件。",
+        "unlocks": "形成微电子逻辑与存储的可规模制造路径，支撑现代计算与控制设施。"
+      },
+      "practice": {
+        "line": "微电子制造线·晶圆加工与封装测试",
+        "input": "设计、器件级材料、洁净水与能源、精密设备及工艺团队",
+        "operation": "受控形成器件和互连，检测、封装并筛选可靠产品",
+        "output": "经功能和可靠性验收的集成逻辑、存储或专用芯片"
+      }
+    },
+    {
+      "id": "algorithms",
+      "title": "算法与可验证程序",
+      "subtitle": "古老规则发展成计算、复杂度和证明",
+      "category": "information",
+      "nodeType": "theory",
+      "stage": 7,
+      "question": "怎样把‘我知道怎么做’变成别人或机器不会误解的规则？",
+      "mechanism": "算法明确输入、步骤、分支、状态与停止条件；正确性解释为何输出符合要求，复杂度分析比较随规模增长的资源需求。算法早于电子计算机，本阶段聚焦程序化、可验证与可扩展的处理能力。",
+      "why": "可重复规则可以在纸上先获得，再由不同机械或电子实现执行。知道答案与有可靠、可终止的求解过程不同。",
+      "equations": [],
+      "example": "有序列表的二分查找比逐项查找增长慢，但若列表未排序，其正确性前提失效；快并不能弥补错。",
+      "gotcha": "一组示例全通过不等于普遍正确。算法也有不可计算或资源不可承受的问题，不是任何愿望都能写成可执行步骤。",
+      "sourceIds": [
+        "modern-cs50"
+      ],
+      "frontier": "如何把规则落实到存储、指令和输入输出上，并在错误、并行和网络环境中仍可验证？",
+      "learning": {
+        "observe": "比较人们查找或排序的口头规则，寻找歧义、遗漏的边界和不同工作量。",
+        "try": "用纸卡独立执行两种查找规则，逐项计数操作，再用小程序比较规模变化。",
+        "infer": "写出前置条件、不变量与停止条件，区分正确性和效率两种主张。",
+        "check": "让没参与设计的人按规则执行，补做空输入、重复值和异常情况，并核对证明前提。",
+        "unlocks": "得到可交给机器执行的明确过程，支撑计算、通信协议、自动化和学习算法。"
+      }
+    },
+    {
+      "id": "computers",
+      "title": "可编程计算机",
+      "subtitle": "同一台机器能更换规则而不是重造结构",
+      "category": "information",
+      "nodeType": "practice",
+      "stage": 7,
+      "question": "怎样让同一套硬件按不同程序处理数字、文字和控制信号？",
+      "mechanism": "计算机以物理状态表示信息，由逻辑、存储、指令执行和输入输出组成。程序组织状态转换，软件抽象把底层设备变成可使用的系统。机械、继电器、真空管和集成电路都是不同实现路径。",
+      "why": "将明确算法交给可重复执行的机器，使计算与信息处理能够扩展；现代微电子是强有力的实现，不是所有计算的唯一历史前件。",
+      "equations": [],
+      "example": "同一台普通电脑可运行排序与绘图程序；程序不变而输入不同，会产生不同结果，硬件故障也会破坏结果。",
+      "gotcha": "软件结果必须有定义的输入、版本和资源边界。知道程序并不能自动制造处理器、存储器、电源和散热系统。",
+      "sourceIds": [
+        "modern-cs50",
+        "modern-silicon"
+      ],
+      "frontier": "怎样管理程序规模、权限、可靠存储与多机协作，并把计算接回真实测量和行动？",
+      "learning": {
+        "observe": "在成品电脑上记录同一程序、相同输入的结果，以及不同输入造成的变化。",
+        "try": "运行离线教学程序或简易指令机仿真，逐步观察存储与指令，不修改系统敏感设置。",
+        "infer": "建立信息表示、程序规则和物理执行分层模型，区分软件错误与硬件资源限制。",
+        "check": "由另一实现或另一机器复算，固定输入和版本，加入边界测试与可追溯日志。",
+        "unlocks": "提供通用可编程处理能力，支持网络、自动化、数据模型和智能系统。"
+      },
+      "practice": {
+        "line": "计算系统线·硬件与软件集成",
+        "input": "可实现逻辑与存储的器件、程序、供电、散热及输入输出设备",
+        "operation": "组织信息表示、指令执行、存储管理与测试",
+        "output": "能在规定资源内重复运行多种程序的计算系统"
+      }
+    },
+    {
+      "id": "networks",
+      "title": "数字网络与共享协议",
+      "subtitle": "从一条信号链到可检错的多机协作",
+      "category": "information",
+      "nodeType": "practice",
+      "stage": 7,
+      "question": "怎样让不同机器分工交换信息，即使线路会丢失或延迟消息？",
+      "mechanism": "网络以约定的地址、封装、路由与端点协议交换数据；检错、重传和顺序管理等机制应对部分传输故障。铜线、无线电与光纤是不同媒介，网络规则与物理信号层不能混为一谈。",
+      "why": "协议把单机能力变成协作系统，支持知识共享与分布式服务。但延迟、带宽、身份验证和故障隔离都是实际约束。",
+      "equations": [],
+      "example": "消息被分成多段后到达顺序改变，端点仍可按协议重组；如果只检查‘有信号’，无法知道内容是否正确完整。",
+      "gotcha": "互联网不是可信知识的自动认证器。入门仅用本地隔离仿真或自有测试环境，不扫描或干扰他人的网络。",
+      "sourceIds": [
+        "modern-cs50"
+      ],
+      "frontier": "怎样验证来源、权限与隐私，并在部分故障下维持协作？分布式计算必须计算通信成本。",
+      "learning": {
+        "observe": "在教学网络仿真里观察消息分段、延迟、丢失和重新组合的事件日志。",
+        "try": "模拟两个端点交换已知短消息，分别加入丢包与乱序，比较有无检错重传的结果。",
+        "infer": "推断互操作需要共享协议，物理传输成功与应用消息完整是不同层次的验收。",
+        "check": "让独立编写的端点实现互相通信，用预定错误情景与校验结果核对协议行为。",
+        "unlocks": "构成数字知识交换、分布式服务和远程测量的协作基础。"
+      },
+      "practice": {
+        "line": "信息基础设施线·连接与协议",
+        "input": "计算端点、传输媒介、地址与协议、供电和维护",
+        "operation": "按协议编码、转发、检错并交付数据，管理身份与故障",
+        "output": "具有可测吞吐、延迟、完整性和权限边界的数据交换服务"
+      }
+    },
+    {
+      "id": "industrial-automation",
+      "title": "工业自动化与质量闭环",
+      "subtitle": "让传感、程序与执行器共同完成工位",
+      "category": "making",
+      "nodeType": "practice",
+      "stage": 7,
+      "question": "怎样让机器持续生产合格品，而不只是按按钮重复动作？",
+      "mechanism": "自动化将传感、控制逻辑、驱动和工艺设备连接起来，用测量决定下一动作，并独立监测故障。工位重复不等于产品合格；过程能力、追溯和停机保护必须同时设计。",
+      "why": "把熟练操作中的可明确部分转成可验收系统，提高一致性与可记录性；设备、原料、校准、维护和人员判断仍不可缺。",
+      "equations": [],
+      "example": "仿真分拣线即使动作完全重复，传感器漂移仍可能把全部产品分错；需要独立抽检发现系统性偏差。",
+      "gotcha": "不用演示程序直接控制真实产线。安全联锁、停机和质量检查不能只依赖同一个可能失效的智能模型。",
+      "sourceIds": [
+        "modern-feedback",
+        "modern-metrology",
+        "modern-autonomous"
+      ],
+      "frontier": "怎样从固定规则扩展到不确定对象，并保留可审计的安全与质量边界？",
+      "learning": {
+        "observe": "阅读工位流程和质量记录，区分动作完成率、合格率与故障停机时间。",
+        "try": "在虚拟分拣线中加入传感偏差、缺料和卡件，比较固定节拍与有反馈的控制。",
+        "infer": "推断稳定制造需要工艺窗口、校准和故障策略，不只需要更快执行程序。",
+        "check": "由独立测试者进行留出的故障注入，并以外部抽检核对程序声称的合格率。",
+        "unlocks": "得到可追踪的重复生产和仪器执行能力，支持微电子、机器人与实验自动化。"
+      },
+      "practice": {
+        "line": "生产系统线·传感控制与验收",
+        "input": "成熟工艺、机械装备、传感与执行器、控制程序、维护和质量规范",
+        "operation": "在受限流程内闭环执行、记录、独立质检和故障停止",
+        "output": "可追溯的合格产品、过程数据与可复核故障记录"
+      }
+    },
+    {
+      "id": "photovoltaics",
+      "title": "光伏与分布式电源",
+      "subtitle": "光直接变电，制造却不直接从沙子开始",
+      "category": "energy",
+      "nodeType": "practice",
+      "stage": 7,
+      "question": "没有燃料和旋转轴时，怎样把阳光变成可用电力？",
+      "mechanism": "光伏材料吸收合适光子产生载流子，器件内部结构帮助分离电荷，外电路获得电输出。组件、封装、功率变换和系统布置共同决定实际发电；光照、温度与遮挡改变输出。",
+      "why": "提供不依赖旋转发电机的一条电源路线，但仍依赖器件材料、制造与持续维护。系统供能要解决夜间和天气变化。",
+      "equations": [],
+      "example": "成品小型教学光伏板的空载电压不能单独代表它在负载下的功率；相同光照下负载工作点不同，输出也不同。",
+      "gotcha": "光伏不等于太阳热机，太阳能板也不天然包含储能。这里只用认证低功率教学模块，不指导屋顶施工或并网。",
+      "sourceIds": [
+        "modern-solar",
+        "modern-physics-3"
+      ],
+      "frontier": "怎样同时评估全生命周期材料、制造能源、组件寿命、储能与回收，而非只看转换效率？",
+      "learning": {
+        "observe": "观察成品教学模块在遮挡、光照和环境温度变化下的公开或实测输出记录。",
+        "try": "按低功率模块规范或仿真比较负载工作点，不直视强光、不连接市电。",
+        "infer": "从负载与光照曲线区分光电转换、输出功率与储能，估计可供给的时段。",
+        "check": "在另一模块和另一天重复记录，计入光照条件，并核对独立性能数据与制造规格。",
+        "unlocks": "增加分布式电源选择，与储能和电网共同支持远程仪器及能源系统。"
+      },
+      "practice": {
+        "line": "太阳能装备线·光电器件与系统",
+        "input": "光照、合格光伏材料组件、封装、功率管理与安装维护能力",
+        "operation": "将光子吸收转成电输出，并匹配负载与环境条件",
+        "output": "随光照条件变化、具有性能记录的电能供给"
+      }
+    },
+    {
+      "id": "batteries",
+      "title": "可充电电池与储能管理",
+      "subtitle": "不创造能源，只在时间上搬运能源",
+      "category": "energy",
+      "nodeType": "practice",
+      "stage": 7,
+      "question": "怎样把现在的电力留到夜间、停电或移动设备工作时使用？",
+      "mechanism": "可充电体系以受控且足够可逆的电化学变化存储能量。电极、电解质、隔离、封装与管理系统共同限制容量、倍率、温度和寿命；损耗使放出的能量小于充入的能量。",
+      "why": "原电池曾提供持续电源，本阶段扩展到循环储能与系统管理，连接波动电源和移动电驱动。制造与安全检验依赖真实材料和设施。",
+      "equations": [],
+      "example": "两块标称容量相同的合格电池，在不同温度或放电速率下可用能量可能不同；循环次数还取决于工况。",
+      "gotcha": "不拆解、刺穿、改装或自制锂电池，不绕过保护充电。这里只介绍原理、数据与成品系统管理。",
+      "sourceIds": [
+        "modern-chemistry",
+        "modern-solar"
+      ],
+      "frontier": "怎样在能量密度、功率、寿命、资源获取和回收间选择？电池不是唯一储能路线。",
+      "learning": {
+        "observe": "读成品储能系统的充放电、温度和老化曲线，区分容量、能量与峰值功率。",
+        "try": "在仿真或公开循环数据中比较工况，若使用成品仅按厂家规定，不改保护装置。",
+        "infer": "推断循环可逆性有代价，系统需状态估计、温度管理和规定使用范围。",
+        "check": "用另一独立数据集复核效率与衰减，并核对容量测试条件，避免只比较广告标称值。",
+        "unlocks": "为移动机器人、远程仪器和可变电源提供一条受约束的时间调节能力。"
+      },
+      "practice": {
+        "line": "储能装备线·电化学与保护管理",
+        "input": "合格可充电材料体系、工业制造、封装、充电管理与供电",
+        "operation": "受控储能、供能、热管理、状态监测和寿命验收",
+        "output": "有能量、功率、循环寿命及安全边界的储能服务"
+      }
+    },
+    {
+      "id": "machine-learning",
+      "title": "机器学习与泛化检验",
+      "subtitle": "由例子形成模型，不把记住当作理解",
+      "category": "cognition",
+      "nodeType": "theory",
+      "stage": 8,
+      "question": "规则难以逐条写出时，怎样让机器从数据中形成可用预测？",
+      "mechanism": "学习算法利用数据和目标函数选择模型参数，必须在未用于调整的样本上检验表现。表示、数据分布、优化与评价共同决定能力；训练集成绩不能说明新环境中的可靠性，更不直接证明因果理解。",
+      "why": "把部分模式发现过程系统化，但需要有质量的数据、可执行算法、计算资源和独立验收，不能让模型自己宣布学会。",
+      "equations": [],
+      "example": "预测测量值的模型在随机切分上表现很好，换一天或另一设备却失效，可能是泄漏或分布变化而不是缺少更多参数。",
+      "gotcha": "基础学习可在普通电脑上完成，不必先拥有巨型数据中心。隐私、偏差、标签错误和错误的目标都可能使规模越大越偏。",
+      "sourceIds": [
+        "modern-ml"
+      ],
+      "frontier": "怎样将相关性预测用于受约束的决策，并保持不确定度、失败检测与独立证据？",
+      "learning": {
+        "observe": "比较训练与保留测试集的误差，寻找记忆、泄漏和不同数据群体的表现差异。",
+        "try": "用公开非敏感小数据训练简单模型，与明确规则或均值基线比较，保留独立测试集。",
+        "infer": "从学习曲线推断拟合、泛化和分布变化，区分预测能力与因果或世界模型主张。",
+        "check": "让独立人员用预先锁定的新数据复算，报告误差分布、基线与失败案例，不只展示最好输出。",
+        "unlocks": "获得可检验的数据驱动预测与表征，为感知、代理和实验选择提供一种方法。"
+      }
+    },
+    {
+      "id": "training-compute",
+      "title": "训练算力与物理底座",
+      "subtitle": "芯片之外还有存储、供电、散热和人",
+      "category": "information",
+      "nodeType": "practice",
+      "stage": 8,
+      "question": "一个很大的学习计算，怎样真实地、可重复地运行下去？",
+      "mechanism": "训练设施组织处理器、存储、数据管线与必要的互连，持续提供电力、散热、检查点和故障恢复。吞吐受计算、内存与通信共同限制。大型任务需数据中心和运维，微小模型可用单机完成。",
+      "why": "把学习算法落实为有成本和资源边界的工程过程。智慧体能优化计划，却不能凭推理生成矿产、芯片工厂、电网、冷却介质或维护人员。",
+      "equations": [],
+      "example": "增加处理器数量而数据读取或通信不变，训练可能几乎不变快；理论算力不等于任务实际吞吐。",
+      "gotcha": "算力更多不自动带来更正确的知识，也不能忽略制造、供水、用电与废热。这里是资源核算，不承诺任何自主制造奇迹。",
+      "sourceIds": [
+        "modern-ml",
+        "modern-silicon",
+        "modern-autonomous"
+      ],
+      "frontier": "怎样按验证收益分配数据与计算预算，并把能源、器件寿命和恢复能力纳入决策？",
+      "learning": {
+        "observe": "记录小型训练的耗时、内存、数据读取与可获得的能耗指标，区分瓶颈。",
+        "try": "在预算受限的成品电脑上比较批量和读取方式，或用资源模型模拟扩展，不搭建供电设备。",
+        "infer": "推断任务吞吐由最紧约束决定，区分算法改进、硬件扩展与数据质量收益。",
+        "check": "由另一环境按同一版本和数据复算误差与资源消耗，并测试检查点恢复是否保持结果。",
+        "unlocks": "提供可审计的模型训练执行能力，把智能发展明确接回硬件、能源和维护链。"
+      },
+      "practice": {
+        "line": "智能计算基础设施线·训练执行",
+        "input": "合格计算与存储硬件、数据、程序、电力、散热和运维能力",
+        "operation": "按预算执行训练、记录版本与资源、检查点保存和故障恢复",
+        "output": "附评价、来源与资源账本的模型参数及可重复运行记录"
+      }
+    },
+    {
+      "id": "intelligent-agent",
+      "title": "智能代理与受约束行动",
+      "subtitle": "观察、计划、用工具、核验，再决定下一步",
+      "category": "cognition",
+      "nodeType": "practice",
+      "stage": 8,
+      "question": "怎样让系统不只给出答案，还能在有限权限下完成多步任务？",
+      "mechanism": "代理维护目标与状态，选择行动或工具，读取返回的证据后更新计划。策略可来自明确规则、搜索或学习模型；权限、预算、停止条件和外部验证约束其行为。语言流畅或自评成功都不等于任务已完成。",
+      "why": "将已有知识与可执行接口接成循环，而不是假设一个智慧体知道一切。现实任务还需要设备、原料、能源、许可和人的协作。",
+      "equations": [],
+      "example": "沙盒代理规划一次虚拟生产：遇到库存不足应报告缺口并调整计划，不能把缺失的零件写成已经制造完成。",
+      "gotcha": "自主性不代表无限权限或可信事实。危险、不可逆和影响他人的行动需审批；工具输出可能错误，需独立核验而非照单全收。",
+      "sourceIds": [
+        "modern-autonomous",
+        "modern-ml",
+        "modern-cs50"
+      ],
+      "frontier": "怎样检验长期任务中的错误累积与资源可行性，并把代理接入有安全停止的物理系统？",
+      "learning": {
+        "observe": "审阅代理日志中的目标、工具调用、反馈和最终证据，找出计划与实际结果的差距。",
+        "try": "在无外部副作用的沙盒安排受预算任务，加入缺料、工具失败和矛盾信息，比较规则与学习策略。",
+        "infer": "建立感知—行动—反馈循环，说明不确定时应核查、降级或停止，而不是编造成功。",
+        "check": "由独立验收脚本或人员按预先目标检查结果，再复现失败情景和权限边界。",
+        "unlocks": "形成受限多步协作与工具使用能力，可连接机器人和研究，但不能绕过物理前置条件。"
+      },
+      "practice": {
+        "line": "智能系统线·计划执行与核验",
+        "input": "明确目标、程序或学习策略、可授权工具、资源预算和状态证据",
+        "operation": "在权限内观察、计划、执行、核验并调整或安全停止",
+        "output": "有证据和资源记录的任务结果或明确的失败/缺口报告"
+      }
+    },
+    {
+      "id": "robotics",
+      "title": "机器人与具身执行",
+      "subtitle": "把数字计划接到有限精度的现实动作",
+      "category": "making",
+      "nodeType": "practice",
+      "stage": 8,
+      "question": "怎样把‘拿起这个物体’变成真实且可验证的机械动作？",
+      "mechanism": "机器人整合机构、电驱动、传感、坐标校准、运动规划和反馈。负载、摩擦、遮挡、柔性与环境变化使真实状态偏离计划；动作完成需外部测量核验。这里以电驱动可编程机器为本枝，不排除其他执行路线。",
+      "why": "让自动化处理变化的空间对象，为物流、制造与研究提供执行能力，但不意味着能在没有零件、工具和能源时自我复制。",
+      "equations": [],
+      "example": "模拟抓取成功但实物滑落，可能是摩擦、物体姿态或传感标定不符；换一个更会说话的模型不能直接消除这些误差。",
+      "gotcha": "学习先在仿真；真实测试只使用认证、低能量且有安全边界的教学设备。通用智能不能替代急停、围栏、维护和独立安全验证。",
+      "sourceIds": [
+        "modern-feedback",
+        "modern-autonomous",
+        "modern-metrology"
+      ],
+      "frontier": "怎样缩小仿真与现实差距，并在工具缺失、材料不符或未知对象下识别不能执行的任务？",
+      "learning": {
+        "observe": "比较目标轨迹、传感轨迹和动作后对象状态，区分到位、抓住与任务成功。",
+        "try": "在机器人仿真中改变摩擦、负载和遮挡，先检验安全停止，不安排危险实物任务。",
+        "infer": "推断具身能力受机构、感知和反馈共同限制，必须估计误差而不是相信规划图。",
+        "check": "由独立任务测试和外部测量验收，在留出的对象与扰动上复现，并记录失败与恢复。",
+        "unlocks": "提供可测、可受限的空间操作能力，连接柔性制造与实验执行。"
+      },
+      "practice": {
+        "line": "机电智能装备线·感知与动作",
+        "input": "机构、电驱动、传感、控制计算、合格能源和安全维护条件",
+        "operation": "校准、规划并闭环执行受限动作，以外部状态验收",
+        "output": "具有效载荷、精度、可靠性和安全范围的机械任务能力"
+      }
+    },
+    {
+      "id": "closed-loop-research",
+      "title": "闭环研究与独立复现",
+      "subtitle": "科技树继续生长，而不是宣布已经走完",
+      "category": "cognition",
+      "nodeType": "practice",
+      "stage": 8,
+      "question": "已有智能与实验工具后，怎样发现下一项尚未确定的能力？",
+      "mechanism": "研究闭环提出可区分的假说，选择有信息价值的试验，执行测量、分析不确定度，再更新模型和下一轮计划。自动设备和代理可加速部分环节；校准、对照、原始记录、独立复现与人的责任仍决定证据是否可信。",
+      "why": "把观察—尝试—推断—核查的认知循环扩展到未知领域。优化已知配方、验证新规律与建立可制造能力是不同验收目标。",
+      "equations": [],
+      "example": "在光伏或传感器的公开数据上，系统选下一项测量以区分两种模型；若只在原有数据上越来越拟合，不能称为新发现。",
+      "gotcha": "自动闭环可能快速放大测量偏差或错误目标。这里不是完整文明复建指南；真实新技术需要资源、设施、安全审批与独立测试，AI不能凭模型补齐这些条件。",
+      "sourceIds": [
+        "modern-autonomous",
+        "modern-metrology",
+        "modern-ml"
+      ],
+      "frontier": "本枝通向开放研究：新材料、能源与制造方法须重新通过证据和可制造性检验，没有保证可一次走完的唯一科技树。",
+      "learning": {
+        "observe": "比较当前模型的预测与未解释数据，记录仪器状态、资源边界和竞争假说。",
+        "try": "先在公开数据或无危险仿真中选能区分假说的下一试验；实物研究交给合格设施并经审批。",
+        "infer": "用新证据更新模型和不确定度，同时检查偏差、异常和是否只优化了错误指标。",
+        "check": "预留独立验证数据，由不同人员或设施复现关键结果并公开足够方法与原始记录。",
+        "unlocks": "获得可持续发现与验收新能力的研究流程，让图谱向未知处延伸而不冒充完整答案。"
+      },
+      "practice": {
+        "line": "知识生产线·假说试验与复现",
+        "input": "可检验问题、既有模型、合格测量设施、资源预算及独立复核组织",
+        "operation": "安全选择与执行有区分力的试验，更新模型并独立复现",
+        "output": "有证据边界的新知识、失败记录和经过验收的下一能力"
+      }
     }
   ],
   "edges": [
     {
+      "from": "bauxite-ore",
+      "to": "bayer-digestion",
+      "kind": "enables",
+      "role": "required",
+      "label": "以矿物相和品位为输入"
+    },
+    {
       "from": "bayer-digestion",
-      "to": "bauxite-ore",
-      "label": "以矿物相和品位为输入",
-      "kind": "requires"
+      "to": "bayer-clarification",
+      "kind": "enables",
+      "role": "required",
+      "label": "分离消化浆料"
     },
     {
       "from": "bayer-clarification",
-      "to": "bayer-digestion",
-      "label": "分离消化浆料",
-      "kind": "requires"
-    },
-    {
-      "from": "bayer-precipitation",
-      "to": "bayer-clarification",
-      "label": "使用澄清绿色液",
-      "kind": "requires"
-    },
-    {
-      "from": "alumina-calcination",
       "to": "bayer-precipitation",
-      "label": "煅烧沉淀氢氧化铝",
-      "kind": "requires"
-    },
-    {
-      "from": "cryolite-electrolyte",
-      "to": "alumina-calcination",
-      "label": "溶解氧化铝进料",
-      "kind": "requires"
-    },
-    {
-      "from": "hall-heroult-cell",
-      "to": "cryolite-electrolyte",
-      "label": "在熔盐浴中电解",
-      "kind": "requires"
-    },
-    {
-      "from": "hall-heroult-cell",
-      "to": "carbon-anode-reaction",
-      "label": "合并电极反应",
-      "kind": "explains"
-    },
-    {
-      "from": "hall-heroult-cell",
-      "to": "faraday-charge",
-      "label": "由三电子计量求产量",
-      "kind": "explains"
-    },
-    {
-      "from": "carbon-anode-reaction",
-      "to": "thermo-voltage",
-      "label": "给出最低电功尺度",
-      "kind": "explains"
-    },
-    {
-      "from": "smelting-energy",
-      "to": "thermo-voltage",
-      "label": "把可逆下限与现场电耗对比",
-      "kind": "explains"
-    },
-    {
-      "from": "bauxite-ore",
-      "to": "crystal",
-      "label": "矿物相决定可浸出性",
-      "kind": "explains"
-    },
-    {
-      "from": "bayer-digestion",
-      "to": "diffusion",
-      "label": "颗粒内外传质影响溶出",
-      "kind": "explains"
+      "kind": "enables",
+      "role": "required",
+      "label": "使用澄清绿色液"
     },
     {
       "from": "bayer-precipitation",
-      "to": "phase",
-      "label": "过饱和与成核长大",
-      "kind": "explains"
+      "to": "alumina-calcination",
+      "kind": "enables",
+      "role": "required",
+      "label": "煅烧沉淀氢氧化铝"
     },
     {
       "from": "alumina-calcination",
-      "to": "phase",
-      "label": "脱水和晶型变化",
-      "kind": "explains"
+      "to": "cryolite-electrolyte",
+      "kind": "enables",
+      "role": "required",
+      "label": "溶解氧化铝进料"
     },
     {
       "from": "cryolite-electrolyte",
-      "to": "phase",
-      "label": "熔盐液相窗口",
-      "kind": "explains"
-    },
-    {
-      "from": "hall-heroult-cell",
-      "to": "atoms-electrons",
-      "label": "铝离子获得电子",
-      "kind": "explains"
-    },
-    {
-      "from": "hall-heroult-cell",
-      "to": "charge",
-      "label": "电荷与电子守恒",
-      "kind": "explains"
-    },
-    {
-      "from": "hall-heroult-cell",
-      "to": "electric-power",
-      "label": "直流电输入槽",
-      "kind": "requires"
+      "to": "hall-heroult-cell",
+      "kind": "enables",
+      "role": "required",
+      "label": "在熔盐浴中电解"
     },
     {
       "from": "carbon-anode-reaction",
-      "to": "bonds",
-      "label": "Al–O 与 C–O 键重排",
-      "kind": "explains"
+      "to": "hall-heroult-cell",
+      "kind": "explains",
+      "label": "合并电极反应"
     },
     {
       "from": "faraday-charge",
-      "to": "moles",
-      "label": "摩尔与电荷换算",
-      "kind": "explains"
-    },
-    {
-      "from": "faraday-charge",
-      "to": "charge",
-      "label": "电子电荷计数",
-      "kind": "explains"
+      "to": "hall-heroult-cell",
+      "kind": "explains",
+      "label": "由三电子计量求产量"
     },
     {
       "from": "thermo-voltage",
-      "to": "free-energy",
-      "label": "\\(\\Delta G=nFE\\)",
-      "kind": "explains"
+      "to": "carbon-anode-reaction",
+      "kind": "explains",
+      "label": "给出最低电功尺度"
     },
     {
       "from": "thermo-voltage",
-      "to": "entropy",
-      "label": "\\(\\Delta G=\\Delta H-T\\Delta S\\)",
-      "kind": "explains"
-    },
-    {
-      "from": "smelting-energy",
-      "to": "electric-power",
-      "label": "积分槽电压电流",
-      "kind": "explains"
-    },
-    {
-      "from": "smelting-energy",
-      "to": "free-energy",
-      "label": "理论下限与实际差距",
-      "kind": "explains"
-    },
-    {
-      "from": "can-alloy-split",
-      "to": "crystal",
-      "label": "合金元素改变晶体中的固溶与相",
-      "kind": "explains"
-    },
-    {
-      "from": "can-alloy-split",
-      "to": "moles",
-      "label": "牌号成分以物质的量和质量分数表达",
-      "kind": "explains"
-    },
-    {
-      "from": "coil-to-cup",
-      "to": "can-alloy-split",
-      "label": "成形窗口取决于罐身料",
-      "kind": "requires"
-    },
-    {
-      "from": "draw-redraw-ironing",
-      "to": "coil-to-cup",
-      "label": "杯是 D&I 的进料形状",
-      "kind": "requires"
-    },
-    {
-      "from": "draw-redraw-ironing",
-      "to": "stress",
-      "label": "变薄后局部应力更依赖厚度",
-      "kind": "explains"
-    },
-    {
-      "from": "draw-redraw-ironing",
-      "to": "cold-work-dislocations",
-      "label": "D&I 提供塑性变形和硬化历史",
-      "kind": "explains"
-    },
-    {
-      "from": "cold-work-dislocations",
-      "to": "crystal",
-      "label": "位错是晶体缺陷",
-      "kind": "explains"
-    },
-    {
-      "from": "cold-work-dislocations",
-      "to": "stress",
-      "label": "硬化改变屈服与应力裕度",
-      "kind": "explains"
-    },
-    {
-      "from": "end-stiffness",
-      "to": "can-alloy-split",
-      "label": "盖的合金和状态为刚度服务",
-      "kind": "requires"
-    },
-    {
-      "from": "end-stiffness",
-      "to": "stress",
-      "label": "盖板把内压载荷转为膜和弯曲载荷",
-      "kind": "explains"
-    },
-    {
-      "from": "neck-flange-double-seam",
-      "to": "draw-redraw-ironing",
-      "label": "成形后的罐身才能缩颈翻边",
-      "kind": "requires"
-    },
-    {
-      "from": "neck-flange-double-seam",
-      "to": "end-stiffness",
-      "label": "盖钩需要可卷封的盖材",
-      "kind": "requires"
-    },
-    {
-      "from": "neck-flange-double-seam",
-      "to": "stress",
-      "label": "卷封传递轴向拉开力和剪切力",
-      "kind": "explains"
-    },
-    {
-      "from": "internal-coating-barrier",
-      "to": "charge",
-      "label": "涂层减少金属与电解质的电荷交换",
-      "kind": "explains"
-    },
-    {
-      "from": "oxide-passivation-pitting",
-      "to": "atoms-electrons",
-      "label": "氧化还原涉及铝原子和电子转移",
-      "kind": "explains"
-    },
-    {
-      "from": "internal-coating-barrier",
-      "to": "oxide-passivation-pitting",
-      "label": "涂层为钝化膜提供额外阻隔",
-      "kind": "explains"
-    },
-    {
-      "from": "internal-pressure-hoop-stress",
-      "to": "stress",
-      "label": "内压产生环向与轴向应力",
-      "kind": "explains"
-    },
-    {
-      "from": "internal-pressure-hoop-stress",
-      "to": "can-alloy-split",
-      "label": "强度与厚度来自对应罐材",
-      "kind": "requires"
-    },
-    {
-      "from": "shell-buckling-dome",
-      "to": "stress",
-      "label": "屈曲由压缩膜力和弯曲刚度触发",
-      "kind": "explains"
-    },
-    {
-      "from": "shell-buckling-dome",
-      "to": "end-stiffness",
-      "label": "盖和穹底用曲率/筋提高稳定性",
-      "kind": "requires"
-    },
-    {
-      "from": "recycling-sort-remelt",
-      "to": "can-alloy-split",
-      "label": "回收分流要追踪罐身与盖材牌号",
-      "kind": "requires"
-    },
-    {
-      "from": "recycling-sort-remelt",
-      "to": "phase",
-      "label": "熔化、铸锭和轧制改变材料状态",
-      "kind": "explains"
-    },
-    {
-      "from": "recycling-sort-remelt",
-      "to": "electric-power",
-      "label": "熔化和轧制的能耗可核算",
-      "kind": "requires"
-    },
-    {
-      "from": "recycling-sort-remelt",
-      "to": "internal-coating-barrier",
-      "label": "涂层和密封胶要去除或作为挥发/熔渣处理",
-      "kind": "explains"
-    },
-    {
-      "from": "bonds",
-      "to": "atoms-electrons",
-      "label": "电子的量子态",
-      "kind": "explains"
-    },
-    {
-      "from": "free-energy",
-      "to": "entropy",
-      "label": "\\(T\\Delta S\\) 从何而来",
-      "kind": "explains"
-    },
-    {
-      "from": "free-energy",
-      "to": "bonds",
-      "label": "反应的能量差",
-      "kind": "explains"
-    },
-    {
-      "from": "phase",
-      "to": "free-energy",
-      "label": "总自由能最小",
-      "kind": "explains"
-    },
-    {
-      "from": "electric-power",
-      "to": "charge",
-      "label": "每单位电荷的能量",
-      "kind": "explains"
-    },
-    {
-      "from": "electric-power",
-      "to": "electromagnetism",
-      "label": "一种发电机制",
-      "kind": "explains"
-    },
-    {
-      "from": "charge",
-      "to": "moles",
-      "label": "电子的计数尺度",
-      "kind": "explains"
+      "to": "smelting-energy",
+      "kind": "explains",
+      "label": "把可逆下限与现场电耗对比"
     },
     {
       "from": "crystal",
-      "to": "bonds",
-      "label": "原子为何结合",
-      "kind": "explains"
-    },
-    {
-      "from": "stress",
-      "to": "bonds",
-      "label": "弹性响应的微观来源",
-      "kind": "explains"
-    },
-    {
-      "from": "stress",
-      "to": "calculus",
-      "label": "局部平衡与变形",
-      "kind": "explains"
+      "to": "bauxite-ore",
+      "kind": "explains",
+      "label": "矿物相决定可浸出性"
     },
     {
       "from": "diffusion",
-      "to": "entropy",
-      "label": "统计与随机游走",
-      "kind": "explains"
+      "to": "bayer-digestion",
+      "kind": "explains",
+      "label": "颗粒内外传质影响溶出"
     },
     {
-      "from": "diffusion",
-      "to": "calculus",
-      "label": "通量怎样累积",
-      "kind": "explains"
+      "from": "phase",
+      "to": "bayer-precipitation",
+      "kind": "explains",
+      "label": "过饱和与成核长大"
+    },
+    {
+      "from": "phase",
+      "to": "alumina-calcination",
+      "kind": "explains",
+      "label": "脱水和晶型变化"
+    },
+    {
+      "from": "phase",
+      "to": "cryolite-electrolyte",
+      "kind": "explains",
+      "label": "熔盐液相窗口"
+    },
+    {
+      "from": "atoms-electrons",
+      "to": "hall-heroult-cell",
+      "kind": "explains",
+      "label": "铝离子获得电子"
+    },
+    {
+      "from": "charge",
+      "to": "hall-heroult-cell",
+      "kind": "explains",
+      "label": "电荷与电子守恒"
     },
     {
       "from": "electric-power",
-      "to": "calculus",
-      "label": "累积电功",
-      "kind": "explains"
+      "to": "hall-heroult-cell",
+      "kind": "enables",
+      "role": "required",
+      "label": "直流电输入槽"
     },
     {
-      "from": "bayer-digestion",
-      "to": "amphoteric",
-      "label": "羟基配位带走铝",
-      "kind": "explains"
+      "from": "bonds",
+      "to": "carbon-anode-reaction",
+      "kind": "explains",
+      "label": "Al–O 与 C–O 键重排"
     },
     {
-      "from": "bayer-precipitation",
-      "to": "equilibrium",
-      "label": "改变析出驱动力",
-      "kind": "explains"
+      "from": "moles",
+      "to": "faraday-charge",
+      "kind": "explains",
+      "label": "摩尔与电荷换算"
     },
     {
-      "from": "amphoteric",
-      "to": "equilibrium",
-      "label": "物种分布与溶解平衡",
-      "kind": "explains"
+      "from": "charge",
+      "to": "faraday-charge",
+      "kind": "explains",
+      "label": "电子电荷计数"
     },
     {
-      "from": "amphoteric",
-      "to": "bonds",
-      "label": "Lewis 酸碱与配位键",
-      "kind": "explains"
+      "from": "free-energy",
+      "to": "thermo-voltage",
+      "kind": "explains",
+      "label": "\\(\\Delta G=nFE\\)"
     },
     {
-      "from": "equilibrium",
-      "to": "free-energy",
-      "label": "\\(\\Delta G\\) 与 \\(K\\) 的关系",
-      "kind": "explains"
+      "from": "entropy",
+      "to": "thermo-voltage",
+      "kind": "explains",
+      "label": "\\(\\Delta G=\\Delta H-T\\Delta S\\)"
     },
     {
-      "from": "equilibrium",
-      "to": "diffusion",
-      "label": "达到平衡还要传质",
-      "kind": "explains"
+      "from": "electric-power",
+      "to": "smelting-energy",
+      "kind": "explains",
+      "label": "积分槽电压电流"
     },
     {
-      "from": "can",
+      "from": "free-energy",
+      "to": "smelting-energy",
+      "kind": "explains",
+      "label": "理论下限与实际差距"
+    },
+    {
+      "from": "crystal",
       "to": "can-alloy-split",
-      "label": "罐身与盖的材料",
-      "kind": "requires"
+      "kind": "explains",
+      "label": "合金元素改变晶体中的固溶与相"
     },
     {
-      "from": "can",
+      "from": "moles",
+      "to": "can-alloy-split",
+      "kind": "explains",
+      "label": "牌号成分以物质的量和质量分数表达"
+    },
+    {
+      "from": "can-alloy-split",
+      "to": "coil-to-cup",
+      "kind": "enables",
+      "role": "required",
+      "label": "成形窗口取决于罐身料"
+    },
+    {
+      "from": "coil-to-cup",
+      "to": "draw-redraw-ironing",
+      "kind": "enables",
+      "role": "required",
+      "label": "杯是 D&I 的进料形状"
+    },
+    {
+      "from": "stress",
+      "to": "draw-redraw-ironing",
+      "kind": "explains",
+      "label": "变薄后局部应力更依赖厚度"
+    },
+    {
+      "from": "cold-work-dislocations",
+      "to": "draw-redraw-ironing",
+      "kind": "explains",
+      "label": "D&I 提供塑性变形和硬化历史"
+    },
+    {
+      "from": "crystal",
+      "to": "cold-work-dislocations",
+      "kind": "explains",
+      "label": "位错是晶体缺陷"
+    },
+    {
+      "from": "stress",
+      "to": "cold-work-dislocations",
+      "kind": "explains",
+      "label": "硬化改变屈服与应力裕度"
+    },
+    {
+      "from": "can-alloy-split",
+      "to": "end-stiffness",
+      "kind": "enables",
+      "role": "required",
+      "label": "盖的合金和状态为刚度服务"
+    },
+    {
+      "from": "stress",
+      "to": "end-stiffness",
+      "kind": "explains",
+      "label": "盖板把内压载荷转为膜和弯曲载荷"
+    },
+    {
+      "from": "draw-redraw-ironing",
       "to": "neck-flange-double-seam",
-      "label": "把盖锁紧并密封",
-      "kind": "requires"
+      "kind": "enables",
+      "role": "required",
+      "label": "成形后的罐身才能缩颈翻边"
     },
     {
-      "from": "can",
+      "from": "end-stiffness",
+      "to": "neck-flange-double-seam",
+      "kind": "enables",
+      "role": "required",
+      "label": "盖钩需要可卷封的盖材"
+    },
+    {
+      "from": "stress",
+      "to": "neck-flange-double-seam",
+      "kind": "explains",
+      "label": "卷封传递轴向拉开力和剪切力"
+    },
+    {
+      "from": "charge",
       "to": "internal-coating-barrier",
-      "label": "隔开饮料与金属",
-      "kind": "requires"
+      "kind": "explains",
+      "label": "涂层减少金属与电解质的电荷交换"
     },
     {
-      "from": "can",
+      "from": "atoms-electrons",
+      "to": "oxide-passivation-pitting",
+      "kind": "explains",
+      "label": "氧化还原涉及铝原子和电子转移"
+    },
+    {
+      "from": "oxide-passivation-pitting",
+      "to": "internal-coating-barrier",
+      "kind": "explains",
+      "label": "涂层为钝化膜提供额外阻隔"
+    },
+    {
+      "from": "stress",
       "to": "internal-pressure-hoop-stress",
-      "label": "侧壁如何承受压差",
-      "kind": "explains"
+      "kind": "explains",
+      "label": "内压产生环向与轴向应力"
+    },
+    {
+      "from": "can-alloy-split",
+      "to": "internal-pressure-hoop-stress",
+      "kind": "explains",
+      "label": "后来的模型解释：强度与厚度来自对应罐材"
+    },
+    {
+      "from": "stress",
+      "to": "shell-buckling-dome",
+      "kind": "explains",
+      "label": "屈曲由压缩膜力和弯曲刚度触发"
+    },
+    {
+      "from": "end-stiffness",
+      "to": "shell-buckling-dome",
+      "kind": "explains",
+      "label": "后来的模型解释：盖和穹底用曲率/筋提高稳定性"
+    },
+    {
+      "from": "can-alloy-split",
+      "to": "recycling-sort-remelt",
+      "kind": "enables",
+      "role": "required",
+      "label": "回收分流要追踪罐身与盖材牌号"
+    },
+    {
+      "from": "phase",
+      "to": "recycling-sort-remelt",
+      "kind": "explains",
+      "label": "熔化、铸锭和轧制改变材料状态"
+    },
+    {
+      "from": "electric-power",
+      "to": "recycling-sort-remelt",
+      "kind": "enables",
+      "role": "required",
+      "label": "熔化和轧制的能耗可核算"
+    },
+    {
+      "from": "internal-coating-barrier",
+      "to": "recycling-sort-remelt",
+      "kind": "explains",
+      "label": "涂层和密封胶要去除或作为挥发/熔渣处理"
+    },
+    {
+      "from": "atoms-electrons",
+      "to": "bonds",
+      "kind": "explains",
+      "label": "电子的量子态"
+    },
+    {
+      "from": "entropy",
+      "to": "free-energy",
+      "kind": "explains",
+      "label": "\\(T\\Delta S\\) 从何而来"
+    },
+    {
+      "from": "bonds",
+      "to": "free-energy",
+      "kind": "explains",
+      "label": "反应的能量差"
+    },
+    {
+      "from": "free-energy",
+      "to": "phase",
+      "kind": "explains",
+      "label": "总自由能最小"
+    },
+    {
+      "from": "charge",
+      "to": "electric-power",
+      "kind": "explains",
+      "label": "每单位电荷的能量"
+    },
+    {
+      "from": "electromagnetism",
+      "to": "electric-power",
+      "kind": "explains",
+      "label": "一种发电机制"
+    },
+    {
+      "from": "moles",
+      "to": "charge",
+      "kind": "explains",
+      "label": "电子的计数尺度"
+    },
+    {
+      "from": "bonds",
+      "to": "crystal",
+      "kind": "explains",
+      "label": "原子为何结合"
+    },
+    {
+      "from": "bonds",
+      "to": "stress",
+      "kind": "explains",
+      "label": "弹性响应的微观来源"
+    },
+    {
+      "from": "calculus",
+      "to": "stress",
+      "kind": "explains",
+      "label": "局部平衡与变形"
+    },
+    {
+      "from": "entropy",
+      "to": "diffusion",
+      "kind": "explains",
+      "label": "统计与随机游走"
+    },
+    {
+      "from": "calculus",
+      "to": "diffusion",
+      "kind": "explains",
+      "label": "通量怎样累积"
+    },
+    {
+      "from": "calculus",
+      "to": "electric-power",
+      "kind": "explains",
+      "label": "累积电功"
+    },
+    {
+      "from": "amphoteric",
+      "to": "bayer-digestion",
+      "kind": "explains",
+      "label": "羟基配位带走铝"
+    },
+    {
+      "from": "equilibrium",
+      "to": "bayer-precipitation",
+      "kind": "explains",
+      "label": "改变析出驱动力"
+    },
+    {
+      "from": "equilibrium",
+      "to": "amphoteric",
+      "kind": "explains",
+      "label": "物种分布与溶解平衡"
+    },
+    {
+      "from": "bonds",
+      "to": "amphoteric",
+      "kind": "explains",
+      "label": "Lewis 酸碱与配位键"
+    },
+    {
+      "from": "free-energy",
+      "to": "equilibrium",
+      "kind": "explains",
+      "label": "\\(\\Delta G\\) 与 \\(K\\) 的关系"
+    },
+    {
+      "from": "diffusion",
+      "to": "equilibrium",
+      "kind": "explains",
+      "label": "达到平衡还要传质"
+    },
+    {
+      "from": "can-alloy-split",
+      "to": "can",
+      "kind": "enables",
+      "role": "required",
+      "label": "罐身与盖的材料"
+    },
+    {
+      "from": "neck-flange-double-seam",
+      "to": "can",
+      "kind": "enables",
+      "role": "required",
+      "label": "把盖锁紧并密封"
+    },
+    {
+      "from": "internal-coating-barrier",
+      "to": "can",
+      "kind": "enables",
+      "role": "required",
+      "label": "隔开饮料与金属"
+    },
+    {
+      "from": "internal-pressure-hoop-stress",
+      "to": "can",
+      "kind": "explains",
+      "label": "侧壁如何承受压差"
+    },
+    {
+      "from": "hall-heroult-cell",
+      "to": "can-alloy-split",
+      "kind": "enables",
+      "role": "required",
+      "label": "原生铝从哪里来"
+    },
+    {
+      "from": "cold-work-dislocations",
+      "to": "can-alloy-split",
+      "kind": "explains",
+      "label": "状态与硬化历史"
+    },
+    {
+      "from": "phase",
+      "to": "can-alloy-split",
+      "kind": "explains",
+      "label": "成分如何变成组织"
+    },
+    {
+      "from": "internal-coating-barrier",
+      "to": "neck-flange-double-seam",
+      "kind": "enables",
+      "role": "required",
+      "label": "垫胶与界面阻隔"
+    },
+    {
+      "from": "diffusion",
+      "to": "internal-coating-barrier",
+      "kind": "explains",
+      "label": "涂层怎样阻隔迁移"
+    },
+    {
+      "from": "bonds",
+      "to": "oxide-passivation-pitting",
+      "kind": "explains",
+      "label": "稳定氧化层与能量"
+    },
+    {
+      "from": "amphoteric",
+      "to": "oxide-passivation-pitting",
+      "kind": "explains",
+      "label": "酸碱为何破坏氧化层"
+    },
+    {
+      "from": "thermo-voltage",
+      "to": "hall-heroult-cell",
+      "kind": "explains",
+      "label": "外加电功为何必要"
+    },
+    {
+      "from": "smelting-energy",
+      "to": "hall-heroult-cell",
+      "kind": "explains",
+      "label": "运行电耗花在哪里"
+    },
+    {
+      "from": "shell-buckling-dome",
+      "to": "internal-pressure-hoop-stress",
+      "kind": "explains",
+      "label": "压缩与屈曲换一种机制"
+    },
+    {
+      "from": "observation-test",
+      "to": "electric-tests",
+      "kind": "enables",
+      "role": "required",
+      "label": "先能记录与比较现象，而非先背电子模型"
+    },
+    {
+      "from": "experiments-control",
+      "to": "electric-tests",
+      "kind": "enables",
+      "role": "support",
+      "label": "对照方法排除气流、湿度等竞争解释"
+    },
+    {
+      "from": "charge",
+      "to": "electric-tests",
+      "kind": "enables",
+      "role": "support",
+      "label": "电荷模型解释观察，不是最初观察的先验前件"
+    },
+    {
+      "from": "electric-tests",
+      "to": "voltaic-cell",
+      "kind": "enables",
+      "role": "support",
+      "label": "短暂效应促使寻找持续电源"
+    },
+    {
+      "from": "copper-smelting",
+      "to": "voltaic-cell",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "提供一种电极金属来源；并非所有原电池必须含铜"
+    },
+    {
+      "from": "quantitative-chemistry",
+      "to": "voltaic-cell",
+      "kind": "enables",
+      "role": "support",
+      "label": "物料与反应比较帮助设计和验收电池"
+    },
+    {
+      "from": "glassmaking",
+      "to": "voltaic-cell",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "玻璃是早期隔离容器的一种实现，不是唯一封装"
+    },
+    {
+      "from": "machine-tools",
+      "to": "generator",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝旋转机器需要可加工的轴、轴承与部件"
+    },
+    {
+      "from": "standardized-parts",
+      "to": "generator",
+      "kind": "enables",
+      "role": "support",
+      "label": "互换部件提高复制和维修能力"
+    },
+    {
+      "from": "waterwheel",
+      "to": "generator",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "水轮供给轴功；与热机等原动机择一路"
+    },
+    {
+      "from": "steam-engine",
+      "to": "generator",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "热机供给轴功；不要求每台发电机都用蒸汽"
+    },
+    {
+      "from": "voltaic-cell",
+      "to": "generator",
+      "kind": "enables",
+      "role": "support",
+      "label": "持续电源支持早期电磁试验与部分励磁方案"
+    },
+    {
+      "from": "electromagnetism",
+      "to": "generator",
+      "kind": "enables",
+      "role": "support",
+      "label": "感应模型帮助解释与预测；不能替代机器和动力"
+    },
+    {
+      "from": "generator",
+      "to": "motors",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "提供一种电驱动供能源；小型电机也可用电池"
+    },
+    {
+      "from": "voltaic-cell",
+      "to": "motors",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "低压化学电源是小型电驱动的另一供能路线"
+    },
+    {
+      "from": "machine-tools",
+      "to": "motors",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝电驱动需机械加工、轴承和装配能力"
+    },
+    {
+      "from": "electromagnetism",
+      "to": "motors",
+      "kind": "enables",
+      "role": "support",
+      "label": "预测力矩与反电动势，不把理论当唯一发现顺序"
+    },
+    {
+      "from": "generator",
+      "to": "power-grid",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "旋转发电是本枝起步供能源；后来可有光伏等路线"
+    },
+    {
+      "from": "standardized-parts",
+      "to": "power-grid",
+      "kind": "enables",
+      "role": "support",
+      "label": "统一规格帮助接口互通、维修和规模部署"
+    },
+    {
+      "from": "electric-power",
+      "to": "power-grid",
+      "kind": "enables",
+      "role": "support",
+      "label": "功率与电阻损耗模型支持容量和线路核算"
+    },
+    {
+      "from": "writing-records",
+      "to": "power-grid",
+      "kind": "enables",
+      "role": "required",
+      "label": "可靠供能要可追溯的调度、规范与检修记录"
+    },
+    {
+      "from": "quantitative-chemistry",
+      "to": "industrial-chemistry",
+      "kind": "enables",
+      "role": "required",
+      "label": "规模化产品需成分检验与物料收支能力"
+    },
+    {
+      "from": "pottery-kiln",
+      "to": "industrial-chemistry",
+      "kind": "enables",
+      "role": "support",
+      "label": "炉窑与耐热材料经验帮助化工装备形成"
+    },
+    {
+      "from": "machine-tools",
+      "to": "industrial-chemistry",
+      "kind": "enables",
+      "role": "support",
+      "label": "机械加工支持泵、阀和分离装备，不把现代机床列为所有旧化工的必要条件"
+    },
+    {
+      "from": "equilibrium",
+      "to": "industrial-chemistry",
+      "kind": "enables",
+      "role": "support",
+      "label": "后来的平衡模型解释分离与回收上限"
+    },
+    {
+      "from": "industrial-chemistry",
+      "to": "polymers",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝合成聚合物的规模供应需原料与受控化工能力"
+    },
+    {
+      "from": "fibre-cordage",
+      "to": "polymers",
+      "kind": "enables",
+      "role": "support",
+      "label": "天然纤维先提供材料经验，不以合成理论为其前置"
+    },
+    {
+      "from": "bonds",
+      "to": "polymers",
+      "kind": "explains",
+      "label": "后来的模型解释：化学键与链结构模型支持现代性能解释"
+    },
+    {
+      "from": "industrial-chemistry",
+      "to": "fertilizer",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝工业固氮需原料、反应分离与受控设施"
+    },
+    {
+      "from": "agriculture",
+      "to": "fertilizer",
+      "kind": "enables",
+      "role": "required",
+      "label": "养分管理须已有种植、土壤和作物需求的实践"
+    },
+    {
+      "from": "equilibrium",
+      "to": "fertilizer",
+      "kind": "enables",
+      "role": "support",
+      "label": "平衡解释产率与循环，不提供工业操作步骤"
+    },
+    {
+      "from": "free-energy",
+      "to": "fertilizer",
+      "kind": "enables",
+      "role": "support",
+      "label": "热力学帮助比较工业路线与能量代价"
+    },
+    {
+      "from": "microscopy",
+      "to": "germ-theory",
+      "kind": "enables",
+      "role": "support",
+      "label": "显微证据是一条路线，不能独自证明致病因果"
+    },
+    {
+      "from": "sanitation",
+      "to": "germ-theory",
+      "kind": "enables",
+      "role": "support",
+      "label": "经验卫生与疾病记录先提出可阻断的传播问题"
+    },
+    {
+      "from": "experiments-control",
+      "to": "germ-theory",
+      "kind": "enables",
+      "role": "required",
+      "label": "接受传播机制需能区别相关、干预和竞争解释"
+    },
+    {
+      "from": "probability",
+      "to": "germ-theory",
+      "kind": "enables",
+      "role": "support",
+      "label": "统计比较提高人群证据可信度，不冒充唯一历史发现顺序"
+    },
+    {
+      "from": "food-storage",
+      "to": "refrigeration",
+      "kind": "enables",
+      "role": "support",
+      "label": "已有保存需求与经验引出持续低温问题"
+    },
+    {
+      "from": "machine-tools",
+      "to": "refrigeration",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝机械制冷需可制造的机械与换热设备"
+    },
+    {
+      "from": "motors",
+      "to": "refrigeration",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "电动机提供一种机械制冷驱动，不排除热机驱动"
+    },
+    {
+      "from": "steam-engine",
+      "to": "refrigeration",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "早期热机可提供机械功，与电驱动不是共同硬约束"
+    },
+    {
+      "from": "thermodynamics-first-law",
+      "to": "refrigeration",
+      "kind": "enables",
+      "role": "support",
+      "label": "热与功收支解释制冷循环"
+    },
+    {
+      "from": "entropy",
+      "to": "refrigeration",
+      "kind": "enables",
+      "role": "support",
+      "label": "熵与第二定律说明方向和效率边界"
+    },
+    {
+      "from": "germ-theory",
+      "to": "refrigeration",
+      "kind": "enables",
+      "role": "support",
+      "label": "解释冷链用途及低温不能替代卫生的限制"
+    },
+    {
+      "from": "iron-smelting",
+      "to": "steel-production",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "供给原生含铁料的一路；废钢电炉等为其他路线"
+    },
+    {
+      "from": "steel-heat-treatment",
+      "to": "steel-production",
+      "kind": "enables",
+      "role": "support",
+      "label": "早期钢材经验促使寻找稳定成分，热处理不能替代炼钢"
+    },
+    {
+      "from": "quantitative-chemistry",
+      "to": "steel-production",
+      "kind": "enables",
+      "role": "required",
+      "label": "可规格化批量炼钢需成分与杂质检验"
+    },
+    {
+      "from": "power-grid",
+      "to": "steel-production",
+      "kind": "enables",
+      "role": "support",
+      "label": "稳定电力支持现代电炉等路线，不把电网列为所有炼钢的前件"
+    },
+    {
+      "from": "geology-mining",
+      "to": "steel-production",
+      "kind": "enables",
+      "role": "support",
+      "label": "矿源、炉衬与能源资源需真实供应链"
+    },
+    {
+      "from": "units-measurement",
+      "to": "precision-measurement",
+      "kind": "enables",
+      "role": "required",
+      "label": "先有对象、单位与参考比较，才能谈精密与误差"
+    },
+    {
+      "from": "standardized-parts",
+      "to": "precision-measurement",
+      "kind": "enables",
+      "role": "support",
+      "label": "互换需求推动更小容差与共同验收"
+    },
+    {
+      "from": "probability",
+      "to": "precision-measurement",
+      "kind": "enables",
+      "role": "support",
+      "label": "统计分析量化重复测量的不确定度"
+    },
+    {
+      "from": "optics-instruments",
+      "to": "precision-measurement",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "光学测量是一条提高精度的路线，非所有精密测量必需"
+    },
+    {
+      "from": "machine-tools",
+      "to": "vacuum",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝泵与密封装置需可加工和检验的机械部件"
+    },
+    {
+      "from": "glassmaking",
+      "to": "vacuum",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "透明玻璃容器支持一类观察装置，金属等容器可替代"
+    },
+    {
+      "from": "precision-measurement",
+      "to": "vacuum",
+      "kind": "enables",
+      "role": "support",
+      "label": "压力校准与泄漏记录提高环境验收能力"
+    },
+    {
+      "from": "quantitative-chemistry",
+      "to": "atomic-evidence",
+      "kind": "enables",
+      "role": "support",
+      "label": "定比与物料数据构成原子观念的一条证据线"
+    },
+    {
+      "from": "microscopy",
+      "to": "atomic-evidence",
+      "kind": "enables",
+      "role": "support",
+      "label": "布朗运动可见颗粒的观察，不将颗粒误认为原子"
+    },
+    {
+      "from": "vacuum",
+      "to": "atomic-evidence",
+      "kind": "enables",
+      "role": "support",
+      "label": "低压环境支持部分粒子与电荷测量，而非全部证据"
+    },
+    {
+      "from": "precision-measurement",
+      "to": "atomic-evidence",
+      "kind": "enables",
+      "role": "support",
+      "label": "独立数值证据需校准和不确定度判断"
+    },
+    {
+      "from": "atomic-evidence",
+      "to": "atoms-electrons",
+      "kind": "enables",
+      "role": "support",
+      "label": "为已有微观结构节点补充接受模型的证据路径"
+    },
+    {
+      "from": "atomic-evidence",
+      "to": "quantum-model",
+      "kind": "enables",
+      "role": "support",
+      "label": "微观证据提出旧模型不能解释的新约束"
+    },
+    {
+      "from": "optics-instruments",
+      "to": "quantum-model",
+      "kind": "enables",
+      "role": "support",
+      "label": "光谱和干涉仪器提供不同的模型检验"
+    },
+    {
+      "from": "probability",
+      "to": "quantum-model",
+      "kind": "enables",
+      "role": "required",
+      "label": "掌握概率比较才能接受和检验量子分布预测"
+    },
+    {
+      "from": "calculus",
+      "to": "quantum-model",
+      "kind": "enables",
+      "role": "support",
+      "label": "微积分支持定量求解，不是观察离散证据的必要门槛"
+    },
+    {
+      "from": "industrial-chemistry",
+      "to": "semiconductors",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝器件级材料需高纯原料与受控处理能力"
+    },
+    {
+      "from": "precision-measurement",
+      "to": "semiconductors",
+      "kind": "enables",
+      "role": "required",
+      "label": "可复制器件需材料、结构与电学特性验收"
+    },
+    {
+      "from": "crystal",
+      "to": "semiconductors",
+      "kind": "enables",
+      "role": "support",
+      "label": "晶体模型解释缺陷与结构对电学的影响"
+    },
+    {
+      "from": "quantum-model",
+      "to": "semiconductors",
+      "kind": "enables",
+      "role": "support",
+      "label": "能带模型帮助现代设计，不强迫早期整流发现先学量子论"
+    },
+    {
+      "from": "vacuum",
+      "to": "semiconductors",
+      "kind": "enables",
+      "role": "support",
+      "label": "部分表面和薄膜工艺需要受控低压环境"
+    },
+    {
+      "from": "semiconductors",
+      "to": "transistor",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝晶体管需可制造的半导体与界面结构"
+    },
+    {
+      "from": "electric-power",
+      "to": "transistor",
+      "kind": "enables",
+      "role": "support",
+      "label": "分清控制信号、供能和散热的边界"
+    },
+    {
+      "from": "precision-measurement",
+      "to": "transistor",
+      "kind": "enables",
+      "role": "required",
+      "label": "开关与放大特性需要独立测量和批次验收"
+    },
+    {
+      "from": "electric-tests",
+      "to": "radio-communication",
+      "kind": "enables",
+      "role": "support",
+      "label": "可重复电实验帮助分辨信号、噪声与设备失效"
+    },
+    {
+      "from": "electromagnetism",
+      "to": "radio-communication",
+      "kind": "enables",
+      "role": "support",
+      "label": "电磁波理论帮助传播预测与天线设计"
+    },
+    {
+      "from": "vacuum",
+      "to": "radio-communication",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "真空电子器件是一类放大实现，并非无线电唯一实现"
+    },
+    {
+      "from": "transistor",
+      "to": "radio-communication",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "晶体管收发器是另一实现，不倒置早期无线电历史"
+    },
+    {
+      "from": "writing-records",
+      "to": "radio-communication",
+      "kind": "enables",
+      "role": "support",
+      "label": "可记录编码与消息让异地接收能够核验"
+    },
+    {
+      "from": "mechanical-feedback",
+      "to": "feedback-control",
+      "kind": "enables",
+      "role": "support",
+      "label": "机械调速实践先提出反馈问题，后有现代分析"
+    },
+    {
+      "from": "experiments-control",
+      "to": "feedback-control",
+      "kind": "enables",
+      "role": "required",
+      "label": "能比较响应与扰动，才能验收稳定控制主张"
+    },
+    {
+      "from": "algebra",
+      "to": "feedback-control",
+      "kind": "enables",
+      "role": "support",
+      "label": "将误差与响应关系形式化"
+    },
+    {
+      "from": "calculus",
+      "to": "feedback-control",
+      "kind": "enables",
+      "role": "support",
+      "label": "动态分析用于预测延迟、过冲和稳定裕度"
+    },
+    {
+      "from": "transistor",
+      "to": "integrated-circuits",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝集成逻辑在可制造开关单元上扩展"
+    },
+    {
+      "from": "precision-measurement",
+      "to": "integrated-circuits",
+      "kind": "enables",
+      "role": "required",
+      "label": "对准、缺陷与尺寸需要高精度验收"
+    },
+    {
+      "from": "industrial-chemistry",
+      "to": "integrated-circuits",
+      "kind": "enables",
+      "role": "required",
+      "label": "高纯材料、受控加工和洁净基础设施不能由版图替代"
+    },
+    {
+      "from": "optics-instruments",
+      "to": "integrated-circuits",
+      "kind": "enables",
+      "role": "support",
+      "label": "光学成像和检测支持主流图形转移路线"
+    },
+    {
+      "from": "vacuum",
+      "to": "integrated-circuits",
+      "kind": "enables",
+      "role": "support",
+      "label": "部分沉积与表面工艺需受控环境"
+    },
+    {
+      "from": "power-grid",
+      "to": "integrated-circuits",
+      "kind": "enables",
+      "role": "support",
+      "label": "制造设施需要稳定供能，亦可有专用供能方案"
+    },
+    {
+      "from": "writing-records",
+      "to": "algorithms",
+      "kind": "enables",
+      "role": "required",
+      "label": "明确规则与状态记录让过程可交给别人复现"
+    },
+    {
+      "from": "counting",
+      "to": "algorithms",
+      "kind": "enables",
+      "role": "support",
+      "label": "计数与离散比较提供可检验的初始算法例子"
+    },
+    {
+      "from": "algebra",
+      "to": "algorithms",
+      "kind": "enables",
+      "role": "support",
+      "label": "符号规则支持抽象、正确性与资源分析"
+    },
+    {
+      "from": "algorithms",
+      "to": "computers",
+      "kind": "enables",
+      "role": "required",
+      "label": "可编程计算需明确定义可执行规则"
+    },
+    {
+      "from": "integrated-circuits",
+      "to": "computers",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "现代微电子是一种强实现，非所有计算机的历史硬前件"
+    },
+    {
+      "from": "vacuum",
+      "to": "computers",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "真空管电子计算路线可先于集成电路"
+    },
+    {
+      "from": "lever-wheel",
+      "to": "computers",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "机械计算是另一物理实现，需要另外满足存储和控制"
+    },
+    {
+      "from": "power-grid",
+      "to": "computers",
+      "kind": "enables",
+      "role": "support",
+      "label": "可靠电力支撑电子计算，仍需电源与散热硬件"
+    },
+    {
+      "from": "computers",
+      "to": "networks",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝数字多机网络需要可编程端点"
+    },
+    {
+      "from": "algorithms",
+      "to": "networks",
+      "kind": "enables",
+      "role": "required",
+      "label": "协议必须给出独立可实现、可检错的规则"
+    },
+    {
+      "from": "radio-communication",
+      "to": "networks",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "无线信道是传输媒介之一；有线与光纤不依赖它"
+    },
+    {
+      "from": "optics-instruments",
+      "to": "networks",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "光学信号通道提供另一媒介，不与无线共同设为硬约束"
+    },
+    {
+      "from": "computers",
+      "to": "industrial-automation",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝可编程自动化需控制计算与日志"
+    },
+    {
+      "from": "feedback-control",
+      "to": "industrial-automation",
+      "kind": "enables",
+      "role": "required",
+      "label": "过程闭环需要响应、扰动与安全停止设计"
+    },
+    {
+      "from": "motors",
+      "to": "industrial-automation",
+      "kind": "enables",
+      "role": "support",
+      "label": "电驱动是一类执行机构，不能等同于全部自动化"
+    },
+    {
+      "from": "precision-measurement",
+      "to": "industrial-automation",
+      "kind": "enables",
+      "role": "required",
+      "label": "控制读数和合格产品需校准、追溯与独立检验"
+    },
+    {
+      "from": "machine-tools",
+      "to": "industrial-automation",
+      "kind": "enables",
+      "role": "support",
+      "label": "机械工位与装备是程序执行的物理底座"
+    },
+    {
+      "from": "semiconductors",
+      "to": "photovoltaics",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝光伏需合格光电材料与器件结构"
+    },
+    {
+      "from": "quantum-model",
+      "to": "photovoltaics",
+      "kind": "enables",
+      "role": "support",
+      "label": "光子与材料模型解释吸收和转换限制"
+    },
+    {
+      "from": "precision-measurement",
+      "to": "photovoltaics",
+      "kind": "enables",
+      "role": "required",
+      "label": "工作点、环境与性能需规定条件下验收"
+    },
+    {
+      "from": "photovoltaics",
+      "to": "power-grid",
+      "kind": "explains",
+      "label": "后来的模型解释：较晚的电源扩展：可替代部分旋转发电，经专用接口接入；不是历史起步前件"
+    },
+    {
+      "from": "voltaic-cell",
+      "to": "batteries",
+      "kind": "enables",
+      "role": "support",
+      "label": "电化学电源经验引出可逆循环与储能问题"
+    },
+    {
+      "from": "industrial-chemistry",
+      "to": "batteries",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝现代可充电储能需受控材料与制造设施"
+    },
+    {
+      "from": "precision-measurement",
+      "to": "batteries",
+      "kind": "enables",
+      "role": "required",
+      "label": "容量、热状态与循环寿命必须按工况验收"
+    },
+    {
+      "from": "feedback-control",
+      "to": "batteries",
+      "kind": "enables",
+      "role": "support",
+      "label": "管理系统监测状态与限制使用，不替代独立安全保护"
+    },
+    {
+      "from": "computers",
+      "to": "machine-learning",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝可运行模型的学习需计算执行；小型任务单机即可"
+    },
+    {
+      "from": "algorithms",
+      "to": "machine-learning",
+      "kind": "enables",
+      "role": "required",
+      "label": "训练和评价需要明确可复现的过程"
+    },
+    {
+      "from": "probability",
+      "to": "machine-learning",
+      "kind": "enables",
+      "role": "support",
+      "label": "统计检验帮助识别泛化、泄漏与不确定度"
+    },
+    {
+      "from": "calculus",
+      "to": "machine-learning",
+      "kind": "enables",
+      "role": "support",
+      "label": "梯度方法需要微积分，其他学习路线不一概强制"
+    },
+    {
+      "from": "experiments-control",
+      "to": "machine-learning",
+      "kind": "enables",
+      "role": "required",
+      "label": "基线与独立保留数据是可用学习主张的验收条件"
+    },
+    {
+      "from": "computers",
+      "to": "training-compute",
+      "kind": "enables",
+      "role": "required",
+      "label": "训练设施必须有真实计算与存储硬件"
+    },
+    {
+      "from": "machine-learning",
+      "to": "training-compute",
+      "kind": "enables",
+      "role": "required",
+      "label": "明确的学习任务、程序与评价定义才有可验收训练"
+    },
+    {
+      "from": "integrated-circuits",
+      "to": "training-compute",
+      "kind": "enables",
+      "role": "support",
+      "label": "现代高吞吐硬件来自微电子制造链，不是凭参数生成"
+    },
+    {
+      "from": "networks",
+      "to": "training-compute",
+      "kind": "enables",
+      "role": "support",
+      "label": "多机训练才需互连；单机入门不以网络为硬前件"
+    },
+    {
+      "from": "power-grid",
+      "to": "training-compute",
+      "kind": "enables",
+      "role": "support",
+      "label": "持续供能支撑现代设施；须另计专用电源、散热和维护"
+    },
+    {
+      "from": "refrigeration",
+      "to": "training-compute",
+      "kind": "enables",
+      "role": "support",
+      "label": "部分设施采用制冷，风冷等其他散热路线可用"
+    },
+    {
+      "from": "computers",
+      "to": "intelligent-agent",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝数字代理需可执行策略与状态管理"
+    },
+    {
+      "from": "algorithms",
+      "to": "intelligent-agent",
+      "kind": "enables",
+      "role": "required",
+      "label": "多步计划、权限与停止规则必须明确定义"
+    },
+    {
+      "from": "machine-learning",
+      "to": "intelligent-agent",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "学习策略是一条代理实现；规则与搜索可另行实现"
+    },
+    {
+      "from": "training-compute",
+      "to": "intelligent-agent",
+      "kind": "enables",
+      "role": "support",
+      "label": "自训模型可扩展策略能力，不是每个代理都须巨型训练设施"
+    },
+    {
+      "from": "networks",
+      "to": "intelligent-agent",
+      "kind": "enables",
+      "role": "support",
+      "label": "可连接远端工具与协作，离线代理亦可存在"
+    },
+    {
+      "from": "motors",
+      "to": "robotics",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝明确选择电驱动机构；其他执行路线需另补条件"
+    },
+    {
+      "from": "computers",
+      "to": "robotics",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝可编程机器人需控制计算和状态估计"
+    },
+    {
+      "from": "feedback-control",
+      "to": "robotics",
+      "kind": "enables",
+      "role": "required",
+      "label": "现实误差与扰动需闭环修正和停止策略"
+    },
+    {
+      "from": "precision-measurement",
+      "to": "robotics",
+      "kind": "enables",
+      "role": "required",
+      "label": "坐标、传感与任务结果需独立校准和验收"
+    },
+    {
+      "from": "industrial-automation",
+      "to": "robotics",
+      "kind": "enables",
+      "role": "support",
+      "label": "重复工位积累执行、联锁和维护经验"
+    },
+    {
+      "from": "intelligent-agent",
+      "to": "robotics",
+      "kind": "enables",
+      "role": "support",
+      "label": "高层策略可扩展任务，不要求每个机器人具有通用智能"
+    },
+    {
+      "from": "batteries",
+      "to": "robotics",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "移动储能是一种供能，固定机器人可采用有线电源"
+    },
+    {
+      "from": "power-grid",
+      "to": "robotics",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "有线稳定供能是另一实现，不与电池共同设为必要"
+    },
+    {
+      "from": "experiments-control",
+      "to": "closed-loop-research",
+      "kind": "enables",
+      "role": "required",
+      "label": "研究须可区分假说、有对照并保留原始证据"
+    },
+    {
+      "from": "precision-measurement",
+      "to": "closed-loop-research",
+      "kind": "enables",
+      "role": "required",
+      "label": "实物闭环的新结论必须建立在校准测量和不确定度上"
+    },
+    {
+      "from": "computers",
+      "to": "closed-loop-research",
+      "kind": "enables",
+      "role": "required",
+      "label": "本枝数字闭环需分析、版本与试验日志"
+    },
+    {
+      "from": "intelligent-agent",
+      "to": "closed-loop-research",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "代理可选择试验；明确脚本加人类决策亦可构成闭环"
+    },
+    {
+      "from": "robotics",
+      "to": "closed-loop-research",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "机器人是一条实物执行路线，不排除人员和专用仪器"
+    },
+    {
+      "from": "industrial-automation",
+      "to": "closed-loop-research",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "固定自动设备可执行一类试验，与移动机器人择路线"
+    },
+    {
+      "from": "machine-learning",
+      "to": "closed-loop-research",
+      "kind": "enables",
+      "role": "support",
+      "label": "数据模型帮助实验选择，但新发现仍需独立证据"
+    },
+    {
+      "from": "probability",
+      "to": "closed-loop-research",
+      "kind": "enables",
+      "role": "support",
+      "label": "统计比较和预留验证避免自我确认的研究循环"
+    },
+    {
+      "from": "industrial-chemistry",
+      "to": "bayer-digestion",
+      "kind": "enables",
+      "role": "required",
+      "label": "现有氧化铝精炼枝需要可靠碱与工业反应分离供应"
+    },
+    {
+      "from": "power-grid",
+      "to": "hall-heroult-cell",
+      "kind": "enables",
+      "role": "support",
+      "label": "大量连续电解需可靠电力；专用供能也是可能路线"
+    },
+    {
+      "from": "polymers",
+      "to": "internal-coating-barrier",
+      "kind": "enables",
+      "role": "support",
+      "label": "聚合物与性能验收支持现有罐内阻隔层枝"
+    },
+    {
+      "from": "industrial-automation",
+      "to": "draw-redraw-ironing",
+      "kind": "enables",
+      "role": "support",
+      "label": "自动控制与独立质检支持现有高速制罐工位"
+    },
+    {
+      "from": "units-measurement",
+      "to": "moles",
+      "kind": "enables",
+      "role": "support",
+      "label": "把物质数量变成可核对的计量"
+    },
+    {
+      "from": "quantitative-chemistry",
+      "to": "moles",
+      "kind": "explains",
+      "label": "后来的模型解释：由质量和反应比例建立物质量模型"
+    },
+    {
+      "from": "quantitative-chemistry",
+      "to": "amphoteric",
+      "kind": "enables",
+      "role": "support",
+      "label": "比较同一物质在酸碱中的行为"
+    },
+    {
+      "from": "quantitative-chemistry",
+      "to": "equilibrium",
+      "kind": "enables",
+      "role": "support",
+      "label": "反应方向不等于无限进行"
+    },
+    {
+      "from": "experiments-control",
+      "to": "phase",
+      "kind": "enables",
+      "role": "support",
+      "label": "改变条件并比较材料状态"
+    },
+    {
+      "from": "experiments-control",
+      "to": "entropy",
+      "kind": "enables",
+      "role": "support",
+      "label": "用循环与不可逆变化检验模型"
+    },
+    {
+      "from": "geometry",
+      "to": "stress",
+      "kind": "enables",
+      "role": "support",
+      "label": "由形状、载荷和截面建立力学计量"
+    },
+    {
+      "from": "machine-tools",
+      "to": "internal-pressure-hoop-stress",
+      "kind": "enables",
+      "role": "support",
+      "label": "用可重复薄壁试件检验压力载荷"
+    },
+    {
+      "from": "stress",
+      "to": "shell-buckling-dome",
+      "kind": "enables",
+      "role": "required",
+      "label": "将强度和失稳分开处理"
+    },
+    {
+      "from": "geology-mining",
+      "to": "bauxite-ore",
+      "kind": "enables",
+      "role": "required",
+      "label": "从地质线索到矿物资源"
+    },
+    {
+      "from": "units-measurement",
+      "to": "charge",
+      "kind": "enables",
+      "role": "support",
+      "label": "用可重复现象建立电量计量"
+    },
+    {
+      "from": "generator",
+      "to": "electric-power",
+      "kind": "enables",
+      "role": "support",
+      "label": "从转动取电到电压电流的功率核算"
+    },
+    {
+      "from": "experiments-control",
+      "to": "crystal",
+      "kind": "enables",
+      "role": "support",
+      "label": "从外部形状与测量寻找内部秩序"
+    },
+    {
+      "from": "quantitative-chemistry",
+      "to": "diffusion",
+      "kind": "enables",
+      "role": "support",
+      "label": "追踪浓度差和迁移速度"
+    },
+    {
+      "from": "atoms-electrons",
+      "to": "bonds",
+      "kind": "enables",
+      "role": "required",
+      "label": "用电子结构解释连接和键合"
+    },
+    {
+      "from": "steel-heat-treatment",
+      "to": "cold-work-dislocations",
+      "kind": "enables",
+      "role": "support",
+      "label": "由加工经验转向缺陷与组织控制"
+    },
+    {
+      "from": "standardized-parts",
+      "to": "coil-to-cup",
+      "kind": "enables",
+      "role": "support",
+      "label": "使批量模具和料带配合"
+    },
+    {
+      "from": "industrial-chemistry",
+      "to": "internal-coating-barrier",
+      "kind": "enables",
+      "role": "support",
+      "label": "材料配方与食品接触评估"
     },
     {
       "from": "can",
       "to": "recycling-sort-remelt",
-      "label": "另一条金属来源",
-      "kind": "requires"
+      "kind": "enables",
+      "role": "support",
+      "label": "使用后回收将材料送回生产"
     },
     {
-      "from": "can-alloy-split",
+      "from": "precision-measurement",
+      "to": "end-stiffness",
+      "kind": "enables",
+      "role": "support",
+      "label": "用公差与检测验证罐盖能力"
+    },
+    {
+      "from": "recycling-sort-remelt",
+      "to": "can",
+      "kind": "explains",
+      "label": "回收料可替代一部分原生金属；不是首次制罐前置"
+    },
+    {
+      "from": "observation-test",
+      "to": "stone-tools",
+      "kind": "enables",
+      "role": "support",
+      "label": "从观察、比较与试错提供的能力，继续探索石材刃口与工具选择"
+    },
+    {
+      "from": "stone-tools",
+      "to": "lever-wheel",
+      "kind": "enables",
+      "role": "support",
+      "label": "从石材刃口与工具选择提供的能力，继续探索杠杆、轮轴与机械传力"
+    },
+    {
+      "from": "lever-wheel",
+      "to": "waterwheel",
+      "kind": "enables",
+      "role": "support",
+      "label": "从杠杆、轮轴与机械传力提供的能力，继续探索水轮与持续动力"
+    },
+    {
+      "from": "waterwheel",
+      "to": "machine-tools",
+      "kind": "enables",
+      "role": "support",
+      "label": "从水轮与持续动力提供的能力，继续探索机床与受约束加工"
+    },
+    {
+      "from": "observation-test",
+      "to": "agriculture",
+      "kind": "enables",
+      "role": "support",
+      "label": "从观察、比较与试错提供的能力，继续探索栽培与留种"
+    },
+    {
+      "from": "agriculture",
+      "to": "food-storage",
+      "kind": "enables",
+      "role": "support",
+      "label": "从栽培与留种提供的能力，继续探索干燥、储粮与库存"
+    },
+    {
+      "from": "food-storage",
+      "to": "village-surplus",
+      "kind": "enables",
+      "role": "support",
+      "label": "从干燥、储粮与库存提供的能力，继续探索剩余、分工与协作"
+    },
+    {
+      "from": "village-surplus",
+      "to": "writing-records",
+      "kind": "enables",
+      "role": "support",
+      "label": "从剩余、分工与协作提供的能力，继续探索记号、文字与账目"
+    },
+    {
+      "from": "writing-records",
+      "to": "paper-printing",
+      "kind": "enables",
+      "role": "support",
+      "label": "从记号、文字与账目提供的能力，继续探索纸张、印刷与复制"
+    },
+    {
+      "from": "paper-printing",
+      "to": "experiments-control",
+      "kind": "enables",
+      "role": "support",
+      "label": "从纸张、印刷与复制提供的能力，继续探索对照、变量与反证"
+    },
+    {
+      "from": "observation-test",
+      "to": "fire-control",
+      "kind": "enables",
+      "role": "support",
+      "label": "从观察、比较与试错提供的能力，继续探索保存与管理火"
+    },
+    {
+      "from": "fire-control",
+      "to": "pottery-kiln",
+      "kind": "enables",
+      "role": "support",
+      "label": "从保存与管理火提供的能力，继续探索制陶与窑炉"
+    },
+    {
+      "from": "pottery-kiln",
+      "to": "charcoal",
+      "kind": "enables",
+      "role": "support",
+      "label": "从制陶与窑炉提供的能力，继续探索木炭与碳质燃料"
+    },
+    {
+      "from": "charcoal",
+      "to": "iron-smelting",
+      "kind": "enables",
+      "role": "support",
+      "label": "从木炭与碳质燃料提供的能力，继续探索铁矿还原与铁料整理"
+    },
+    {
+      "from": "iron-smelting",
+      "to": "steel-heat-treatment",
+      "kind": "enables",
+      "role": "support",
+      "label": "从铁矿还原与铁料整理提供的能力，继续探索钢料与热处理"
+    },
+    {
+      "from": "steel-heat-treatment",
+      "to": "machine-tools",
+      "kind": "enables",
+      "role": "support",
+      "label": "从钢料与热处理提供的能力，继续探索机床与受约束加工"
+    },
+    {
+      "from": "machine-tools",
+      "to": "steam-engine",
+      "kind": "enables",
+      "role": "support",
+      "label": "从机床与受约束加工提供的能力，继续探索蒸汽机与热驱动"
+    },
+    {
+      "from": "alumina-calcination",
       "to": "hall-heroult-cell",
-      "label": "原生铝从哪里来",
-      "kind": "requires"
+      "kind": "enables",
+      "role": "support",
+      "label": "从煅烧得到氧化铝提供的能力，继续探索霍尔–埃鲁电解"
     },
     {
-      "from": "can-alloy-split",
-      "to": "cold-work-dislocations",
-      "label": "状态与硬化历史",
-      "kind": "explains"
+      "from": "draw-redraw-ironing",
+      "to": "can",
+      "kind": "enables",
+      "role": "support",
+      "label": "从拉深与壁厚变薄提供的能力，继续探索易拉罐"
     },
     {
-      "from": "can-alloy-split",
-      "to": "phase",
-      "label": "成分如何变成组织",
-      "kind": "explains"
+      "from": "experiments-control",
+      "to": "precision-measurement",
+      "kind": "enables",
+      "role": "support",
+      "label": "从对照、变量与反证提供的能力，继续探索精密测量与不确定度"
     },
     {
-      "from": "neck-flange-double-seam",
-      "to": "internal-coating-barrier",
-      "label": "垫胶与界面阻隔",
-      "kind": "requires"
+      "from": "observation-test",
+      "to": "shelter-water",
+      "kind": "enables",
+      "role": "support",
+      "label": "比较地形暴露与水源风险；不认证饮水安全"
     },
     {
-      "from": "internal-coating-barrier",
-      "to": "diffusion",
-      "label": "涂层怎样阻隔迁移",
-      "kind": "explains"
+      "from": "observation-test",
+      "to": "oral-learning",
+      "kind": "enables",
+      "role": "support",
+      "label": "为示范与纠错提供可核对的结果"
     },
     {
-      "from": "oxide-passivation-pitting",
-      "to": "bonds",
-      "label": "稳定氧化层与能量",
-      "kind": "explains"
+      "from": "shelter-water",
+      "to": "fire-control",
+      "kind": "enables",
+      "role": "support",
+      "label": "较稳定的停留与看护条件；不是用火的硬前置"
     },
     {
-      "from": "oxide-passivation-pitting",
-      "to": "amphoteric",
-      "label": "酸碱为何破坏氧化层",
-      "kind": "explains"
+      "from": "oral-learning",
+      "to": "fibre-cordage",
+      "kind": "enables",
+      "role": "support",
+      "label": "跨人传递捻合、结扎与检查经验"
     },
     {
-      "from": "hall-heroult-cell",
+      "from": "stone-tools",
+      "to": "fibre-cordage",
+      "kind": "enables",
+      "role": "support",
+      "label": "帮助取得与整理部分植物纤维"
+    },
+    {
+      "from": "stone-tools",
+      "to": "agriculture",
+      "kind": "enables",
+      "role": "support",
+      "label": "提供部分整地、收获与加工工具"
+    },
+    {
+      "from": "shelter-water",
+      "to": "agriculture",
+      "kind": "enables",
+      "role": "support",
+      "label": "水源与地方环境信息约束栽培选择"
+    },
+    {
+      "from": "observation-test",
+      "to": "domestication",
+      "kind": "enables",
+      "role": "support",
+      "label": "区分个体行为与多代群体差异"
+    },
+    {
+      "from": "oral-learning",
+      "to": "domestication",
+      "kind": "enables",
+      "role": "support",
+      "label": "传递照护与繁殖管理经验；不代表每种动物可驯化"
+    },
+    {
+      "from": "shelter-water",
+      "to": "food-storage",
+      "kind": "enables",
+      "role": "support",
+      "label": "提供储物空间及湿度、污染风险线索"
+    },
+    {
+      "from": "oral-learning",
+      "to": "food-storage",
+      "kind": "enables",
+      "role": "support",
+      "label": "传递损失辨识与保管经验，不替代食品安全检测"
+    },
+    {
+      "from": "agriculture",
+      "to": "village-surplus",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "供给可来自栽培，也可来自采集、畜牧或交换"
+    },
+    {
+      "from": "domestication",
+      "to": "village-surplus",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "动物资源是协作供给的一种路径，照护成本须计入"
+    },
+    {
+      "from": "observation-test",
+      "to": "counting",
+      "kind": "enables",
+      "role": "support",
+      "label": "用对应关系核对物件，而不是凭排列大小判断"
+    },
+    {
+      "from": "counting",
+      "to": "units-measurement",
+      "kind": "enables",
+      "role": "support",
+      "label": "数字读数与重复核对的基础；比较基准可先于数字"
+    },
+    {
+      "from": "counting",
+      "to": "food-storage",
+      "kind": "enables",
+      "role": "support",
+      "label": "核算出入库与损失；储藏本身可先于数字账目"
+    },
+    {
+      "from": "counting",
+      "to": "village-surplus",
+      "kind": "enables",
+      "role": "support",
+      "label": "使供给、需求与储备的分配更易核对"
+    },
+    {
+      "from": "agriculture",
+      "to": "seasonal-calendar",
+      "kind": "enables",
+      "role": "support",
+      "label": "跨季节栽培提出周期安排问题；不是历法唯一起源"
+    },
+    {
+      "from": "counting",
+      "to": "seasonal-calendar",
+      "kind": "enables",
+      "role": "support",
+      "label": "累计间隔与重复事件，逐渐形成周期记录"
+    },
+    {
+      "from": "shelter-water",
+      "to": "irrigation",
+      "kind": "enables",
+      "role": "support",
+      "label": "辨识水源和地形，明确引排水的地方条件"
+    },
+    {
+      "from": "agriculture",
+      "to": "irrigation",
+      "kind": "enables",
+      "role": "support",
+      "label": "栽培提出水量调配需求；雨养是替代路线"
+    },
+    {
+      "from": "fibre-cordage",
+      "to": "weaving",
+      "kind": "enables",
+      "role": "required",
+      "label": "本成线织物路线需要可用线材；条带编席另有分支"
+    },
+    {
+      "from": "domestication",
+      "to": "weaving",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "动物纤维可作为原料；植物纤维不需畜牧前置"
+    },
+    {
+      "from": "agriculture",
+      "to": "weaving",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "纤维作物是一种来源；野生纤维另有路线"
+    },
+    {
+      "from": "stone-tools",
+      "to": "pottery-kiln",
+      "kind": "enables",
+      "role": "support",
+      "label": "帮助原料处理与形状修整，不是成陶的唯一工具"
+    },
+    {
+      "from": "village-surplus",
+      "to": "pottery-kiln",
+      "kind": "enables",
+      "role": "support",
+      "label": "可支持专门制作；家庭与流动工艺也能烧陶"
+    },
+    {
+      "from": "fire-control",
+      "to": "charcoal",
+      "kind": "enables",
+      "role": "required",
+      "label": "本制炭路线需要供热与火灾、烟气管理能力"
+    },
+    {
+      "from": "fire-control",
+      "to": "copper-smelting",
+      "kind": "enables",
+      "role": "required",
+      "label": "本早期燃料冶炼分支需要专业受控热源"
+    },
+    {
+      "from": "pottery-kiln",
+      "to": "copper-smelting",
+      "kind": "enables",
+      "role": "support",
+      "label": "耐火部件及热分布经验支持炉体，非现代理论前置"
+    },
+    {
+      "from": "charcoal",
+      "to": "copper-smelting",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "碳质燃料与还原介质路线；矿物和燃料可有其他组合"
+    },
+    {
+      "from": "stone-tools",
+      "to": "copper-smelting",
+      "kind": "enables",
+      "role": "support",
+      "label": "采集、破碎与选择矿料的早期工具经验"
+    },
+    {
+      "from": "village-surplus",
+      "to": "copper-smelting",
+      "kind": "enables",
+      "role": "support",
+      "label": "协调矿料、燃料和劳动供给；不是冶金唯一社会路径"
+    },
+    {
+      "from": "copper-smelting",
+      "to": "bronze-casting",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "冶炼铜是一种铜料来源；天然铜与回收料另有路径"
+    },
+    {
+      "from": "fire-control",
+      "to": "bronze-casting",
+      "kind": "enables",
+      "role": "required",
+      "label": "本热铸路线需要受控热源与专业安全设施"
+    },
+    {
+      "from": "pottery-kiln",
+      "to": "bronze-casting",
+      "kind": "enables",
+      "role": "support",
+      "label": "陶质模具与耐火材料经验；其他模材另有分支"
+    },
+    {
+      "from": "units-measurement",
+      "to": "bronze-casting",
+      "kind": "enables",
+      "role": "support",
+      "label": "改进配料和尺寸重复性，不要求先有现代单位"
+    },
+    {
+      "from": "fire-control",
+      "to": "iron-smelting",
+      "kind": "enables",
+      "role": "required",
+      "label": "本早期冶炼路线需要受控供热与环境风险管理"
+    },
+    {
+      "from": "pottery-kiln",
+      "to": "iron-smelting",
+      "kind": "enables",
+      "role": "support",
+      "label": "耐火炉材与热空间经验可用，陶器不是普遍硬前置"
+    },
+    {
+      "from": "copper-smelting",
+      "to": "iron-smelting",
+      "kind": "enables",
+      "role": "support",
+      "label": "矿、金属与渣的辨识经验可迁移；铁并不必须经铜阶段"
+    },
+    {
+      "from": "village-surplus",
+      "to": "iron-smelting",
+      "kind": "enables",
+      "role": "support",
+      "label": "支持燃料和后处理劳动，仍有其他协作组织路径"
+    },
+    {
+      "from": "fire-control",
+      "to": "steel-heat-treatment",
+      "kind": "enables",
+      "role": "required",
+      "label": "本热处理路线需要专业可管理热过程"
+    },
+    {
+      "from": "observation-test",
+      "to": "steel-heat-treatment",
+      "kind": "enables",
+      "role": "support",
+      "label": "比较性能差异，经验工艺先于组织与相变理论"
+    },
+    {
+      "from": "units-measurement",
+      "to": "steel-heat-treatment",
+      "kind": "enables",
+      "role": "support",
+      "label": "帮助核对尺寸和性能；现代温度量表不是初次发现前置"
+    },
+    {
+      "from": "fire-control",
+      "to": "lime-mortar",
+      "kind": "enables",
+      "role": "required",
+      "label": "本石灰煅制分支需要专业高温与风险管理"
+    },
+    {
+      "from": "pottery-kiln",
+      "to": "lime-mortar",
+      "kind": "enables",
+      "role": "support",
+      "label": "供热、构筑和耐火经验可迁移，石灰窑另有设计"
+    },
+    {
+      "from": "fire-control",
+      "to": "glassmaking",
+      "kind": "enables",
+      "role": "required",
+      "label": "本早期玻璃路线需要专业可控制热源"
+    },
+    {
+      "from": "pottery-kiln",
+      "to": "glassmaking",
+      "kind": "enables",
+      "role": "support",
+      "label": "炉材与受控加热经验可迁移，不保证光学质量"
+    },
+    {
+      "from": "observation-test",
+      "to": "lever-wheel",
+      "kind": "enables",
+      "role": "support",
+      "label": "从可比较的搬运、平衡和运动经验抽象机构"
+    },
+    {
+      "from": "fibre-cordage",
+      "to": "lever-wheel",
+      "kind": "enables",
+      "role": "support",
+      "label": "连接与柔性传力可支持部分机构"
+    },
+    {
+      "from": "irrigation",
+      "to": "waterwheel",
+      "kind": "enables",
+      "role": "support",
+      "label": "水路、落差与维护经验可迁移，不要求先有灌溉"
+    },
+    {
+      "from": "lime-mortar",
+      "to": "waterwheel",
+      "kind": "enables",
+      "role": "support",
+      "label": "支持部分土建；木、石等构筑材料有替代路线"
+    },
+    {
+      "from": "oral-learning",
+      "to": "writing-records",
+      "kind": "enables",
+      "role": "support",
+      "label": "共享意义与解释约定，文字扩展而非取代口传"
+    },
+    {
+      "from": "counting",
+      "to": "writing-records",
+      "kind": "enables",
+      "role": "support",
+      "label": "给数量记录可核对的对应关系，不解释全部文字起源"
+    },
+    {
+      "from": "pottery-kiln",
+      "to": "writing-records",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "泥质载体是一种记录路径；木、石等另有路径"
+    },
+    {
+      "from": "units-measurement",
+      "to": "geometry",
+      "kind": "enables",
+      "role": "support",
+      "label": "度量问题支持形状关系，几何证明需另列假设"
+    },
+    {
+      "from": "counting",
+      "to": "geometry",
+      "kind": "enables",
+      "role": "support",
+      "label": "方格、分割与面积比较所用的数量关系"
+    },
+    {
+      "from": "writing-records",
+      "to": "geometry",
+      "kind": "enables",
+      "role": "support",
+      "label": "保存图样与推理；口述和实物演示仍可传递几何"
+    },
+    {
+      "from": "fibre-cordage",
+      "to": "paper-printing",
+      "kind": "enables",
+      "role": "support",
+      "label": "纤维选择与整理经验可迁移，不要求先会制绳"
+    },
+    {
+      "from": "observation-test",
+      "to": "experiments-control",
+      "kind": "enables",
+      "role": "required",
+      "label": "正式协议明确化已有比较、试验和核对能力"
+    },
+    {
+      "from": "units-measurement",
+      "to": "experiments-control",
+      "kind": "enables",
+      "role": "support",
+      "label": "使数值比较及误差说明更易复现"
+    },
+    {
+      "from": "writing-records",
+      "to": "experiments-control",
+      "kind": "enables",
+      "role": "support",
+      "label": "保存条件和失败结果，防止只记成功"
+    },
+    {
+      "from": "counting",
+      "to": "algebra",
+      "kind": "enables",
+      "role": "required",
+      "label": "本数值关系分支需要稳定的数量与基本运算"
+    },
+    {
+      "from": "units-measurement",
+      "to": "algebra",
+      "kind": "enables",
+      "role": "support",
+      "label": "为资源关系提供单位与边界检查"
+    },
+    {
+      "from": "geometry",
+      "to": "algebra",
+      "kind": "enables",
+      "role": "support",
+      "label": "形状与面积提出可推广的关系问题，非代数唯一起源"
+    },
+    {
+      "from": "seasonal-calendar",
+      "to": "navigation",
+      "kind": "enables",
+      "role": "support",
+      "label": "周期与天体参照知识支持部分定位路线"
+    },
+    {
+      "from": "geometry",
+      "to": "navigation",
+      "kind": "enables",
+      "role": "support",
+      "label": "角度、相似与空间关系支持测绘，地标经验可独立使用"
+    },
+    {
+      "from": "writing-records",
+      "to": "navigation",
+      "kind": "enables",
+      "role": "support",
+      "label": "保存路线、历表及误差记录，口传路线也是替代"
+    },
+    {
+      "from": "shelter-water",
+      "to": "sanitation",
+      "kind": "enables",
+      "role": "support",
+      "label": "水源和污染风险辨识扩展到完整传播路径"
+    },
+    {
+      "from": "irrigation",
+      "to": "sanitation",
+      "kind": "enables",
+      "role": "support",
+      "label": "引排水经验可迁移，不把农业渠道当作安全供水"
+    },
+    {
+      "from": "village-surplus",
+      "to": "sanitation",
+      "kind": "enables",
+      "role": "support",
+      "label": "持续协作和维护可支持共同设施，卫生并不限于村落"
+    },
+    {
+      "from": "glassmaking",
+      "to": "microscopy",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "光学质量玻璃可供透镜；其他透明材料另有分支"
+    },
+    {
+      "from": "units-measurement",
+      "to": "microscopy",
+      "kind": "enables",
+      "role": "support",
+      "label": "尺度参照把图像变成可比较的观察，不是首次发现硬前置"
+    },
+    {
+      "from": "experiments-control",
+      "to": "microscopy",
+      "kind": "enables",
+      "role": "support",
+      "label": "通过同位置、换照明与复看区分伪影"
+    },
+    {
+      "from": "counting",
+      "to": "probability",
+      "kind": "enables",
+      "role": "required",
+      "label": "本频率模型需要事件次数与总次数"
+    },
+    {
+      "from": "experiments-control",
+      "to": "probability",
+      "kind": "enables",
+      "role": "support",
+      "label": "一致试验规则让样本频率可解释，不消除偏差"
+    },
+    {
+      "from": "writing-records",
+      "to": "probability",
+      "kind": "enables",
+      "role": "support",
+      "label": "保留完整试验和抽样记录，不只保留成功"
+    },
+    {
+      "from": "lever-wheel",
+      "to": "machine-tools",
+      "kind": "enables",
+      "role": "required",
+      "label": "本加工机构需要约束相对运动与机械传力"
+    },
+    {
+      "from": "units-measurement",
+      "to": "machine-tools",
+      "kind": "enables",
+      "role": "support",
+      "label": "检验尺寸与重复性，不能仅凭机械导向保证精度"
+    },
+    {
+      "from": "village-surplus",
+      "to": "machine-tools",
+      "kind": "enables",
+      "role": "support",
+      "label": "协调供给和维修劳动，非唯一制造组织形式"
+    },
+    {
+      "from": "units-measurement",
+      "to": "standardized-parts",
+      "kind": "enables",
+      "role": "required",
+      "label": "共享配合基准与可复核限度是互换验证条件"
+    },
+    {
+      "from": "machine-tools",
+      "to": "standardized-parts",
+      "kind": "enables",
+      "role": "support",
+      "label": "改善重复加工；机床存在不自动带来互换"
+    },
+    {
+      "from": "writing-records",
+      "to": "standardized-parts",
+      "kind": "enables",
+      "role": "support",
+      "label": "传播接口与版本，实物样规也是参照路线"
+    },
+    {
+      "from": "probability",
+      "to": "standardized-parts",
+      "kind": "enables",
+      "role": "support",
+      "label": "帮助解释抽检和波动，不替代接口实测"
+    },
+    {
+      "from": "fire-control",
+      "to": "steam-engine",
+      "kind": "enables",
+      "role": "required",
+      "label": "本燃料热机分支需要可管理热源与专业安全系统"
+    },
+    {
+      "from": "lever-wheel",
+      "to": "steam-engine",
+      "kind": "enables",
+      "role": "required",
+      "label": "本往复发动机输出需要传力及周期运动机构"
+    },
+    {
+      "from": "steam-engine",
+      "to": "thermodynamics-first-law",
+      "kind": "enables",
+      "role": "support",
+      "label": "热机和热损失提出统一能量账问题；理论不是发明前置"
+    },
+    {
+      "from": "waterwheel",
+      "to": "thermodynamics-first-law",
+      "kind": "enables",
+      "role": "support",
+      "label": "机械功和能量来源的比较支持守恒模型"
+    },
+    {
+      "from": "units-measurement",
+      "to": "thermodynamics-first-law",
+      "kind": "enables",
+      "role": "required",
+      "label": "本定量能量账需要一致单位与可比较量值"
+    },
+    {
+      "from": "algebra",
+      "to": "thermodynamics-first-law",
+      "kind": "enables",
+      "role": "support",
+      "label": "便于表示账目关系，不是早期热机经验的前置"
+    },
+    {
+      "from": "glassmaking",
+      "to": "optics-instruments",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "合格玻璃元件是一条光学材料路线"
+    },
+    {
+      "from": "microscopy",
+      "to": "optics-instruments",
+      "kind": "enables",
+      "role": "support",
+      "label": "成像差异促使更系统的校准与误差研究"
+    },
+    {
+      "from": "geometry",
+      "to": "optics-instruments",
+      "kind": "enables",
+      "role": "support",
+      "label": "为定量近轴成像提供模型，不是首次造透镜前置"
+    },
+    {
+      "from": "units-measurement",
+      "to": "optics-instruments",
+      "kind": "enables",
+      "role": "required",
+      "label": "本定量仪器分支需要尺度参照与校准"
+    },
+    {
+      "from": "machine-tools",
+      "to": "optics-instruments",
+      "kind": "enables",
+      "role": "support",
+      "label": "改善镜筒与支承重复性，仍需检验光学元件"
+    },
+    {
+      "from": "weaving",
+      "to": "textile-mechanization",
+      "kind": "enables",
+      "role": "required",
+      "label": "本机械化路线先需识别成线、交织等工艺任务"
+    },
+    {
+      "from": "fibre-cordage",
+      "to": "textile-mechanization",
+      "kind": "enables",
+      "role": "support",
+      "label": "纤维与捻合经验支持成线工序"
+    },
+    {
+      "from": "lever-wheel",
+      "to": "textile-mechanization",
+      "kind": "enables",
+      "role": "required",
+      "label": "本机械化分支需要重复运动和传动机构"
+    },
+    {
+      "from": "waterwheel",
+      "to": "textile-mechanization",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "水力是连续动力的一种来源，人力等另有路线"
+    },
+    {
+      "from": "steam-engine",
+      "to": "textile-mechanization",
+      "kind": "enables",
+      "role": "alternative",
+      "label": "后续蒸汽动力分支；不是早期纺织机械的前置"
+    },
+    {
+      "from": "machine-tools",
+      "to": "textile-mechanization",
+      "kind": "enables",
+      "role": "support",
+      "label": "改善部件加工和维修，不包办原料及工序匹配"
+    },
+    {
+      "from": "units-measurement",
+      "to": "quantitative-chemistry",
+      "kind": "enables",
+      "role": "required",
+      "label": "本定量路线需要校准称量、单位和边界"
+    },
+    {
+      "from": "experiments-control",
+      "to": "quantitative-chemistry",
+      "kind": "enables",
+      "role": "required",
+      "label": "本可复现实验路线需记录条件、对照与误差"
+    },
+    {
+      "from": "writing-records",
+      "to": "quantitative-chemistry",
+      "kind": "enables",
+      "role": "support",
+      "label": "保存称量、组成和全部产物流，便于独立复算"
+    },
+    {
+      "from": "algebra",
+      "to": "quantitative-chemistry",
+      "kind": "enables",
+      "role": "support",
+      "label": "推广配料与产率关系，不是初次经验冶炼前置"
+    },
+    {
+      "from": "probability",
+      "to": "quantitative-chemistry",
+      "kind": "enables",
+      "role": "support",
+      "label": "帮助理解重复测量与抽样波动，不消除系统误差"
+    },
+    {
+      "from": "copper-smelting",
+      "to": "quantitative-chemistry",
+      "kind": "enables",
+      "role": "support",
+      "label": "矿、金属和渣的经验提出可核算的反应及损耗问题"
+    },
+    {
+      "from": "copper-smelting",
+      "to": "geology-mining",
+      "kind": "enables",
+      "role": "support",
+      "label": "矿料差异提出原料分布问题，现代地质不是早期冶炼前置"
+    },
+    {
+      "from": "iron-smelting",
+      "to": "geology-mining",
+      "kind": "enables",
+      "role": "support",
+      "label": "产率与矿料差异推动更系统的资源调查"
+    },
+    {
+      "from": "navigation",
+      "to": "geology-mining",
+      "kind": "enables",
+      "role": "support",
+      "label": "测绘与位置记录帮助调查空间分布"
+    },
+    {
+      "from": "quantitative-chemistry",
+      "to": "geology-mining",
+      "kind": "enables",
+      "role": "support",
+      "label": "组成和品位分析支持资源核算，不取代代表性采样"
+    },
+    {
+      "from": "units-measurement",
+      "to": "geology-mining",
+      "kind": "enables",
+      "role": "support",
+      "label": "把样品、范围和开采代价转成可核对量值"
+    },
+    {
+      "from": "lever-wheel",
+      "to": "mechanical-feedback",
+      "kind": "enables",
+      "role": "required",
+      "label": "本机械调节分支需要传感位移到执行动作的机构"
+    },
+    {
+      "from": "steam-engine",
+      "to": "mechanical-feedback",
+      "kind": "enables",
+      "role": "support",
+      "label": "变负载调速提出问题；浮子等反馈有独立路线"
+    },
+    {
+      "from": "waterwheel",
+      "to": "mechanical-feedback",
+      "kind": "enables",
+      "role": "support",
+      "label": "流量与负载变化提供调节场景，不是反馈唯一起源"
+    },
+    {
+      "from": "machine-tools",
+      "to": "mechanical-feedback",
+      "kind": "enables",
+      "role": "support",
+      "label": "改善活动部件、轴承和连接的一致性"
+    },
+    {
+      "from": "experiments-control",
+      "to": "mechanical-feedback",
+      "kind": "enables",
+      "role": "support",
+      "label": "预设扰动验证回稳与振荡，不用空载成功代替验收"
+    },
+    {
+      "from": "observation-test",
+      "to": "fibre-cordage",
+      "kind": "enables",
+      "role": "support",
+      "label": "从材料试拉和连接中寻找稳定的绳索"
+    },
+    {
+      "from": "observation-test",
+      "to": "seasonal-calendar",
+      "kind": "enables",
+      "role": "support",
+      "label": "把重复天象与生活条件记成周期"
+    },
+    {
+      "from": "units-measurement",
+      "to": "irrigation",
+      "kind": "enables",
+      "role": "support",
+      "label": "比较水位、坡度和分配效率"
+    },
+    {
+      "from": "writing-records",
+      "to": "algebra",
+      "kind": "enables",
+      "role": "support",
+      "label": "把数量关系记成可操作的表达"
+    },
+    {
+      "from": "experiments-control",
+      "to": "sanitation",
+      "kind": "enables",
+      "role": "support",
+      "label": "区分相关与干预的效果"
+    },
+    {
+      "from": "experiments-control",
+      "to": "thermodynamics-first-law",
+      "kind": "enables",
+      "role": "support",
+      "label": "对可重复系统作闭合能量核算"
+    },
+    {
+      "from": "thermodynamics-first-law",
+      "to": "entropy",
+      "kind": "enables",
+      "role": "support",
+      "label": "在能量守恒之外检验过程方向"
+    },
+    {
+      "from": "quantitative-chemistry",
+      "to": "moles",
+      "kind": "enables",
+      "role": "required",
+      "label": "由比例、质量与计量建立物质量"
+    },
+    {
+      "from": "stone-tools",
+      "to": "geology-mining",
+      "kind": "enables",
+      "role": "support",
+      "label": "辨认石料和露头的经验扩展到矿物资源"
+    },
+    {
+      "from": "algebra",
+      "to": "calculus",
+      "kind": "enables",
+      "role": "support",
+      "label": "从数量关系到变化率与累积"
+    },
+    {
+      "from": "geometry",
+      "to": "calculus",
+      "kind": "enables",
+      "role": "support",
+      "label": "用曲线、切线与面积构造变化问题"
+    },
+    {
+      "from": "charge",
+      "to": "electromagnetism",
+      "kind": "enables",
+      "role": "support",
+      "label": "比较电流与磁响应的可重复关系"
+    },
+    {
+      "from": "charge",
+      "to": "faraday-charge",
+      "kind": "enables",
+      "role": "required",
+      "label": "用电量核算电极反应的粒子账目"
+    },
+    {
+      "from": "moles",
+      "to": "faraday-charge",
+      "kind": "enables",
+      "role": "required",
+      "label": "将物质量与电子转移数相联系"
+    },
+    {
+      "from": "entropy",
+      "to": "free-energy",
+      "kind": "enables",
+      "role": "required",
+      "label": "在能量之外处理方向与约束"
+    },
+    {
+      "from": "thermodynamics-first-law",
+      "to": "free-energy",
+      "kind": "enables",
+      "role": "support",
+      "label": "守恒、热功与可用功的账目"
+    },
+    {
+      "from": "free-energy",
       "to": "thermo-voltage",
-      "label": "外加电功为何必要",
-      "kind": "explains"
+      "kind": "enables",
+      "role": "required",
+      "label": "把可用功与电荷转移联系起来"
     },
     {
-      "from": "hall-heroult-cell",
+      "from": "faraday-charge",
+      "to": "thermo-voltage",
+      "kind": "enables",
+      "role": "support",
+      "label": "由电量对应反应进度"
+    },
+    {
+      "from": "electric-power",
       "to": "smelting-energy",
-      "label": "运行电耗花在哪里",
-      "kind": "explains"
+      "kind": "enables",
+      "role": "required",
+      "label": "核算电能输入和损耗"
     },
     {
-      "from": "internal-pressure-hoop-stress",
-      "to": "shell-buckling-dome",
-      "label": "压缩与屈曲换一种机制",
-      "kind": "explains"
+      "from": "industrial-chemistry",
+      "to": "carbon-anode-reaction",
+      "kind": "enables",
+      "role": "support",
+      "label": "用电极材料与反应账目解释工业消耗"
+    },
+    {
+      "from": "charcoal",
+      "to": "carbon-anode-reaction",
+      "kind": "enables",
+      "role": "support",
+      "label": "碳材料经验是一条材料认识路径"
+    },
+    {
+      "from": "industrial-chemistry",
+      "to": "oxide-passivation-pitting",
+      "kind": "enables",
+      "role": "support",
+      "label": "比较保护膜与局部腐蚀条件"
+    },
+    {
+      "from": "cold-work-dislocations",
+      "to": "oxide-passivation-pitting",
+      "kind": "enables",
+      "role": "support",
+      "label": "组织与表面状态影响耐蚀性"
     }
   ],
   "routes": [
     {
-      "id": "ore",
-      "title": "铝从矿石怎样来？",
+      "id": "first-tools",
+      "title": "从试错，到金属工具",
       "nodes": [
-        "can",
-        "can-alloy-split",
-        "hall-heroult-cell",
-        "cryolite-electrolyte",
-        "alumina-calcination",
-        "bayer-precipitation",
-        "bayer-clarification",
+        "observation-test",
+        "stone-tools",
+        "lever-wheel",
+        "waterwheel",
+        "machine-tools"
+      ]
+    },
+    {
+      "id": "food-to-records",
+      "title": "从储粮，到可复查的知识",
+      "nodes": [
+        "observation-test",
+        "agriculture",
+        "food-storage",
+        "village-surplus",
+        "writing-records",
+        "paper-printing",
+        "experiments-control"
+      ]
+    },
+    {
+      "id": "fire-to-machine",
+      "title": "从用火，到持续动力",
+      "nodes": [
+        "observation-test",
+        "fire-control",
+        "pottery-kiln",
+        "charcoal",
+        "iron-smelting",
+        "steel-heat-treatment",
+        "machine-tools",
+        "steam-engine",
+        "generator",
+        "power-grid"
+      ]
+    },
+    {
+      "id": "aluminium-path",
+      "title": "工业支线：一只易拉罐",
+      "nodes": [
+        "geology-mining",
+        "bauxite-ore",
         "bayer-digestion",
-        "bauxite-ore"
-      ],
-      "steps": [
-        "手边的物件",
-        "需要罐材",
-        "先制出原生铝",
-        "氧化铝溶入熔盐",
-        "无水氧化铝从哪来",
-        "先得到氢氧化铝",
-        "液体与残渣分开",
-        "碱液把铝带走",
-        "矿石是混合矿物"
-      ]
-    },
-    {
-      "id": "why",
-      "title": "铝为什么难冶炼？",
-      "nodes": [
-        "can",
-        "can-alloy-split",
+        "bayer-clarification",
+        "bayer-precipitation",
+        "alumina-calcination",
         "hall-heroult-cell",
-        "thermo-voltage",
-        "free-energy",
-        "entropy"
-      ],
-      "steps": [
-        "从一只罐开始",
-        "合金需要铝",
-        "氧化铝要电解",
-        "至少需要多少功",
-        "方向由自由能判断",
-        "把能量接到微观统计"
+        "can-alloy-split",
+        "coil-to-cup",
+        "draw-redraw-ironing",
+        "can"
       ]
     },
     {
-      "id": "thin",
-      "title": "这么薄，为什么不破？",
+      "id": "discovery-to-ai",
+      "title": "从可重复实验，到自主研究",
       "nodes": [
-        "can",
-        "internal-pressure-hoop-stress",
-        "stress",
-        "bonds",
-        "atoms-electrons"
-      ],
-      "steps": [
-        "一个带压容器",
-        "压力变成膜应力",
-        "力与变形如何相关",
-        "弹性从原子相互作用来",
-        "电子量子态的入口"
-      ]
-    },
-    {
-      "id": "again",
-      "title": "喝完之后的捷径",
-      "nodes": [
-        "can",
-        "recycling-sort-remelt",
-        "phase",
-        "free-energy",
-        "bonds",
-        "atoms-electrons"
-      ],
-      "steps": [
-        "换一条材料来源",
-        "分选去涂层再熔化",
-        "熔化改变材料的相",
-        "平衡取决于自由能",
-        "比较微观能量",
-        "电子与原子状态"
+        "experiments-control",
+        "precision-measurement",
+        "semiconductors",
+        "transistor",
+        "integrated-circuits",
+        "computers",
+        "machine-learning",
+        "intelligent-agent",
+        "closed-loop-research"
       ]
     }
   ]

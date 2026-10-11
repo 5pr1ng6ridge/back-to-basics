@@ -1,0 +1,7 @@
+dist/
+node_modules/
+.DS_Store
+screenshots/
+# One-off local migration utilities; canonical knowledge lives in kb.json.
+research/extend-discovery.cjs
+research/connect.cjs
